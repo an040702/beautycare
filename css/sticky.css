@@ -40,5 +40,6 @@
 }
 
 .sticky + .content {
-  padding-top: 60px;
+  /*Chỗ này gây lỗi*/
+  /*padding-top: 60px;*/
 }
