@@ -8,42 +8,51 @@
   	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/latest/normalize.css">
     <link rel="stylesheet" type="text/css" href="../css/index-css.css">
     <link rel="stylesheet" type="text/css" href="../css/sticky.css">
+    <style type="text/css">
+		.nav_menu.fix {
+		  left: 0;
+		  max-width: 100%;
+		  overflow: visible;
+		  position: fixed !important;
+		  top: 0;
+		  width: 100%;
+		  z-index: 1000;
+			}
 
+	</style>
 
 </head>
 <body>
 	<div class="row">
-		<nav>
+		<nav class="nav_menu">
 		  	<div style="height: 50px;" id="navbar" class="info" style="">
 		    	<a class="active" href="javascript:void(0)">Home</a>
 		  	</div>
 		</nav>
 	</div>
 	<div class="row">
-		<div style="height: 120px; margin-top: 0px; z-index: 1;" >
+		<div style="height: 120px; margin-top: 0px; z-index: 1;">
 			
 		</div>
 	</div>
 	<aside>
-		<div class="row">
-	    	<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="../images/red-color-paint-painting-nail-polish-art-1095989-pxhere.com.jpg">
-	      		<div class="container info">
-			        <p class="aside-comment">
-			          SINCE 1985 
-			        </p>
-	      		</div>
-	    	</div>
+    	<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="../images/red-color-paint-painting-nail-polish-art-1095989-pxhere.com.jpg">
+      		<div class="container info">
+		        <p class="aside-comment">
+		          SINCE 1985 
+		        </p>
+      		</div>
     	</div>
-    	<div class="row">    	
-	    	<div class="col-md-6" style="min-height: 200px; background: green;" class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="../images/girl-woman-female-model-red-color-648635-pxhere.com.jpg">
-	    		
-	    	</div>
-	    	<div class="col-md-6" style="min-height: 200px; background: black;" class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="../images/girl-woman-female-model-red-color-648635-pxhere.com.jpg">
-	    		<div class="info aside-comment">
-	    				<a class="text-a" href="#">Buy Now</a>
-	    		</div>
-	    	</div>
+
+    	<div style="width: 50%; min-height: 355px;" class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="../images/girl-woman-female-model-red-color-648635-pxhere.com.jpg">
+    		
     	</div>
+    	<div style="width: 50%; min-height: 355px; background: black; float: right; margin-top: -355px;">
+    		<div class="info aside-comment">
+    				<a href="#">Buy Now</a>
+    		</div>
+    	</div>
+
 	</aside>
 	
 	<div class="row">
@@ -147,7 +156,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script type="text/javascript" src="../js/index-jquery.js"></script>
     <script type="text/javascript" src="../js/parallax.min.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <!-- <script type="text/javascript">
     	window.onscroll = function() {myFunction()};
 
 		var navbar = document.getElementById("navbar");
@@ -161,6 +171,32 @@
 		      navbar.classList.remove("sticky");
 		    }
 		}
-    </script>
+    </script> -->
+    <script type="text/javascript">
+	jQuery(document).ready(function($) {
+		var $filter = $('.nav_menu');
+		var $filterSpacer = $('<div />', {
+			// "class": "vnkings-spacer",
+			// "height": $filter.outerHeight()
+		});
+		if ($filter.size())
+		{
+			$(window).scroll(function ()
+			{
+				if (!$filter.hasClass('fix') && $(window).scrollTop() > $filter.offset().top)
+				{
+					$filter.before($filterSpacer);
+					$filter.addClass("fix");
+				}
+				else if ($filter.hasClass('fix')  && $(window).scrollTop() < $filterSpacer.offset().top)
+				{
+					$filter.removeClass("fix");
+					$filterSpacer.remove();
+				}
+			});
+		}
+
+	});
+	</script>
 </body>
 </html>
