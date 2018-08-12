@@ -508,6 +508,7 @@
     display: table;
 }
 .container1 {
+	position: relative;
   display: inline-block;
   max-width:100%;
   text-align:center;
@@ -527,16 +528,17 @@
   position: relative;
 }
 .container1:hover .overlay {
-  bottom: 0;
-  height: 20%;
-  opacity: 1;
+	bottom: 0;
+	height: 20%;
+	opacity: 1;
   
 }
 .overlay .text:hover {
   text-decoration: underline;
-
+  text-align: center;
 }
 .text {
+	position: relative;
   color: white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -545,7 +547,7 @@
     font-weight: 700;
     text-align: center; 
     height: 60px;
-    line-height: 64px;
+    line-height: 55px;
     border-style: solid;
     border-color: white;
     border-width: 0;
@@ -569,13 +571,14 @@ background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
   
 }
 .cost{
-  font-weight: 700;
-  font-size: 15px;
-  
-  display: inline-block;
-  float: left;
-  text-align: center;
-  font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,Sans-Serif;
+  	font-weight: 700;
+  	font-size: 15px; 
+   	height: 35px;
+    line-height: 35px; 
+  	display: inline-block;
+  	float: left;
+  	text-align: center;
+  	font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,Sans-Serif;
 }
 fieldset, label { margin: 0; padding: 0; }
 body{ margin: 20px; }
