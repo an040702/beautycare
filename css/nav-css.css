@@ -1,5 +1,6 @@
 nav.nav_container {
 	background: black;
+	margin-top: 0px;
 }
 nav.navbar-inverse {
 	/*background: black !important;*/
@@ -7,6 +8,7 @@ nav.navbar-inverse {
 a > img.nav_logo {
 	width: 200px ;
 	margin-top: -12px;
+	height: 45.5px;
 }
 
 body {
