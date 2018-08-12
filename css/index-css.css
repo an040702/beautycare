@@ -1,3 +1,12 @@
+/*edit page cuc bo*/
+.col-md-3{
+    margin-top: 10%; 
+
+}
+.col-md-3{
+  margin-top: 3% !important;
+}
+/*anh parallax */
 .parallax{
     min-height: 300px; 
     background: transparent;
@@ -6,22 +15,21 @@
     margin: none;
     padding: none;
 }
+
+/*row 1 */
 .aside-comment{
     color: white;
     font-size: 50px;
     padding: 5%;
     margin-top: 3%;
-    margin-left: 30%;
-}
-.outside-title-page{
-    margin: 33%;
-    font-size: 50px;
+    margin-left: 33%;
 }
 .info{
     z-index: 2;
     position: relative;
-
 }
+
+/*row 2*/
 .text-a{
   color: white;
   margin-top: 5%;
@@ -31,21 +39,40 @@
   background-color: white;
   text-decoration: none;
 }
+.row .background-picture{
+  width: 50%; 
+  min-height: 355px; 
+  background: black; 
+  float: right;
+  margin-top: -355px;
+}
+
+/*row 3*/
+.outside-title-page{
+    margin: 33%;
+    font-size: 50px;
+}
+
+/*row 4*/
 .media-list{
   width: 100px;
   height: 40px;
   text-align: center;
-  border-bottom: solid 1px black;
   padding-right: 0px !important;
-  margin: 0% 2.6%;
   padding-top: 10px;
-}
-.product-hot{
-  padding: 15px 15px;
+  font-weight: bold;
+  margin: 0% 0.3%;
+  border: 1px solid black;
+  width: 150px;
 }
 .media-list:hover{
   background-color: black;
   color: white;
+}
+
+/*row 5*/
+.product-hot{
+  padding: 15px 15px;
 }
 .header{
   min-height: 70px !important;
@@ -76,9 +103,6 @@
   background-color: white;
   color: black;
 }
-.picture{
-  height: 200px;
-}
 .price{
   width: 30%;
   float: left;
@@ -93,6 +117,13 @@
     margin-left: 30%;
     margin-top: 5%;
 }
+
+/*row 7*/
+.picture{
+  height: 200px;
+  width: 278px;
+}
+/* */
 .navbar{
     margin-top: 50px;
 }
@@ -119,49 +150,32 @@
     padding-left: 25%;
     padding-top: 10%;
 }
-.col-md-3{
-    margin-top: 10%; 
-
-}
-.outside{
-    
+/*footer edit*/
+.footer{
     background-color: black;
     color: white;
-
+    height: 250px;
+    margin-top: 5%;
 }
-.outside .title{
-    font-size: 40px;
-    color: black;
-    margin: 10% 41%;
+.footer .title{
+    font-size: 20px;
+    height: 60px;
+    font-weight: bold;
+    width: 100%;
+    color: white;
+    margin: 10% 30%;
 }
-#navbar {
-  overflow: hidden;
-  background-color: black !important;
+.footer .info-footer{
+  font-size: 15px;
+  color: white;
 }
-
-/* Navbar links */
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
+.footer ul{
+  list-style: none;
+}
+.footer ul li{
+  text-decoration: underline;
+}
+.footer ul li a{
   text-decoration: none;
-}
-/* Page content */
-.content {
-  
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-.col-md-3{
-  margin-top: 3% !important;
+  color: white;
 }
