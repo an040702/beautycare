@@ -15,7 +15,7 @@
 }
 /*anh parallax */
 .parallax{
-    min-height: 300px; 
+    min-height: 390px; 
     background: transparent;
     width: 100% ;
     max-width: none;
@@ -28,7 +28,7 @@
     color: white;
     font-size: 50px;
     padding: 5%;
-    margin-top: 3%;
+    margin-top: 10%;
     margin-left: 33%;
 }
 .info{
