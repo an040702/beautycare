@@ -15,11 +15,13 @@ ul li {
 
 /* This hides the dropdowns */
 
-ul li a:hover{background-color: white;color: black;}
+ul li a:hover{background-color: white;color: black;} /*back ground nav main*/
+
 
 li ul { display: none; }
+/*back ground hover*/
 ul.main-nav li:hover ul li a{
-  background-color: #fff;
+  background-color: gray;
   color: black;
 }
 ul.main-nav li:hover ul li a:hover{
