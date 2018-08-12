@@ -1,0 +1,23 @@
+nav.nav_container {
+	background: black;
+}
+nav.navbar-inverse {
+	/*background: black !important;*/
+}
+a > img.nav_logo {
+	width: 200px ;
+	margin-top: -12px;
+}
+
+body {
+    margin: 30px 0px;
+}
+.navbar-default .navbar-nav > li.dropdown:hover > a, 
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
