@@ -524,6 +524,7 @@
   width:auto;
   transition: .5s ease;
 }
+img.img-responsive{width: 225px;height: 225px;}
 .images_custom{
   position: relative;
 }
