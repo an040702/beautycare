@@ -441,3 +441,209 @@
 .rating12 > input:checked ~ label:hover,
 .rating12 > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating12 > input:checked ~ label:hover ~ label { color: #848483;  }
+
+/*Các hiệu ứng của Kiên làm*/
+/*# sourceMappingURL=bootstrap.css.map */
+.btn_custom {
+  width: auto;
+  line-height: 30px;
+  clear: none;
+  float: right;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  background-color: #222;
+  padding: 0px 20px;
+  border-width: 0;
+  font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,Sans-Serif;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  border:2px solid white;
+}
+.btn_custom:hover{
+  border:2px solid black;
+}
+.btn_custom span {
+  color: #fff;
+  position: relative; 
+  z-index: 1;
+  font-weight: 700;
+  font-size: 15px;
+}
+.btn_custom:hover span {
+  color: black;
+  position: relative; 
+  z-index: 1;
+}
+.btn_custom:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: black;
+  height: 450%;
+  width: 150%;
+  background: white;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all 1.1s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+.btn_custom:hover:after {
+
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.container1 {
+  display: inline-block;
+  max-width:100%;
+  text-align:center;
+}
+.overlay {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  height:0%;
+  width:auto;
+  transition: .5s ease;
+}
+.images_custom{
+  position: relative;
+}
+.container1:hover .overlay {
+  bottom: 0;
+  height: 20%;
+  opacity: 1;
+  
+}
+.overlay .text:hover {
+  text-decoration: underline;
+
+}
+.text {
+  color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,Sans-Serif;
+    font-size: 100%;
+    font-weight: 700;
+    text-align: center; 
+    height: 60px;
+    line-height: 64px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0;
+    display: inline-block;
+    background-color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+hr.style-one {
+border: 0;
+height: 1px;
+background: #333;
+background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+.font_all{
+  font-weight: 700;
+  font-size: 15px;
+  
+}
+.cost{
+  font-weight: 700;
+  font-size: 15px;
+  
+  display: inline-block;
+  float: left;
+  text-align: center;
+  font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,Sans-Serif;
+}
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+  position: relative;
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+
+.wrapper input {
+  border: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  opacity: 0;
+}
+.wrapper label:before {
+  margin: 5px;
+  content: "\f004";
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 1.5em;
+  color: #ccc;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.wrapper input:checked ~ label:before {
+  color: black;
+}
+.wrapper label:hover:before {
+  color: #d6d6c2;
+}
