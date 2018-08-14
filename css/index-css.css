@@ -130,6 +130,12 @@
   height: 200px;
   width: 278px;
 }
+.picture .text-inside{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 60%;
+}
 /* */
 .navbar{
     margin-top: 50px;
