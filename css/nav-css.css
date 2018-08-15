@@ -98,3 +98,84 @@ a > img.nav_logo {
     text-align: center;
   }
 }  
+
+/*Navbar hover effects*/
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+
+.snip1555 li:before,
+.snip1555 li:after {
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  height: 2px;
+  width: 35%;
+  background-color: #528cb3;
+  position: absolute;
+  content: '';
+  opacity: 0;
+}
+.snip1555 li:before {
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+}
+.snip1555 li:after {
+  bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
+}
+.snip1555 li:hover:before,
+.snip1555 li.hover:before,
+.snip1555 li:hover:after,
+.snip1555 li.hover:after {
+  opacity: 1;
+}
+.snip1555 li:hover:before,
+.snip1555 li.hover:before {
+  left: 65%;
+  margin-top: 10px;
+}
+.snip1555 li:hover:after,
+.snip1555 li.hover:after {
+  right: 65%;
+  margin-bottom: 10px;
+}
+
+/*=========================================*/
+.snip1556 li:before,
+.snip1556 li:after {
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  height: 2px;
+  width: 35%;
+  background-color: #528cb3;
+  position: absolute;
+  content: '';
+  opacity: 0;
+}
+.snip1556 li:before {
+  top: 0;
+  left: 0;
+  margin-top: 0 !important;
+}
+.snip1556 li:after {
+  bottom: 0;
+  right: 0;
+  margin-bottom: 0 !important;
+}
+.snip1556 li:hover:before,
+.snip1556 li.hover:before,
+.snip1556 li:hover:after,
+.snip1556 li.hover:after {
+  opacity: 1;
+}
+.snip1556 li:hover:before,
+.snip1556 li.hover:before {
+  left: 65%;
+  margin-top: 0 !important;
+}
+.snip1556 li:hover:after,
+.snip1556 li.hover:after {
+  right: 65%;
+  margin-bottom: 0 !important;
+}
