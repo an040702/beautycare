@@ -9,54 +9,168 @@
 	<title>NavBar</title>
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-fixed-top nav_container">
-		<div class="container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-		      	</button>
-		      	<a class="navbar-brand nav_logo" href="#">
+	
+<div id="navbar" class="">    
+  <nav class="navbar navbar-inverse navbar-fixed-top nav_container" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+              <a class="navbar-brand nav_logo" href="SEM1.html">
 		      		<img class="img-responsive nav_logo" src="../logo/logo.png">
 		      	</a>
-		    </div>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <!-- <li class=""><a href="#">WHAT'S NEW</a></li> -->                  
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">WHAT'S NEW <b class="caret"></b></a> 
 
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      	<ul class="nav navbar-nav">
-			        <!-- <li class="active"><a href="#">WHAT'S NEW <span class="sr-only">(current)</span></a></li> -->
-			        <li class="dropdown">
-			          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WHAT'S NEW<span class="caret"></span></a>
-			          	<ul class="dropdown-menu">
-				            <li><a href="#">Action</a></li>
-				            <li><a href="#">Another action</a></li>
-				            <li><a href="#">Something else here</a></li>
+                        <ul class="dropdown-menu">
+                          <li class="kopie"><a href="#">Dropdown</a></li>
+                            <li><a href="#">Dropdown Link 1</a></li>
+                            <li class="active"><a href="#">Dropdown Link 2</a></li>
+                            <li><a href="#">Dropdown Link 3</a></li>
+                          
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Link 4</a>
+								<ul class="dropdown-menu">
+                                    <li class="kopie"><a href="#">Dropdown Link 4</a></li>
+									<li><a href="#">Dropdown Submenu Link 4.1</a></li>
+									<li><a href="#">Dropdown Submenu Link 4.2</a></li>
+									<li><a href="#">Dropdown Submenu Link 4.3</a></li>
+									<li><a href="#">Dropdown Submenu Link 4.4</a></li>
+                                                                      
+								</ul>
+							</li>
+                          
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Link 5</a>
+								<ul class="dropdown-menu">
+                                    <li class="kopie"><a href="#">Dropdown Link 5</a></li>
+									<li><a href="#">Dropdown Submenu Link 5.1</a></li>
+									<li><a href="#">Dropdown Submenu Link 5.2</a></li>
+									<li><a href="#">Dropdown Submenu Link 5.3</a></li>
+									
+									<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
+										<ul class="dropdown-menu">
+                                            <li class="kopie"><a href="#">Dropdown Submenu Link 5.4</a></li>
+											<li><a href="#">Dropdown Submenu Link 5.4.1</a></li>
+											<li><a href="#">Dropdown Submenu Link 5.4.2</a></li>
+											
+											
+										</ul>
+									</li>                           
+								</ul>
+							</li>                                   
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="kopie"><a href="#">PRODUCTS</a></li>
+                            
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">HAIR</a>
+								<ul class="dropdown-menu">
+                                    <li class="kopie"><a href="#">HAIR</a></li>
+									<li><a href="#">HAIR CARE</a></li>
+									<li><a href="#">HAIR CONDITIONER</a></li>
+									<li><a href="#">HAIR SHAMPOO</a></li>
+									<li><a href="#">HAIR UPCOMING</a></li>
+                                   
+								</ul>
+							</li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">SKIN</a>
+								<ul class="dropdown-menu">
+                                    <li class="kopie"><a href="#">SKIN</a></li>
+									<li><a href="#">SKIN DAC TRI MUN</a></li>
+									<li><a href="#">SKIN DUONG AM</a></li>
+									<li><a href="#">SKIN SUA RUA MAT</a></li>
+									<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">SKIN UPCOMING</a>
+										<ul class="dropdown-menu">
+                                            <li class="kopie"><a href="#">SKIN UPCOMING</a></li>
+											<li><a href="#">SKIN A</a></li>
+											<li><a href="#">SKIN B</a></li>
+											
+										</ul>
+									</li>                                  
+								</ul>
+							</li>
+							<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">MAKE-UP KITS</a>
+								<ul class="dropdown-menu">
+                                    <li class="kopie"><a href="#">MAKE-UP KITS</a></li>
+									<li><a href="#">EYES</a></li>
+									<li><a href="#">LIPS</a></li>
+									<li><a href="#">BROW</a></li>
+									<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">MAKE-UP UPCOMING</a>
+										<ul class="dropdown-menu">
+                                            <li class="kopie"><a href="#">SKIN UPCOMING</a></li>
+											<li><a href="#">SKIN A</a></li>
+											<li><a href="#">SKIN B</a></li>
+											
+										</ul>
+									</li>                                  
+								</ul>
+							</li> 
+							<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">NAIL</a>
+								<ul class="dropdown-menu">
+                                    <li class="kopie"><a href="#">NAIL</a></li>
+									<li><a href="#">NAIL-KITS</a></li>
+									<li><a href="#">NAIL-ART</a></li>
+									<li><a href="#">NAIL-PAINT</a></li>
+									<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">NAIL UPCOMING</a>
+										<ul class="dropdown-menu">
+                                            <li class="kopie"><a href="#">SKIN UPCOMING</a></li>
+											<li><a href="#">SKIN A</a></li>
+											<li><a href="#">SKIN B</a></li>
+											
+										</ul>
+									</li>                                  
+								</ul>
+							</li>  
+							<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">JEWELLRY</a>
+								<ul class="dropdown-menu">
+                                    <li class="kopie"><a href="#">JEWELLRY</a></li>
+									<li><a href="#">RINGS</a></li>
+									<li><a href="#">NECKLACES</a></li>
+									<li><a href="#">BRACELETS</a></li>
+									<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">JEWELLRY UPCOMING</a>
+										<ul class="dropdown-menu">
+                                            <li class="kopie"><a href="#">SKIN UPCOMING</a></li>
+											<li><a href="#">SKIN A</a></li>
+											<li><a href="#">SKIN B</a></li>
+											
+										</ul>
+									</li>                                  
+								</ul>
+							</li> 
+							<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">WEDDING</a>
+								<ul class="dropdown-menu">
+                                    <li class="kopie"><a href="#">WEDDING</a></li>
+									<li><a href="#">KITS</a></li>
+									<li><a href="#">BRIDE</a></li>
+									<li><a href="#">BRIDEGROOM</a></li>
+									<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">WEDDING UPCOMING</a>
+										<ul class="dropdown-menu">
+                                            <li class="kopie"><a href="#">SKIN UPCOMING</a></li>
+											<li><a href="#">SKIN A</a></li>
+											<li><a href="#">SKIN B</a></li>
+											
+										</ul>
+									</li>                                  
+								</ul>
+							</li>
+							<li role="separator" class="divider"></li>
+				            <li><a href="#">UPCOMING PRODUCTS</a></li>
 				            <li role="separator" class="divider"></li>
-				            <li><a href="#">Separated link</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">One more separated link</a></li>
-			          	</ul>
-			        </li>
-			        <li class="dropdown">
-			          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCTS<span class="caret"></span></a>
-			          	<ul class="dropdown-menu">
-				            <li><a href="#">Action</a></li>
-				            <li><a href="#">Another action</a></li>
-				            <li><a href="#">Something else here</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">Separated link</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">One more separated link</a></li>
-			          	</ul>
-			        </li>
-			        <li><a href="#">STORE</a></li>
-			        <li><a href="#">UPCOMMING</a></li>
-			        
-		      	</ul>
-		      	<form class="navbar-form navbar-left">
+				            <li><a href="#">BEST SALE</a></li>                                                                                    
+                        </ul>
+                        <li><a href="#">STORE</a></li>
+			        	<li><a href="#">UPCOMMING</a></li>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
 			        <div class="form-group">
 			          	<input type="text" class="form-control" placeholder="Search">
 			        </div>
@@ -75,10 +189,12 @@
 			          	</ul>
 			        </li>
 	      		</ul>
-	    	</div><!-- /.navbar-collapse -->
-	  	</div><!-- /.container-fluid -->
-	</nav>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+</div>
 
+
+    
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
