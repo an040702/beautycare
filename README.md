@@ -6,3 +6,4 @@
 # 12 / 8 / 2018 add product in Homepage
 # 13/08/2018 linking pages
 # 15 / 8 / 2018 add footer
+# 15/08/2018: add new navbar with effect hover
