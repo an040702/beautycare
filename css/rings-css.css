@@ -572,6 +572,7 @@ background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
   
 }
 .cost{
+    color:#fb003f;
   	font-weight: 700;
   	font-size: 15px; 
    	height: 35px;
