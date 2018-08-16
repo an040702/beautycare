@@ -76,7 +76,10 @@
 
 	</style>
 </head>
-<body>
+<body ng-app="myApp">
+	<!-- Navbar duoc tao bang Directive -->
+	<main-navbar></main-navbar>
+	<!-- ======================================== -->
 
 	<fieldset class="rating1">
 	    <input type="radio" id="8star5" name="rating1" value="5" /><label class = "full" for="8star5" title="Awesome - 5 stars"></label>
@@ -102,5 +105,14 @@
 	    <input type="radio" id="2star1" name="rating" value="1" /><label class = "full" for="2star1" title="Sucks big time - 1 star"></label>
 	    <input type="radio" id="2starhalf" name="rating" value="half" /><label class="half" for="2starhalf" title="Sucks big time - 0.5 stars"></label>
 	</fieldset>
+	
+		<main-navbar></main-navbar>
+
+
+	<script src="../js/angular.min.js"></script>
+	<script src="../js/angular-route.min.js"></script>
+	<script src="../js/navbarDirective.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
