@@ -28,12 +28,12 @@
 
 .rating1 > input:checked ~ label, /* show gold star when clicked */
 .rating1:not(:checked) > label:hover, /* hover current star */
-.rating1:not(:checked) > label:hover ~ label { color: #000000;  } /* hover previous stars in list */
+.rating1:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
 
 .rating1 > input:checked + label:hover, /* hover current star when changing rating */
 .rating1 > input:checked ~ label:hover,
 .rating1 > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating1 > input:checked ~ label:hover ~ label { color: #848483;  }
+.rating1 > input:checked ~ label:hover ~ label { color: #FFED85;  }
 
 /*Hiệu ứng rating stars SP2*/
 /*======================================================================*/
@@ -65,12 +65,12 @@
 
 .rating2 > input:checked ~ label, /* show gold star when clicked */
 .rating2:not(:checked) > label:hover, /* hover current star */
-.rating2:not(:checked) > label:hover ~ label { color: #000000;  } /* hover previous stars in list */
+.rating2:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
 
 .rating2 > input:checked + label:hover, /* hover current star when changing rating */
 .rating2 > input:checked ~ label:hover,
 .rating2 > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating2 > input:checked ~ label:hover ~ label { color: #848483;  }
+.rating2 > input:checked ~ label:hover ~ label { color: #FFED85;  }
 
 /*Hiệu ứng rating stars SP3*/
 /*======================================================================*/
@@ -102,12 +102,12 @@
 
 .rating3 > input:checked ~ label, /* show gold star when clicked */
 .rating3:not(:checked) > label:hover, /* hover current star */
-.rating3:not(:checked) > label:hover ~ label { color: #000000;  } /* hover previous stars in list */
+.rating3:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
 
 .rating3 > input:checked + label:hover, /* hover current star when changing rating */
 .rating3 > input:checked ~ label:hover,
 .rating3 > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating3 > input:checked ~ label:hover ~ label { color: #848483;  }
+.rating3 > input:checked ~ label:hover ~ label { color: #FFED85;  }
 
 /*Hiệu ứng rating stars SP4*/
 /*======================================================================*/
@@ -139,12 +139,12 @@
 
 .rating4 > input:checked ~ label, /* show gold star when clicked */
 .rating4:not(:checked) > label:hover, /* hover current star */
-.rating4:not(:checked) > label:hover ~ label { color: #000000;  } /* hover previous stars in list */
+.rating4:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
 
 .rating4 > input:checked + label:hover, /* hover current star when changing rating */
 .rating4 > input:checked ~ label:hover,
 .rating4 > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating4 > input:checked ~ label:hover ~ label { color: #848483;  }
+.rating4 > input:checked ~ label:hover ~ label { color: #FFED85;  }
 
 /*Hiệu ứng rating stars SP5*/
 /*======================================================================*/
@@ -176,12 +176,12 @@
 
 .rating5 > input:checked ~ label, /* show gold star when clicked */
 .rating5:not(:checked) > label:hover, /* hover current star */
-.rating5:not(:checked) > label:hover ~ label { color: #000000;  } /* hover previous stars in list */
+.rating5:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
 
 .rating5 > input:checked + label:hover, /* hover current star when changing rating */
 .rating5 > input:checked ~ label:hover,
 .rating5 > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating5 > input:checked ~ label:hover ~ label { color: #848483;  }
+.rating5 > input:checked ~ label:hover ~ label { color: #FFED85;  }
 
 /*Hiệu ứng rating stars SP6*/
 /*======================================================================*/
@@ -213,12 +213,12 @@
 
 .rating6 > input:checked ~ label, /* show gold star when clicked */
 .rating6:not(:checked) > label:hover, /* hover current star */
-.rating6:not(:checked) > label:hover ~ label { color: #000000;  } /* hover previous stars in list */
+.rating6:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
 
 .rating6 > input:checked + label:hover, /* hover current star when changing rating */
 .rating6 > input:checked ~ label:hover,
 .rating6 > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating6 > input:checked ~ label:hover ~ label { color: #848483;  }
+.rating6 > input:checked ~ label:hover ~ label { color: #FFED85;  }
 
 /*Hiệu ứng rating stars SP7*/
 /*======================================================================*/
@@ -250,12 +250,12 @@
 
 .rating7 > input:checked ~ label, /* show gold star when clicked */
 .rating7:not(:checked) > label:hover, /* hover current star */
-.rating7:not(:checked) > label:hover ~ label { color: #000000;  } /* hover previous stars in list */
+.rating7:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
 
 .rating7 > input:checked + label:hover, /* hover current star when changing rating */
 .rating7 > input:checked ~ label:hover,
 .rating7 > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating7 > input:checked ~ label:hover ~ label { color: #848483;  }
+.rating7 > input:checked ~ label:hover ~ label { color: #FFED85;  }
 
 /*Hiệu ứng rating stars SP8*/
 /*======================================================================*/
@@ -287,12 +287,12 @@
 
 .rating8 > input:checked ~ label, /* show gold star when clicked */
 .rating8:not(:checked) > label:hover, /* hover current star */
-.rating8:not(:checked) > label:hover ~ label { color: #000000;  } /* hover previous stars in list */
+.rating8:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
 
 .rating8 > input:checked + label:hover, /* hover current star when changing rating */
 .rating8 > input:checked ~ label:hover,
 .rating8 > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating8 > input:checked ~ label:hover ~ label { color: #848483;  }
+.rating8 > input:checked ~ label:hover ~ label { color: #FFED85;  }
 
 /*Hiệu ứng rating stars SP9*/
 /*======================================================================*/
@@ -324,12 +324,12 @@
 
 .rating9 > input:checked ~ label, /* show gold star when clicked */
 .rating9:not(:checked) > label:hover, /* hover current star */
-.rating9:not(:checked) > label:hover ~ label { color: #000000;  } /* hover previous stars in list */
+.rating9:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
 
 .rating9 > input:checked + label:hover, /* hover current star when changing rating */
 .rating9 > input:checked ~ label:hover,
 .rating9 > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating9 > input:checked ~ label:hover ~ label { color: #848483;  }
+.rating9 > input:checked ~ label:hover ~ label { color: #FFED85;  }
 
 /*Hiệu ứng rating stars SP10*/
 /*======================================================================*/
@@ -361,12 +361,12 @@
 
 .rating10 > input:checked ~ label, /* show gold star when clicked */
 .rating10:not(:checked) > label:hover, /* hover current star */
-.rating10:not(:checked) > label:hover ~ label { color: #000000;  } /* hover previous stars in list */
+.rating10:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
 
 .rating10 > input:checked + label:hover, /* hover current star when changing rating */
 .rating10 > input:checked ~ label:hover,
 .rating10 > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating10 > input:checked ~ label:hover ~ label { color: #848483;  }
+.rating10 > input:checked ~ label:hover ~ label { color: #FFED85;  }
 
 /*Hiệu ứng rating stars SP11*/
 /*======================================================================*/
@@ -398,12 +398,12 @@
 
 .rating11 > input:checked ~ label, /* show gold star when clicked */
 .rating11:not(:checked) > label:hover, /* hover current star */
-.rating11:not(:checked) > label:hover ~ label { color: #000000;  } /* hover previous stars in list */
+.rating11:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
 
 .rating11 > input:checked + label:hover, /* hover current star when changing rating */
 .rating11 > input:checked ~ label:hover,
 .rating11 > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating11 > input:checked ~ label:hover ~ label { color: #848483;  }
+.rating11 > input:checked ~ label:hover ~ label { color: #FFED85;  }
 
 /*Hiệu ứng rating stars SP12*/
 /*======================================================================*/
@@ -435,12 +435,12 @@
 
 .rating12 > input:checked ~ label, /* show gold star when clicked */
 .rating12:not(:checked) > label:hover, /* hover current star */
-.rating12:not(:checked) > label:hover ~ label { color: #000000;  } /* hover previous stars in list */
+.rating12:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
 
 .rating12 > input:checked + label:hover, /* hover current star when changing rating */
 .rating12 > input:checked ~ label:hover,
 .rating12 > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating12 > input:checked ~ label:hover ~ label { color: #848483;  }
+.rating12 > input:checked ~ label:hover ~ label { color: #FFED85;  }
 
 /*Các hiệu ứng của Kiên làm*/
 /*# sourceMappingURL=bootstrap.css.map */
@@ -572,6 +572,7 @@ background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
   
 }
 .cost{
+    color:#fb003f;
   	font-weight: 700;
   	font-size: 15px; 
    	height: 35px;

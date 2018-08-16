@@ -137,7 +137,7 @@
     padding-top: 60%;
 }
 /* */
-.navbar{
+/*.navbar{
     margin-top: 50px;
 }
 .navbar>div>ul>li>a{
@@ -151,7 +151,7 @@
   background-color: black !important;
   color: white;
   border-right: solid 1px white;
-}
+}*/
 .thumbnail>img{
     z-index: 2;
     position: relative;
