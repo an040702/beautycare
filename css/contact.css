@@ -1,0 +1,33 @@
+
+.contact{
+    text-align: center;
+    border-bottom: #67696b solid 1px;
+    margin: 0px 15px 38px 15px;
+    padding: 20px;
+    letter-spacing: 5px;
+    font-size: 38px;
+    font-variant: small-caps;
+    color: #c61f0c;
+}
+.floot{
+    margin-top: 50px;
+    background-image: url('../images/index_background/facility.jpg');
+}
+.under{
+    padding-bottom: 30px;
+}
+small{
+    color: #e84a27;
+}
+.sub{
+    background: #809F61;
+    color: #fff;
+}
+.care,.place{
+    color: #7ba6d6;
+    font-size: 18px;
+}
+.into{
+    font-size: 15px;
+    font-weight: bold;
+}
