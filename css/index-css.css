@@ -1,3 +1,6 @@
+/*xóa viền*/
+body {margin: 0px !important;} 
+/*anh parallax */
 /*edit page cuc bo*/
 .col-md-3{
     margin-top: 10%; 
@@ -13,7 +16,6 @@
 .col-md-6{
   margin-top: 3% !important;
 }
-/*anh parallax */
 .parallax{
     min-height: 390px; 
     background: transparent;
