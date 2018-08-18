@@ -7,10 +7,9 @@ nav.navbar-inverse {
 }
 a > img.nav_logo {
 	width: 200px ;
-	margin-top: -12px;
-	height: 45.5px;
+	margin-top: -9px;
+	height: 40px;
 }
-
  
 .dropdown-menu > li.kopie > a {
     padding-left:5px;
@@ -43,7 +42,8 @@ a > img.nav_logo {
  }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > .active > a:hover {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
+  color: #f309be;
 }  
   
 @media (max-width: 767px) {
