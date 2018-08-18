@@ -7,3 +7,5 @@
 # 13/08/2018 linking pages
 # 15 / 8 / 2018 add footer
 # 15/08/2018: add new navbar with effect hover
+# 17/08/2018: add product details, cart, cart-shop, about us, contact us pages
+# 18/08/2018: update navbar
