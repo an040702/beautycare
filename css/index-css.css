@@ -4,7 +4,6 @@ body {margin: 0px !important;}
 /*edit page cuc bo*/
 .col-md-3{
     margin-top: 10%; 
-
 }
 .col-md-3{
   margin-top: 3% !important;
@@ -58,21 +57,27 @@ body {margin: 0px !important;}
 
 /*row 3*/
 .outside-title-page{
-    margin: 33%;
-    font-size: 50px;
+  /*margin: 33%;*/
+  font-size: 50px;
+  text-align: center;
+  display: block;
+}
+.outside-title-page-small{
+  font-size: 25px;
+  text-align: center;
+  display: block;
 }
 
 /*row 4*/
 .media-list{
-  width: 100px;
   height: 40px;
+  line-height: 40px;
   text-align: center;
+  vertical-align: middle;
   padding-right: 0px !important;
-  padding-top: 10px;
   font-weight: bold;
-  margin: 0% 0.3%;
+  margin: 0% 0%;
   border: 1px solid black;
-  width: 150px;
 }
 .media-list:hover{
   background-color: black;
