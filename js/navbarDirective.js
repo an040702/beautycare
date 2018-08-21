@@ -18,6 +18,15 @@ myApp.directive('mainNavbar',function () {
     }
 })
 
+myApp.directive('mainNavbarHomePage',function () {
+    return {
+        restrict: 'AE',
+        // template: '<h3>Hello AngularJS</h3> <p>I was made inside custom directive</p>',
+        templateUrl: './common/navbar.html',
+        // replace: false
+    }
+})
+
 // myApp.controller('NavbarController',['$scope',function($scope){
 //     $scope.name = "Home controller";
 //     $scope.detail = "Welcome to home controller";
