@@ -1,10 +1,11 @@
 
 function show_icon_share(e){
-  document.getElementById("show_share").innerHTML="<span id='show_icon' ><a href='#'><span>Facebook</span></a><a href='#'><span>Twitter</span></a><a href='#'><span>Google+</span></a><a href='#'><span>Github</span></a><a href='#'><span>Email</span></a></span>"
+  document.getElementById("show_share").innerHTML="<span id='show_icon' style='float:right'><a href='#'><span>Facebook</span></a><a href='#'><span>Twitter</span></a><a href='#'><span>Google+</span></a><a href='#'><span>Github</span></a><a href='#'><span>Email</span></a></span>"
 }
 function hide_icon_share(e){
   document.getElementById("show_share").innerHTML="Share";
 }
+
 
 function zoom_image(e){
     function imageZoom(imgID, resultID) {
@@ -62,10 +63,29 @@ function zoom_image(e){
     return {x : x, y : y};
   }
 }
-  document.getElementById("show_zoom").innerHTML="<div id='myresult' class='img-zoom-result'></div>"
+  document.getElementById("infomation").style.display="none";
+  document.getElementById("show_zoom").innerHTML="<div id='myresult' class='img-zoom-result'></div>";
   imageZoom("myimage", "myresult");
 }
-
 function out_zoom_image(e){
   document.getElementById("show_zoom").innerHTML="";
+  document.getElementById("infomation").style.display="block";
+}
+function change_price(){
+  var x=document.getElementById("my_Select").value;
+  document.getElementById("price").innerHTML="<div class='cost'>"+x+"<sup>đ</sup></div>";
+}
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close_custom")[0];
+btn.onclick = function(e) {
+    modal.style.display = "block";
+}
+span.onclick = function(e) {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }

@@ -12,45 +12,91 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
-	<div class="container" style="border-bottom:1px solid black;border-left: 1px solid black;border-right: 1px solid black; border-top:1px solid black;  ">
+	<div class="container" style="border-bottom:1px solid black;border-left: 1px solid black;border-right: 1px solid black; border-top:1px solid black;">
 		<div class="row">
-			<div class="col-md-8" style="border-right:1px solid black">
-				<div class="row">
-					<div class="col-md-6" onmouseleave="out_zoom_image(this)" onmouseenter ="zoom_image(this)">
-				  		<img id="myimage" src="..\images\images_ring\images_ring_gold\gold_1.png" width="100%" height="100%">
-					</div>
-					<div class="col-md-6" id="show_zoom">
-					</div>
-				</div>
+			<div class="col-md-6" style="border-right:1px solid black; display: block;text-align: center; cursor: pointer;" title="Click zoom image" onmouseleave="out_zoom_image(this)" onclick ="zoom_image(this)">
+				  <img id="myimage" src="..\images\images_ring\images_ring_gold\gold_1.png" class="img-responsive2">
 			</div>
-			<div class="col-md-4" style="height: auto;">
-				<p style="font-weight: 700;font-size: 2em">RING/PNJ</p>
-				<p style="font-weight: 600">WRITE SOMETHING ABOUT THE PRODUCT...</p>
-				<div id="menu1">
-					<span style="cursor: pointer;font-weight: 700;font-size: 1em" onclick="show_Content1()">FULL DESCRIPTION</span><br>
-					<p id="content_1" style="font-weight: 600;">Satisfy your sweet tooth! Indulge in patisserie-fresh, saturated and scented lip colour! Oh, Sweetie Lipcolour is whipped for mousse-like texture and serves up funfetti-bright, frosted opaque hues for lips. Explore all 15 to find your favourite decadent delight.</p>
+			<div class="col-md-6">
+				<div id="show_zoom">
 				</div>
-				<div id="menu2">
-					<span style="cursor: pointer;font-weight: 700;font-size: 1em" onclick="show_Content2()">SEX</span>
-					<p id="content_2" style="font-weight: 600">Male</p>
-				</div>
-				<div id="menu3">
-					<span style="cursor: pointer;font-weight: 700;font-size: 1em" onclick="show_Content3()">WEIGHT OF THE RING</span>
-					<p id="content_3" style="font-weight: 600">1.16157 g</p>
-				</div>
-				<hr>
-				<div style="float:right; cursor: pointer;text-decoration: underline;font-weight: 500;max-height: 100%;max-width: 100%">
-					<div id="show_share" onmouseleave="hide_icon_share(this)" onmouseenter ="show_icon_share(this)">Share</div>
-				</div>
-				<br><br>
-				 <div style="clear: right;">
-      				<div class="cost">
-      					12.300.000<sup>đ</sup>
-      				</div>
-      				<div>
-      					<div class="btn_custom""><span>BUY NOW !!!</span></div>
-      				</div>
-      			</div>
+				<div id="infomation">
+					<p style="font-weight: 700;font-size: 2em">RING/PNJ</p>
+					<p >WRITE SOMETHING ABOUT THE PRODUCT...</p>
+					<div id="menu1">
+						<span style="cursor: pointer;font-weight: 700;font-size: 1em">FULL DESCRIPTION</span><br>
+						<p id="content_1" >Satisfy your sweet tooth! Indulge in patisserie-fresh, saturated and scented lip colour! Oh, Sweetie Lipcolour is whipped for mousse-like texture and serves up funfetti-bright, frosted opaque hues for lips. Explore all 15 to find your favourite decadent delight.</p>
+					</div>
+					<div id="menu2">
+						<span style="cursor: pointer;font-weight: 700;font-size: 1em">SEX</span>
+						<p id="content_2">Male</p>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<select id="my_Select" style="width: 40%" onchange="change_price()">
+								<option value="12.300.000">Select size</option>
+								<option value="12.300.000">8</option>
+								<option value="12.650.000">9</option>
+								<option value="13.000.000" >10.5</option>
+							</select>
+							<a href="#" class="custom"><u>SIZE GUIDE</u></a>
+						</div>
+						<div class="col-md-4">
+							<span id="myBtn" style="cursor: pointer;color: #ff00bae8;float: right;">
+								<u>SPECIFICATIONS</u>
+							</span>
+							<div id="myModal" class="modal">
+							  	<div class="modal-content" style="width: 40%;">
+							    	<div class="close_custom" style="float: right;">&times;</div>
+							    	<div style="text-align: center;font-weight: bold;font-size: 1.5em">SPECIFICATIONS</div><br>
+							    	<div style="margin-left: 30px;border-bottom: 1px solid #ddd;font-size: 1.2em;margin-bottom: 8px;">
+							    		<span style="font-weight: bold;">Trade Mark:</span>
+							    		<span>PNJ</span>
+							    	</div>
+							    	<div style="margin-left: 30px;border-bottom: 1px solid #ddd;font-size: 1.2em;margin-bottom: 8px;">
+							    		<span style="font-weight: bold;">Type Of Stone:</span>
+							    		<span>Diamon</span>
+							    	</div>
+							    	<div style="margin-left: 30px;border-bottom: 1px solid #ddd;font-size: 1.2em;margin-bottom: 8px;">
+							    		<span style="font-weight: bold;">Color Of Stone:</span>
+							    		<span>White</span>
+							    	</div>
+							    	<div style="margin-left: 30px;border-bottom: 1px solid #ddd;font-size: 1.2em;margin-bottom: 8px;">
+							    		<span style="font-weight: bold;">Shape Of Stone:</span>
+							    		<span>Circle</span>
+							    	</div>
+							   		<div style="margin-left: 30px;border-bottom: 1px solid #ddd;font-size: 1.2em;margin-bottom: 8px;">
+							    		<span style="font-weight: bold;">Carrat:</span>
+							    		<span>1.9</span>
+							    	</div>
+							    	<div style="margin-left: 30px;border-bottom: 1px solid #ddd;font-size: 1.2em;margin-bottom: 8px;">
+							    		<span style="font-weight: bold;">Age Of Gold:</span>
+							    		<span>18K</span>
+							    	</div>
+							   		<div style="margin-left: 30px;border-bottom: 1px solid #ddd;font-size: 1.2em;margin-bottom: 8px;">
+							    		<span style="font-weight: bold;">Weight Of Ring:</span>
+							    		<span>0.69269</span>
+							    	</div>
+							 	</div>
+							</div>
+						</div>
+					</div>
+					<hr><br>
+						<div style="float:right; cursor: pointer;text-decoration: underline;font-weight: 500;max-height: 100%;max-width: 100%">
+							<div id="show_share" onmouseleave="hide_icon_share(this)" onmouseenter ="show_icon_share(this)" style="font-weight: bold">Share</div>
+						</div>
+						<br><br><br>
+						<div style="clear: right;">
+							<div id="price">
+				      			<div class="cost">
+				      				12.300.000<sup>đ</sup>
+				      			</div>
+		      				</div>
+		      				<div>
+		      				<div class="btn_custom""><span>BUY NOW !!!</span></div>
+		      				</div>
+	      				</div>
+	      		</div>
 			</div>
 		</div>
 	</div>
@@ -272,6 +318,7 @@
 	  		</div>
 	  	</div>
 	  </div>
+
 	<script src="../js/profile.js"></script>
 	<script type="text/javascript" src="../js/jquery.min.js"></script>
 	<script type="text/javascript" src ="../js/bootstrap.min.js"></script>
