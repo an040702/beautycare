@@ -2,33 +2,49 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../css/profile.css">
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/rings-css.css">
-	<link rel="stylesheet" type="text/css" href="../css/nav-css.css">	
+	<link rel="stylesheet" type="text/css" href="../css/nav-css.css">
+	<link rel="stylesheet" type="text/css" href="../css/cart.css">
+	<link rel="stylesheet" type="text/css" href="../css/profile.css">	
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<!-- LINK ANGULARJS -->
+	<script src="../js/angular.min.js"></script>
+	<script src="../js/angular-route.min.js"></script>
+	<script src="../js/navbarDirective.js"></script>
+	<title>Gold Ring 1 Details</title>
 </head>
-<body>
+<body ng-app="myApp">
+	<!-- Navbar -->
+	<div id="navbar" class="container-fluid">    
+	  <!-- Navbar duoc tao bang Directive -->
+		<main-navbar></main-navbar>
+		<!-- ============================== -->
+	</div>
+	<!-- ======================================================================= -->
 	<div class="container" style="border-bottom:1px solid black;border-left: 1px solid black;border-right: 1px solid black; border-top:1px solid black;">
 		<div class="row">
 			<div class="col-md-6" style="border-right:1px solid black; display: block;text-align: center; cursor: zoom-in;" title="Click zoom image" onmouseleave="out_zoom_image(this)" onclick ="zoom_image(this);">
-				  <img id="myimage" src="..\images\images_ring\images_ring_gold\gold_1.png" class="img-responsive2">
+				  <img id="myimage" src="..\images\images_ring\images_ring_gold\gold_1.png" class="img-responsive5">
 			</div>
 			<div class="col-md-6">
-				<div id="show_zoom">
+				<div id="show_zoom" style="display: none">
+					<div id='myresult' class='img-zoom-result'></div>
 				</div>
-				<div id="infomation">
-					<p style="font-weight: 700;font-size: 2em">RING/PNJ</p>
+				<div id="infomation" style="margin-top: 10px;">
+					<p style="font-weight: 700;font-size: 2.3em">RING/PNJ</p>
 					<p >WRITE SOMETHING ABOUT THE PRODUCT...</p>
 					<div id="menu1">
-						<span style="cursor: pointer;font-weight: 700;font-size: 1em">FULL DESCRIPTION</span><br>
+						<span style="cursor: pointer;font-weight: 700;font-size: 1.3em">FULL DESCRIPTION</span><br>
 						<p id="content_1" >Satisfy your sweet tooth! Indulge in patisserie-fresh, saturated and scented lip colour! Oh, Sweetie Lipcolour is whipped for mousse-like texture and serves up funfetti-bright, frosted opaque hues for lips. Explore all 15 to find your favourite decadent delight.</p>
 					</div>
 					<div id="menu2">
-						<span style="cursor: pointer;font-weight: 700;font-size: 1em">SEX</span>
+						<span style="cursor: pointer;font-weight: 700;font-size: 1.3em">SEX</span>
 						<p id="content_2">Male</p>
 					</div>
 					<div class="row">
@@ -45,7 +61,7 @@
 							<span id="myBtn" style="cursor: pointer;color: #ff00bae8;float: right;">
 								<u>SPECIFICATIONS</u>
 							</span>
-							<div id="myModal" class="modal" >
+							<div id="myModal" class="modal">
 							  	<div class="modal-content  container">
 								    <div class="close_custom" style="float: right;">&times;</div>
 								    <div style="text-align: center;font-weight: bold;font-size: 1.5em">SPECIFICATIONS</div><br>
@@ -85,11 +101,11 @@
 							</div>
 						</div>
 					</div>
-					<hr><br>
+					<hr><br><br>
 						<div style="float:right; cursor: pointer;text-decoration: underline;font-weight: 500;max-height: 100%;max-width: 100%">
 							<div id="show_share" onmouseleave="hide_icon_share(this)" onmouseenter ="show_icon_share(this)" style="font-weight: bold">Share</div>
 						</div>
-						<br><br><br>
+						<br><br><br><br>
 						<div style="clear: right;">
 							<div id="price">
 				      			<div class="cost">
