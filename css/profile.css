@@ -1,7 +1,7 @@
 
-span>a {
-  color:#3b5998;
-  background: #fff;
+a {
+  color:#fff;
+  background: #DB6E82;
   border-radius:4px;
   text-align:center;
   text-decoration:none;
@@ -16,14 +16,9 @@ span>a {
   transition: all .5s;
    -webkit-font-smoothing: antialiased;
 }
-<<<<<<< HEAD
 
 a span {
   color:#666;
-=======
-span>a span {
-  color:#3b5998;
->>>>>>> d9e2a43b8846c518d67a2f92a975daafecad642d
   position:absolute;
   font-family:sans-serif;
   bottom:0;
@@ -40,13 +35,8 @@ span>a span {
   -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-<<<<<<< HEAD
 img.img-responsive2{width: 80%;height: 80%;margin-top: 5px}
 a:hover span {
-=======
-
-span>a:hover span {
->>>>>>> d9e2a43b8846c518d67a2f92a975daafecad642d
   bottom:20px;
  
   opacity:1;
@@ -71,21 +61,14 @@ content:'\f0e0';
   position: absolute;
 
   /*set the size of the lens:*/
-<<<<<<< HEAD
   width: 180px;
   height: 180px;
-=======
-  /*margin-top: 150px;*/
-  width: 150px;
-  height: 150px;
->>>>>>> d9e2a43b8846c518d67a2f92a975daafecad642d
 }
 
 .img-zoom-result {
-  /*margin-top: 50px;*/
+  
   border: 1px solid #d4d4d4;
   /*set the size of the result div:*/
-<<<<<<< HEAD
   width: 100%;
   height: 435px;
 }
@@ -126,8 +109,4 @@ a.custom{
   text-align: left;
   display: block;
   width: 30%;
-=======
-  width: 350px !important;
-  height: 350px !important;
->>>>>>> d9e2a43b8846c518d67a2f92a975daafecad642d
 }
