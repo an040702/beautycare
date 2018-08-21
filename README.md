@@ -10,3 +10,4 @@
 # 17/08/2018: add product details, cart, cart-shop, about us, contact us pages
 # 18/08/2018: update navbar
 # 19/08/2018: Add SEM3.html with newnavbar and slide camera. Preventing conflict so need add new SEM3.html, will merge later.
+# 21/08/2018: Add product detail page.
