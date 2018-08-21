@@ -8,7 +8,7 @@ function hide_icon_share(e){
 
 
 function zoom_image(e){
-    function imageZoom(imgID, resultID) {
+  function imageZoom(imgID, resultID) {
   var img, lens, result, cx, cy;
   img = document.getElementById(imgID);
   result = document.getElementById(resultID);
@@ -63,11 +63,15 @@ function zoom_image(e){
     return {x : x, y : y};
   }
 }
+<<<<<<< HEAD
   document.getElementById("infomation").style.display="none";
+=======
+>>>>>>> d9e2a43b8846c518d67a2f92a975daafecad642d
   document.getElementById("show_zoom").innerHTML="<div id='myresult' class='img-zoom-result'></div>";
   imageZoom("myimage", "myresult");
 }
 function out_zoom_image(e){
+  // document.getElementsByClassName("img-zoom-lens").remove();
   document.getElementById("show_zoom").innerHTML="";
   document.getElementById("infomation").style.display="block";
 }

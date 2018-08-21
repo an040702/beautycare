@@ -2,17 +2,37 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../css/profile.css">
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/rings-css.css">
-	<link rel="stylesheet" type="text/css" href="../css/nav-css.css">	
+	<link rel="stylesheet" type="text/css" href="../css/nav-css.css">
+	<link rel="stylesheet" type="text/css" href="../css/cart.css">
+	<link rel="stylesheet" type="text/css" href="../css/profile.css">	
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<!-- LINK ANGULARJS -->
+	<script src="../js/angular.min.js"></script>
+	<script src="../js/angular-route.min.js"></script>
+	<script src="../js/navbarDirective.js"></script>
+	<title>Gold Ring 1 Details</title>
 </head>
+<<<<<<< HEAD
 <body>
 	<div class="container" style="border-bottom:1px solid black;border-left: 1px solid black;border-right: 1px solid black; border-top:1px solid black;">
+=======
+<body ng-app="myApp">
+	<!-- Navbar -->
+	<div id="navbar" class="container-fluid">    
+	  <!-- Navbar duoc tao bang Directive -->
+		<main-navbar></main-navbar>
+		<!-- ============================== -->
+	</div>
+	<!-- ======================================================================= -->
+	<div class="container" style="border-bottom:1px solid black;border-left: 1px solid black;border-right: 1px solid black; border-top:1px solid black;  ">
+>>>>>>> d9e2a43b8846c518d67a2f92a975daafecad642d
 		<div class="row">
 			<div class="col-md-6" style="border-right:1px solid black; display: block;text-align: center; cursor: pointer;" title="Click zoom image" onmouseleave="out_zoom_image(this)" onclick ="zoom_image(this)">
 				  <img id="myimage" src="..\images\images_ring\images_ring_gold\gold_1.png" class="img-responsive2">
@@ -227,7 +247,7 @@
       				</div>
       			</div>
       		</div>
-      		<div class="col-md3 col-lg-3 col-sm-3 col-xs-12">
+      		<div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
 		  		<hr>
 		  		<div>
 		  		<h4 style="font-weight: 700;float: left;">RING/PNJ</h4>
@@ -312,8 +332,8 @@
 				<i class="fas fa-star" style="color: #FFD700"></i>
 				<i class="fas fa-star" style="color: #FFD700"></i>
 				<i class="fas fa-star" style="color: #FFD700"></i>
-				<i class="fas fa-star" style="color: #ddd;"></i><br><br>
-				<span>4/5</span><br><br>
+				<i class="fas fa-star-half-alt" style="color: #FFD700;"></i><br><br>
+				<span>4.5/5</span><br><br>
 				<span>( 10 REVIEWS )</span>
 	  		</div>
 	  	</div>
