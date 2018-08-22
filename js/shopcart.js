@@ -11,6 +11,7 @@ function checkcart(){
 		g=document.getElementById('total03').innerText
 		h=g.slice(1,)
 		f=parseFloat(k)+parseFloat(e)+parseFloat(h);
+		f=f.toFixed(2)
 		document.getElementById('total').innerText="$"+f;
 	}
 function remove(row){
@@ -27,6 +28,7 @@ function refresh01() {
 	g=document.getElementById('total03').innerText
 	h=g.slice(1,)
 	f=parseFloat(c)+parseFloat(e)+parseFloat(h);
+	f=f.toFixed(2)
 	document.getElementById('total').innerText="$"+f;
 	}
 function checkcart02(){
@@ -42,6 +44,7 @@ function checkcart02(){
 		g=document.getElementById('total03').innerText
 		h=g.slice(1,)
 		f=parseFloat(k)+parseFloat(e)+parseFloat(h);
+		f=f.toFixed(2)
 		document.getElementById('total').innerText="$"+f;
 	}
 function refresh02() {
@@ -54,6 +57,7 @@ function refresh02() {
 	g=document.getElementById('total03').innerText
 	h=g.slice(1,)
 	f=parseFloat(c)+parseFloat(e)+parseFloat(h);
+	f=f.toFixed(2)
 	document.getElementById('total').innerText="$"+f;
 	}	
 function checkcart03(){
@@ -69,6 +73,7 @@ function checkcart03(){
 		g=document.getElementById('total02').innerText
 		h=g.slice(1,)
 		f=parseFloat(k)+parseFloat(e)+parseFloat(h);
+		f=f.toFixed(2)
 		document.getElementById('total').innerText="$"+f;
 	} 
 function refresh03() {
@@ -81,5 +86,6 @@ function refresh03() {
 	g=document.getElementById('total02').innerText
 	h=g.slice(1,)
 	f=parseFloat(c)+parseFloat(e)+parseFloat(h);
+	f=f.toFixed(2)
 	document.getElementById('total').innerText="$"+f;
 	}		
