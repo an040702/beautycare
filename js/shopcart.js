@@ -24,7 +24,9 @@ function remove(row){
       var resulttotal = 0;
       // Tinh tien sau khi tru:
       resulttotal = parseFloat(tabletotal) - parseFloat(rowtotal);
+      // Chi lay 2 so thap phan
       resulttotal = resulttotal.toFixed(2);
+      // Gan gia tri va xoa row
       document.getElementById('total').innerText = "$" + resulttotal;
       document.getElementById('cart').deleteRow(row_Index);
    }
