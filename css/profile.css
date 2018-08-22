@@ -71,7 +71,7 @@ content:'\f0e0';
   border: 1px solid #d4d4d4;
   /*set the size of the result div:*/
   width: 100% !important;
-  height: 480px !important;
+  height: 501px !important;
 }
 
 .modal {
@@ -112,3 +112,4 @@ a.custom{
   display: block;
   width: 30%;
 }
+.img-responsive5{width: 90%;height: 90%;margin-top: 5px}

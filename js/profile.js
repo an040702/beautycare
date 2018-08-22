@@ -1,4 +1,3 @@
-
 function show_icon_share(e){
   document.getElementById("show_share").innerHTML="<span id='show_icon' style='float:right'><a href='https://www.facebook.com/sharer/sharer.php?u=https%3A//news.zing.vn/'><span>Facebook</span></a><a href='https://twitter.com/home?status=https%3A//news.zing.vn/'><span>Twitter</span></a><a href='#'><span>Google+</span></a><a href='#'><span>Github</span></a><a href='#'><span>Email</span></a></span>"
 }
@@ -73,7 +72,30 @@ function out_zoom_image(e){
 }
 function change_price(){
   var x=document.getElementById("my_Select").value;
-  document.getElementById("price").innerHTML="<div class='cost'>"+x+"<sup>đ</sup></div>";
+  if(x==10.5){
+    document.getElementById("price_select").style.display="none";
+    document.getElementById("price_9").style.display="none";
+    document.getElementById("price_8").style.display="none"
+    document.getElementById("price_10.5").style.display="block";
+  }
+  if(x==8){
+    document.getElementById("price_select").style.display="none";
+    document.getElementById("price_9").style.display="none";
+    document.getElementById("price_8").style.display="block"
+    document.getElementById("price_10.5").style.display="none";
+  }
+  if(x==9){
+    document.getElementById("price_select").style.display="none";
+    document.getElementById("price_9").style.display="block";
+    document.getElementById("price_8").style.display="none"
+    document.getElementById("price_10.5").style.display="none";
+  }
+  if(x==0){
+    document.getElementById("price_select").style.display="block";
+    document.getElementById("price_9").style.display="none";
+    document.getElementById("price_8").style.display="none"
+    document.getElementById("price_10.5").style.display="none";
+  }
 }
 var modal = document.getElementById('myModal');
 var btn = document.getElementById("myBtn");
