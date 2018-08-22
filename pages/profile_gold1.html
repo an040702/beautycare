@@ -27,29 +27,29 @@
 		<!-- ============================== -->
 	</div>
 	<!-- ======================================================================= -->
-	<div class="container" style="border-bottom:1px solid black;border-left: 1px solid black;border-right: 1px solid black; border-top:1px solid black;">
+	<div class="container border-custom-1">
 		<div class="row">
-			<div class="col-md-6" style="border-right:1px solid black; display: block;text-align: center; cursor: zoom-in;" title="Click zoom image" onmouseleave="out_zoom_image(this)" onclick ="zoom_image(this);">
+			<div class="col-md-6 border-zoom" title="Click zoom image" onmouseleave="out_zoom_image(this)" onclick ="zoom_image(this);">
 				  <img id="myimage" src="..\images\images_ring\images_ring_gold\gold_1.png" class="img-responsive5">
 			</div>
 			<div class="col-md-6">
-				<div id="show_zoom" style="display: none">
+				<div id="show_zoom" class="display-zoom">
 					<div id='myresult' class='img-zoom-result'></div>
 				</div>
-				<div id="infomation" style="margin-top: 10px;">
-					<p style="font-weight: 700;font-size: 2.3em">RING/PNJ</p>
+				<div id="infomation" class="margin-infomation">
+					<p class="caption-name">RING/PNJ</p>
 					<p >WRITE SOMETHING ABOUT THE PRODUCT...</p>
-					<div id="menu1">
-						<span style="cursor: pointer;font-weight: 700;font-size: 1.3em">FULL DESCRIPTION</span><br>
-						<p id="content_1" >Satisfy your sweet tooth! Indulge in patisserie-fresh, saturated and scented lip colour! Oh, Sweetie Lipcolour is whipped for mousse-like texture and serves up funfetti-bright, frosted opaque hues for lips. Explore all 15 to find your favourite decadent delight.</p>
+					<div>
+						<span class="title-infomation">FULL DESCRIPTION</span><br>
+						<p>Satisfy your sweet tooth! Indulge in patisserie-fresh, saturated and scented lip colour! Oh, Sweetie Lipcolour is whipped for mousse-like texture and serves up funfetti-bright, frosted opaque hues for lips. Explore all 15 to find your favourite decadent delight.</p>
 					</div>
-					<div id="menu2">
-						<span style="cursor: pointer;font-weight: 700;font-size: 1.3em">SEX</span>
-						<p id="content_2">Male</p>
+					<div>
+						<span class="title-infomation">SEX</span>
+						<p>Male</p>
 					</div>
 					<div class="row">
 						<div class="col-md-8">
-							<select id="my_Select" style="width: 40%" onchange="change_price()">
+							<select id="my_Select" class="menu-select" onchange="change_price()">
 								<option value="0">Select size</option>
 								<option value="8">8</option>
 								<option value="9">9</option>
@@ -58,40 +58,40 @@
 							<a href="#" class="custom"><u>SIZE GUIDE</u></a>
 						</div>
 						<div class="col-md-4">
-							<span id="myBtn" style="cursor: pointer;color: #ff00bae8;float: right;">
+							<span id="myBtn" class="powup-table">
 								<u>SPECIFICATIONS</u>
 							</span>
 							<div id="myModal" class="modal">
-							  	<div class="modal-content  container" style="width: 40%;">
-								    <div class="close_custom" style="float: right;">&times;</div>
-								    <div style="text-align: center;font-weight: bold;font-size: 1.5em">SPECIFICATIONS</div><br>
+							  	<div class="modal-content  container">
+								    <div class="close_custom">&times;</div>
+								    <div class="caption-powup">SPECIFICATIONS</div><br>
 								    <div class="row">
 								    	<div class="col-md-12">
-									    	<div style="margin-left: 50px;margin-right: 60px; border-bottom: 1px solid #ddd;font-size: 1.2em;margin-bottom: 8px;">
+									    	<div class="content-powup">
 									    		<span style="font-weight: bold;">Trade Mark:</span>
 									    		<span>PNJ</span>
 									    	</div>
-									    	<div style="margin-left: 50px;margin-right: 60px;border-bottom: 1px solid #ddd;font-size: 1.2em;margin-bottom: 8px;">
+									    	<div class="content-powup"">
 									    		<span style="font-weight: bold;">Type Of Stone:</span>
 									    		<span>Diamon</span>
 									    	</div>
-									    	<div style="margin-left: 50px;margin-right: 60px;border-bottom: 1px solid #ddd;font-size: 1.2em;margin-bottom: 8px;">
+									    	<div class="content-powup"">
 									    		<span style="font-weight: bold;">Color Of Stone:</span>
 									    		<span>White</span>
 									    	</div>
-									    	<div style="margin-left: 50px;margin-right: 60px;border-bottom: 1px solid #ddd;font-size: 1.2em;margin-bottom: 8px;">
+									    	<div class="content-powup"">
 									    		<span style="font-weight: bold;">Shape Of Stone:</span>
 									    		<span>Circle</span>
 									    	</div>
-									   		<div style="margin-left: 50px;margin-right: 60px;border-bottom: 1px solid #ddd;font-size: 1.2em;margin-bottom: 8px;">
+									   		<div class="content-powup"">
 									    		<span style="font-weight: bold;">Carrat:</span>
 									    		<span>1.9</span>
 									    	</div>
-									    	<div style="margin-left: 50px;margin-right: 60px;border-bottom: 1px solid #ddd;font-size: 1.2em;margin-bottom: 8px;">
+									    	<div class="content-powup"">
 									    		<span style="font-weight: bold;">Age Of Gold:</span>
 									    		<span>18K</span>
 									    	</div>
-									   		<div style="margin-left: 50px;margin-right: 60px;border-bottom: 1px solid #ddd;font-size: 1.2em;margin-bottom: 8px;">
+									   		<div class="content-powup"">
 									    		<span style="font-weight: bold;">Weight Of Ring:</span>
 									    		<span>0.69269</span>
 									    	</div>
@@ -101,30 +101,30 @@
 							</div>
 						</div>
 					</div>
-					<hr><br><br><br>
-						<div style="float:right; cursor: pointer;text-decoration: underline;font-weight: 500;max-height: 100%;max-width: 100%">
-							<div id="show_share" onmouseleave="hide_icon_share(this)" onmouseenter ="show_icon_share(this)" style="font-weight: bold">Share</div>
-						</div>
-						<br><br><br>
-						<div style="clear: right;">
-							<div>
-				      			<div class="cost" id="price_8" style="display: none">
-				      				12.300.000<sup>đ</sup>
-				      			</div>
-				      			<div class="cost" id="price_9" style="display: none">
-				      				12.800.000<sup>đ</sup>
-				      			</div>
-				      			<div class="cost" id="price_10.5" style="display: none">
-				      				13.500.000<sup>đ</sup>
-				      			</div>
-				      			<div class="cost" id="price_select" style="display: block">
-				      				12.300.000<sup>đ</sup>
-				      			</div>
-		      				</div>
-		      				<div>
-		      				<div class="btn_custom""><span>BUY NOW !!!</span></div>
-		      				</div>
-	      				</div>
+					<hr class="hr-style">
+					<div class="share-icon">
+						<div id="show_share" onmouseleave="hide_icon_share(this)" onmouseenter ="show_icon_share(this)">Share</div>
+					</div>
+					<hr class="hr-clear">
+					<div>
+						<div class="margin-button">
+				      		<div class="cost" id="price_8" style="display: none">
+				      			12.300.000<sup>đ</sup>
+				      		</div>
+				      		<div class="cost" id="price_9" style="display: none">
+				      			12.800.000<sup>đ</sup>
+				      		</div>
+				      		<div class="cost" id="price_10.5" style="display: none">
+				      			13.500.000<sup>đ</sup>
+				      		</div>
+				      		<div class="cost" id="price_select" style="display: block">
+				      			12.300.000<sup>đ</sup>
+				      		</div>
+		      			</div>
+		      			<div>
+		      			<div class="btn_custom""><span>BUY NOW !!!</span></div>
+		      			</div>
+	      			</div>
 	      		</div>
 			</div>
 		</div>
@@ -133,12 +133,12 @@
 	<hr class="style-one">
 	<div class="container">
 		<!-- Rings products 1st row -->
-		<div style="text-align: center; font-weight:600;font-size: 2em">RELATED PRODUCTS</div>
+		<div class="caption-related">RELATED PRODUCTS</div>
 	  	<div class="row">
 		  	<div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
 		  		<hr>
 		  		<div>
-		  		<h4 style="font-weight: 700;float: left;">RING/PNJ</h4>
+		  		<h4 class="title-related">RING/PNJ</h4>
 				<fieldset class="rating1" style="float: right;">
 				    <input type="radio" id="1star5" name="rating1" value="5" /><label class = "full" for="1star5" title="Awesome - 5 stars"></label>
 				    <input type="radio" id="1star4half" name="rating1" value="4 and a half" /><label class="half" for="1star4half" title="Pretty good - 4.5 stars"></label>
@@ -159,11 +159,10 @@
 				</div>
 		  		<div class="container1">
 		  			<div class="overlay">
-	   						<div class="text">PREVIEW SHADES</div>
+	   						<a href="profile_gold9.html"><div class="text">PREVIEW SHADES</div></a>
 	  					</div>
 		  			<div class="img-responsive">
-      					<img src="..\images\images_ring\images_ring_gold\gold_9.png" class="img-responsive">
-
+      					<a href="profile_gold9.html"><img src="..\images\images_ring\images_ring_gold\gold_9.png" class="img-responsive"></a>
   					</div>
       			</div>
       			 <hr class="style-one">
@@ -179,7 +178,7 @@
       		<div class="col-md3 col-lg-3 col-sm-3 col-xs-12">
 		  		<hr>
 		  		<div>
-		  		<h4 style="font-weight: 700;float: left;">RING/PNJ</h4>
+		  		<h4 class="title-related">RING/PNJ</h4>
 				<fieldset class="rating2" style="float: right;">
 				    <input type="radio" id="2star5" name="rating2" value="5" /><label class = "full" for="2star5" title="Awesome - 5 stars"></label>
 				    <input type="radio" id="2star4half" name="rating2" value="4 and a half" /><label class="half" for="2star4half" title="Pretty good - 4.5 stars"></label>
@@ -219,7 +218,7 @@
       		<div class="col-md3 col-lg-3 col-sm-3 col-xs-12">
 		  		<hr>
 		  		<div>
-		  		<h4 style="font-weight: 700;float: left;">RING/PNJ</h4>
+		  		<h4 class="title-related">RING/PNJ</h4>
 				<fieldset class="rating3" style="float: right;">
 				    <input type="radio" id="3star5" name="rating3" value="5" /><label class = "full" for="3star5" title="Awesome - 5 stars"></label>
 				    <input type="radio" id="3star4half" name="rating3" value="4 and a half" /><label class="half" for="3star4half" title="Pretty good - 4.5 stars"></label>
@@ -240,9 +239,9 @@
 				</div>
 		  		<div class="container1">
 		  			<div class="img-responsive">
-      				<img src="..\images\images_ring\images_ring_gold\gold_3.png" class="img-responsive">
+      				<a href="profile_gold3.html"><img src="..\images\images_ring\images_ring_gold\gold_3.png" class="img-responsive"></a>
       				<div class="overlay">
-   						<div class="text">PREVIEW SHADES</div>
+   						<a href="profile_gold3.html"><div class="text">PREVIEW SHADES</div></a>
   					</div>
   				</div>
       			</div>
@@ -259,7 +258,7 @@
       		<div class="col-md3 col-lg-3 col-sm-3 col-xs-12">
 		  		<hr>
 		  		<div>
-		  		<h4 style="font-weight: 700;float: left;">RING/PNJ</h4>
+		  		<h4 class="title-related">RING/PNJ</h4>
 				<fieldset class="rating4" style="float: right;">
 				    <input type="radio" id="4star5" name="rating4" value="5" /><label class = "full" for="4star5" title="Awesome - 5 stars"></label>
 				    <input type="radio" id="4star4half" name="rating4" value="4 and a half" /><label class="half" for="4star4half" title="Pretty good - 4.5 stars"></label>
@@ -300,43 +299,43 @@
       </div><br><hr class="style-one"><br>
       <div class="container">
 		<!-- Rings products 1st row -->
-		<div style="text-align: center; font-weight:600;font-size: 2em">PRODUCT REVIEWS</div><br>
+		<div class="caption-product">PRODUCT REVIEWS</div><br>
 	  	<div class="row">
 	  		<div class="col-md-4">
 	  			<div class="progress ">
-  					<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+  					<div class="progress-bar progress-bar-striped active progress-percent-60" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
     					60%
   					</div>
 				</div>
 				<div class="progress ">
-  					<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+  					<div class="progress-bar progress-bar-striped active progress-percent-20" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
     					20%
   					</div>
 				</div>
 				<div class="progress ">
-  					<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+  					<div class="progress-bar progress-bar-striped active progress-percent-10" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
     					10%
   					</div>
 				</div>
 				<div class="progress ">
-  					<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+  					<div class="progress-bar progress-bar-striped active progress-percent-10" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
     					10%
   					</div>
 				</div>
 				<div class="progress ">
-  					<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+  					<div class="progress-bar progress-bar-striped active progress-percent-0" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
     					0%
   					</div>
 				</div>
 			</div>
-	  		<div class="col-md-4" style="text-align: center;font-weight: 700;font-size: 1em">
+	  		<div class="col-md-4 content-product">
 				<div>6 TIMES 5 STARS</div><br>
 				<div>2 TIMES 4 STARS</div><br>
 				<div>1 TIMES 3 STARS</div><br>
 				<div>1 TIMES 2 STARS</div><br>
 				<div>0 TIMES 1 STARS</div><br>
 	  		</div>
-			<div class="col-md-4" style="text-align: center;font-weight: 700;font-size: 1em">
+			<div class="col-md-4 content-product">
 				<i class="fas fa-star" style="color: #FFD700"></i>
 				<i class="fas fa-star" style="color: #FFD700"></i>
 				<i class="fas fa-star" style="color: #FFD700"></i>
