@@ -15,8 +15,18 @@ function checkcart(){
 		document.getElementById('total').innerText="$"+f;
 	}
 function remove(row){
-      var d =row.parentNode.parentNode.rowIndex;
-      document.getElementById('cart').deleteRow(d);
+      var row_Index = row.parentNode.parentNode.rowIndex;
+      // Khai bao bien bang gia tri tong tien cua hang vua duoc xoa
+      var rowtotal = document.getElementById('cart').rows[row_Index].children[3].innerText.slice(1,);
+      // Khai bao bien bang gia tri tong tien cua ca bang
+      var tabletotal = document.getElementById('total').innerText.slice(1,);
+      // Khai bao bien chua gia tri tong tien sau khi tru;
+      var resulttotal = 0;
+      // Tinh tien sau khi tru:
+      resulttotal = parseFloat(tabletotal) - parseFloat(rowtotal);
+      resulttotal = resulttotal.toFixed(2);
+      document.getElementById('total').innerText = "$" + resulttotal;
+      document.getElementById('cart').deleteRow(row_Index);
    }
 function refresh01() {
 	document.getElementById('quantity01').value=1;
