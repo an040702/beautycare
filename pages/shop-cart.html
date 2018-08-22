@@ -9,7 +9,6 @@
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-
 <div class="container">
 	<table id="cart" class="table table-hover table-condensed">
     				<thead>
@@ -32,14 +31,14 @@
 									</div>
 								</div>
 							</td>
-							<td data-th="Price" id="price" value="">$1.99</td>
+							<td data-th="Price" id="price01" value="">$1.99</td> 	
 							<td data-th="Quantity">
-								<input type="number" class="form-control text-center" value="1">
+								<input type="number" class="form-control text-center" value="1" id="quantity01" onchange="checkcart()">
 							</td>
-							<td data-th="Subtotal" class="text-center">1.99$</td>
+							<td data-th="Subtotal" class="text-center" id="total01">1.99$</td>
 							<td class="actions" data-th="">
 								<button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
-								<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+								<button class="btn btn-danger btn-sm"  onclick="remove( this)"><i class="fa fa-trash-o"></i></button>								
 							</td>
 						</tr>
 						<tr>
@@ -59,7 +58,7 @@
 							<td data-th="Subtotal" class="text-center">1.99$</td>
 							<td class="actions" data-th="">
 								<button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
-								<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+								<button class="btn btn-danger btn-sm" onclick="remove( this)"><i class="fa fa-trash-o"></i></button>								
 							</td>
 						</tr>
 						<tr>
@@ -79,7 +78,7 @@
 							<td data-th="Subtotal" class="text-center">1.99$</td>
 							<td class="actions" data-th="">
 								<button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
-								<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+								<button class="btn btn-danger btn-sm" onclick="remove(this)"><i class="fa fa-trash-o"></i></button>								
 							</td>
 						</tr>
 						<tr>
@@ -99,9 +98,9 @@
 							<td data-th="Subtotal" class="text-center">1.99$</td>
 							<td class="actions" data-th="">
 								<button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
-								<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+								<button class="btn btn-danger btn-sm" onclick="remove(this)"><i class="fa fa-trash-o"></i></button>								
 							</td>
-						</tr>
+						</tr>x`
 						<tr>
 							<td data-th="Product">
 								<div class="row">
@@ -119,7 +118,7 @@
 							<td data-th="Subtotal" class="text-center">1.99$</td>
 							<td class="actions" data-th="">
 								<button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
-								<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+								<button class="btn btn-danger btn-sm" onclick="remove(this)"><i class="fa fa-trash-o"></i></button>								
 							</td>
 						</tr>
 					</tbody>
@@ -133,6 +132,20 @@
 					</tfoot>
 				</table>
 </div>
+<script>
+	function checkcart(){
+		var a,b,c;
+		a=document.getElementById('quantity01').value;
+		b=document.getElementById('price01').innerHTML;
+		c=b.slice(1,);
+		document.getElementById('total01').innerText="$"+a*c;
+	}
+</script>
+<script>
+	function remove(rownumber){
+		document.getElementById("cart").deleteRow("rownumber");
+	}
+</script>
 </body>
 </html>
 
