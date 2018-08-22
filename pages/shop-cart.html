@@ -100,7 +100,7 @@
 								<button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
 								<button class="btn btn-danger btn-sm" onclick="remove(this)"><i class="fa fa-trash-o"></i></button>								
 							</td>
-						</tr>x`
+						</tr>
 						<tr>
 							<td data-th="Product">
 								<div class="row">
@@ -132,20 +132,7 @@
 					</tfoot>
 				</table>
 </div>
-<script>
-	function checkcart(){
-		var a,b,c;
-		a=document.getElementById('quantity01').value;
-		b=document.getElementById('price01').innerHTML;
-		c=b.slice(1,);
-		document.getElementById('total01').innerText="$"+a*c;
-	}
-</script>
-<script>
-	function remove(rownumber){
-		document.getElementById("cart").deleteRow("rownumber");
-	}
-</script>
+<script src="../js/shopcart.js"></script>
 </body>
 </html>
 
