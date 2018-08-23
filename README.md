@@ -12,3 +12,4 @@
 # 19/08/2018: Add SEM3.html with newnavbar and slide camera. Preventing conflict so need add new SEM3.html, will merge later.
 # 21/08/2018: Add product detail page.
 # 22/08/2018: Add js shop-cart page
+# 23 / 8 / 2018 : Edit lại about us và xóa chút ít code thừa trong SEM3
