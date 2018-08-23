@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Angular JS Includes</title>
+    <style>
+        table, th, td {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+            table tr:nth-child(odd) {
+                background-color: #f2f2f2;
+            }
+
+            table tr:nth-child(even) {
+                background-color: #ffffff;
+            }
+    </style>
+   <script src="js/angular.min.js"></script>
+</head>
+<body>
+    <h2>AngularJS Sample Application</h2>
+    <div ng-app="" ng-controller="categoryController">
+        <table>
+            <tr>
+                <th>Category ID</th>
+                <th>Category Name</th>
+            </tr>
+            <tr ng-repeat="category in categories">
+                <td>{{ category.CategoryID }}</td>
+                <td>{{ category.CategoryName }}</td>
+            </tr>
+        </table>
+    </div>
+    <script  src="http://code.angularjs.org/1.0.7/angular.min.js" data-semver="1.0.7"></script>
+    <script>
+        function categoryController($scope, $http) {
+            $http.get("data/category.json").success(function (response) {
+                console.log(response);
+                $scope.categories = response;
+            });
+        }
+    </script>
+
+</body>
+</html> 
