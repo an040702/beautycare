@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/cart.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body onload="checkcart();checkcart02();checkcart03()">
+<div class="container">
+	<table id="cart" class="table table-hover table-condensed">
+    				<thead>
+						<tr>
+							<th style="width:50%">Product</th>
+							<th style="width:10%">Price</th>
+							<th style="width:8%">Quantity</th>
+							<th style="width:22%" class="text-center">Subtotal</th>
+							<th style="width:10%"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-th="Product">
+								<div class="row">
+									<div class="col-md-3"><img src="../images/imgna/1.png" class="img-responsive2"></div>
+									<div class="col-md-9">
+									<p>Product1</p>
+									<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+									</div>
+								</div>
+							</td>
+							<td data-th="Price" id="price01" value="">$1.99</td> 	
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" value="1" id="quantity01" onchange="checkcart()">
+							</td>
+							<td data-th="Subtotal" class="text-center" id="total01">$1.99</td>
+							<td class="actions" data-th="">
+								<button class="btn btn-info btn-sm" onclick="refresh01()"><i class="fa fa-refresh"></i></button>
+								<button class="btn btn-danger btn-sm"  onclick="remove( this)"><i class="fa fa-trash-o"></i></button>								
+							</td>
+						</tr>
+						<tr>
+							<td data-th="Product">
+								<div class="row">
+									<div class="col-md-3"><img src="../images/imgnp/1.png" class="img-responsive2"></div>
+									<div class="col-md-9">
+									<p>Product1</p>
+									<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+									</div>
+								</div>
+							</td>
+							<td data-th="Price" id="price02" value="">$6.5</td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" value="1" id="quantity02" onchange="checkcart02()">
+							</td>
+							<td data-th="Subtotal" class="text-center" id="total02">$6.5</td>
+							<td class="actions" data-th="">
+								<button class="btn btn-info btn-sm" onclick="refresh02()"><i class="fa fa-refresh"></i></button>
+								<button class="btn btn-danger btn-sm" onclick="remove( this)"><i class="fa fa-trash-o"></i></button>								
+							</td>
+						</tr>
+						<tr>
+							<td data-th="Product">
+								<div class="row">
+									<div class="col-md-3"><img src="../images/imgnp/6.png" class="img-responsive2"></div>
+									<div class="col-md-9">
+									<p>Product1</p>
+									<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+									</div>
+								</div>
+							</td>
+							<td data-th="Price" id="price03" value="">$2</td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" value="1" id="quantity03" onchange="checkcart03()">
+							</td>
+							<td data-th="Subtotal" class="text-center" id="total03">$2</td>
+							<td class="actions" data-th="">
+								<button class="btn btn-info btn-sm" onclick="refresh03()"><i class="fa fa-refresh"></i></button>
+								<button class="btn btn-danger btn-sm" onclick="remove(this)"><i class="fa fa-trash-o"></i></button>								
+							</td>
+						</tr>					
+					</tbody>
+					<tfoot>
+						<tr>
+							<td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+							<td colspan="2" class="hidden-xs"></td>
+							<td class="hidden-xs text-center" id="total"><strong>Total $1.99</strong></td>
+							<td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+						</tr>
+					</tfoot>
+				</table>
+</div>
+<script src="../js/shopcart.js"></script>
+</body>
+</html>
+
+
