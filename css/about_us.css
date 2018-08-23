@@ -85,3 +85,21 @@
     color: #323232;
     text-align: justify;
 	}
+
+body {margin: 0px !important;} 
+/*anh parallax */
+/*edit page cuc bo*/
+.col-md-3{
+    margin-top: 10%; 
+}
+.col-md-3{
+  margin-top: 3% !important;
+}
+.col-md-6{
+    margin-top: 10%; 
+
+}
+.col-md-6{
+  margin-top: 3% !important;
+}
+

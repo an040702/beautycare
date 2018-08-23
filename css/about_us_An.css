@@ -1,0 +1,64 @@
+.parallax-desgin{
+	min-height: 390px; 
+    background: transparent;
+    width: 100% ;
+    max-width: none;
+    margin: none;
+    padding: none;
+}
+
+.information_about{
+	min-height: 390px;
+	background-color: #f7f8f8;
+	color: black;
+	height: 390px;
+}
+.information_about .text-editor-all{
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 24px;
+	line-height: 50px;
+	padding: 5% 20%;
+	height: 390px;
+}
+.information_about img {
+	width: 50%;
+	height: 390px;
+}
+.information_about .image-left{
+	float: left;
+	height: 700px;
+}
+.color-white{
+	background-color: white;
+}
+.information_about .text-editor-right{
+	width: 50%;
+	display: block;
+	float: right;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	line-height: 50px;
+	padding: 15% 5%;
+	height: 700px;
+}
+.information_about .big-size{
+	height: 700px;
+}
+.information_about .image-right{
+	float: right;
+	height: 700px;
+}
+.information_about .text-editor-left{
+	width: 50%;
+	display: block;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	line-height: 50px;
+	padding: 15% 5%;
+	height: 700px;
+}
