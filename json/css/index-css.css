@@ -1,0 +1,201 @@
+/*xóa viền*/
+body {margin: 0px !important;} 
+/*anh parallax */
+/*edit page cuc bo*/
+.col-md-3{
+    margin-top: 10%; 
+}
+.col-md-3{
+  margin-top: 3% !important;
+}
+.col-md-6{
+    margin-top: 10%; 
+
+}
+.col-md-6{
+  margin-top: 3% !important;
+}
+.parallax{
+    min-height: 390px; 
+    background: transparent;
+    width: 100% ;
+    max-width: none;
+    margin: none;
+    padding: none;
+}
+
+/*row 1 */
+.aside-comment{
+    color: white;
+    font-size: 50px;
+    padding: 5%;
+    margin-top: 10%;
+    margin-left: 33%;
+}
+.info{
+    z-index: 2;
+    position: relative;
+}
+
+/*row 2*/
+.text-a{
+  color: white;
+  margin-top: 5%;
+}
+.text-a:hover{
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+.row .background-picture{
+  width: 50%; 
+  min-height: 355px; 
+  background: black; 
+  float: right;
+  margin-top: -355px;
+}
+
+/*row 3*/
+.outside-title-page{
+  /*margin: 33%;*/
+  font-size: 50px;
+  text-align: center;
+  display: block;
+}
+.outside-title-page-small{
+  font-size: 25px;
+  text-align: center;
+  display: block;
+}
+
+/*row 4*/
+.media-list{
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  padding-right: 0px !important;
+  font-weight: bold;
+  margin: 0% 0%;
+  border: 1px solid black;
+}
+.media-list:hover{
+  background-color: black;
+  color: white;
+}
+.pagination-list
+/*row 5*/
+.product-hot{
+  padding: 15px 15px;
+}
+.header{
+  min-height: 70px !important;
+}
+.thumbnail{
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-right: none;
+  border-left: none;
+  border-radius: 0px;
+}
+.thumbnail .info-product{
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 75%;
+}
+.cart{
+  padding: 5px 20px !important;
+  background-color: black !important;
+  color: white !important;
+  border: none !important;
+  float: right !important;
+}
+.cart:hover{
+  border-bottom: 1px solid black;
+  background-color: white;
+  color: black;
+}
+.price{
+  width: 30%;
+  float: left;
+}
+.container-page{
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 24px;
+    padding: 25px;
+}
+.logo{
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+/*row 7*/
+.picture{
+  height: 200px;
+  width: 278px;
+}
+.picture .text-inside{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 60%;
+}
+/* */
+/*.navbar{
+    margin-top: 50px;
+}
+.navbar>div>ul>li>a{
+    height: 110px;
+    font-size: 30px;
+    padding-right: 115px;
+    padding-left: 115px;
+    line-height: 60px;
+}
+#navbar a.active{
+  background-color: black !important;
+  color: white;
+  border-right: solid 1px white;
+}*/
+.thumbnail>img{
+    z-index: 2;
+    position: relative;
+    width: 200px;
+}
+.contact{
+    color: black;
+    font-size: 90px;
+    padding-left: 25%;
+    padding-top: 10%;
+}
+/*footer edit*/
+.footer{
+    background-color: black;
+    color: white;
+    height: 250px;
+    margin-top: 5%;
+}
+.footer .title{
+    font-size: 20px;
+    height: 60px;
+    font-weight: bold;
+    width: 100%;
+    color: white;
+    margin: 10% 30%;
+}
+.footer .info-footer{
+  font-size: 15px;
+  color: white;
+}
+.footer ul{
+  list-style: none;
+}
+.footer ul li{
+  text-decoration: underline;
+}
+.footer ul li a{
+  text-decoration: none;
+  color: white;
+}
