@@ -1,0 +1,32 @@
+[
+    {
+    "CategoryID" : 1,
+    "CategoryName" : "Beverage",
+    "Url" : "Beverage",
+    },
+    {
+    "CategoryID" : 2,
+    "CategoryName" : "Condiment"
+    },
+    {
+    "CategoryID" : 3,
+    "CategoryName" : "Confection"
+    },
+    {
+    "CategoryID" : 4,
+    "CategoryName" : "Beverage"
+    },
+    {
+    "CategoryID" : 5,
+    "CategoryName" : "Dairy"
+    },
+    {
+    "CategoryID" : 6,
+    "CategoryName" : "Grains"
+    },
+    {
+    "CategoryID" : 7,
+    "CategoryName" : "Seafood"
+    }
+
+]
