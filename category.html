@@ -25,10 +25,12 @@
             <tr>
                 <th>Category ID</th>
                 <th>Category Name</th>
+                <th>Category Image</th>
             </tr>
             <tr ng-repeat="category in categories">
                 <td>{{ category.CategoryID }}</td>
                 <td>{{ category.CategoryName }}</td>
+                <td><img src="{{ category.CategoryImage }}"></td>
             </tr>
         </table>
     </div>

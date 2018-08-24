@@ -1,31 +1,38 @@
 [
     {
     "CategoryID" : 1,
-    "CategoryName" : "Beverage"
+    "CategoryName" : "Beverage",
+    "CategoryImage" : "images/images_makeup_kits/eyes/16821_aqua_matic_0.png"
     },
     {
     "CategoryID" : 2,
-    "CategoryName" : "Condiment"
+    "CategoryName" : "Condiment",
+    "CategoryImage" : "images/images_makeup_kits/eyes/ACP_800.png"
     },
     {
     "CategoryID" : 3,
-    "CategoryName" : "Confection"
+    "CategoryName" : "Confection",
+    "CategoryImage" : "images/images_makeup_kits/eyes/aqua_black_28601_0.png"
     },
     {
     "CategoryID" : 4,
-    "CategoryName" : "Beverage"
+    "CategoryName" : "Beverage",
+    "CategoryImage" : "images/images_makeup_kits/eyes/Aqua_XL_Color_Paint_M10.png"
     },
     {
     "CategoryID" : 5,
-    "CategoryName" : "Dairy"
+    "CategoryName" : "Dairy",
+    "CategoryImage" : "images/images_makeup_kits/eyes/ArtistColorShadow_M100_0.png"
     },
     {
     "CategoryID" : 6,
-    "CategoryName" : "Grains"
+    "CategoryName" : "Grains",
+    "CategoryImage" : "images/images_makeup_kits/eyes/metal_powder_94001.png"
     },
     {
     "CategoryID" : 7,
-    "CategoryName" : "Seafood"
+    "CategoryName" : "Seafood",
+    "CategoryImage" : "images/images_makeup_kits/eyes/Star_Lit_Palette.png"
     }
 
 ]
