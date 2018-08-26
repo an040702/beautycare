@@ -10,6 +10,7 @@ productApp.config(function($routeProvider) {
 
 productApp.controller("productCtrl", function($scope, $http, $routeParams)  {
             $http.get('data/ring_product.json') //reading the product.json file
+<<<<<<< HEAD
 
                 .then (function(response){
                         $scope.products = response.data; // binding the data to the $scope variable
@@ -19,3 +20,13 @@ productApp.controller("productCtrl", function($scope, $http, $routeParams)  {
     $scope.id=$scope.product;
     }
 );//end controller
+=======
+            
+                .success (function(data){
+                        $scope.products = data; // binding the data to the $scope variable
+                    })
+    } 
+);//end controller
+
+productAppModule.controller('OtherController', OtherController);
+>>>>>>> 386fcdcc05309ce4f6562e35ed06da9858b22332
