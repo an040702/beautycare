@@ -1,11 +1,21 @@
 //creating an application module
-var productAppModule = angular.module("productApp", []);
-//The below code will read the data from product.json file and will pass to the $scope variable 
-productAppModule.controller("productCtrl", function($scope, $http){    
+
+var productApp = angular.module("productApp", ["ngRoute"]);
+productApp.config(function($routeProvider) {
+    $routeProvider.when('/profile',{
+        templateUrl : "hello.html",
+        controller : "productCtrl"
+    });
+});
+
+productApp.controller("productCtrl", function($scope, $http, $routeParams)  {
             $http.get('data/ring_product.json') //reading the product.json file
-            
-                .success (function(data){
-                        $scope.products = data; // binding the data to the $scope variable
-                    })
-    } 
+
+                .then (function(response){
+                        $scope.products = response.data; // binding the data to the $scope variable
+                        $scope.product=response.data[$routeParams.name]
+                    });
+
+    $scope.id=$scope.product;
+    }
 );//end controller

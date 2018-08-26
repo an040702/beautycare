@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
   <!-- LINK BOOTSTRAP -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Custom CSS -->
@@ -12,18 +13,24 @@
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <script  src="http://code.angularjs.org/1.0.7/angular.min.js" data-semver="1.0.7"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-route.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>-->
   <script src="../js/products.js"></script>
   <script src="../js/profile.js"></script>
   <!-- LINK ANGULARJS -->
 	<title>PRODUCT_RING_GOLD</title>
 </head>
-<body ng-app="productApp">
-	<div class="container" ng-controller="productCtrl">
+<body ng-app="productApp" ng-controller="productCtrl">
+	<div class="container">
   	<div class="row">
 	  	<div class="col-md-3 col-lg-3 col-sm-3 col-xs-12" ng-repeat="product in products">
 	  		<hr>
-	  		<div >
+	  		<div>
+                <div ng-view></div>
+                <a href="#!profile">ss</a>
+
   		    <h4 style="font-weight: 700;float: left;">{{product.name}}</h4>
 				  <fieldset class="rating{{product.class_rating_star}}" style="float: right;">
 				    <input type="radio" id="{{product.class_rating_star}}star5" name="rating{{product.class_rating_star}}" value="5" /><label class = "full" for="{{product.class_rating_star}}star5" title="Awesome - 5 stars"></label>
@@ -59,11 +66,13 @@
   					{{product.price}}<sup>đ</sup>
   				</div>
   				<div>
-  					<div class="btn_custom""><span>BUY NOW !!!</span></div>
+  					<div class="btn_custom"><span>BUY NOW !!!</span></div>
   				</div>
   			</div>
-  		</div>		  	
+
   		</div>
-    </div>
+    <div>{{ products[1].name }}</div>
+	</div>
+	</div>
 </body>
 </html>
