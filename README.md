@@ -13,3 +13,4 @@
 # 21/08/2018: Add product detail page.
 # 22/08/2018: Add js shop-cart page
 # 23 / 8 / 2018 : Edit lại about us và xóa chút ít code thừa trong SEM3
+# 24 -> 27/08/2018: Work with AngularJS
