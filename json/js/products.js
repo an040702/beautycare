@@ -9,3 +9,5 @@ productAppModule.controller("productCtrl", function($scope, $http){
                     })
     } 
 );//end controller
+
+productAppModule.controller('OtherController', OtherController);
