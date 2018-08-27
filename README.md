@@ -15,3 +15,4 @@
 # 23 / 8 / 2018 : Edit lại about us và xóa chút ít code thừa trong SEM3
 # 24 -> 27/08/2018: Work with AngularJS
 # 27/08/2018: Add Rings Category and Ring Detail with AngularJS
+# 27/08/2018: Add index.html...
