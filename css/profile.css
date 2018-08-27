@@ -116,7 +116,7 @@ a.custom{
   border-bottom:1px solid black;border-left: 1px solid black;border-right: 1px solid black; border-top:1px solid black;
 }
 .border-zoom{
-  border-right:1px solid black; display: block;text-align: center; cursor: zoom-in;
+  border-right:1px solid black; display: block;text-align: center; cursor: zoom-in;height: 496px;
 }
 .display-zoom{
   display: none;
