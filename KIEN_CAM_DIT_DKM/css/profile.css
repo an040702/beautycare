@@ -111,7 +111,7 @@ a.custom{
   display: block;
   width: 30%;
 }
-.img-responsive5{width: 90%;height: 90%;margin-top: 5px}
+.img-responsive5{width: 90%;max-height: 491px;margin-top: 5px}
 .border-custom-1{
   border-bottom:1px solid black;border-left: 1px solid black;border-right: 1px solid black; border-top:1px solid black;
 }
@@ -222,5 +222,6 @@ a.custom{
 #scroll:hover {
     background-color:black;
     opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
     -ms-filter:"alpha(opacity=100)";
 }
