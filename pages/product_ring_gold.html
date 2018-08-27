@@ -14,27 +14,17 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <!-- LINK ANGULARJS -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-route.js"></script> -->
-  <script src="../js/angular.min.js"></script>
-  <script src="../js/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-route.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src="../js/products.js"></script>
   <script src="../js/profile.js"></script>
-  <script src="../js/navbarDirective.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <!-- LINK ANGULARJS -->
 	<title>PRODUCT_RING_GOLD</title>
 </head>
 <body ng-app="productApp" ng-controller="productCtrl">
-  <!-- Navbar -->
-  <div id="navbar" class="container-fluid">    
-    <!-- Navbar duoc tao bang Directive -->
-    <main-navbar></main-navbar>
-    <!-- ============================== -->
-  </div>
-  <!-- ======================================================================= -->
-    <a href="#" id="scroll" style="display: none; z-index: 1;"><span></span></a>
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
 	<div class="ng-view" autoscroll="true"></div>
 	<div class="container" id="show_products">
   	<div class="row">
@@ -62,12 +52,12 @@
 				</div>
 	  		<div class="container1">
   				<div class="overlay">
-                    <a href="#/profile/{{product.class_rating_star}}">
+                    <a href="#!profile_gold/{{product.class_rating_star}}">
  						<div class="text">PREVIEW SHADES</div>
                     </a>
                 </div>
 	  			<div class="img-responsive">
-                   <a href="#!profile/{{product.class_rating_star}}">
+                   <a href="#!profile_gold/{{product.class_rating_star}}">
     					<img src={{product.image}} class="img-responsive">
                     </a>
                 </div>
