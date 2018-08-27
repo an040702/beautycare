@@ -443,7 +443,293 @@
 .rating12 > input:checked ~ label:hover ~ label { color: #FFED85;  }
 
 /*Các hiệu ứng của Kiên làm*/
-/*# sourceMappingURL=bootstrap.css.map */
+/*Hiệu ứng rating stars SP12*/
+/*======================================================================*/
+.rating13 {
+  border: none;
+}
+
+.rating13 > input { display: none; }
+.rating13 > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+  position: relative;
+}
+
+.rating13 > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating13 > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating13 > input:checked ~ label, /* show gold star when clicked */
+.rating13:not(:checked) > label:hover, /* hover current star */
+.rating13:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating13 > input:checked + label:hover, /* hover current star when changing rating */
+.rating13 > input:checked ~ label:hover,
+.rating13 > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating13 > input:checked ~ label:hover ~ label { color: #FFED85;  }
+/*Hiệu ứng rating stars SP12*/
+/*======================================================================*/
+.rating14 {
+  border: none;
+}
+
+.rating14 > input { display: none; }
+.rating14 > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+  position: relative;
+}
+
+.rating14 > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating14 > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating14 > input:checked ~ label, /* show gold star when clicked */
+.rating14:not(:checked) > label:hover, /* hover current star */
+.rating14:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating14 > input:checked + label:hover, /* hover current star when changing rating */
+.rating14 > input:checked ~ label:hover,
+.rating14 > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating14 > input:checked ~ label:hover ~ label { color: #FFED85;  }/*Hiệu ứng rating stars SP12*/
+/*======================================================================*/
+.rating15 {
+  border: none;
+}
+.rating15 > input { display: none; }
+.rating15 > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+  position: relative;
+}
+
+.rating15 > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating15 > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating15 > input:checked ~ label, /* show gold star when clicked */
+.rating15:not(:checked) > label:hover, /* hover current star */
+.rating15:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating15 > input:checked + label:hover, /* hover current star when changing rating */
+.rating15 > input:checked ~ label:hover,
+.rating15 > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating15 > input:checked ~ label:hover ~ label { color: #FFED85;  }
+/*Hiệu ứng rating stars SP12*/
+/*======================================================================*/
+.rating16 {
+  border: none;
+}
+
+.rating16 > input { display: none; }
+.rating16 > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+  position: relative;
+}
+
+.rating16 > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating16 > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating16 > input:checked ~ label, /* show gold star when clicked */
+.rating16:not(:checked) > label:hover, /* hover current star */
+.rating16:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating16 > input:checked + label:hover, /* hover current star when changing rating */
+.rating16 > input:checked ~ label:hover,
+.rating16 > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating16 > input:checked ~ label:hover ~ label { color: #FFED85;  }
+/*Hiệu ứng rating stars SP12*/
+/*======================================================================*/
+.rating17 {
+  border: none;
+}
+
+.rating17 > input { display: none; }
+.rating17 > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+  position: relative;
+}
+
+.rating17 > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating17 > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating17 > input:checked ~ label, /* show gold star when clicked */
+.rating17:not(:checked) > label:hover, /* hover current star */
+.rating17:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating17 > input:checked + label:hover, /* hover current star when changing rating */
+.rating17 > input:checked ~ label:hover,
+.rating17 > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating17 > input:checked ~ label:hover ~ label { color: #FFED85;  }
+/*Hiệu ứng rating stars SP12*/
+/*======================================================================*/
+.rating18 {
+  border: none;
+}
+
+.rating18 > input { display: none; }
+.rating18 > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+  position: relative;
+}
+
+.rating18 > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating18 > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating18 > input:checked ~ label, /* show gold star when clicked */
+.rating18:not(:checked) > label:hover, /* hover current star */
+.rating18:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating18 > input:checked + label:hover, /* hover current star when changing rating */
+.rating18 > input:checked ~ label:hover,
+.rating18 > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating18 > input:checked ~ label:hover ~ label { color: #FFED85;  }
+/*Hiệu ứng rating stars SP12*/
+/*======================================================================*/
+.rating19 {
+  border: none;
+}
+
+.rating19 > input { display: none; }
+.rating19 > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+  position: relative;
+}
+
+.rating19 > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating19 > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating19 > input:checked ~ label, /* show gold star when clicked */
+.rating19:not(:checked) > label:hover, /* hover current star */
+.rating19:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating19 > input:checked + label:hover, /* hover current star when changing rating */
+.rating19 > input:checked ~ label:hover,
+.rating19 > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating19 > input:checked ~ label:hover ~ label { color: #FFED85;  }
+/*Hiệu ứng rating stars SP12*/
+/*======================================================================*/
+.rating20 {
+  border: none;
+}
+
+.rating20 > input { display: none; }
+.rating20 > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+  position: relative;
+}
+
+.rating20 > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating20 > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating20 > input:checked ~ label, /* show gold star when clicked */
+.rating20:not(:checked) > label:hover, /* hover current star */
+.rating20:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating20 > input:checked + label:hover, /* hover current star when changing rating */
+.rating20 > input:checked ~ label:hover,
+.rating20 > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating20 > input:checked ~ label:hover ~ label { color: #FFED85;  }
+/*# sour6ceMappingURL=bootstrap.css.map */
 .btn_custom {
   width: auto;
   line-height: 30px;

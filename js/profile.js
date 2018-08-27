@@ -4,8 +4,6 @@ function show_icon_share(e){
 function hide_icon_share(e){
   document.getElementById("show_share").innerHTML="Share";
 }
-
-
 function zoom_image(e){
   function imageZoom(imgID, resultID) {
   var img, lens, result, cx, cy;
@@ -97,17 +95,16 @@ function change_price(){
     document.getElementById("price_10.5").style.display="none";
   }
 }
-var modal = document.getElementById('myModal');
 var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close_custom")[0];
-btn.onclick = function(e) {
-    modal.style.display = "block";
+function powup_custom_btn(e) {
+    document.getElementById('myModal').style.display = "block";
 }
-span.onclick = function(e) {
-    modal.style.display = "none";
+function close_powup(e) {
+    document.getElementById('myModal').style.display = "none";
 }
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == document.getElementById('myModal')) {
+        document.getElementById('myModal').style.display = "none";
     }
 }
+
