@@ -19,6 +19,16 @@ productApp.directive('mainNavbar',function () {
     }
 })
 
+//Index.html Navbar direvtive
+productApp.directive('mainNavbarHomePage',function () {
+    return {
+        restrict: 'AE',
+        // template: '<h3>Hello AngularJS</h3> <p>I was made inside custom directive</p>',
+        templateUrl: './common/navbar.html',
+        // replace: false
+    }
+})
+
 //Products page controller
 productApp.controller("productCtrl", function($scope, $http, $routeParams)  {
             $http.get('../data/ring_product.json') //reading the product.json file
