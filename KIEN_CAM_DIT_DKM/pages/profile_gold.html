@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/rings-css.css">
-	<link rel="stylesheet" type="text/css" href="../css/nav-css.css">
-	<link rel="stylesheet" type="text/css" href="../css/cart.css">
-	<link rel="stylesheet" type="text/css" href="../css/profile.css">	
-	<!-- FONT AWESOME -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<!-- LINK ANGULARJS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-
-	<title>Gold Ring 1 Details</title>
-</head>
-<body ng-app="myApp">
+<div ng-app="productApp">
 	<!-- Navbar -->
 	<div id="navbar" class="container-fluid">    
 	  <!-- Navbar duoc tao bang Directive -->
@@ -30,22 +9,22 @@
 	<div class="container border-custom-1">
 		<div class="row">
 			<div class="col-md-6 border-zoom" title="Click zoom image" onmouseleave="out_zoom_image(this)" onclick ="zoom_image(this);">
-				  <img id="myimage" src="..\images\images_ring\images_ring_gold\gold_1.png" class="img-responsive5">
+				  <img id="myimage" src={{image}} class="img-responsive5">
 			</div>
 			<div class="col-md-6">
 				<div id="show_zoom" class="display-zoom">
 					<div id='myresult' class='img-zoom-result'></div>
 				</div>
 				<div id="infomation" class="margin-infomation">
-					<p class="caption-name">RING/PNJ</p>
-					<p >WRITE SOMETHING ABOUT THE PRODUCT...</p>
+					<p class="caption-name">{{name_product}}</p>
+					<p >{{title_info}}</p>
 					<div>
 						<span class="title-infomation">FULL DESCRIPTION</span><br>
-						<p>Satisfy your sweet tooth! Indulge in patisserie-fresh, saturated and scented lip colour! Oh, Sweetie Lipcolour is whipped for mousse-like texture and serves up funfetti-bright, frosted opaque hues for lips. Explore all 15 to find your favourite decadent delight.</p>
+						<p>{{description}}</p>
 					</div>
 					<div>
 						<span class="title-infomation">SEX</span>
-						<p>Male</p>
+						<p>{{sex}}</p>
 					</div>
 					<div class="row">
 						<div class="col-md-8">
@@ -58,42 +37,42 @@
 							<a href="#" class="custom"><u>SIZE GUIDE</u></a>
 						</div>
 						<div class="col-md-4">
-							<span id="myBtn" class="powup-table">
+							<span id="myBtn" class="powup-table" onclick="powup_custom_btn(this)">
 								<u>SPECIFICATIONS</u>
 							</span>
 							<div id="myModal" class="modal">
 							  	<div class="modal-content  container">
-								    <div class="close_custom">&times;</div>
+								    <div class="close_custom" onclick="close_powup()">&times;</div>
 								    <div class="caption-powup">SPECIFICATIONS</div><br>
 								    <div class="row">
 								    	<div class="col-md-12">
 									    	<div class="content-powup">
 									    		<span style="font-weight: bold;">Trade Mark:</span>
-									    		<span>PNJ</span>
+									    		<span>{{Trade_Mark}}</span>
 									    	</div>
-									    	<div class="content-powup"">
+									    	<div class="content-powup">
 									    		<span style="font-weight: bold;">Type Of Stone:</span>
-									    		<span>Diamon</span>
+									    		<span>{{Stone}}</span>
 									    	</div>
-									    	<div class="content-powup"">
+									    	<div class="content-powup">
 									    		<span style="font-weight: bold;">Color Of Stone:</span>
-									    		<span>White</span>
+									    		<span>{{Color}}</span>
 									    	</div>
-									    	<div class="content-powup"">
+									    	<div class="content-powup">
 									    		<span style="font-weight: bold;">Shape Of Stone:</span>
-									    		<span>Circle</span>
+									    		<span>{{Shape}}</span>
 									    	</div>
-									   		<div class="content-powup"">
+									   		<div class="content-powup">
 									    		<span style="font-weight: bold;">Carrat:</span>
-									    		<span>1.9</span>
+									    		<span>{{Cara}}</span>
 									    	</div>
-									    	<div class="content-powup"">
+									    	<div class="content-powup">
 									    		<span style="font-weight: bold;">Age Of Gold:</span>
-									    		<span>18K</span>
+									    		<span>{{Age}}</span>
 									    	</div>
-									   		<div class="content-powup"">
+									   		<div class="content-powup">
 									    		<span style="font-weight: bold;">Weight Of Ring:</span>
-									    		<span>0.69269</span>
+									    		<span>{{Weight}}</span>
 									    	</div>
 									    </div>
 								    </div>
@@ -102,6 +81,7 @@
 						</div>
 					</div>
 					<hr class="hr-style">
+
 					<div class="share-icon">
 						<div id="show_share" onmouseleave="hide_icon_share(this)" onmouseenter ="show_icon_share(this)">Share</div>
 					</div>
@@ -109,20 +89,20 @@
 					<div>
 						<div class="margin-button">
 				      		<div class="cost" id="price_8" style="display: none">
-				      			12.300.000<sup>đ</sup>
+				      			{{price_8}}<sup>đ</sup>
 				      		</div>
 				      		<div class="cost" id="price_9" style="display: none">
-				      			12.800.000<sup>đ</sup>
+								{{price_9}}<sup>đ</sup>
 				      		</div>
 				      		<div class="cost" id="price_10.5" style="display: none">
-				      			13.500.000<sup>đ</sup>
+								{{price_10_5}}<sup>đ</sup>
 				      		</div>
 				      		<div class="cost" id="price_select" style="display: block">
-				      			12.300.000<sup>đ</sup>
+								{{price_8}}<sup>đ</sup>
 				      		</div>
 		      			</div>
 		      			<div>
-		      			<div class="btn_custom""><span>BUY NOW !!!</span></div>
+		      			<div class="btn_custom"><span>BUY NOW !!!</span></div>
 		      			</div>
 	      			</div>
 	      		</div>
@@ -133,7 +113,7 @@
 	<hr class="style-one">
 	<div class="container">
 		<!-- Rings products 1st row -->
-		<div class="caption-related">RELATED PRODUCTS</div>
+		<div class="caption-related">BEST SELLER</div>
 	  	<div class="row">
 		  	<div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
 		  		<hr>
@@ -159,10 +139,10 @@
 				</div>
 		  		<div class="container1">
 		  			<div class="overlay">
-	   						<a href="profile_gold9.html"><div class="text">PREVIEW SHADES</div></a>
+						<a href="#!profile/9"><div class="text">PREVIEW SHADES</div></a>
 	  					</div>
 		  			<div class="img-responsive">
-      					<a href="profile_gold9.html"><img src="..\images\images_ring\images_ring_gold\gold_9.png" class="img-responsive"></a>
+						<a href="#!profile/9"><img src="..\images\images_ring\images_ring_gold\gold_9.png" class="img-responsive"></a>
   					</div>
       			</div>
       			 <hr class="style-one">
@@ -171,7 +151,7 @@
       					12.300.000<sup>đ</sup>
       				</div>
       				<div>
-      					<div class="btn_custom""><span>BUY NOW !!!</span></div>
+      					<div class="btn_custom"><span>BUY NOW !!!</span></div>
       				</div>
       			</div>
       		</div>		  	
@@ -199,9 +179,9 @@
 				</div>
 		  		<div class="container1">
 		  			<div class="img-responsive">
-      				<img src="..\images\images_ring\images_ring_gold\gold_2.png" class="img-responsive">
+						<a href="#!profile/2"><img src="..\images\images_ring\images_ring_gold\gold_2.png" class="img-responsive"></a>
       				<div class="overlay">
-   						<div class="text">PREVIEW SHADES</div>
+						<a href="#!profile/2">	<div class="text">PREVIEW SHADES</div></a>
   					</div>
   				</div>
       			</div>
@@ -211,7 +191,7 @@
       					12.300.000<sup>đ</sup>
       				</div>
       				<div>
-      					<div class="btn_custom""><span>BUY NOW !!!</span></div>
+      					<div class="btn_custom"><span>BUY NOW !!!</span></div>
       				</div>
       			</div>
       		</div>
@@ -239,9 +219,9 @@
 				</div>
 		  		<div class="container1">
 		  			<div class="img-responsive">
-      				<a href="profile_gold3.html"><img src="..\images\images_ring\images_ring_gold\gold_3.png" class="img-responsive"></a>
+						<a href="#!profile/3"><img src="..\images\images_ring\images_ring_gold\gold_3.png" class="img-responsive"></a>
       				<div class="overlay">
-   						<a href="profile_gold3.html"><div class="text">PREVIEW SHADES</div></a>
+						<a href="#!profile/3"><div class="text">PREVIEW SHADES</div></a>
   					</div>
   				</div>
       			</div>
@@ -251,7 +231,7 @@
       					12.300.000<sup>đ</sup>
       				</div>
       				<div>
-      					<div class="btn_custom""><span>BUY NOW !!!</span></div>
+      					<div class="btn_custom"><span>BUY NOW !!!</span></div>
       				</div>
       			</div>
       		</div>
@@ -279,9 +259,9 @@
 				</div>
 		  		<div class="container1">
 		  			<div class="img-responsive">
-      				<img src="..\images\images_ring\images_ring_gold\gold_4.png" class="img-responsive">
+						<a href="#!profile/4"><img src="..\images\images_ring\images_ring_gold\gold_4.png" class="img-responsive"></a>
       				<div class="overlay">
-   						<div class="text">PREVIEW SHADES</div>
+						<a href="#!profile/4"><div class="text">PREVIEW SHADES</div></a>
   					</div>
   				</div>
       			</div>
@@ -291,7 +271,7 @@
       					12.300.000<sup>đ</sup>
       				</div>
       				<div>
-      					<div class="btn_custom""><span>BUY NOW !!!</span></div>
+      					<div class="btn_custom"><span>BUY NOW !!!</span></div>
       				</div>
       			</div>
       		</div>
@@ -347,9 +327,5 @@
 	  	</div>
 	  </div>
 
-	<script src="../js/profile.js"></script>
-	<script src="../js/app.js"></script>
-	<script type="text/javascript" src="../js/jquery.min.js"></script>
-	<script type="text/javascript" src ="../js/bootstrap.min.js"></script>
-</body>
-</html>
+</div>
+

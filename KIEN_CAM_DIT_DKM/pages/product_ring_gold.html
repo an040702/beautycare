@@ -3,39 +3,33 @@
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
   <!-- LINK BOOTSTRAP -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="../css/rings-css.css">
   <link rel="stylesheet" type="text/css" href="../css/nav-css.css">
   <link rel="stylesheet" type="text/css" href="../css/cart.css">
+	<link rel="stylesheet" type="text/css" href="../css/profile.css">
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
-
-   
-
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-route.js"></script>
-    <script src="https://rawgit.com/michaelbromley/angularUtils-pagination/master/dirPagination.js"></script>
-    <script data-require="jquery@*" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-  <script data-require="bootstrap@3.1.1" data-semver="3.1.1" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src="../js/products.js"></script>
-  <script src="../js/profile.js"></script>
+    <script src="../js/profile.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <!-- LINK ANGULARJS -->
 	<title>PRODUCT_RING_GOLD</title>
 </head>
 <body ng-app="productApp" ng-controller="productCtrl">
-	<div class="container">
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+	<div class="ng-view" autoscroll="true"></div>
+	<div class="container" id="show_products">
   	<div class="row">
 	  	<div class="col-md-3 col-lg-3 col-sm-3 col-xs-12" ng-repeat="product in products">
 	  		<hr>
 	  		<div>
-                <div ng-view></div>
-                <a href="#!profile">ss</a>
   		    <h4 style="font-weight: 700;float: left;">{{product.name}}</h4>
 				  <fieldset class="rating{{product.class_rating_star}}" style="float: right;">
 				    <input type="radio" id="{{product.class_rating_star}}star5" name="rating{{product.class_rating_star}}" value="5" /><label class = "full" for="{{product.class_rating_star}}star5" title="Awesome - 5 stars"></label>
@@ -57,13 +51,15 @@
 				</div>
 	  		<div class="container1">
   				<div class="overlay">
+                    <a href="#/profile/{{product.class_rating_star}}">
  						<div class="text">PREVIEW SHADES</div>
-					</div>
+                    </a>
+                </div>
 	  			<div class="img-responsive">
-            <a href="profile_gold1.html">
+                   <a href="#!profile/{{product.class_rating_star}}">
     					<img src={{product.image}} class="img-responsive">
-            </a>
-					</div>
+                    </a>
+                </div>
   			</div>
 			  <hr class="style-one">
   			<div>
@@ -74,9 +70,7 @@
   					<div class="btn_custom"><span>BUY NOW !!!</span></div>
   				</div>
   			</div>
-
   		</div>
-    <div>{{ products[1].name }}</div>
 	</div>
 	</div>
 </body>
