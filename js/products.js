@@ -1,6 +1,7 @@
 //creating an application module
 
 var productApp = angular.module("productApp", ["ngRoute"]);
+
 productApp.config(function($routeProvider) {
     $routeProvider.when('/profile_gold/:id',{
         templateUrl : "profile_gold.html",
@@ -55,6 +56,7 @@ productApp.controller("productCtrl_detail", function($scope, $http, $routeParams
 
     }
 );//end controller
+
 productApp.config(function($routeProvider) {
     $routeProvider.when('/profile_diamon/:id',{
         templateUrl : "profile_gold.html",
@@ -62,7 +64,7 @@ productApp.config(function($routeProvider) {
     });
 });
 productApp.controller("productCtrl_diamon", function($scope, $http, $routeParams)  {
-        $http.get('data/ring_diamon_product.json') //reading the product.json file
+        $http.get('../data/ring_diamon_product.json') //reading the product.json file
 
             .then (function(response){
                 $scope.products = response.data; // binding the data to the $scope variable
@@ -72,7 +74,7 @@ productApp.controller("productCtrl_diamon", function($scope, $http, $routeParams
 );//end controller
 
 productApp.controller("productCtrl_detail_diamon", function($scope, $http, $routeParams)  {
-        $http.get('data/ring_diamon_product.json') //reading the product.json file
+        $http.get('../data/ring_diamon_product.json') //reading the product.json file
             .then (function(response){
                 $scope.id=$routeParams.id;
                 $scope.image=response.data[$scope.id-1].image;
@@ -95,6 +97,7 @@ productApp.controller("productCtrl_detail_diamon", function($scope, $http, $rout
 
     }
 );//
+
 $(document).ready(function(){
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
