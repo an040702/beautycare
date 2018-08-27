@@ -22,6 +22,7 @@ productApp.controller("productCtrl_detail", function($scope, $http, $routeParams
             $http.get('data/ring_product.json') //reading the product.json file
                 .then (function(response){
                         $scope.id=$routeParams.id;
+                        console.log($routeParams.id);
                         $scope.image=response.data[$scope.id-1].image;
                         $scope.name_product=response.data[$scope.id-1].name;
                         $scope.sex=response.data[$scope.id-1].sex;
