@@ -8,8 +8,19 @@ productApp.config(function($routeProvider) {
     });
 });
 
+//Navbar direvtive
+productApp.directive('mainNavbar',function () {
+    return {
+        restrict: 'AE',
+        // template: '<h3>Hello AngularJS</h3> <p>I was made inside custom directive</p>',
+        templateUrl: '../pages/navbar_01.html',
+        // replace: false
+    }
+})
+
+//Products page controller
 productApp.controller("productCtrl", function($scope, $http, $routeParams)  {
-            $http.get('data/ring_product.json') //reading the product.json file
+            $http.get('../data/ring_product.json') //reading the product.json file
 
                 .then (function(response){
                         $scope.products = response.data; // binding the data to the $scope variable
@@ -18,8 +29,9 @@ productApp.controller("productCtrl", function($scope, $http, $routeParams)  {
     }
 );//end controller
 
+//Product detail page controller
 productApp.controller("productCtrl_detail", function($scope, $http, $routeParams)  {
-            $http.get('data/ring_product.json') //reading the product.json file
+            $http.get('../data/ring_product.json') //reading the product.json file
                 .then (function(response){
                         $scope.id=$routeParams.id;
                         console.log($routeParams.id);
