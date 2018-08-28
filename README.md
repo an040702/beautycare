@@ -16,3 +16,4 @@
 # 24 -> 27/08/2018: Work with AngularJS
 # 27/08/2018: Add Rings Category and Ring Detail with AngularJS
 # 27/08/2018: Add index.html...
+# 28/08/2018: Fix best seller function at homepage
