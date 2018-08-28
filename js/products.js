@@ -20,12 +20,14 @@ productApp.directive('mainNavbar',function () {
 })
 
 
-
+//code for Pagination
 function OtherController($scope) {
   
 }
 
 productApp.controller('OtherController', OtherController);
+//End Code 
+
 
 //Index.html Navbar direvtive
 productApp.directive('mainNavbarHomePage',function () {
@@ -39,6 +41,7 @@ productApp.directive('mainNavbarHomePage',function () {
 
 //Products page controller
 productApp.controller("productCtrl", function($scope, $http, $routeParams)  {
+    //code for Pagination
     $scope.currentPage = 1;
     $scope.pageSize = 8;
 

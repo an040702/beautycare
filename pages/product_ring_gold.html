@@ -85,10 +85,22 @@
   			</div>
   		</div>
 
-      <div ng-controller="OtherController" class="other-controller">
+      <div ng-controller="OtherController" class="other-controller col-xs-12">
           <div class="text-center">
           <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)"></dir-pagination-controls>
           </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+            <div class="col-xs-6">
+              <h3>Products Page: {{ currentPage }}</h3>
+            </div>
+            <div class="col-xs-6">
+              <label for="search">items per page:</label>
+              <input type="number" min="1" max="100" class="form-control" ng-model="pageSize">
+            </div>
+        </div>
       </div>
 	</div>
 	</div>
