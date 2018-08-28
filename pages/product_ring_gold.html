@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="../css/nav-css.css">
   <link rel="stylesheet" type="text/css" href="../css/cart.css">
 	<link rel="stylesheet" type="text/css" href="../css/profile.css">
+  <link rel="stylesheet" type="text/css" href="../css/test-index-pagination.css">
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -21,6 +22,8 @@
   <script src="../js/angular-route.min.js"></script>
   <script src="../js/products.js"></script>
   <script src="../js/profile.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="https://rawgit.com/michaelbromley/angularUtils-pagination/master/dirPagination.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <!-- LINK ANGULARJS -->
 	<title>PRODUCT_RING_GOLD</title>
@@ -37,7 +40,7 @@
 	<div class="ng-view" autoscroll="true"></div>
 	<div class="container" id="show_products">
   	<div class="row">
-	  	<div class="col-md-3 col-lg-3 col-sm-3 col-xs-12" ng-repeat="product in products">
+	  	<div class="col-md-3 col-lg-3 col-sm-3 col-xs-12" dir-paginate="product in products | itemsPerPage: pageSize" current-page="currentPage">
 	  		<hr>
 	  		<div>
   		    <h4 style="font-weight: 700;float: left;">{{product.name}}</h4>
@@ -81,6 +84,12 @@
   				</div>
   			</div>
   		</div>
+
+      <div ng-controller="OtherController" class="other-controller">
+          <div class="text-center">
+          <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)"></dir-pagination-controls>
+          </div>
+      </div>
 	</div>
 	</div>
 </body>

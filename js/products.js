@@ -1,6 +1,6 @@
 //creating an application module
 
-var productApp = angular.module("productApp", ["ngRoute"]);
+var productApp = angular.module("productApp", ["ngRoute", 'angularUtils.directives.dirPagination']);
 
 productApp.config(function($routeProvider) {
     $routeProvider.when('/profile_gold/:id',{
@@ -19,6 +19,14 @@ productApp.directive('mainNavbar',function () {
     }
 })
 
+
+
+function OtherController($scope) {
+  
+}
+
+productApp.controller('OtherController', OtherController);
+
 //Index.html Navbar direvtive
 productApp.directive('mainNavbarHomePage',function () {
     return {
@@ -31,6 +39,9 @@ productApp.directive('mainNavbarHomePage',function () {
 
 //Products page controller
 productApp.controller("productCtrl", function($scope, $http, $routeParams)  {
+    $scope.currentPage = 1;
+    $scope.pageSize = 8;
+
             $http.get('../data/ring_product.json') //reading the product.json file
 
                 .then (function(response){
