@@ -17,8 +17,5 @@
 # 27/08/2018: Add Rings Category and Ring Detail with AngularJS
 # 27/08/2018: Add index.html...
 # 28/08/2018: Fix best seller function at homepage
-<<<<<<< HEAD
 # 28/08/2018: Make new branch FilterFunction
-=======
 # 28 / 8 / 2018 Add pagination into product
->>>>>>> 079224561a0ce709732788bb9b6e88d2abb90bb0
