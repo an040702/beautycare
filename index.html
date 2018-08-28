@@ -17,6 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="css/nav-css.css">
 	<link rel="stylesheet" type="text/css" href="css/rings-css.css">
   <link rel="stylesheet" type="text/css" href="css/sticky.css">
+  <link rel="stylesheet" type="text/css" href="css/profile.css">
 	<!-- LINK CAMERA -->
 	<script type='text/javascript' src='js/camera.min.js'></script>
 	<!-- LINK ANGULARJS -->
@@ -27,7 +28,7 @@
 	<link rel='stylesheet' id='camera-css' href='css/camera.css' type='text/css' media='all'>
 	 	
 </head>
-<body ng-app="myApp">
+<body ng-app="productApp" ng-controller="productCtrl">
 
 	<!-- thanh nav -->
 	<div id="navbar" class="container-fluid">    
@@ -36,6 +37,9 @@
 		<!-- ============================== -->
 	</div>
 	<!-- ================================================================================================= -->
+	<a href="#" id="scroll" style="display: none;z-index: 1;"><span></span></a>
+
+	<div class="ng-view" autoscroll="true"></div>
 	<!-- <div style="height: 120px; margin-top: 0px; z-index: 1;" >
 		
 	</div> -->
@@ -410,6 +414,7 @@
     <script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
     <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
     <script type='text/javascript' src='js/camera.min.js'></script>
+    <script type='text/javascript' src="js/products.js"></script>
 
     <script>
         jQuery(function () {
