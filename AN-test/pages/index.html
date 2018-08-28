@@ -39,51 +39,52 @@
           <div class="panel panel-default">
             <div class="panel-body">
 
-              <ul>
-                <li class="col-xs-3" dir-paginate="meal in meals | itemsPerPage: pageSize" current-page="currentPage">
+                <div class="col-xs-3" dir-paginate="product in products | itemsPerPage: pageSize" current-page="currentPage">
                       <hr>
-                      <div >
-                        <h4 style="font-weight: 700;float: left;">{{meal.name}}</h4>
-                        <fieldset class="rating{{meal.class_rating_star}}" style="float: right;">
-                          <input type="radio" id="{{meal.class_rating_star}}star5" name="rating{{meal.class_rating_star}}" value="5" /><label class = "full" for="{{meal.class_rating_star}}star5" title="Awesome - 5 stars"></label>
-                          <input type="radio" id="{{meal.class_rating_star}}star4half" name="rating{{meal.class_rating_star}}" value="4 and a half" /><label class="half" for="{{meal.class_rating_star}}star4half" title="Pretty good - 4.5 stars"></label>
-                          <input type="radio" id="{{meal.class_rating_star}}star4" name="rating{{meal.class_rating_star}}" value="4" /><label class = "full" for="{{meal.class_rating_star}}star4" title="Pretty good - 4 stars"></label>
-                          <input type="radio" id="{{meal.class_rating_star}}star3half" name="rating{{meal.class_rating_star}}" value="3 and a half" /><label class="half" for="{{meal.class_rating_star}}star3half" title="Meh - 3.5 stars"></label>
-                          <input type="radio" id="{{meal.class_rating_star}}star3" name="rating{{meal.class_rating_star}}" value="3" /><label class = "full" for="{{meal.class_rating_star}}star3" title="Meh - 3 stars"></label>
-                          <input type="radio" id="{{meal.class_rating_star}}star2half" name="rating{{meal.class_rating_star}}" value="2 and a half" /><label class="half" for="{{meal.class_rating_star}}star2half" title="Kinda bad - 2.5 stars"></label>
-                          <input type="radio" id="{{meal.class_rating_star}}star2" name="rating{{meal.class_rating_star}}" value="2" /><label class = "full" for="{{meal.class_rating_star}}star2" title="Kinda bad - 2 stars"></label>
-                          <input type="radio" id="{{meal.class_rating_star}}star1half" name="rating{{meal.class_rating_star}}" value="1 and a half" /><label class="half" for="{{meal.class_rating_star}}star1half" title="Meh - 1.5 stars"></label>
-                          <input type="radio" id="{{meal.class_rating_star}}star1" name="rating{{meal.class_rating_star}}" value="1" /><label class = "full" for="{{meal.class_rating_star}}star1" title="Sucks big time - 1 star"></label>
-                          <input type="radio" id="{{meal.class_rating_star}}starhalf" name="rating{{meal.class_rating_star}}" value="half" /><label class="half" for="{{meal.class_rating_star}}starhalf" title="Sucks big time - 0.5 stars"></label>
+                      <div>
+                        <h4 style="font-weight: 700;float: left;">{{product.name}}</h4>
+                        <fieldset class="rating{{product.class_rating_star}}" style="float: right;">
+                          <input type="radio" id="{{product.class_rating_star}}star5" name="rating{{product.class_rating_star}}" value="5" /><label class = "full" for="{{product.class_rating_star}}star5" title="Awesome - 5 stars"></label>
+                          <input type="radio" id="{{product.class_rating_star}}star4half" name="rating{{product.class_rating_star}}" value="4 and a half" /><label class="half" for="{{product.class_rating_star}}star4half" title="Pretty good - 4.5 stars"></label>
+                          <input type="radio" id="{{product.class_rating_star}}star4" name="rating{{product.class_rating_star}}" value="4" /><label class = "full" for="{{product.class_rating_star}}star4" title="Pretty good - 4 stars"></label>
+                          <input type="radio" id="{{product.class_rating_star}}star3half" name="rating{{product.class_rating_star}}" value="3 and a half" /><label class="half" for="{{product.class_rating_star}}star3half" title="Meh - 3.5 stars"></label>
+                          <input type="radio" id="{{product.class_rating_star}}star3" name="rating{{product.class_rating_star}}" value="3" /><label class = "full" for="{{product.class_rating_star}}star3" title="Meh - 3 stars"></label>
+                          <input type="radio" id="{{product.class_rating_star}}star2half" name="rating{{product.class_rating_star}}" value="2 and a half" /><label class="half" for="{{product.class_rating_star}}star2half" title="Kinda bad - 2.5 stars"></label>
+                          <input type="radio" id="{{product.class_rating_star}}star2" name="rating{{product.class_rating_star}}" value="2" /><label class = "full" for="{{product.class_rating_star}}star2" title="Kinda bad - 2 stars"></label>
+                          <input type="radio" id="{{product.class_rating_star}}star1half" name="rating{{product.class_rating_star}}" value="1 and a half" /><label class="half" for="{{product.class_rating_star}}star1half" title="Meh - 1.5 stars"></label>
+                          <input type="radio" id="{{product.class_rating_star}}star1" name="rating{{product.class_rating_star}}" value="1" /><label class = "full" for="{{product.class_rating_star}}star1" title="Sucks big time - 1 star"></label>
+                          <input type="radio" id="{{product.class_rating_star}}starhalf" name="rating{{product.class_rating_star}}" value="half" /><label class="half" for="{{product.class_rating_star}}starhalf" title="Sucks big time - 0.5 stars"></label>
                         </fieldset>
                         <div style="clear: left;clear: right;"></div>
                         <div class="wrapper" style="float: right;">
-                          <input type="checkbox" id="st{{meal.class_rating_star}}" value="1" />
-                          <label title="Favorite" for="st{{meal.class_rating_star}}"></label>
+                          <input type="checkbox" id="st{{product.class_rating_star}}" value="1" />
+                          <label title="Favorite" for="st{{product.class_rating_star}}"></label>
                         </div>
                       </div>
                       <div class="container1">
                         <div class="overlay">
+                                  <a href="#!profile_gold/{{product.class_rating_star}}">
                           <div class="text">PREVIEW SHADES</div>
-                        </div>
+                                  </a>
+                              </div>
                         <div class="img-responsive">
-                          <a href="profile_gold1.html">
-                            <img src={{meal.image}} class="img-responsive">
-                          </a>
-                          </div>
+                                 <a href="#!profile_gold/{{product.class_rating_star}}">
+                            <img src={{product.image}} class="img-responsive">
+                                  </a>
+                              </div>
+                      </div>
+                      <hr class="style-one">
+                      <div>
+                        <div class="cost">
+                          {{product.price}}<sup>đ</sup>
                         </div>
-                        <hr class="style-one">
                         <div>
-                          <div class="cost">
-                            {{meal.price}}<sup>đ</sup>
-                          </div>
-                          <div>
-                            <div class="btn_custom""><span>BUY NOW !!!</span></div>
-                          </div>
+                          <div class="btn_custom"><span>BUY NOW !!!</span></div>
                         </div>
-                </li>
+                      </div>
+                </div>
                 
-              </ul>
+
             </div>
           </div>
         </div>
