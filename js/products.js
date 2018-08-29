@@ -1,6 +1,25 @@
 //creating an application module
+var  myApp = angular.module('myApp',['ngRoute']);
 
-var productApp = angular.module("productApp", ["ngRoute", 'angularUtils.directives.dirPagination']);
+// Custome directive
+
+myApp.directive('mainNavbar',function () {
+    return {
+        restrict: 'AE',
+        templateUrl: '../pages/navbar_01.html',
+    }
+})
+
+myApp.directive('mainNavbarHomePage',function () {
+    return {
+        restrict: 'AE',
+        templateUrl: './common/navbar.html',
+    }
+})
+
+//Products App module
+
+var productApp = angular.module('productApp', ['ngRoute', 'angularUtils.directives.dirPagination']);
 
 productApp.config(function($routeProvider) {
     $routeProvider.when('/profile_gold/:id',{
@@ -13,31 +32,25 @@ productApp.config(function($routeProvider) {
 productApp.directive('mainNavbar',function () {
     return {
         restrict: 'AE',
-        // template: '<h3>Hello AngularJS</h3> <p>I was made inside custom directive</p>',
         templateUrl: '../pages/navbar_01.html',
-        // replace: false
     }
 })
-
-
-//code for Pagination
-function OtherController($scope) {
-  
-}
-
-productApp.controller('OtherController', OtherController);
-//End Code 
-
 
 //Index.html Navbar direvtive
 productApp.directive('mainNavbarHomePage',function () {
     return {
         restrict: 'AE',
-        // template: '<h3>Hello AngularJS</h3> <p>I was made inside custom directive</p>',
         templateUrl: './common/navbar.html',
-        // replace: false
     }
 })
+
+//code for Pagination
+function OtherController($scope) {
+  
+};
+
+productApp.controller('OtherController', OtherController);
+//End Code 
 
 //Products page controller
 productApp.controller("productCtrl", function($scope, $http, $routeParams)  {
