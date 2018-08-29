@@ -30,6 +30,8 @@
 	<script type='text/javascript' src="js/angular.min.js"></script>
 	<script type='text/javascript' src="js/angular-route.min.js"></script>
   <script type='text/javascript' src="js/products.js"></script>
+  <script src="https://rawgit.com/michaelbromley/angularUtils-pagination/master/dirPagination.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
   <!-- LINK CUSTOME JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -60,10 +62,10 @@
 	 	
 </head>
 
-<body ng-app="myApp" ng-controller="productCtrl">
+<body ng-app="productApp" ng-controller="productCtrl">
 
 	<!-- thanh nav -->
-	<div id="navbar" class="container-fluid">    
+	<div id="navbar" class="container-fluid" ng-app="myApp">    
   	<!-- Navbar duoc tao bang Directive -->
 		<main-navbar-home-page></main-navbar-home-page>
 		<!-- ============================== -->
