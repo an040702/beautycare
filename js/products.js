@@ -8,14 +8,14 @@ myApp.directive('mainNavbar',function () {
         restrict: 'AE',
         templateUrl: '../pages/navbar_01.html',
     }
-})
+});
 
 myApp.directive('mainNavbarHomePage',function () {
     return {
         restrict: 'AE',
         templateUrl: './common/navbar.html',
     }
-})
+});
 
 //Products App module
 
@@ -34,7 +34,7 @@ productApp.directive('mainNavbar',function () {
         restrict: 'AE',
         templateUrl: '../pages/navbar_01.html',
     }
-})
+});
 
 //Index.html Navbar direvtive
 productApp.directive('mainNavbarHomePage',function () {
@@ -42,7 +42,7 @@ productApp.directive('mainNavbarHomePage',function () {
         restrict: 'AE',
         templateUrl: './common/navbar.html',
     }
-})
+});
 
 //code for Pagination
 function OtherController($scope) {
