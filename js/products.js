@@ -3,7 +3,6 @@
 //Products App module
 
 var productApp = angular.module('productApp', ['ngRoute', 'angularUtils.directives.dirPagination']);
-
 //Navbar direvtive
 productApp.directive('mainNavbar',function () {
     return {
@@ -11,7 +10,6 @@ productApp.directive('mainNavbar',function () {
         templateUrl: '../pages/navbar_01.html',
     }
 });
-
 //Index.html Navbar direvtive
 productApp.directive('mainNavbarHomePage',function () {
     return {
@@ -19,12 +17,9 @@ productApp.directive('mainNavbarHomePage',function () {
         templateUrl: './common/navbar.html',
     }
 });
-
 //code for Pagination
 function OtherController($scope) {
-
 };
-
 productApp.controller('OtherController', OtherController);
 //End Code
 
