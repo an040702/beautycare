@@ -11,25 +11,22 @@ productApp.directive('mainNavbar',function () {
     }
 });
 //Index.html Navbar direvtive
-productApp.directive('mainNavbarHomePage',function () {
-    return {
-        restrict: 'AE',
-        templateUrl: './common/navbar.html',
-    }
-});
-//code for Pagination
+
 function OtherController($scope) {
 };
 productApp.controller('OtherController', OtherController);
 //End Code
 
-productApp.config(function($routeProvider) {
+productApp.config(function($routeProvider,$locationProvider) {
     $routeProvider.when('/',{
         templateUrl : "home.html"
     }).when('/product/:name',{
         templateUrl : "product.html",
         controller : "productCtrl"
-    })
+    }).otherwise({
+        redirectTo: '/'
+    });
+    $locationProvider.html5Mode(true);
 });
 //Products page controller
 productApp.controller("productCtrl", function($scope, $http,$routeParams)  {
