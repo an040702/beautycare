@@ -31,13 +31,10 @@ productApp.controller('OtherController', OtherController);
 productApp.config(function($routeProvider) {
     $routeProvider.when('/',{
         templateUrl : "home.html"
-    }).when('/product_gold/:name',{
+    }).when('/product/:name',{
         templateUrl : "product_ring_gold.html",
         controller : "productCtrl"
-    }).when('/product_diamon/:name',{
-        templateUrl : "product_ring_gold.html",
-        controller : "productCtrl"
-    });
+    })
 });
 //Products page controller
 productApp.controller("productCtrl", function($scope, $http,$routeParams)  {
