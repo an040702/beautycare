@@ -32,7 +32,7 @@ productApp.config(function($routeProvider) {
     $routeProvider.when('/',{
         templateUrl : "home.html"
     }).when('/product/:name',{
-        templateUrl : "product_ring_gold.html",
+        templateUrl : "product.html",
         controller : "productCtrl"
     })
 });
