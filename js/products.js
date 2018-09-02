@@ -18,18 +18,20 @@ productApp.controller('OtherController', OtherController);
 //End Code
 
 productApp.config(function($routeProvider,$locationProvider) {
-    $routeProvider.when('/',{
+
+
+    $routeProvider.when('/home',{
         templateUrl : "home.html"
     }).when('/product/:name',{
         templateUrl : "product.html",
         controller : "productCtrl"
     }).otherwise({
-        redirectTo: '/'
+        redirectTo: '/product/gold'
     });
-    $locationProvider.html5Mode(true);
+
 });
 //Products page controller
-productApp.controller("productCtrl", function($scope, $http,$routeParams)  {
+productApp.controller("productCtrl", function($scope, $http,$routeParams,$route)  {
     //code for Pagination
     $scope.currentPage = 1;
     $scope.pageSize = 8;
@@ -38,14 +40,12 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams)  {
                 .then(function (response) {
                     $scope.products = response.data; // binding the data to the $scope variable
                 });
-            alert("gold");
         }
         if($routeParams.name=="diamon") {
         $http.get('../data/ring_diamon_product.json') //reading the product.json file
             .then(function (response) {
                 $scope.products = response.data; // binding the data to the $scope variable
             });
-        alert("diamon");
         }
     }
 );//end controller
