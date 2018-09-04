@@ -22,6 +22,7 @@ function OtherController($scope) {
 productApp.controller('OtherController', OtherController);
 //End Code
 
+
 productApp.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
     $routeProvider.when('/home',{
         templateUrl : "pages/home.html"
@@ -29,9 +30,9 @@ productApp.config(['$routeProvider','$locationProvider',function($routeProvider,
         templateUrl : "pages/product_directive.html",
         controller : "productCtrl"
     })
-    // .otherwise({
-    //     redirectTo: '/home'
-    // })
+    .otherwise({
+        redirectTo: '/home'
+    })
     ;
     // $routeProvider.reload();
     // $locationProvider.html5Mode(true);
@@ -66,6 +67,10 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
             //         $scope.products = response.data; // binding the data to the $scope variable
             //     });
             // alert("gold");
+            $http.get('../data/ring_product.json') //reading the product.json file
+                .then(function (response) {
+                    $scope.products = response.data; // binding the data to the $scope variable
+                });
         }
         if($routeParams.name=="diamon") {
         $http.get('data/ring_diamon_product.json') //reading the product.json file
@@ -73,6 +78,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
                 $scope.products = response.data; // binding the data to the $scope variable
             });
         // alert("diamon");
+
         }
     }
 );//end controller
