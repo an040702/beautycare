@@ -1,7 +1,7 @@
 [{
   "id": "ring_diamon_1",
   "name": "PNJ",
-  "image":"../images/images_ring/images_ring_diamon/diamon_1.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_1.png",
   "price": "22.000.000",
   "class_rating_star": "1",
   "price_8": "22.000.000",
@@ -20,7 +20,7 @@
 },{
   "id": "ring_diamon_2",
   "name": "WEEDING",
-  "image":"../images/images_ring/images_ring_diamon/diamon_2.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_2.png",
   "price": "23.000.000",
   "class_rating_star": "2",
   "price_8": "23.000.000",
@@ -39,7 +39,7 @@
 },{
   "id": "ring_diamon_3",
   "name": "PROPOSE",
-  "image":"../images/images_ring/images_ring_diamon/diamon_3.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_3.png",
   "price": "32.500.000",
   "class_rating_star": "3",
   "price_8": "32.500.000",
@@ -58,7 +58,7 @@
 },{
   "id": "ring_diamon_4",
   "name": "LOVE",
-  "image":"../images/images_ring/images_ring_diamon/diamon_4.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_4.png",
   "price": "24.000.000",
   "price_8": "24.000.000",
   "price_9": "24.800.000",
@@ -77,7 +77,7 @@
 },{
   "id": "ring_diamon_5",
   "name": "HEART",
-  "image":"../images/images_ring/images_ring_diamon/diamon_5.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_5.png",
   "price": "22.800.000",
   "price_8": "22.800.000",
   "price_9": "24.000.000",
@@ -96,7 +96,7 @@
 },{
   "id": "ring_diamon_6",
   "name": "LOVE",
-  "image":"../images/images_ring/images_ring_diamon/diamon_6.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_6.png",
   "price": "22.000.000",
   "price_8": "22.000.000",
   "price_9": "24.000.000",
@@ -115,7 +115,7 @@
 },{
   "id": "ring_diamon_7",
   "name": "LUXURY",
-  "image":"../images/images_ring/images_ring_diamon/diamon_7.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_7.png",
   "price": "26.000.000",
   "price_8": "26.000.000",
   "price_9": "27.000.000",
@@ -134,7 +134,7 @@
 },{
   "id": "ring_diamon_8",
   "name": "ROMANTIC",
-  "image":"../images/images_ring/images_ring_diamon/diamon_8.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_8.png",
   "price": "21.000.000",
   "price_8": "21.000.000",
   "price_9": "22.000.000",
@@ -153,7 +153,7 @@
 },{
   "id": "ring_diamon_9",
   "name": "ROSE",
-  "image":"../images/images_ring/images_ring_diamon/diamon_9.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_9.png",
   "price": "32.300.000",
   "price_8": "32.300.000",
   "price_9": "34.000.000",
@@ -171,7 +171,7 @@
 },{
   "id": "ring_diamon_10",
   "name": "COUPLE",
-  "image":"../images/images_ring/images_ring_diamon/diamon_10.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_10.png",
   "price": "49.000.000",
   "price_8": "49.000.000",
   "price_9": "49.800.000",
@@ -190,7 +190,7 @@
 },{
   "id": "ring_diamon_11",
   "name": "COUPLE",
-  "image":"../images/images_ring/images_ring_diamon/diamon_11.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_11.png",
   "price": "52.000.000",
   "price_8": "52.000.000",
   "price_9": "54.000.000",
@@ -209,7 +209,7 @@
 },{
   "id": "ring_diamon_12",
   "name": "NOBLE",
-  "image":"../images/images_ring/images_ring_diamon/diamon_12.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_12.png",
   "price": "31.500.000",
   "price_8": "31.500.000",
   "price_9": "34.000.000",
@@ -229,7 +229,7 @@
 ,{
   "id": "ring_diamon_13",
   "name": "NOBLE",
-  "image":"../images/images_ring/images_ring_diamon/diamon_13.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_13.png",
   "price": "24.500.000",
   "price_8": "24.500.000",
   "price_9": "25.000.000",
@@ -249,7 +249,7 @@
 ,{
   "id": "ring_diamon_14",
   "name": "PNJ",
-  "image":"../images/images_ring/images_ring_diamon/diamon_14.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_14.png",
   "price": "31.500.000",
   "price_8": "31.500.000",
   "price_9": "34.000.000",
@@ -269,7 +269,7 @@
 ,{
   "id": "ring_diamon_15",
   "name": "NOBLE",
-  "image":"../images/images_ring/images_ring_diamon/diamon_15.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_15.png",
   "price": "41.800.000",
   "price_8": "41.800.000",
   "price_9": "43.000.000",
@@ -289,7 +289,7 @@
 ,{
   "id": "ring_diamon_16",
   "name": "NTK",
-  "image":"../images/images_ring/images_ring_diamon/diamon_16.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_16.png",
   "price": "34.500.000",
   "price_8": "34.500.000",
   "price_9": "35.000.000",
@@ -309,7 +309,7 @@
 ,{
   "id": "ring_diamon_17",
   "name": "NOBLE",
-  "image":"../images/images_ring/images_ring_diamon/diamon_17.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_17.png",
   "price": "21.500.000",
   "price_8": "21.500.000",
   "price_9": "24.000.000",
@@ -329,7 +329,7 @@
 ,{
   "id": "ring_diamon_18",
   "name": "NOBLE",
-  "image":"../images/images_ring/images_ring_diamon/diamon_18.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_18.png",
   "price": "21.500.000",
   "price_8": "21.500.000",
   "price_9": "24.000.000",
@@ -349,7 +349,7 @@
 ,{
   "id": "ring_diamon_19",
   "name": "PNJ",
-  "image":"../images/images_ring/images_ring_diamon/diamon_19.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_19.png",
   "price": "22.500.000",
   "price_8": "22.500.000",
   "price_9": "24.000.000",
@@ -369,7 +369,7 @@
 ,{
   "id": "ring_diamon_20",
   "name": "NOBLE",
-  "image":"../images/images_ring/images_ring_diamon/diamon_20.png",
+  "image":"images/images_ring/images_ring_diamon/diamon_20.png",
   "price": "31.500.000",
   "price_8": "31.500.000",
   "price_9": "34.000.000",

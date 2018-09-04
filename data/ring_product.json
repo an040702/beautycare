@@ -1,7 +1,7 @@
   [{
     "id": "ring_1",
     "name": "PNJ",
-    "image":"../images/images_ring/images_ring_gold/gold_1.png",
+    "image":"images/images_ring/images_ring_gold/gold_1.png",
     "price": "12.000.000",
     "class_rating_star": "1",
     "price_8": "12.000.000",
@@ -20,7 +20,7 @@
   },{
    "id": "ring_2",
     "name": "WEEDING",
-    "image":"../images/images_ring/images_ring_gold/gold_2.png",
+    "image":"images/images_ring/images_ring_gold/gold_2.png",
     "price": "13.000.000",
     "class_rating_star": "2",
     "price_8": "13.000.000",
@@ -39,7 +39,7 @@
   },{
    "id": "ring_3",
     "name": "PROPOSE",
-    "image":"../images/images_ring/images_ring_gold/gold_3.png",
+    "image":"images/images_ring/images_ring_gold/gold_3.png",
     "price": "12.500.000",
     "class_rating_star": "3",
     "price_8": "12.500.000",
@@ -58,7 +58,7 @@
   },{
    "id": "ring_4",
     "name": "LOVE",
-    "image":"../images/images_ring/images_ring_gold/gold_4.png",
+    "image":"images/images_ring/images_ring_gold/gold_4.png",
     "price": "14.000.000",
     "price_8": "14.000.000",
     "price_9": "14.800.000",
@@ -77,7 +77,7 @@
   },{
    "id": "ring_5",
     "name": "HEART",
-    "image":"../images/images_ring/images_ring_gold/gold_5.png",
+    "image":"images/images_ring/images_ring_gold/gold_5.png",
     "price": "12.800.000",
     "price_8": "12.800.000",
     "price_9": "14.000.000",
@@ -96,7 +96,7 @@
   },{
    "id": "ring_6",
     "name": "LOVE",
-    "image":"../images/images_ring/images_ring_gold/gold_6.png",
+    "image":"images/images_ring/images_ring_gold/gold_6.png",
     "price": "12.000.000",
     "price_8": "12.000.000",
     "price_9": "14.000.000",
@@ -115,7 +115,7 @@
 },{
    "id": "ring_7",
     "name": "LUXURY",
-    "image":"../images/images_ring/images_ring_gold/gold_7.png",
+    "image":"images/images_ring/images_ring_gold/gold_7.png",
     "price": "16.000.000",
     "price_8": "16.000.000",
     "price_9": "17.000.000",
@@ -134,7 +134,7 @@
 },{
    "id": "ring_8",
     "name": "ROMANTIC",
-    "image":"../images/images_ring/images_ring_gold/gold_8.png",
+    "image":"images/images_ring/images_ring_gold/gold_8.png",
     "price": "11.000.000",
     "price_8": "11.000.000",
     "price_9": "12.000.000",
@@ -153,7 +153,7 @@
 },{
    "id": "ring_9",
     "name": "ROSE",
-    "image":"../images/images_ring/images_ring_gold/gold_9.png",
+    "image":"images/images_ring/images_ring_gold/gold_9.png",
     "price": "12.300.000",
     "price_8": "12.300.000",
     "price_9": "14.000.000",
@@ -171,7 +171,7 @@
     },{
    "id": "ring_10",
     "name": "COUPLE",
-    "image":"../images/images_ring/images_ring_gold/gold_10.png",
+    "image":"images/images_ring/images_ring_gold/gold_10.png",
     "price": "19.000.000",
     "price_8": "19.000.000",
     "price_9": "19.800.000",
@@ -190,7 +190,7 @@
   },{
    "id": "ring_11",
     "name": "COUPLE",
-    "image":"../images/images_ring/images_ring_gold/gold_11.png",
+    "image":"images/images_ring/images_ring_gold/gold_11.png",
     "price": "22.000.000",
     "price_8": "22.000.000",
     "price_9": "24.000.000",
@@ -209,7 +209,7 @@
   },{
    "id": "ring_12",
     "name": "NOBLE",
-    "image":"../images/images_ring/images_ring_gold/gold_12.png",
+    "image":"images/images_ring/images_ring_gold/gold_12.png",
     "price": "11.500.000",
     "price_8": "11.500.000",
     "price_9": "14.000.000",
@@ -229,7 +229,7 @@
   ,{
     "id": "ring_13",
     "name": "NOBLE",
-    "image":"../images/images_ring/images_ring_gold/gold_13.png",
+    "image":"images/images_ring/images_ring_gold/gold_13.png",
     "price": "14.500.000",
     "price_8": "14.500.000",
     "price_9": "15.000.000",
@@ -249,7 +249,7 @@
   ,{
     "id": "ring_14",
     "name": "PNJ",
-    "image":"../images/images_ring/images_ring_gold/gold_14.png",
+    "image":"images/images_ring/images_ring_gold/gold_14.png",
     "price": "11.500.000",
     "price_8": "11.500.000",
     "price_9": "14.000.000",
@@ -269,7 +269,7 @@
   ,{
     "id": "ring_15",
     "name": "NOBLE",
-    "image":"../images/images_ring/images_ring_gold/gold_15.png",
+    "image":"images/images_ring/images_ring_gold/gold_15.png",
     "price": "11.800.000",
     "price_8": "11.800.000",
     "price_9": "13.000.000",
@@ -289,7 +289,7 @@
   ,{
     "id": "ring_16",
     "name": "NTK",
-    "image":"../images/images_ring/images_ring_gold/gold_16.png",
+    "image":"images/images_ring/images_ring_gold/gold_16.png",
     "price": "14.500.000",
     "price_8": "14.500.000",
     "price_9": "15.000.000",
@@ -309,7 +309,7 @@
   ,{
     "id": "ring_17",
     "name": "NOBLE",
-    "image":"../images/images_ring/images_ring_gold/gold_17.png",
+    "image":"images/images_ring/images_ring_gold/gold_17.png",
     "price": "11.500.000",
     "price_8": "11.500.000",
     "price_9": "14.000.000",
@@ -329,7 +329,7 @@
   ,{
     "id": "ring_18",
     "name": "NOBLE",
-    "image":"../images/images_ring/images_ring_gold/gold_18.png",
+    "image":"images/images_ring/images_ring_gold/gold_18.png",
     "price": "11.500.000",
     "price_8": "11.500.000",
     "price_9": "14.000.000",
@@ -349,7 +349,7 @@
   ,{
     "id": "ring_19",
     "name": "PNJ",
-    "image":"../images/images_ring/images_ring_gold/gold_19.png",
+    "image":"images/images_ring/images_ring_gold/gold_19.png",
     "price": "12.500.000",
     "price_8": "12.500.000",
     "price_9": "14.000.000",
@@ -369,7 +369,7 @@
   ,{
     "id": "ring_20",
     "name": "NOBLE",
-    "image":"../images/images_ring/images_ring_gold/gold_20.png",
+    "image":"images/images_ring/images_ring_gold/gold_20.png",
     "price": "11.500.000",
     "price_8": "11.500.000",
     "price_9": "14.000.000",

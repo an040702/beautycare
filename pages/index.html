@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- <base href="/"> -->
 	<title>BEAUTY CARE</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="utf-8">
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<!--<meta content="utf-8" http-equiv="encoding">-->
+	<!-- <meta charset="utf-8"> -->
 	<!-- LINK Boostrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/latest/normalize.css">
@@ -65,7 +68,7 @@
 
 <body ng-app="productApp">
 	<!-- Navbar -->
-  <div id="navbar" class="container-fluid">    
+  <div id="navbar" class="container-fluid">
     <!-- Navbar duoc tao bang Directive -->
     <main-navbar></main-navbar>
     <!-- ============================== -->
@@ -75,7 +78,7 @@
 
 	<!-- <div style="height: 120px; margin-top: 0px; z-index: 1;" >
 	</div> -->
-	<div class="ng-view" autoscroll="true"></div>
+	<div ng-view="" autoscroll="true" ng-controller="AppController"></div>
 	<footer class="footer-distributed">
 		<div class="footer-left">
 			<a style="padding: 15px 0px;" class="navbar-brand nav_logo" href="../SEM1.html">
