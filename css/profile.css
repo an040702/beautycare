@@ -69,8 +69,8 @@ content:'\f0e0';
   /*margin-top: 50px;*/
   border: 1px solid #d4d4d4;
   /*set the size of the result div:*/
-  max-width: 100% !important;
-  height: 491px !important;
+  max-width: 100%;
+  height: 491px;
 }
 
 .modal {
@@ -111,18 +111,19 @@ a.custom{
   display: block;
   width: 30%;
 }
-.img-responsive5{width: 90%;max-height: 491px;margin-top: 5px}
+.img-responsive5{width: 100%;height: 100%}
 .border-custom-1{
-  border-bottom:1px solid black;border-left: 1px solid black;border-right: 1px solid black; border-top:1px solid black;
+  border:1px solid black;
+
 }
 .border-zoom{
-  border-right:1px solid black; display: block;text-align: center; cursor: zoom-in;height: 496px;
+  display: block;text-align: center; cursor: zoom-in;height: 496px;
 }
 .display-zoom{
   display: none;
 }
 .margin-infomation{
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .caption-name{
   font-weight: 700;font-size: 2.3em;

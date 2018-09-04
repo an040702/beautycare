@@ -847,6 +847,7 @@ hr.style-one {
 border: 0;
 height: 1px;
 background: #333;
+  width:75%;
 background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
 background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
 background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
@@ -933,7 +934,7 @@ h1 { font-size: 1.5em; margin: 10px; }
 }
 
 .wrapper input:checked ~ label:before {
-  color: black;
+  color: #fb0505cc;
 }
 .wrapper label:hover:before {
   color: #d6d6c2;
