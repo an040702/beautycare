@@ -1,4 +1,4 @@
-<div ng-app="productApp">
+<div>
 	<!-- Navbar -->
 	<div id="navbar" class="container-fluid">    
 	  <!-- Navbar duoc tao bang Directive -->
@@ -6,12 +6,14 @@
 		<!-- ============================== -->
 	</div>
 	<!-- ======================================================================= -->
-	<div class="container border-custom-1">
-		<div class="row">
-			<div class="col-md-6 border-zoom" title="Click zoom image" onmouseleave="out_zoom_image(this)" onclick ="zoom_image(this);">
-				  <img id="myimage" ng-src={{image}} class="img-responsive5">
+	<div class="container">
+		<div class="row border-custom-1">
+			<div class="col-md-6" style="border-right:1px solid black;margin-top:0 !important">
+				<div class="border-zoom" title="Click zoom image" onmouseleave="out_zoom_image(this)" onclick ="zoom_image(this);">
+					  <img id="myimage" ng-src={{image}} class="img-responsive5">
+				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6" style="margin-top:0 !important;">
 				<div id="show_zoom" class="display-zoom">
 					<div id='myresult' class='img-zoom-result'></div>
 				</div>
@@ -115,7 +117,7 @@
 		<!-- Rings products 1st row -->
 		<div class="caption-related">BEST SELLER</div>
 	  	<div class="row">
-		  	<div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+		  	<div class="col-md-3 col-lg-3 col-sm-3 col-xs-12" style="margin-top: 0 !important;">
 		  		<hr>
 		  		<div>
 		  		<h4 class="title-related">RING/PNJ</h4>
@@ -139,10 +141,10 @@
 				</div>
 		  		<div class="container1">
 		  			<div class="overlay">
-						<a href="#!profile_gold/9"><div class="text">PREVIEW SHADES</div></a>
+						<a href="#!/profile/gold/9"><div class="text">PREVIEW SHADES</div></a>
 	  					</div>
 		  			<div class="img-responsive">
-						<a href="#!profile_gold/9"><img src="..\images\images_ring\images_ring_gold\gold_9.png" class="img-responsive"></a>
+						<a href="#!/profile/gold/9"><img src="images\images_ring\images_ring_gold\gold_9.png" class="img-responsive"></a>
   					</div>
       			</div>
       			 <hr class="style-one">
@@ -179,9 +181,9 @@
 				</div>
 		  		<div class="container1">
 		  			<div class="img-responsive">
-						<a href="#!profile_gold/2"><img src="..\images\images_ring\images_ring_gold\gold_2.png" class="img-responsive"></a>
+						<a href="#!/profile/gold/2"><img src="images\images_ring\images_ring_gold\gold_2.png" class="img-responsive"></a>
       				<div class="overlay">
-						<a href="#!profile_gold/2">	<div class="text">PREVIEW SHADES</div></a>
+						<a href="#!/profile/gold/2"><div class="text">PREVIEW SHADES</div></a>
   					</div>
   				</div>
       			</div>
@@ -219,9 +221,9 @@
 				</div>
 		  		<div class="container1">
 		  			<div class="img-responsive">
-						<a href="#!profile_diamon/3"><img src="..\images\images_ring\images_ring_diamon\diamon_3.png" class="img-responsive"></a>
+						<a href="#!/profile/diamon/3"><img src="images\images_ring\images_ring_diamon\diamon_3.png" class="img-responsive"></a>
       				<div class="overlay">
-						<a href="#!profile_diamon/3"><div class="text">PREVIEW SHADES</div></a>
+						<a href="#!/profile/diamon/3"><div class="text">PREVIEW SHADES</div></a>
   					</div>
   				</div>
       			</div>
@@ -259,9 +261,9 @@
 				</div>
 		  		<div class="container1">
 		  			<div class="img-responsive">
-						<a href="#!profile_diamon/4"><img src="..\images\images_ring\images_ring_diamon\diamon_4.png" class="img-responsive"></a>
+						<a href="#!/profile/diamon/4"><img src="images\images_ring\images_ring_diamon\diamon_4.png" class="img-responsive"></a>
       				<div class="overlay">
-						<a href="#!profile_diamon/4"><div class="text">PREVIEW SHADES</div></a>
+						<a href="#!/profile/diamon/4"><div class="text">PREVIEW SHADES</div></a>
   					</div>
   				</div>
       			</div>
@@ -329,3 +331,83 @@
 
 </div>
 
+
+
+
+
+<!--//more product-->
+
+
+<hr class="style-one">
+
+
+
+<div class="container" >
+
+	<div class="row">
+
+		<div class="col-md-3 col-lg-3 col-sm-3 col-xs-12" dir-paginate="product in products | itemsPerPage: pageSize |filter : productSearch" current-page="currentPage">
+			<hr>
+			<div>
+				<h4 style="font-weight: 700;float: left;">{{product.name}}</h4>
+
+				<fieldset class="rating{{product.class_rating_star}}" style="float: right;">
+					<input type="radio" id="{{product.class_rating_star}}star5" name="rating{{product.class_rating_star}}" value="5" /><label class = "full" for="{{product.class_rating_star}}star5" title="Awesome - 5 stars"></label>
+					<input type="radio" id="{{product.class_rating_star}}star4half" name="rating{{product.class_rating_star}}" value="4 and a half" /><label class="half" for="{{product.class_rating_star}}star4half" title="Pretty good - 4.5 stars"></label>
+					<input type="radio" id="{{product.class_rating_star}}star4" name="rating{{product.class_rating_star}}" value="4" /><label class = "full" for="{{product.class_rating_star}}star4" title="Pretty good - 4 stars"></label>
+					<input type="radio" id="{{product.class_rating_star}}star3half" name="rating{{product.class_rating_star}}" value="3 and a half" /><label class="half" for="{{product.class_rating_star}}star3half" title="Meh - 3.5 stars"></label>
+					<input type="radio" id="{{product.class_rating_star}}star3" name="rating{{product.class_rating_star}}" value="3" /><label class = "full" for="{{product.class_rating_star}}star3" title="Meh - 3 stars"></label>
+					<input type="radio" id="{{product.class_rating_star}}star2half" name="rating{{product.class_rating_star}}" value="2 and a half" /><label class="half" for="{{product.class_rating_star}}star2half" title="Kinda bad - 2.5 stars"></label>
+					<input type="radio" id="{{product.class_rating_star}}star2" name="rating{{product.class_rating_star}}" value="2" /><label class = "full" for="{{product.class_rating_star}}star2" title="Kinda bad - 2 stars"></label>
+					<input type="radio" id="{{product.class_rating_star}}star1half" name="rating{{product.class_rating_star}}" value="1 and a half" /><label class="half" for="{{product.class_rating_star}}star1half" title="Meh - 1.5 stars"></label>
+					<input type="radio" id="{{product.class_rating_star}}star1" name="rating{{product.class_rating_star}}" value="1" /><label class = "full" for="{{product.class_rating_star}}star1" title="Sucks big time - 1 star"></label>
+					<input type="radio" id="{{product.class_rating_star}}starhalf" name="rating{{product.class_rating_star}}" value="half" /><label class="half" for="{{product.class_rating_star}}starhalf" title="Sucks big time - 0.5 stars"></label>
+				</fieldset>
+				<div style="clear: left;clear: right;"></div>
+				<div class="wrapper" style="float: right;">
+					<input type="checkbox" id="st{{product.class_rating_star}}" value="1" />
+					<label title="Favorite" for="st{{product.class_rating_star}}"></label>
+				</div>
+			</div>
+			<div class="container1">
+				<div class="overlay">
+					<!--<a href="#!profile_gold/{{product.class_rating_star}}">-->
+					<a href="#!/profile/{{name_custom}}/{{product.class_rating_star}}"><div class="text">PREVIEW SHADES</div></a>
+					<!--</a>-->
+				</div>
+				<div class="img-responsive">
+					<!--<a href="#!profile_gold/{{product.class_rating_star}}">-->
+					<a href="#!/profile/{{name_custom}}/{{product.class_rating_star}}"><img ng-src={{product.image}} class="img-responsive"></a>
+					<!--</a>-->
+				</div>
+			</div>
+			<hr class="style-one">
+			<div>
+				<div class="cost">
+					{{product.price}}<sup>đ</sup>
+				</div>
+				<div>
+					<div class="btn_custom"><span>BUY NOW !!!</span></div>
+				</div>
+			</div>
+		</div>
+
+		<div ng-controller="OtherController" class="other-controller col-xs-12">
+			<div class="text-center">
+				<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)"></dir-pagination-controls>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="col-xs-6">
+					<h3>Products Page: {{ currentPage }}</h3>
+				</div>
+				<div class="col-xs-6">
+
+					<input type="number" min="1" max="100" class="form-control" ng-model="pageSize">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

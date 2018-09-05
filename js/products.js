@@ -27,7 +27,10 @@ productApp.config(['$routeProvider','$locationProvider',function($routeProvider,
     $routeProvider.when('/home',{
         templateUrl : "pages/home.html"
     }).when('/product/:name',{
-        templateUrl : "pages/product_directive.html",
+        templateUrl : "pages/product.html",
+        controller : "productCtrl"
+    }).when('/profile/:name/:id',{
+        templateUrl : "pages/profile_ring.html",
         controller : "productCtrl"
     })
     .otherwise({
@@ -37,49 +40,31 @@ productApp.config(['$routeProvider','$locationProvider',function($routeProvider,
     // $routeProvider.reload();
     // $locationProvider.html5Mode(true);
 }]);
-var productGold = [];
-productApp.controller('AppController', ['$scope', '$http', function ($scope, $http) {
-    $http.get('data/ring_product.json') //reading the product.json file
-    .then(function (response) {
-        console.log(response.data);
-        productGold = response.data; // binding the data to the $scope variable
-    });
-    console.log(productGold);
-  }]);
-//Products page controller
-
 productApp.controller("productCtrl", function($scope, $http,$routeParams,$location)  {
-    //code for Pagination
-    $scope.currentPage = 1;
-    $scope.pageSize = 8;
-    // $location.path('index.html#!/product/'+$routeParams.name);
-    // $http.get('../data/ring_product.json') //reading the product.json file
-    // .then(function (response) {
-    //     console.log(response.data);
-    //     productGold = response.data; // binding the data to the $scope variable
-    // });
-        if($routeParams.name=="gold") {
-            // console.log($routeParams.name);
-            $scope.products = productGold;
-            // console.log($scope.products);
-            // $http.get('../data/ring_product.json') //reading the product.json file
-            //     .then(function (response) {
-            //         $scope.products = response.data; // binding the data to the $scope variable
-            //     });
-            // alert("gold");
-            $http.get('../data/ring_product.json') //reading the product.json file
+            $scope.currentPage = 1;
+            $scope.pageSize = 12;
+            $scope.name_custom=$routeParams.name;
+            $http.get('data/ring_'+$routeParams.name+'.json') //reading the product.json file
                 .then(function (response) {
                     $scope.products = response.data; // binding the data to the $scope variable
+                    $scope.id=$routeParams.id;
+                    $scope.image = response.data[$scope.id-1].image;
+                    $scope.name_product=response.data[$scope.id-1].name;
+                    $scope.sex=response.data[$scope.id-1].sex;
+                    $scope.price=response.data[$scope.id-1].price;
+                    $scope.price_8=response.data[$scope.id-1].price_8;
+                    $scope.price_9=response.data[$scope.id-1].price_9;
+                    $scope.price_10_5=response.data[$scope.id-1].price_10_5;
+                    $scope.title_info=response.data[$scope.id-1].title_info;
+                    $scope.description=response.data[$scope.id-1].description;
+                    $scope.Trade_Mark=response.data[$scope.id-1].trade_mark;
+                    $scope.Stone=response.data[$scope.id-1].stone;
+                    $scope.Color=response.data[$scope.id-1].color;
+                    $scope.Shape=response.data[$scope.id-1].shape;
+                    $scope.Cara=response.data[$scope.id-1].cara;
+                    $scope.Age=response.data[$scope.id-1].age;
+                    $scope.Weight=response.data[$scope.id-1].weight;
                 });
-        }
-        if($routeParams.name=="diamon") {
-        $http.get('data/ring_diamon_product.json') //reading the product.json file
-            .then(function (response) {
-                $scope.products = response.data; // binding the data to the $scope variable
-            });
-        // alert("diamon");
-
-        }
     }
 );//end controller
 
