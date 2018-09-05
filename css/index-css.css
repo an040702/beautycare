@@ -131,7 +131,8 @@ body {margin: 0px !important;}
     margin-left: 30%;
     margin-top: 5%;
 }
-
+.column {display: none; /* Hide all elements by default */}
+.show {display: block;}
 /*row 7*/
 .picture{
   height: 200px;
