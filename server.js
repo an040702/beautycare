@@ -7,7 +7,19 @@
 var express = require('express');
 var app = express();
 var serveStatic = require('serve-static');
+const url = require('url');
 
+
+/**
+ * STATIC FILES
+ */
+app.use(express.static(__dirname+"/"));
+
+
+// Default every route except the above to serve the index.html
+// app.get('*', function(req, res) {  
+//     res.sendFile(path.join(__dirname));
+// });
 // app.get('/', function (req, res) {
 //    res.send('Hello World');
 // })
@@ -21,9 +33,13 @@ var serveStatic = require('serve-static');
 // app.get('/beautycare/*', function (req, res) {
 // res.sendFile(path.join(__dirname, './pages', 'index.html')); // change this
 // });
-
-app.use(serveStatic(__dirname)).listen(8080, function(){
+// app.get('/', function(req, res) {
+//     res.sendFile( __dirname + "/" + "index.html" );
+// });
+app.listen(8080, function(){
+	console.log(__dirname);
     console.log('Server running on 8080...');
+    // console.log(__dirname);
 });
 // app.use(express.static('pages'));
 // app.get('pages/index.html', function (req, res) {
@@ -49,3 +65,28 @@ app.use(serveStatic(__dirname)).listen(8080, function(){
 // });
  
 // module.exports = router;
+
+// var http = require('http');
+// var fs = require('fs');
+
+// const PORT=8080; 
+
+// fs.readFile('./index.html', function (err, html) {
+
+//     if (err) throw err;    
+
+//     http.createServer(function(request, response) {  
+//         response.writeHeader(200, {"Content-Type": "text/html"});  
+//         response.write(html);  
+//         response.end();  
+//     }).listen(PORT);
+// });
+
+// var express = require('express');
+// var app = express();
+
+// console.log(__dirname);
+// app.use(express.static(__dirname)); //__dir and not _dir
+// var port = 8080; // you can use any port
+// app.listen(port);
+// console.log('server on' + port);
