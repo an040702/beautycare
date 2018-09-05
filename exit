@@ -1,0 +1,281 @@
+[33mcommit e3285aad36c78d744b025ecdf0386f8c7b02c188[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 2523dd2 bdb99b4
+Author: karobest3 <karobest3@gmail.com>
+Date:   Wed Aug 29 23:21:26 2018 +0700
+
+    Merge branch 'master' of https://github.com/an040702/beautycare
+
+[33mcommit 2523dd2e7cdaa747e316d834cc048aef08758c5b[m
+Author: karobest3 <karobest3@gmail.com>
+Date:   Wed Aug 29 23:21:05 2018 +0700
+
+    sdssd
+
+[33mcommit bdb99b4f05bdd621193ae34e0c931bc87603bec2[m
+Author: an040702 <lendran@gmail.com>
+Date:   Wed Aug 29 22:00:04 2018 +0700
+
+    edit lai tag <br>
+
+[33mcommit e2a849d01e220f69ca883fee305bec4cc625359e[m
+Author: karobest3 <karobest3@gmail.com>
+Date:   Wed Aug 29 21:23:10 2018 +0700
+
+    s
+
+[33mcommit 1cba2110b9d1fa10c730a862591fd1cafa42d29d[m
+Author: karobest3 <karobest3@gmail.com>
+Date:   Wed Aug 29 21:13:17 2018 +0700
+
+    s
+
+[33mcommit 1013f96123c7d59fdefa878b1e6397b157fea680[m
+Author: karobest3 <karobest3@gmail.com>
+Date:   Wed Aug 29 21:11:07 2018 +0700
+
+    s
+
+[33mcommit 3059a965388ec37b62e7ce282d0adca589c2aac4[m
+Author: karobest3 <karobest3@gmail.com>
+Date:   Wed Aug 29 21:09:08 2018 +0700
+
+    'asd
+
+[33mcommit 10b547a68077fe8400b66ca52603571c5bcaea47[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Wed Aug 29 17:21:17 2018 +0700
+
+    Continue cleaning...
+
+[33mcommit 6cf3b0d41368886b32c26620ca029738ece93e44[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Wed Aug 29 16:28:30 2018 +0700
+
+    Cleaning...
+
+[33mcommit 74b3bf70bc18372717247e7d1f8ae780ffd24ee8[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Wed Aug 29 16:16:49 2018 +0700
+
+    Delete some pages
+
+[33mcommit 4a7a27c12efab9d84bd34d5693e5d1790b10a3b2[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Wed Aug 29 16:10:08 2018 +0700
+
+    Fix navbar index.html
+
+[33mcommit bc276f3efcfb0f78374ccf57dc1094d88c0e68b0[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Wed Aug 29 10:12:46 2018 +0700
+
+    Update diamond ring page
+
+[33mcommit 0ee5d1a30a05632b7e749ce4c6a84e29e6982f8e[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Wed Aug 29 10:08:35 2018 +0700
+
+    Update index.html
+
+[33mcommit bae96f2ec4fc52fd0a7d2e25a9dbd02e7e891543[m
+Author: doanthanhnhan <41228413+doanthanhnhan@users.noreply.github.com>
+Date:   Wed Aug 29 00:00:59 2018 +0700
+
+    Update README.md
+
+[33mcommit aababe79ba775ea4930074a93097ecd05e5cd802[m[33m ([m[1;32mFilterFunction[m[33m)[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Tue Aug 28 23:56:44 2018 +0700
+
+    Update filter function at navbar
+
+[33mcommit 56af57109b8d7745138b16a3cc3802dc760e12b4[m
+Merge: 3906490 0792245
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Tue Aug 28 23:52:34 2018 +0700
+
+    Update README.md
+
+[33mcommit 079224561a0ce709732788bb9b6e88d2abb90bb0[m
+Author: an040702 <lendran@gmail.com>
+Date:   Tue Aug 28 23:50:31 2018 +0700
+
+    update something
+
+[33mcommit a378c1552a64684bba902e22b7ac8f48f4250fb8[m
+Author: an040702 <41360497+an040702@users.noreply.github.com>
+Date:   Tue Aug 28 23:50:12 2018 +0700
+
+    Update README.md
+
+[33mcommit 39064903c1bb2bd4ae5368c35cd3c4236d7a52bf[m
+Merge: 79ed98b ba4a977
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Tue Aug 28 23:49:13 2018 +0700
+
+    update filter
+
+[33mcommit 79ed98bd265067f2397b65670b9b778540baf3ae[m[33m ([m[1;31morigin/FilterFunction[m[33m)[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Tue Aug 28 23:22:55 2018 +0700
+
+    Update filter function
+
+[33mcommit ba4a977eb87963b152d77c7aab5af3c1955644d6[m
+Author: an040702 <lendran@gmail.com>
+Date:   Tue Aug 28 23:22:04 2018 +0700
+
+    test tich hop file
+
+[33mcommit 15401f55bc5d061ecde4673f2040537b8e147705[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Tue Aug 28 23:06:21 2018 +0700
+
+    Update README.md
+
+[33mcommit cecef06df257601724d092b2d7c0fd8b0439e50b[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Tue Aug 28 18:04:29 2018 +0700
+
+    Update index.html
+
+[33mcommit f233e8639232f70945cd1562b0f133cc7bed1344[m
+Author: doanthanhnhan <41228413+doanthanhnhan@users.noreply.github.com>
+Date:   Tue Aug 28 14:47:32 2018 +0700
+
+    Update README.md
+
+[33mcommit efd914257cc2ed02334cf9b7348475147d69ae0c[m
+Author: karobest3 <karobest3@gmail.com>
+Date:   Tue Aug 28 14:02:45 2018 +0700
+
+    da fix click best seller go to profile
+
+[33mcommit 80a1f2f3f67c34abe3e870bef2ccdf252f70c983[m
+Author: doanthanhnhan <41228413+doanthanhnhan@users.noreply.github.com>
+Date:   Mon Aug 27 19:53:56 2018 +0700
+
+    Update README.md
+
+[33mcommit b031730316e32571e878f90a5dace81b29f3a0cd[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Mon Aug 27 19:47:38 2018 +0700
+
+    Add back-to-top button to index.html
+
+[33mcommit 2ab13047769c18b4e1195412b0ccaad63a70a335[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Mon Aug 27 19:22:58 2018 +0700
+
+    Update index.html
+
+[33mcommit da11c777895ce20fc036d1d19f63d12695ae73a5[m
+Merge: df66115 3c88c12
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Mon Aug 27 17:55:37 2018 +0700
+
+    Merge branch 'master' of https://github.com/an040702/beautycare
+
+[33mcommit df661150c35e57f200a464701da81b53646a103f[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Mon Aug 27 17:55:06 2018 +0700
+
+    Update navbar
+
+[33mcommit 3c88c12a0d199795d7d10f0c3004ed2f2468b41a[m
+Author: karobest3 <karobest3@gmail.com>
+Date:   Mon Aug 27 17:53:12 2018 +0700
+
+    ''
+
+[33mcommit 4d4e8f1f4870c0d12ddfce565efa6149060b9af8[m
+Author: karobest3 <karobest3@gmail.com>
+Date:   Mon Aug 27 17:37:11 2018 +0700
+
+    asd
+
+[33mcommit 68ee5748040b1808fbcbb77181304e8b607d82a9[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Mon Aug 27 11:58:15 2018 +0700
+
+    Update Kien's pages with navbar...
+
+[33mcommit d49fc51210b99a842153c532652182491bf32082[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Mon Aug 27 11:27:55 2018 +0700
+
+    Update product.js and product_ring_gold.html
+
+[33mcommit e49c3fd9411c19cc215decc14689659522a73074[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Mon Aug 27 11:19:26 2018 +0700
+
+    Update Kien's pages...
+
+[33mcommit c106dd1742d3c737ac3fda3a923026befc5c8cd6[m
+Author: an040702 <lendran@gmail.com>
+Date:   Mon Aug 27 10:31:06 2018 +0700
+
+    add folder test
+
+[33mcommit bbc197f9fa4d6acaa406bec053416317a099362b[m
+Merge: 21ab406 c694364
+Author: karobest3 <karobest3@gmail.com>
+Date:   Mon Aug 27 10:16:49 2018 +0700
+
+    Merge branch 'master' of https://github.com/an040702/beautycare
+
+[33mcommit 21ab4062693499e0e51cc779e4829b04fbda1203[m
+Author: karobest3 <karobest3@gmail.com>
+Date:   Mon Aug 27 10:16:30 2018 +0700
+
+    s
+
+[33mcommit c6943646ca0b5380d208a640efc8a1779e321b65[m
+Author: doanthanhnhan <41228413+doanthanhnhan@users.noreply.github.com>
+Date:   Mon Aug 27 09:54:35 2018 +0700
+
+    Update README.md
+
+[33mcommit 228ef2b0c79845854904d5d988b75af9874c0df8[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Mon Aug 27 09:47:24 2018 +0700
+
+    Update css, pages
+
+[33mcommit 6373625c56b1a8bcfb5d3a6ad87e4da6cd6afb35[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Mon Aug 27 09:39:54 2018 +0700
+
+    Update some Kien's Pages include AngularJS
+
+[33mcommit 752c8e3acc9e078f0ad3c9ee9380c470fa61cbf8[m
+Author: karobest3 <karobest3@gmail.com>
+Date:   Mon Aug 27 07:44:32 2018 +0700
+
+    s
+
+[33mcommit 1487bf20c06ec6f52dea28d945bea8a161172ba2[m
+Author: doanthanhnhan <41228413+doanthanhnhan@users.noreply.github.com>
+Date:   Mon Aug 27 00:12:21 2018 +0700
+
+    Update README.md
+
+[33mcommit 563701490fbbd7e4134c760185ec8b1e5750eca9[m
+Author: Doan Thanh Nhan <doanthanhnhan@outlook.com>
+Date:   Mon Aug 27 00:09:45 2018 +0700
+
+    Update Kien_CAM...
+
+[33mcommit f50d60428b86372e6e6f8e972942e66bccc69a4b[m
+Author: karobest3 <karobest3@gmail.com>
+Date:   Sun Aug 26 23:05:32 2018 +0700
+
+    asd
+
+[33mcommit dd9566785b69ea52c4c899a7fafd3353d964fe38[m
+Merge: ebf4cb1 386fcdc
+Author: karobest3 <karobest3@gmail.com>
+Date:   Sun Aug 26 22:07:28 2018 +0700
+
+    
