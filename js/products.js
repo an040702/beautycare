@@ -42,7 +42,9 @@ productApp.config(['$routeProvider','$locationProvider',function($routeProvider,
     }).otherwise({redirectTo:'/home'});
     // $locationProvider.html5Mode(true);
 }]);
-
+var data_array = [];
+var btn_add;
+var btn_added;
 productApp.controller("productCtrl", function($scope, $http,$routeParams,$location) {
     $scope.currentPage = 1;
     $scope.pageSize = 12;
@@ -71,80 +73,63 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
 
     //SHOPPING...........................................................
 
-            var array = [];
+
             var name_product;
             var price_product;
-            var product_type;
+            var type_product;
             var image_product;
-            var no;
-            var k=0;
-            var check=[];
-            var id;
+            var id_product;
             $scope.add_Cart = function (checked_id) {
-                var check_tam=0;
-
-                if(document.getElementById("btn_add_"+ checked_id).style.display=="block") {
-                    document.getElementById("btn_add_" + checked_id).style.display = "none";
-                    document.getElementById("btn_added_" + checked_id).style.display = "block";
+                name_product=document.getElementById("name_"+checked_id).innerText;
+                price_product=document.getElementById("price_"+checked_id).innerText;
+                type_product=$routeParams.name;
+                image_product="images/images_ring/images_ring_"+$routeParams.name+"/"+$routeParams.name+"_"+checked_id+".png";
+                id_product=document.getElementById("id_sp_"+checked_id).innerText;
+                btn_add=document.getElementById("btn_"+id_product+"_add_"+ checked_id);
+                btn_added=document.getElementById("btn_"+id_product+"_added_" + checked_id);
+                if(btn_add.style.display == "block") {
+                    btn_add.style.display = "none";
+                    btn_added.style.display = "block";
+                    //add data to array
+                    data_array.push({
+                        no: data_array.length+1,
+                        image: image_product,
+                        id: id_product,
+                        type: type_product,
+                        name: name_product,
+                        price: price_product
+                    });
                 }
+                
+                //when delete product
+
                 else{
-                    document.getElementById("btn_add_" + checked_id).style.display = "block";
-                    document.getElementById("btn_added_" + checked_id).style.display = "none";
-                }
-                var check_id=true;
-                var tam=0;
-                check[k] = document.getElementById("id_sp_" + checked_id).innerText;
-                name_product = document.getElementById("name_" + checked_id).innerText;
-                price_product = document.getElementById("price_" + checked_id).innerText;
-                product_type = $routeParams.name;
-                id = document.getElementById("id_sp_" + checked_id).innerText;
-                image_product = "images/images_ring/images_ring_" + $routeParams.name + "/" + $routeParams.name + "_" + checked_id + ".png";
-                no=array.length+1;
-                if (k == 0) {
-                    array.push({no : no, image: image_product,id:id, type: product_type, name: name_product, price: price_product});
-                    alert("Bạn đã chọn " + array.length + " sản phẩm");
-                    k++;
-                }
-                else {
-                    for (tam; tam < check.length-1; tam++) {
-                        if (check[k] == check[tam]) {
-                            check_tam=tam;
-                            check_id=false;
+                    var checked_delete=0;
+                    var delete_product=document.getElementById("id_sp_"+checked_id).innerText;
+                    btn_add.style.display = "block";
+                    btn_added.style.display = "none";
+                    for(checked_delete;checked_delete<data_array.length;checked_delete++){
+                        if(delete_product == data_array[checked_delete].id){
+                            data_array.splice(checked_delete,1);
                             break;
+                        }
+                    }
+                    checked_delete=0;
 
-                        }
-                        else {
-                            check_id=true;
-                        }
+                    //add no again delete product
+                    for(checked_delete;checked_delete<data_array.length;checked_delete++){
+                        data_array[checked_delete].no=checked_delete+1;
                     }
-                    if(check_id==true){
-                        array.push({
-                            no : no,
-                            image: image_product,
-                            id : id,
-                            type: product_type,
-                            name: name_product,
-                            price: price_product
-                        });
-                        alert("Bạn đã chọn " + array.length + " sản phẩm");
-                        k++;
-                    }
-                    else {
-                        var change_array_1=check_tam;
-                        alert("Bạn đã chọn sản phẩm này rồi !!!");
-                        for(change_array_1;change_array_1<k;change_array_1++){
-                            array[change_array_1]=array[change_array_1+1];
-                        }
-                        k--;
-                        alert(k);
-                    }
+                };
+
                 }
-                no=array.length+1;
-            }
+
+           //     function creat table
+
            function displayTable(table_shopping) {
                 document.getElementById('show_table').innerHTML="<table id='table_shopping'><tr><th>No</th><th>Image</th><th>Name</th><th>Id</th><th>Type</th><th>Price</th></tr></table>";
                 var table = document.getElementById('table_shopping');
-                var sum=0;
+                 var sum=0;
                 for (var i = 0; i < table_shopping.length; ++i)
                 {   // keep a reference to an individual president object
                     var products = table_shopping[i];
@@ -153,7 +138,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
                     var row = document.createElement('tr');
 
                     // properties of the array elements
-                    var properties = ['no','image','name','type','id', 'price'];
+                    var properties = ['no','image','name','id','type', 'price'];
 
                     // append each one of them to the row in question, in order
                     for (var j = 0; j < properties.length; ++j) {   // create new data cell for names
@@ -193,8 +178,11 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
                     }
                 }
             }
+
+            //function add array in table
+
             $scope.show_shopping=function(){
-                displayTable(array);
+                displayTable(data_array);
             }
         }
 );//end controller
