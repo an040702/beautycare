@@ -1,5 +1,5 @@
   [{
-    "id": "ring_1",
+    "id": "(G1)",
     "name": "PNJ",
     "image":"images/images_ring/images_ring_gold/gold_1.png",
     "price": "12.000.000",
@@ -18,7 +18,7 @@
    "weight": "0.6612",
    "age" : "18K"
   },{
-   "id": "ring_2",
+   "id": "(G2)",
     "name": "WEEDING",
     "image":"images/images_ring/images_ring_gold/gold_2.png",
     "price": "13.000.000",
@@ -37,7 +37,7 @@
    "weight": "0.6672",
    "age" : "14K"
   },{
-   "id": "ring_3",
+   "id": "(G3)",
     "name": "PROPOSE",
     "image":"images/images_ring/images_ring_gold/gold_3.png",
     "price": "12.500.000",
@@ -56,7 +56,7 @@
    "weight": "0.6112",
    "age" : "10K"
   },{
-   "id": "ring_4",
+   "id": "(G4)",
     "name": "LOVE",
     "image":"images/images_ring/images_ring_gold/gold_4.png",
     "price": "14.000.000",
@@ -75,7 +75,7 @@
    "weight": "0.6912",
    "age" : "20K"
   },{
-   "id": "ring_5",
+   "id": "(G5)",
     "name": "HEART",
     "image":"images/images_ring/images_ring_gold/gold_5.png",
     "price": "12.800.000",
@@ -94,7 +94,7 @@
    "weight": "0.8612",
    "age" : "18K"
   },{
-   "id": "ring_6",
+   "id": "(G6)",
     "name": "LOVE",
     "image":"images/images_ring/images_ring_gold/gold_6.png",
     "price": "12.000.000",
@@ -113,7 +113,7 @@
    "weight" : "0.3612",
    "age" : "14K"
 },{
-   "id": "ring_7",
+   "id": "(G7)",
     "name": "LUXURY",
     "image":"images/images_ring/images_ring_gold/gold_7.png",
     "price": "16.000.000",
@@ -132,7 +132,7 @@
    "weight": "0.8612",
    "age" : "20K"
 },{
-   "id": "ring_8",
+   "id": "(G8)",
     "name": "ROMANTIC",
     "image":"images/images_ring/images_ring_gold/gold_8.png",
     "price": "11.000.000",
@@ -151,7 +151,7 @@
    "weight": "0.4612",
    "age" : "18K"
 },{
-   "id": "ring_9",
+   "id": "(G9)",
     "name": "ROSE",
     "image":"images/images_ring/images_ring_gold/gold_9.png",
     "price": "12.300.000",
@@ -169,7 +169,7 @@
    "weight": "0.6682",
    "age" : "18K"
     },{
-   "id": "ring_10",
+   "id": "(G10)",
     "name": "COUPLE",
     "image":"images/images_ring/images_ring_gold/gold_10.png",
     "price": "19.000.000",
@@ -188,7 +188,7 @@
    "weight": "0.6212",
    "age" : "20K"
   },{
-   "id": "ring_11",
+   "id": "(G11)",
     "name": "COUPLE",
     "image":"images/images_ring/images_ring_gold/gold_11.png",
     "price": "22.000.000",
@@ -207,7 +207,7 @@
    "weight": "0.6612",
    "age" : "10K"
   },{
-   "id": "ring_12",
+   "id": "(G12)",
     "name": "NOBLE",
     "image":"images/images_ring/images_ring_gold/gold_12.png",
     "price": "11.500.000",
@@ -227,7 +227,7 @@
    "age" : "20K"
   }
   ,{
-    "id": "ring_13",
+    "id": "(G13)",
     "name": "NOBLE",
     "image":"images/images_ring/images_ring_gold/gold_13.png",
     "price": "14.500.000",
@@ -247,7 +247,7 @@
     "age" : "10K"
   }
   ,{
-    "id": "ring_14",
+    "id": "(G14)",
     "name": "PNJ",
     "image":"images/images_ring/images_ring_gold/gold_14.png",
     "price": "11.500.000",
@@ -267,7 +267,7 @@
     "age" : "20K"
   }
   ,{
-    "id": "ring_15",
+    "id": "(G15)",
     "name": "NOBLE",
     "image":"images/images_ring/images_ring_gold/gold_15.png",
     "price": "11.800.000",
@@ -287,7 +287,7 @@
     "age" : "20K"
   }
   ,{
-    "id": "ring_16",
+    "id": "(G16)",
     "name": "NTK",
     "image":"images/images_ring/images_ring_gold/gold_16.png",
     "price": "14.500.000",
@@ -307,7 +307,7 @@
     "age" : "20K"
   }
   ,{
-    "id": "ring_17",
+    "id": "(G17)",
     "name": "NOBLE",
     "image":"images/images_ring/images_ring_gold/gold_17.png",
     "price": "11.500.000",
@@ -327,7 +327,7 @@
     "age" : "20K"
   }
   ,{
-    "id": "ring_18",
+    "id": "(G18)",
     "name": "NOBLE",
     "image":"images/images_ring/images_ring_gold/gold_18.png",
     "price": "11.500.000",
@@ -347,7 +347,7 @@
     "age" : "20K"
   }
   ,{
-    "id": "ring_19",
+    "id": "(G19)",
     "name": "PNJ",
     "image":"images/images_ring/images_ring_gold/gold_19.png",
     "price": "12.500.000",
@@ -367,7 +367,7 @@
     "age" : "20K"
   }
   ,{
-    "id": "ring_20",
+    "id": "(G20)",
     "name": "NOBLE",
     "image":"images/images_ring/images_ring_gold/gold_20.png",
     "price": "11.500.000",

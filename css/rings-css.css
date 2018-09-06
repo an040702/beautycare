@@ -730,6 +730,10 @@
 .rating20 > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating20 > input:checked ~ label:hover ~ label { color: #FFED85;  }
 /*# sour6ceMappingURL=bootstrap.css.map */
+
+
+/*custom btn ADD CART*/
+
 .btn_custom {
   width: auto;
   line-height: 30px;
@@ -769,6 +773,11 @@
   position: relative; 
   z-index: 1;
 }
+.btn_custom:hover i {
+  color: black;
+  position: relative;
+  z-index: 1;
+}
 .btn_custom:after {
   content: "";
   position: absolute;
@@ -788,6 +797,78 @@
   -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
+
+
+/*custom_btn ADDED CART*/
+
+
+.btn_custom_added {
+  width: auto;
+  line-height: 30px;
+  clear: none;
+  float: right;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: black;
+  background-color: white;
+  padding: 0px 20px;
+  border-width: 0;
+  font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,Sans-Serif;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  border:2px solid black;
+}
+.btn_custom_added:hover{
+  border:2px solid black;
+}
+.btn_custom_added span {
+  color: black;
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 15px;
+}
+.btn_custom_added:hover span {
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.btn_custom_added:hover i {
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.btn_custom_added:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: black;
+  height: 450%;
+  width: 150%;
+  background: black;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all 1.1s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+.btn_custom_added:hover:after {
+
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+
+
+/*overplay image*/
 .clearfix::after {
     content: "";
     clear: both;
