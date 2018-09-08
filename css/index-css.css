@@ -17,13 +17,24 @@ body {margin: 0px !important;}
 }
 .parallax{
     min-height: 390px; 
-    background: transparent;
+    /*background: transparent;
     width: 100% ;
     max-width: none;
     margin: none;
-    padding: none;
+    padding: none;*/
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.view-body{
+  margin-top: 30px;
+}
 /*row 1 */
 .aside-comment{
     color: white;
