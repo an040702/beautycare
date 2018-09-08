@@ -48,11 +48,28 @@ var data_array = [];
 //function change_quantity and change price;
 
 function change_quantity(e) {
+    var check_price=0;
+    var sum=0;
+    for(check_price;check_price<data_array.length;check_price++){
+        document.getElementById("price_no_"+(check_price+1)).innerText=parseInt(data_array[check_price].price)*parseInt(document.getElementById("quantity_no_"+(check_price+1)).value);
+        data_array[check_price].value=document.getElementById("quantity_no_"+(check_price+1)).value;
+        data_array[check_price].price_quantity=document.getElementById("price_no_"+(check_price+1)).innerText;
+        // =data_array[check_price].no;
+        sum+=parseInt(data_array[check_price].price_quantity);
+    }
+    document.getElementById("total").innerText=sum;
+}
 
-    document.getElementById("price_no_1").innerText=parseInt(document.getElementById("price_1").innerText)*parseInt(document.getElementById("quantity_no_1").value);
+//function remove product..............
+
+function remove_product(e) {
+    data_array.splice(e-1,1);
+    document.getElementById('row_'+(e)).style.display='none';
+    change_quantity(this);
 }
 
 productApp.controller("productCtrl", function($scope, $http,$routeParams,$location) {
+
     $scope.currentPage = 1;
     $scope.pageSize = 12;
     $scope.name_custom = $routeParams.name;
@@ -134,45 +151,23 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
                     }
                 }
             }
-                //when delete product
-
-           //      else{
-           //          var checked_delete=0;
-           //          var delete_product=document.getElementById("id_sp_"+checked_id).innerText;
-           //          $scope.btn_add.style.display = "block";
-           //          $scope.btn_added.style.display = "none";
-           //          for(checked_delete;checked_delete<data_array.length;checked_delete++){
-           //              if(delete_product == data_array[checked_delete].id){
-           //                  data_array.splice(checked_delete,1);
-           //                  break;
-           //              }
-           //          }
-           //          checked_delete=0;
-           //
-           //          //add no again delete product
-           //          for(checked_delete;checked_delete<data_array.length;checked_delete++){
-           //              data_array[checked_delete].no=checked_delete+1;
-           //          }
-           //      };
-           //
-           //      }
-           //
            // //     function creat table
 
            function displayTable(table_shopping) {
 
-                document.getElementById('show_table').innerHTML="<table id='table_shopping'><tr><th>No</th><th>Image</th><th>Name</th><th>Id</th><th>Type</th><th>Quantity</th><th>Price/1</th><th>Price/Quantity</th></tr></table>";
+                document.getElementById('show_table').innerHTML="<table id='table_shopping'><tr><th>No</th><th>Image</th><th>Name</th><th>Id</th><th>Type</th><th>Quantity</th><th>Price/1</th><th>Price/Quantity</th><th>Remove</th></tr></table>";
                 var table = document.getElementById('table_shopping');
-                 var sum=0;
+
+                var sum=0;
                 for (var i = 0; i < table_shopping.length; ++i)
                 {   // keep a reference to an individual president object
                     var products = table_shopping[i];
 
                     // create a row element to append cells to
                     var row = document.createElement('tr');
-
+                    row.id='row_'+(i+1);
                     // properties of the array elements
-                    var properties = ['no','image','name','id','type','value', 'price','price_quantity'];
+                    var properties = ['no','image','name','id','type','value', 'price','price_quantity','kien'];
 
                     // append each one of them to the row in question, in order
                     for (var j = 0; j < properties.length; ++j) {   // create new data cell for names
@@ -195,16 +190,32 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
                             input.value=products[properties[j]];
                             cell.appendChild(input);
                         }
-                        else if(j==properties.length-1){
+                        else if(j==properties.length-2){
                             var cell = document.createElement('td');
                             cell.id="price_no_"+(i+1);
-                            cell.innerHTML = parseInt(products[properties[5]])*parseInt(products[properties[j]]);
-                            sum+=parseInt(products[properties[5]])*parseInt(products[properties[j]]);
+                            cell.innerHTML = parseInt(products[properties[5]])*parseInt(products[properties[j-1]]);
+                            sum+=parseInt(products[properties[5]])*parseInt(products[properties[j-1]]);
                         }
-                        else if(j==properties.length-2){
+                        else if(j==properties.length-3){
                             var cell = document.createElement('td');
                             cell.id="price_"+(i+1);
                             cell.innerHTML = products[properties[j]];
+                        }
+                        else if(j==0){
+                            var cell = document.createElement('td');
+                            cell.id="no_"+(i+1);
+                            cell.innerHTML = i+1;
+                        }
+                        else if(j==properties.length-1){
+                            var cell = document.createElement('td');
+                            var button = document.createElement('button');
+                            var recycle= document.createElement('i');
+                            button.className='btn btn-danger btn-sm';
+                            button.id=(i+1);
+                            button.setAttribute('onclick','remove_product(this.id)');
+                            recycle.className='fas fa-trash-alt';
+                            button.appendChild(recycle);
+                            cell.appendChild(button);
                         }
                         else {
                             var cell = document.createElement('td');
@@ -221,13 +232,22 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
                     if(i==table_shopping.length-1){
                         var row = document.createElement('tr');
                         var cell=document.createElement('td');
-                        cell.setAttribute('colspan',properties.length-1);
+                        cell.setAttribute('colspan',properties.length-2);
                         cell.setAttribute('style','color:blue');
                         cell.innerHTML="TOTAL";
                         row.appendChild(cell);
                         var cell=document.createElement('td');
                         cell.setAttribute('style','color:blue');
+                        cell.setAttribute('id','total');
                         cell.innerHTML=sum;
+                        row.appendChild(cell);
+                        table.appendChild(row);
+                        var cell = document.createElement('td');
+                        var button = document.createElement('button');
+                        button.className='btn btn-danger btn-sm';
+                        button.innerHTML="ALL ";
+                        button.style='font-weight:600; font-style=both';
+                        cell.appendChild(button);
                         row.appendChild(cell);
                         table.appendChild(row);
                     }
