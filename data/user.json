@@ -1,9 +1,1 @@
-{
-    "users": [
-    {   
-      "id":1,
-      "square": 3
-    } 
-   
-  ]
-}
+{"table":[[{"no":1,"image":"images/images_ring/images_ring_gold/gold_1.png","id":"(G1)","type":"gold","name":"PNJ","value":1,"price":"12.000.000","price_quantity":12},{"no":2,"image":"images/images_ring/images_ring_gold/gold_2.png","id":"(G2)","type":"gold","name":"WEEDING","value":1,"price":"13.000.000","price_quantity":13},{"no":3,"image":"images/images_ring/images_ring_gold/gold_3.png","id":"(G3)","type":"gold","name":"PROPOSE","value":1,"price":"12.500.000","price_quantity":12}]]}
