@@ -45,10 +45,14 @@ productApp.config(['$routeProvider','$locationProvider',function($routeProvider,
 
 var data_array = [];
 
+//function change_quantity and change price;
 
+function change_quantity(e) {
+
+    document.getElementById("price_no_1").innerText=parseInt(document.getElementById("price_1").innerText)*parseInt(document.getElementById("quantity_no_1").value);
+}
 
 productApp.controller("productCtrl", function($scope, $http,$routeParams,$location) {
-
     $scope.currentPage = 1;
     $scope.pageSize = 12;
     $scope.name_custom = $routeParams.name;
@@ -75,13 +79,13 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
         });
 
     //SHOPPING...........................................................
-
             var name_product;
             var price_product;
             var type_product;
             var image_product;
             var id_product;
             var value_product;
+            var price_product_quantity;
             $scope.add_Cart = function (checked_id) {
                 name_product=document.getElementById("name_"+checked_id).innerText;
                 price_product=document.getElementById("price_"+checked_id).innerText;
@@ -89,6 +93,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
                 image_product="images/images_ring/images_ring_"+$routeParams.name+"/"+$routeParams.name+"_"+checked_id+".png";
                 id_product=document.getElementById("id_sp_"+checked_id).innerText;
                 value_product=1;
+                price_product_quantity=parseInt(price_product)*parseInt(value_product);
                 var check;
                 var tam=0;
                 if(data_array.length==0) {
@@ -100,7 +105,8 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
                         type: type_product,
                         name: name_product,
                         value: 1,
-                        price: price_product
+                        price: price_product,
+                        price_quantity: price_product_quantity
                     });
                 }
                 else{
@@ -122,7 +128,8 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
                             type: type_product,
                             name: name_product,
                             value: 1,
-                            price: price_product
+                            price: price_product,
+                            price_quantity: price_product_quantity
                         });
                     }
                 }
@@ -153,7 +160,8 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
            // //     function creat table
 
            function displayTable(table_shopping) {
-                document.getElementById('show_table').innerHTML="<table id='table_shopping'><tr><th>No</th><th>Image</th><th>Name</th><th>Id</th><th>Type</th><th>Quantity</th><th>Price</th></tr></table>";
+
+                document.getElementById('show_table').innerHTML="<table id='table_shopping'><tr><th>No</th><th>Image</th><th>Name</th><th>Id</th><th>Type</th><th>Quantity</th><th>Price/1</th><th>Price/Quantity</th></tr></table>";
                 var table = document.getElementById('table_shopping');
                  var sum=0;
                 for (var i = 0; i < table_shopping.length; ++i)
@@ -164,7 +172,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
                     var row = document.createElement('tr');
 
                     // properties of the array elements
-                    var properties = ['no','image','name','id','type','value', 'price'];
+                    var properties = ['no','image','name','id','type','value', 'price','price_quantity'];
 
                     // append each one of them to the row in question, in order
                     for (var j = 0; j < properties.length; ++j) {   // create new data cell for names
@@ -178,7 +186,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
                         else if(j==5){
                             var cell= document.createElement('td');
                             var input=document.createElement('input');
-                            input.onchange="change_quantity()";
+                            input.setAttribute("onchange","change_quantity(this)");
                             input.id="quantity_no_"+(i+1);
                             input.type ="number";
                             input.style="width:50px";
@@ -192,6 +200,11 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
                             cell.id="price_no_"+(i+1);
                             cell.innerHTML = parseInt(products[properties[5]])*parseInt(products[properties[j]]);
                             sum+=parseInt(products[properties[5]])*parseInt(products[properties[j]]);
+                        }
+                        else if(j==properties.length-2){
+                            var cell = document.createElement('td');
+                            cell.id="price_"+(i+1);
+                            cell.innerHTML = products[properties[j]];
                         }
                         else {
                             var cell = document.createElement('td');
@@ -219,6 +232,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
                         table.appendChild(row);
                     }
                 }
+
             }
 
             //function add array in table
