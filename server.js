@@ -10,11 +10,10 @@ var serveStatic = require('serve-static');
 const url = require('url');
 var callback = function() {} ;
 var fs = require('fs');
-var json = JSON.stringify(obj);
 
-var obj = {
-   table: []
-};
+
+var obj;
+var json = JSON.stringify(obj);
 
 var bodyParser = require('body-parser')
 
@@ -27,50 +26,29 @@ app.all('*', function(req, res, next) {
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   next();
  });
- 
+//Post data_test from test.html
 app.post('/', function(req, res){
   console.log(req.body);
-    res.send("ok. NodeJS response");
-    // res.send(req.body);
-    obj.table.push(req.body);
-    json = JSON.stringify(obj); //convert it back to json
+  res.send("ok. NodeJS response");
+  obj = req.body;
+  json = JSON.stringify(obj); //convert it back to json
 	console.log(json+" json");
 	fs.writeFile('test/user1.json', json, 'utf8', callback); // write it back 
-	// bodyParser = [];
-	req.body = [];
-	obj.table = [];
-	console.log(obj.table);
-	json = {};
-	console.log(json+" json");
+	
+});
+
+//Post data_array from product page
+app.post('/product/gold', function(req, res){
+  console.log(req.body);
+  res.send("Got data_array. NodeJS response");
+  obj = req.body;
+  json = JSON.stringify(obj); //convert it back to json
+  console.log(json+" json");
+  fs.writeFile('data/user.json', json, 'utf8', callback); // write it back 
+ 
 });
 
 
-
-// obj.table.push({id: 1, square:2});
-
-
-
-
-
-// fs.writeFile('test/user.json', json, 'utf8', callback);
-
-// fs.readFile('test/user.json', 'utf8', function readFileCallback(err, data){
-//     if (err){
-//         console.log(err);
-//     } 
-//     else 
-//     {
-// 		    obj = JSON.parse(data); //now it an object
-// 		    console.log(obj+"jsjssjs");
-// 		    var dataadd = new Array({id: 2, square:4});
-// 		    console.log(dataadd+"bbbbb");
-
-// 		    obj.table.push(dataadd); //add some data
-// 		    json = JSON.stringify(obj); //convert it back to json
-// 		    console.log(json+"json");
-// 		    fs.writeFile('test/user.json', json, 'utf8', callback); // write it back 
-// 	}
-// });
 
 /**
  * STATIC FILES
@@ -79,6 +57,5 @@ app.use(express.static(__dirname+"/"));
 
 app.listen(8080, function(){
 	console.log(__dirname);
-    console.log('Server running on 8080...');
-    // console.log(__dirname);
+  console.log('Server running on 8080...');
 });
