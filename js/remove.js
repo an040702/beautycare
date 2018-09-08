@@ -1,22 +1,7 @@
 
-function remove_product(e) {
-    data_array.splice(e-1,1);
-    show_shopping();
-    if(data_array.length==0){
-        document.getElementById('show_table').innerHTML="EMPTY CART !!!";
-    }
-
-}
-function remove_all_product() {
-    data_array.splice(0,data_array.length);
-    show_shopping();
-    document.getElementById('show_table').innerHTML="EMPTY CART !!!";
-}
 function displayTable(table_shopping) {
-
     document.getElementById('show_table').innerHTML="<table id='table_shopping'><tr><th>No</th><th>Image</th><th>Name</th><th>Id</th><th>Type</th><th>Quantity</th><th>Price/1</th><th>Price/Quantity</th><th>Remove</th></tr></table>";
     var table = document.getElementById('table_shopping');
-
     var sum=0;
     for (var i = 0; i < table_shopping.length; ++i)
     {   // keep a reference to an individual president object
@@ -67,14 +52,7 @@ function displayTable(table_shopping) {
             }
             else if(j==properties.length-1){
                 var cell = document.createElement('td');
-                var button = document.createElement('button');
-                var recycle= document.createElement('i');
-                button.className='btn btn-danger btn-sm';
-                button.id=(i+1);
-                button.setAttribute('onclick','remove_product(this.id)');
-                recycle.className='fas fa-trash-alt';
-                button.appendChild(recycle);
-                cell.appendChild(button);
+                cell.innerHTML="<div style='cursor: pointer' class='btn btn-danger btn-sm' id=i ng-click='remove_product(1)'><i class='fas fa-trash-alt'></i></div>";
             }
             else {
                 var cell = document.createElement('td');
@@ -104,15 +82,16 @@ function displayTable(table_shopping) {
             var cell = document.createElement('td');
             var button = document.createElement('button');
             button.className='btn btn-danger btn-sm';
+            button.setAttribute('ng-app','productApp');
+            button.setAttribute('ng-controller','productCtrl');
             button.innerHTML="ALL ";
-            button.setAttribute('onclick','remove_all_product()');
+            button.setAttribute('ng-click','remove_all_product()');
             button.style='font-weight:600; font-style=both';
             cell.appendChild(button);
             row.appendChild(cell);
             table.appendChild(row);
         }
     }
-
 }
 function show_shopping(){
     displayTable(data_array);
