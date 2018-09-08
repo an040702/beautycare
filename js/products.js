@@ -36,9 +36,10 @@ productApp.config(['$routeProvider','$locationProvider',function($routeProvider,
         controller : "productCtrl"
     }).when('/profile/:name/:id',{
         templateUrl : "pages/profile_ring.html",
-        controller : "productCtrl"
+        controller : "profileCtrl"
     }).when('/checkout',{
-        templateUrl : "pages/check_out.html"
+        templateUrl : "pages/check_out.html",
+        controller : "productCtrl"
     }).otherwise({redirectTo:'/home'});
     // $locationProvider.html5Mode(true);
 }]);
@@ -61,15 +62,7 @@ function change_quantity(e) {
 }
 
 //function remove product..............
-
-function remove_product(e) {
-    data_array.splice(e-1,1);
-    document.getElementById('row_'+(e)).style.display='none';
-    change_quantity(this);
-}
-
-productApp.controller("productCtrl", function($scope, $http,$routeParams,$location) {
-
+productApp.controller("profileCtrl", function($scope, $http,$routeParams,$location) {
     $scope.currentPage = 1;
     $scope.pageSize = 12;
     $scope.name_custom = $routeParams.name;
@@ -93,6 +86,16 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
             $scope.Cara = response.data[$scope.id - 1].cara;
             $scope.Age = response.data[$scope.id - 1].age;
             $scope.Weight = response.data[$scope.id - 1].weight;
+        });
+})
+productApp.controller("productCtrl", function($scope, $http,$routeParams,$location) {
+
+    $scope.currentPage = 1;
+    $scope.pageSize = 12;
+    $scope.name_custom = $routeParams.name;
+    $http.get('data/ring_' + $routeParams.name + '.json') //reading the product.json file
+        .then(function (response) {
+            $scope.products = response.data; // binding the data to the $scope variable
         });
 
     //SHOPPING...........................................................
@@ -150,9 +153,15 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
                         });
                     }
                 }
+                displayTable(data_array);
             }
            // //     function creat table
-
+            if(data_array.length>0) {
+                displayTable(data_array);
+            }
+            else {
+                document.getElementById('show_table').innerHTML="EMPTY CART !!!";
+            }
            function displayTable(table_shopping) {
 
                 document.getElementById('show_table').innerHTML="<table id='table_shopping'><tr><th>No</th><th>Image</th><th>Name</th><th>Id</th><th>Type</th><th>Quantity</th><th>Price/1</th><th>Price/Quantity</th><th>Remove</th></tr></table>";
@@ -246,6 +255,8 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
                         var button = document.createElement('button');
                         button.className='btn btn-danger btn-sm';
                         button.innerHTML="ALL ";
+                        button.id="remove_all";
+                        button.setAttribute('onclick','remove_all_product(this.id)');
                         button.style='font-weight:600; font-style=both';
                         cell.appendChild(button);
                         row.appendChild(cell);
@@ -257,9 +268,6 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
 
             //function add array in table
 
-            $scope.show_shopping=function(){
-                displayTable(data_array);
-            }
         }
 );//end controller
 
