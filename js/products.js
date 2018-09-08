@@ -42,10 +42,13 @@ productApp.config(['$routeProvider','$locationProvider',function($routeProvider,
     }).otherwise({redirectTo:'/home'});
     // $locationProvider.html5Mode(true);
 }]);
+
 var data_array = [];
-var btn_add;
-var btn_added;
+
+
+
 productApp.controller("productCtrl", function($scope, $http,$routeParams,$location) {
+
     $scope.currentPage = 1;
     $scope.pageSize = 12;
     $scope.name_custom = $routeParams.name;
@@ -73,61 +76,84 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
 
     //SHOPPING...........................................................
 
-
             var name_product;
             var price_product;
             var type_product;
             var image_product;
             var id_product;
+            var value_product;
             $scope.add_Cart = function (checked_id) {
                 name_product=document.getElementById("name_"+checked_id).innerText;
                 price_product=document.getElementById("price_"+checked_id).innerText;
                 type_product=$routeParams.name;
                 image_product="images/images_ring/images_ring_"+$routeParams.name+"/"+$routeParams.name+"_"+checked_id+".png";
                 id_product=document.getElementById("id_sp_"+checked_id).innerText;
-                btn_add=document.getElementById("btn_"+id_product+"_add_"+ checked_id);
-                btn_added=document.getElementById("btn_"+id_product+"_added_" + checked_id);
-                if(btn_add.style.display == "block") {
-                    btn_add.style.display = "none";
-                    btn_added.style.display = "block";
+                value_product=1;
+                var check;
+                var tam=0;
+                if(data_array.length==0) {
                     //add data to array
                     data_array.push({
-                        no: data_array.length+1,
+                        no: data_array.length + 1,
                         image: image_product,
                         id: id_product,
                         type: type_product,
                         name: name_product,
+                        value: 1,
                         price: price_product
                     });
                 }
-                
-                //when delete product
-
                 else{
-                    var checked_delete=0;
-                    var delete_product=document.getElementById("id_sp_"+checked_id).innerText;
-                    btn_add.style.display = "block";
-                    btn_added.style.display = "none";
-                    for(checked_delete;checked_delete<data_array.length;checked_delete++){
-                        if(delete_product == data_array[checked_delete].id){
-                            data_array.splice(checked_delete,1);
+                    for(tam;tam<data_array.length;tam++){
+                        if(id_product==data_array[tam].id){
+                            data_array[tam].value++;
+                            check=false;
                             break;
                         }
+                        else {
+                            check=true;
+                        }
                     }
-                    checked_delete=0;
-
-                    //add no again delete product
-                    for(checked_delete;checked_delete<data_array.length;checked_delete++){
-                        data_array[checked_delete].no=checked_delete+1;
+                    if(check==true){
+                        data_array.push({
+                            no: data_array.length + 1,
+                            image: image_product,
+                            id: id_product,
+                            type: type_product,
+                            name: name_product,
+                            value: 1,
+                            price: price_product
+                        });
                     }
-                };
-
                 }
+            }
+                //when delete product
 
-           //     function creat table
+           //      else{
+           //          var checked_delete=0;
+           //          var delete_product=document.getElementById("id_sp_"+checked_id).innerText;
+           //          $scope.btn_add.style.display = "block";
+           //          $scope.btn_added.style.display = "none";
+           //          for(checked_delete;checked_delete<data_array.length;checked_delete++){
+           //              if(delete_product == data_array[checked_delete].id){
+           //                  data_array.splice(checked_delete,1);
+           //                  break;
+           //              }
+           //          }
+           //          checked_delete=0;
+           //
+           //          //add no again delete product
+           //          for(checked_delete;checked_delete<data_array.length;checked_delete++){
+           //              data_array[checked_delete].no=checked_delete+1;
+           //          }
+           //      };
+           //
+           //      }
+           //
+           // //     function creat table
 
            function displayTable(table_shopping) {
-                document.getElementById('show_table').innerHTML="<table id='table_shopping'><tr><th>No</th><th>Image</th><th>Name</th><th>Id</th><th>Type</th><th>Price</th></tr></table>";
+                document.getElementById('show_table').innerHTML="<table id='table_shopping'><tr><th>No</th><th>Image</th><th>Name</th><th>Id</th><th>Type</th><th>Quantity</th><th>Price</th></tr></table>";
                 var table = document.getElementById('table_shopping');
                  var sum=0;
                 for (var i = 0; i < table_shopping.length; ++i)
@@ -138,22 +164,38 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
                     var row = document.createElement('tr');
 
                     // properties of the array elements
-                    var properties = ['no','image','name','id','type', 'price'];
+                    var properties = ['no','image','name','id','type','value', 'price'];
 
                     // append each one of them to the row in question, in order
                     for (var j = 0; j < properties.length; ++j) {   // create new data cell for names
                         if (j == 1) {
-                            var cell = document.createElement('img');
-                            cell.setAttribute('src',products[properties[j]]);
-                            cell.setAttribute('height','50px');
-                            cell.setAttribute('style','margin:10px');
+                            var cell = document.createElement('td');
+                            var img = document.createElement('img');
+                            img.src=products[properties[j]];
+                            img.style='height:50px;margin:10px';
+                            cell.appendChild(img);
+                        }
+                        else if(j==5){
+                            var cell= document.createElement('td');
+                            var input=document.createElement('input');
+                            input.onchange="change_quantity()";
+                            input.id="quantity_no_"+(i+1);
+                            input.type ="number";
+                            input.style="width:50px";
+                            input.min="1";
+                            input.max="100";
+                            input.value=products[properties[j]];
+                            cell.appendChild(input);
+                        }
+                        else if(j==properties.length-1){
+                            var cell = document.createElement('td');
+                            cell.id="price_no_"+(i+1);
+                            cell.innerHTML = parseInt(products[properties[5]])*parseInt(products[properties[j]]);
+                            sum+=parseInt(products[properties[5]])*parseInt(products[properties[j]]);
                         }
                         else {
                             var cell = document.createElement('td');
                             cell.innerHTML = products[properties[j]];
-                            if (j == properties.length-1) {
-                                sum+= parseFloat(products[properties[j]]);
-                            }
                         }
                         // set name of property using bracket notation (properties[i] is a string,
                         // which can be used to access properties of president)
