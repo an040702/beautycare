@@ -7,7 +7,7 @@ function remove_product(e) {
     }
 
 }
-function remove_all_product(e) {
+function remove_all_product() {
     data_array.splice(0,data_array.length);
     show_shopping();
     document.getElementById('show_table').innerHTML="EMPTY CART !!!";
@@ -105,6 +105,7 @@ function displayTable(table_shopping) {
             var button = document.createElement('button');
             button.className='btn btn-danger btn-sm';
             button.innerHTML="ALL ";
+            button.setAttribute('onclick','remove_all_product()');
             button.style='font-weight:600; font-style=both';
             cell.appendChild(button);
             row.appendChild(cell);

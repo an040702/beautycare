@@ -61,7 +61,7 @@ function change_quantity(e) {
     document.getElementById("total").innerText=sum;
 }
 
-//function remove product..............
+
 productApp.controller("profileCtrl", function($scope, $http,$routeParams,$location) {
     $scope.currentPage = 1;
     $scope.pageSize = 12;
@@ -159,9 +159,10 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
             if(data_array.length>0) {
                 displayTable(data_array);
             }
-            else {
-                document.getElementById('show_table').innerHTML="EMPTY CART !!!";
-            }
+           else{document.getElementById('show_table').innerHTML="EMPTY CART !!!";}
+
+
+
            function displayTable(table_shopping) {
 
                 document.getElementById('show_table').innerHTML="<table id='table_shopping'><tr><th>No</th><th>Image</th><th>Name</th><th>Id</th><th>Type</th><th>Quantity</th><th>Price/1</th><th>Price/Quantity</th><th>Remove</th></tr></table>";
@@ -255,8 +256,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
                         var button = document.createElement('button');
                         button.className='btn btn-danger btn-sm';
                         button.innerHTML="ALL ";
-                        button.id="remove_all";
-                        button.setAttribute('onclick','remove_all_product(this.id)');
+                        button.setAttribute('onclick','remove_all_product()');
                         button.style='font-weight:600; font-style=both';
                         cell.appendChild(button);
                         row.appendChild(cell);
