@@ -37,8 +37,18 @@ app.post('/', function(req, res){
 	
 });
 
-//Post data_array from product page
+//Post data_array from gold product page
 app.post('/product/gold', function(req, res){
+  console.log(req.body);
+  res.send("Got data_array. NodeJS response");
+  obj = req.body;
+  json = JSON.stringify(obj); //convert it back to json
+  console.log(json+" json");
+  fs.writeFile('data/user.json', json, 'utf8', callback); // write it back 
+ 
+});
+//Post data_array from diamon product page
+app.post('/product/diamon', function(req, res){
   console.log(req.body);
   res.send("Got data_array. NodeJS response");
   obj = req.body;

@@ -97,7 +97,12 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
         .then(function (response) {
             $scope.products = response.data; // binding the data to the $scope variable
         });
-
+    
+    //GET and bind data_array from user.json
+    $http.get('data/user.json') //reading the user.json file
+        .then(function (response) {
+            data_array = response.data; // binding the data to the $scope variable
+        });
     //SHOPPING...........................................................
             var name_product;
             var price_product;
@@ -107,6 +112,12 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$locati
             var value_product;
             var price_product_quantity;
             $scope.add_Cart = function (checked_id) {
+                //POST data_array to NodeJS
+                $http.post("/product/"+$routeParams.name,data_array)
+                .then(function(response) {
+                    console.log(response);
+                    // data_array = response.config.data;
+                        });
                 name_product=document.getElementById("name_"+checked_id).innerText;
                 price_product=document.getElementById("price_"+checked_id).innerText;
                 type_product=$routeParams.name;
