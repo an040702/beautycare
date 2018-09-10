@@ -97,9 +97,6 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
             vm.name_product = response.data[vm.id - 1].name;
             vm.sex = response.data[vm.id - 1].sex;
             vm.price = response.data[vm.id - 1].price;
-            vm.price_8 = response.data[vm.id - 1].price_8;
-            vm.price_9 = response.data[vm.id - 1].price_9;
-            vm.price_10_5 = response.data[vm.id - 1].price_10_5;
             vm.title_info = response.data[vm.id - 1].title_info;
             vm.description = response.data[vm.id - 1].description;
             vm.Trade_Mark = response.data[vm.id - 1].trade_mark;
@@ -139,13 +136,13 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
         var check_price=0;
         var sum=0;
         for(check_price;check_price<data_array.length;check_price++){
-            document.getElementById("price_no_"+(check_price+1)).innerText=parseInt(data_array[check_price].price)*parseInt(document.getElementById("quantity_no_"+(check_price+1)).value);
+            document.getElementById("price_no_"+(check_price+1)).innerText=parseInt(data_array[check_price].price)*parseInt(document.getElementById("quantity_no_"+(check_price+1)).value) +"$";
             data_array[check_price].value=document.getElementById("quantity_no_"+(check_price+1)).value;
             data_array[check_price].price_quantity=document.getElementById("price_no_"+(check_price+1)).innerText;
             // =data_array[check_price].no;
             sum+=parseInt(data_array[check_price].price_quantity);
         }
-        document.getElementById("total").innerText=sum;
+        document.getElementById("total").innerText=sum +"$";
     }
             var name_product;
             var price_product;
@@ -295,7 +292,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                             else if(j==properties.length-2){
                                 var cell = document.createElement('td');
                                 cell.id="price_no_"+(i+1);
-                                cell.innerHTML = parseInt(products[properties[5]])*parseInt(products[properties[j-1]]);
+                                cell.innerHTML = parseInt(products[properties[5]])*parseInt(products[properties[j-1]])+ "$";
                                 sum+=parseInt(products[properties[5]])*parseInt(products[properties[j-1]]);
                             }
                             else if(j==properties.length-3){
@@ -341,7 +338,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                             var cell=document.createElement('td');
                             cell.setAttribute('style','color:blue');
                             cell.setAttribute('id','total');
-                            cell.innerHTML=sum;
+                            cell.innerHTML=sum +"$";
                             row.appendChild(cell);
                             table.appendChild(row);
                             var cell = document.createElement('td');
