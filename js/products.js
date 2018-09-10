@@ -57,7 +57,8 @@ productApp.controller('OtherController', OtherController);
 
 productApp.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
 		$routeProvider.when('/home',{
-				templateUrl : "./pages/home.html"
+				templateUrl : "./pages/home.html",
+				controller :"myCtrl"
 		}).when('/product/:name',{
 				templateUrl : "./pages/product.html",
 				controller : "productCtrl"
@@ -70,6 +71,38 @@ productApp.config(['$routeProvider','$locationProvider',function($routeProvider,
 		}).otherwise({redirectTo:'/home'});
 		// $locationProvider.html5Mode(true);
 }]);
+
+
+// BEST SELLER
+productApp.controller("myCtrl",function($scope,$http) {
+    $http.get('./data/BESTSELLER/sell_hair.json')
+        .then(function(response) {
+        $scope.hairhome = response.data;
+    });
+    $http.get('./data/BESTSELLER/sell_skin.json')
+        .then(function(response) {
+        $scope.skinshome = response.data;
+    });    
+    $http.get('./data/BESTSELLER/sell_makeup.json')
+        .then(function(response) {
+        $scope.makeuphome = response.data;
+    });
+    $http.get('./data/BESTSELLER/sell_nails.json')
+        .then(function(response) {
+        $scope.nailshome = response.data;
+    });
+    $http.get('./data/BESTSELLER/sell_jewellry.json')
+        .then(function(response) {
+        $scope.jewellryhome = response.data;
+    });
+    $http.get('./data/BESTSELLER/sell_wedding.json')
+        .then(function(response) {
+        $scope.weddinghome = response.data;
+    });
+});
+
+
+
 
 var data_array = [];
 var table_watching;
