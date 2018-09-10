@@ -103,8 +103,15 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
         });
 
 
+    //change price when click input
+
 
     vm.change_quantity=function(e) {
+        $http.post("/product/" + $routeParams.name, data_array)
+            .then(function (response) {
+                data_array = response.config.data;
+                console.log(data_array);
+            });
         var check_price=0;
         var sum=0;
         for(check_price;check_price<data_array.length;check_price++){
@@ -234,7 +241,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                             else if(j==5){
                                 var cell= document.createElement('td');
                                 var input=document.createElement('input');
-                                input.setAttribute("ng-click","change_quantity(this)");
+                                // input.setAttribute("ng-click","change_quantity(this)");
                                 input.id="quantity_no_"+(i+1);
                                 input.type ="number";
                                 input.style="width:50px";
@@ -312,6 +319,9 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                     for(var i=0;i<table_shopping.length;i++){
                         var el = document.getElementById(i);
                         el.setAttribute("data-ng-click", "remove_product($event)");
+                        compile(el);
+                        var el = document.getElementById("quantity_no_"+(i+1));
+                        el.setAttribute("data-ng-click", "change_quantity($event)");
                         compile(el);
                     }
                 }
