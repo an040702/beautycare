@@ -130,6 +130,12 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                         // data_array = response.config.data;
                     });
                 data_array.splice(event.target.id,1);
+                if(data_array.length==0){
+                    document.getElementById('show_table').innerHTML="EMPTY CART !!!";
+                }
+                else {
+                    vm.displayTable(data_array);
+                }
             }
             vm.remove_all_product=function(event) {
                 $http.post("/product/"+$routeParams.name,data_array)
