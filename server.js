@@ -43,7 +43,7 @@ app.post('/product/gold', function(req, res){
   res.send("Got data_array. NodeJS response");
   obj = req.body;
   json = JSON.stringify(obj); //convert it back to json
-  console.log(json+" json");
+  // console.log(json+" json");
   fs.writeFile('data/user.json', json, 'utf8', callback); // write it back 
  
 });
@@ -53,9 +53,9 @@ app.post('/product/diamon', function(req, res){
   res.send("Got data_array. NodeJS response");
   obj = req.body;
   json = JSON.stringify(obj); //convert it back to json
-  console.log(json+" json");
+  // console.log(json+" json");
   fs.writeFile('data/user.json', json, 'utf8', callback); // write it back 
- 
+  console.log("Saved!!!");
 });
 
 
