@@ -86,10 +86,14 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
     vm.currentPage = 1;
     vm.pageSize = 12;
     vm.name_custom = $routeParams.name;
-    $http.get('data/ring_' + $routeParams.name + '.json') //reading the product.json file
+    
+    //Check route if route product page or not
+    if(typeof $routeParams.name !== "undefined") {
+        $http.get('data/ring_' + $routeParams.name + '.json') //reading the product.json file
         .then(function (response) {
             vm.products = response.data; // binding the data to the vm variable
         });
+    }    
 
     // GET and bind data_array from user.json
     $http.get('data/user.json') //reading the user.json file
