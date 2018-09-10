@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact </title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>	
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/_contact.css">
+	<script src="../js/angular.min.js"></script>
+    <script src="../js/angular-route.min.js"></script>
+    <script type="text/javascript" src="../js/contact.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body ng-app="myApp" >
+	<div class="container  ">
+		<div class="contact_logo row">
+			<div class="contact_idm container">Contact Simplon</div>
+		</div>
+	</div><br>
+	<div class="container">		
+				<div style="font-size: 20px;text-align: center;">For general inquiries and questions, please feel free to send us a message.</div>
+			</div>
+	</div>
+	<div class="container contact_header" ng-controller="AppController as ctrl" >		
+		<div class="row contact_here">
+			<div class="col-sm-5">
+				<h2>Headquarters :</h2>
+				<div class="row contact_adress">
+					<div class="col-sm-3 option_font">
+                	   Address :
+                    </div>
+                    <div class="col-sm-9">
+                        38 Yen Bai Street, Hai Chau District, Da Nang City, Viet Nam.
+                    </div>
+				</div>
+				<div class="row">
+                    <div class="col-md-3 option_font">
+                        Phone :
+                    </div>
+                    <div class="col-md-9">
+                        +(84) 123 456 6879
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 option_font">
+                        Fax  :
+                    </div>
+                    <div class="col-md-9">
+                        123 456 6789
+                    </div>
+                </div>
+                <div class="row contact_adress">
+                    <div class="col-md-3 option_font">
+                        Email :
+                    </div>
+                    <div class="col-md-9 mail">
+                        <a href="mailto:info@yourdomain.com"> Info@gmail.com </a><br>
+                        <a href="mailto:support@yourdomain.com"> Support@gmail.com </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 option_font">
+                        Hours of operation :
+                    </div>
+                    <div class="col-md-9">
+                        <div>Open 7 days a week</div><br>
+                        <div>8am to 9pm</div>
+                    </div>
+                </div>
+                <div class="row">
+                	<div class="col-md-12">
+                		" FOLLOW " and " LIKE " The SIMPLON Center on <a href="">Facebook</a> + <a href="">Googleplus</a> + <a href="">Instagram</a> + <a href="">Twitter</a> for daily messages and highlighted work from our collaborative professionals. 
+                	</div>
+                </div>
+                <div class="row ">
+                	<div class="col-md-12 social_hidden">
+                		<a class="social" href="#" target="_blank">
+						    <div class="front">
+								<i class="fa fa-facebook"></i>
+						    </div>
+						    <div class="back">
+								<i class="fa fa-facebook"></i>
+						    </div>
+						</a>
+                		<a class="social social-googleplus" href="#" target="_blank">
+						    <div class="front">
+								<i class="fa fa-google-plus"></i>
+						    </div>
+						    <div class="back">
+								<i class="fa fa-google-plus"></i>
+						    </div>
+						</a>
+                		<a class="social social-linkedin" href="#" target="_blank">
+						    <div class="front">
+								<i class="fa fa-linkedin"></i>
+						    </div>
+						    <div class="back">
+								<i class="fa fa-linkedin"></i>
+						    </div>
+						</a>
+                		<a class="social social-twitter" href="#" target="_blank">
+						    <div class="front">
+								<i class="fa fa-twitter"></i>
+						    </div>
+						    <div class="back">
+								<i class="fa fa-twitter"></i>
+						    </div>
+						</a>
+					</div>
+                </div>
+			</div>
+			<div class="col-sm-7" >
+				<form ng-submit="ctrl.submit()" name="myForm" id="myForm">
+					<div class="form-group">
+						<label class="option_font">Your Name * </label><br>
+						<input type="text" ng-model="ctrl.user.username" name="uname" class="contact_form username" placeholder="Enter your name" required ng-minlength="3"/><br>
+			            <span ng-show="myForm.$dirty && myForm.uname.$error.required">This is a required field</span>
+			            <span ng-show="myForm.$dirty && myForm.uname.$error.minlength">Minimum length required is 3</span>
+			            <span ng-show="myForm.$dirty && myForm.uname.$invalid">This field is invalid </span>
+					</div>
+					<div class="form-group">
+						<label class="option_font">Your Phone * </label><br>
+						<input type="text" ng-model="ctrl.user.phone" name="phone" class="contact_form phone" placeholder="Enter your phone" required ng-minlength="9"/><br>
+			            <span ng-show="myForm.$dirty && myForm.phone.$error.required">This is a required field</span>
+			            <span ng-show="myForm.$dirty && myForm.phone.$error.minlength">Minimum length required is 10</span>
+			            <span ng-show="myForm.$dirty && myForm.phone.$invalid">This field is invalid </span>
+					</div>
+					<div class="form-group">
+						<label class="option_font">Your Email * </label><br>
+						<input type="email" ng-model="ctrl.user.email" name="email" class=" contact_formemail contact_form" placeholder="Enter your Email" required/>
+		                <span ng-show="myForm.$dirty && myForm.email.$error.required">This is a required field</span>
+		                <span ng-show="myForm.$dirty && myForm.email.$invalid">This field is invalid </span>
+					</div>
+					<div class="form-group">
+						<label class="option_font">Your Message * </label><br>
+						<textarea ng-model="ctrl.user.message" name="message" class="contact_form contactform_textarea message" placeholder="Enter your message" required ng-minlength="1"></textarea>
+		                <span ng-show="myForm.$dirty && myForm.message.$error.required">This is a required field</span>
+		                <span ng-show="myForm.$dirty && myForm.message.$error.minlength">Minimum length required is 1</span>
+		                <span ng-show="myForm.$dirty && myForm.message.$invalid">This field is invalid </span>
+					</div>
+					<div class="form-group">
+						 <input type="submit"  value="Send" ng-disabled="myForm.$invalid" style="background-color: #4ab94a;color: white;margin-bottom: 20px;" onclick="myFunction()" class="contact_form">
+					</div>
+					<div class="form-group">
+						<small><strong>*</strong> These fields are required .</small>
+					</div>
+				</form>
+			</div>
+		</div>		
+	</div>
+<!-- Map -->
+	<div class="container"><h2 style="text-align: center;">Google Maps</h2></div>
+	<div class="container" id="map">	
+	</div>
+<!--===================================================================== -->
+
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=
+		AIzaSyBTcq3v74l5EKYBJEKRH6U6KWNa0NENn8o
+		&callback=initMap">
+    </script>
+</body>
+</html>
