@@ -155,27 +155,45 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
             var value_product;
             var price_product_quantity;
             vm.remove_product=function(event) {
-                $http.post("/product/"+$routeParams.name,data_array)
-                    .then(function(response) {
-                        console.log(response);
-                        // data_array = response.config.data;
-                    });
                 data_array.splice(event.target.id,1);
                 if(data_array.length==0){
                     document.getElementById('show_table').innerHTML="EMPTY CART !!!";
                 }
                 else {
                     vm.displayTable(data_array);
-                }
+                };
+                if(typeof $routeParams.name !== "undefined"){
+                    $http.post("/product/"+$routeParams.name,data_array)
+                        .then(function(response) {
+                            console.log(response);
+                            // data_array = response.config.data;
+                        });
+                };
+                if(typeof $routeParams.name == "undefined"){
+                    $http.post('/checkout',data_array)
+                        .then(function(response) {
+                            console.log(response);
+                            // data_array = response.config.data;
+                        });
+                };
             }
             vm.remove_all_product=function(event) {
-                $http.post("/product/"+$routeParams.name,data_array)
-                    .then(function(response) {
-                        console.log(response);
-                        // data_array = response.config.data;
-                    });
                 data_array.splice(0,event.target.id);
                 document.getElementById('show_table').innerHTML="EMPTY CART !!!";
+                if(typeof $routeParams.name !== "undefined"){
+                    $http.post("/product/"+$routeParams.name,data_array)
+                        .then(function(response) {
+                            console.log(response);
+                            // data_array = response.config.data;
+                        });
+                }
+                else if(typeof $routeParams.name == "undefined"){
+                    $http.post("/checkout",data_array)
+                        .then(function(response) {
+                            console.log(response);
+                            // data_array = response.config.data;
+                        });
+                };
             }
 
 
