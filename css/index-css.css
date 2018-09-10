@@ -80,7 +80,31 @@ body {margin: 0px !important;}
 }
 
 /*row 4*/
-.media-list{
+.defaut_category {
+  padding: 12px 16px;
+  background-color: white;
+  margin: 20px;
+  border: 1.5px solid black;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: cursive;
+}
+.defaut_category:hover {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+.defaut_category.active {
+  background-color: #1a1717;
+  color: white;
+  border: #f7f8fe solid 0.5px;
+  text-align: center;
+  border: 1.5px solid black;
+  font-weight: bold;
+  font-family: cursive;
+}
+/*.media-list{
   height: 40px;
   line-height: 40px;
   text-align: center;
@@ -93,7 +117,7 @@ body {margin: 0px !important;}
 .media-list:hover{
   background-color: black;
   color: white;
-}
+}*/
 .pagination-list
 /*row 5*/
 .product-hot{
