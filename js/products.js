@@ -30,7 +30,8 @@ productApp.controller('OtherController', OtherController);
 var data_array=[];
 productApp.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
     $routeProvider.when('/home',{
-        templateUrl : "./pages/home.html"
+        templateUrl : "./pages/home.html",
+        controller:"myCtrl"
     }).when('/product/:name',{
         templateUrl : "./pages/product.html",
         controller : "productCtrl"
