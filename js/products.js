@@ -37,7 +37,7 @@ productApp.config(['$routeProvider','$locationProvider',function($routeProvider,
         controller : "productCtrl"
     }).when('/profile/:name/:id',{
         templateUrl : "pages/profile_ring.html",
-        controller : "profileCtrl"
+        controller : "productCtrl"
     }).when('/checkout',{
         templateUrl : "pages/check_out.html",
         controller : "productCtrl"
@@ -54,8 +54,8 @@ function compile(element){
 }
 
 
-//function change_quantity and change price;
-// productApp.controller("profileCtrl", function(vm, $http,$routeParams,$location) {
+// productApp.controller("profileCtrl", function($scope, $http,$routeParams,$location) {
+//     vm=$scope;
 //     vm.currentPage = 1;
 //     vm.pageSize = 12;
 //     vm.name_custom = $routeParams.name;
@@ -92,6 +92,25 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
         $http.get('data/ring_' + $routeParams.name + '.json') //reading the product.json file
         .then(function (response) {
             vm.products = response.data; // binding the data to the vm variable
+            vm.id = $routeParams.id;
+            vm.image = response.data[vm.id - 1].image;
+            vm.name_product = response.data[vm.id - 1].name;
+            vm.sex = response.data[vm.id - 1].sex;
+            vm.price = response.data[vm.id - 1].price;
+            vm.price_8 = response.data[vm.id - 1].price_8;
+            vm.price_9 = response.data[vm.id - 1].price_9;
+            vm.price_10_5 = response.data[vm.id - 1].price_10_5;
+            vm.title_info = response.data[vm.id - 1].title_info;
+            vm.description = response.data[vm.id - 1].description;
+            vm.Trade_Mark = response.data[vm.id - 1].trade_mark;
+            vm.Stone = response.data[vm.id - 1].stone;
+            vm.Color = response.data[vm.id - 1].color;
+            vm.Shape = response.data[vm.id - 1].shape;
+            vm.Cara = response.data[vm.id - 1].cara;
+            vm.Age = response.data[vm.id - 1].age;
+            vm.Weight = response.data[vm.id - 1].weight;
+            vm.class_rating_star=response.data[vm.id-1].class_rating_star;
+            vm.id_product=response.data[vm.id-1].id;
         });
     }    
 
