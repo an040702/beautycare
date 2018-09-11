@@ -123,9 +123,18 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
             }
         });
 
+    //thay doi bang checkout
+    vm.changetable=function(){
+        document.getElementById('table_shopping').style='width: 50%';
+        a=document.getElementById('sub');
+        b=document.getElementById('show_table');
+        a.setAttribute('colspan','5')
+        b.setAttribute('class','col-md-7');
+        document.getElementById('checkout').remove();
+        document.getElementById('hidden').style='display:inline';
+    };
 
     //change price when click input
-
 
     vm.change_quantity=function(e) {
         $http.post("/product/" + $routeParams.name, data_array)
@@ -255,7 +264,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
             //
             vm.displayTable=function (table_shopping) {
                 console.log(table_shopping.length);
-                    document.getElementById('show_table').innerHTML="<table id='table_shopping'><tr><th>No</th><th>Image</th><th>Name</th><th>Id</th><th>Type</th><th>Quantity</th><th>Price/1</th><th>Price/Quantity</th><th>Remove</th></tr></table>";
+                    document.getElementById('show_table').innerHTML="<table id='table_shopping'><tr><th width='5%'>No</th><th width='25%'>Image</th><th width='10%'>Name</th><th width='5%'>Id</th><th width='10%'>Type</th><th width='10%'>Quantity</th><th width='10%'>Price/1</th><th width='15%'>Price/Quantity</th><th width='10%'>Remove</th></tr></table>";
                     var table = document.getElementById('table_shopping');
                     var sum=0;
                     for (var i = 0; i < table_shopping.length; ++i)
@@ -273,8 +282,9 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                             if (j == 1) {
                                 var cell = document.createElement('td');
                                 var img = document.createElement('img');
+                                img.className="ing-responsive2"
                                 img.src=products[properties[j]];
-                                img.style='height:50px;margin:10px';
+                                img.style='max-width: 100px;max-height: 100px';
                                 cell.appendChild(img);
                             }
                             else if(j==5){
@@ -291,6 +301,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                             }
                             else if(j==properties.length-2){
                                 var cell = document.createElement('td');
+                                cell.className="a";
                                 cell.id="price_no_"+(i+1);
                                 cell.innerHTML = parseInt(products[properties[5]])*parseInt(products[properties[j-1]])+ "$";
                                 sum+=parseInt(products[properties[5]])*parseInt(products[properties[j-1]]);
@@ -331,12 +342,25 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                         if(i==table_shopping.length-1){
                             var row = document.createElement('tr');
                             var cell=document.createElement('td');
-                            cell.setAttribute('colspan',properties.length-2);
+                            cell.setAttribute('colspan',properties.length-7);
                             cell.setAttribute('style','color:blue');
-                            cell.innerHTML="TOTAL";
+                            cell.innerHTML="<a class='btn btn-warning'><i class='fa fa-angle-left'></i> Continue Shopping</a>";
+                            cell.className="continue";
+                            row.appendChild(cell);
+                            table.appendChild(row);
+                            var cell=document.createElement('td');
+                            cell.setAttribute('colspan',properties.length-5);
+                            cell.setAttribute('style','color:black;font-weight:bold;font-size:20px;');
+                            cell.innerHTML="Total";
+                            cell.setAttribute('id','sub');
+                            row.appendChild(cell);
+                            table.appendChild(row);
+                            var cell=document.createElement('td');
+                            cell.setAttribute('id','checkout');
+                            cell.innerHTML="<div style='cursor: pointer' class='btn btn-success btn-block'>Check Out <i class='fa fa-angle-right'></i></div>";
                             row.appendChild(cell);
                             var cell=document.createElement('td');
-                            cell.setAttribute('style','color:blue');
+                            cell.setAttribute('style','color:red');
                             cell.setAttribute('id','total');
                             cell.innerHTML=sum +"$";
                             row.appendChild(cell);
@@ -352,6 +376,9 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                             table.appendChild(row);
                         }
                     }
+                    var el = document.getElementById('checkout');
+                    el.setAttribute("ng-click", "changetable()");
+                    compile(el);
                     var el = document.getElementById(table_shopping.length);
                     el.setAttribute("ng-click", "remove_all_product($event)");
                     compile(el);
