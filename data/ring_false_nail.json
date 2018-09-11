@@ -1,7 +1,7 @@
   [{
-    "id": "(EYE1)",
+    "id": "(FN1)",
     "name": "PNJ",
-    "image":"images/images_ring/images_ring_eyes/eyes_1.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_1.png",
     "price": "600",
     "class_rating_star": "1",
     "sex" : "Male",
@@ -15,9 +15,9 @@
    "weight": "0.6612",
    "age" : "18K"
   },{
-   "id": "(EYE2)",
+   "id": "(FN2)",
     "name": "WEEDING",
-    "image":"images/images_ring/images_ring_eyes/eyes_2.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_2.png",
     "price": "700",
     "class_rating_star": "2",
     "sex" : "Female",
@@ -31,9 +31,9 @@
    "weight": "0.6672",
    "age" : "14K"
   },{
-   "id": "(EYE3)",
+   "id": "(FN3)",
     "name": "PROPOSE",
-    "image":"images/images_ring/images_ring_eyes/eyes_3.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_3.png",
     "price": "999",
     "class_rating_star": "3",
     "price_8": "12.500.000",
@@ -50,9 +50,9 @@
    "weight": "0.6112",
    "age" : "10K"
   },{
-   "id": "(EYE4)",
+   "id": "(FN4)",
     "name": "LOVE",
-    "image":"images/images_ring/images_ring_eyes/eyes_4.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_4.png",
     "price": "850",
     "class_rating_star": "4",
     "sex" : "Female",
@@ -66,9 +66,9 @@
    "weight": "0.6912",
    "age" : "20K"
   },{
-   "id": "(EYE5)",
+   "id": "(FN5)",
     "name": "HEART",
-    "image":"images/images_ring/images_ring_eyes/eyes_5.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_5.png",
     "price": "750",
     "class_rating_star": "5",
     "sex" : "Male",
@@ -82,9 +82,9 @@
    "weight": "0.8612",
    "age" : "18K"
   },{
-   "id": "(EYE6)",
+   "id": "(FN6)",
     "name": "LOVE",
-    "image":"images/images_ring/images_ring_eyes/eyes_6.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_6.png",
     "price": "840",
     "class_rating_star": "6",
     "sex" : "Male",
@@ -98,9 +98,9 @@
    "weight" : "0.3612",
    "age" : "14K"
 },{
-   "id": "(EYE7)",
+   "id": "(FN7)",
     "name": "LUXURY",
-    "image":"images/images_ring/images_ring_eyes/eyes_7.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_7.png",
     "price": "680",
     "class_rating_star": "7",
     "description" : "Description_7",
@@ -114,9 +114,9 @@
    "weight": "0.8612",
    "age" : "20K"
 },{
-   "id": "(EYE8)",
+   "id": "(FN8)",
     "name": "ROMANTIC",
-    "image":"images/images_ring/images_ring_eyes/eyes_8.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_8.png",
     "price": "1200",
     "class_rating_star": "8",
     "sex" : "Male",
@@ -130,9 +130,9 @@
    "weight": "0.4612",
    "age" : "18K"
 },{
-   "id": "(EYE9)",
+   "id": "(FN9)",
     "name": "ROSE",
-    "image":"images/images_ring/images_ring_eyes/eyes_9.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_9.png",
     "price": "660",
     "class_rating_star": "9",
     "sex" : "Male",
@@ -145,9 +145,9 @@
    "weight": "0.6682",
    "age" : "18K"
     },{
-   "id": "(EYE10)",
+   "id": "(FN10)",
     "name": "COUPLE",
-    "image":"images/images_ring/images_ring_eyes/eyes_10.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_10.png",
     "price": "900",
     "class_rating_star": "10",
     "sex" : "Male & Female",
@@ -161,9 +161,9 @@
    "weight": "0.6212",
    "age" : "20K"
   },{
-   "id": "(EYE11)",
+   "id": "(FN11)",
     "name": "COUPLE",
-    "image":"images/images_ring/images_ring_eyes/eyes_11.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_11.png",
     "price": "1150",
     "class_rating_star": "11",
     "sex" : "Male & Female",
@@ -177,9 +177,9 @@
    "weight": "0.6612",
    "age" : "10K"
   },{
-   "id": "(EYE12)",
+   "id": "(FN12)",
     "name": "NOBLE",
-    "image":"images/images_ring/images_ring_eyes/eyes_12.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_12.png",
     "price": "820",
     "class_rating_star": "12",
     "sex" : "Female",
@@ -194,9 +194,9 @@
    "age" : "20K"
   }
   ,{
-    "id": "(EYE13)",
+    "id": "(FN13)",
     "name": "NOBLE",
-    "image":"images/images_ring/images_ring_eyes/eyes_13.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_13.png",
     "price": "550",
     "class_rating_star": "13",
     "sex" : "Female",
@@ -211,9 +211,9 @@
     "age" : "10K"
   }
   ,{
-    "id": "(EYE14)",
+    "id": "(FN14)",
     "name": "PNJ",
-    "image":"images/images_ring/images_ring_eyes/eyes_14.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_14.png",
     "price": "630",
     "class_rating_star": "14",
     "sex" : "Male",
@@ -228,9 +228,9 @@
     "age" : "20K"
   }
   ,{
-    "id": "(EYE15)",
+    "id": "(FN15)",
     "name": "NOBLE",
-    "image":"images/images_ring/images_ring_eyes/eyes_15.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_15.png",
     "price": "960",
     "class_rating_star": "15",
     "sex" : "Female",
@@ -245,9 +245,9 @@
     "age" : "20K"
   }
   ,{
-    "id": "(EYE16)",
+    "id": "(FN16)",
     "name": "NTK",
-    "image":"images/images_ring/images_ring_eyes/eyes_16.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_16.png",
     "price": "160",
     "class_rating_star": "16",
     "sex" : "Male",
@@ -262,9 +262,9 @@
     "age" : "20K"
   }
   ,{
-    "id": "(EYE17)",
+    "id": "(FN17)",
     "name": "NOBLE",
-    "image":"images/images_ring/images_ring_eyes/eyes_17.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_17.png",
     "price": "860",
     "class_rating_star": "17",
     "sex" : "Female",
@@ -279,9 +279,9 @@
     "age" : "20K"
   }
   ,{
-    "id": "(EYE18)",
+    "id": "(FN18)",
     "name": "NOBLE",
-    "image":"images/images_ring/images_ring_eyes/eyes_18.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_18.png",
     "price": "880",
     "class_rating_star": "18",
     "sex" : "Female",
@@ -296,9 +296,9 @@
     "age" : "20K"
   }
   ,{
-    "id": "(EYE19)",
+    "id": "(FN19)",
     "name": "PNJ",
-    "image":"images/images_ring/images_ring_eyes/eyes_19.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_19.png",
     "price": "550",
     "class_rating_star": "19",
     "sex" : "Male",
@@ -313,9 +313,9 @@
     "age" : "20K"
   }
   ,{
-    "id": "(EYE20)",
+    "id": "(FN20)",
     "name": "NOBLE",
-    "image":"images/images_ring/images_ring_eyes/eyes_20.png",
+    "image":"images/images_ring/images_ring_false_nail/false_nail_20.png",
     "price": "880",
     "class_rating_star": "20",
     "sex" : "Female",
