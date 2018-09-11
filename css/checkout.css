@@ -1,9 +1,46 @@
 table {
   border-collapse: collapse;
+  width: 100%;
 }
-
-table, td, th {
-  border: 1px solid black;
-  padding:10px;
+.table>tbody>tr>td, .table>tfoot>tr>td{
+  vertical-align: middle;
   text-align: center;
 }
+table,th,td,tr {
+  text-align: center;
+  border-top: 2px solid #dee2e6;
+}
+th {
+  height: 40px;
+}
+td {
+  padding: 10px;
+}
+input {
+  text-align: center;
+}
+.actions .btn{
+  width:36%;
+  margin:1.5em 0;
+}
+
+.actions .btn-info{
+  float:left;
+}
+.actions .btn-danger{
+  float:right;
+}
+
+table thead { display: none; }
+table tbody td { display: block; padding: .6rem; min-width:320px;}
+table tbody tr td:first-child { background: #333; color: #fff; }
+table tbody td:before {
+  content: attr(data-th); font-weight: bold;
+  display: inline-block; width: 8rem;
+}
+
+
+
+table#cart tfoot td{display:block; }
+table#cart tfoot td .btn{display:block;}
+td>a{width: 100%}

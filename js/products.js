@@ -136,7 +136,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
     vm.currentPage = 1;
     vm.pageSize = 12;
     vm.name_custom = $routeParams.name;
-    
+
     //Check route if route product page or not
     if(typeof $routeParams.name !== "undefined") {
         $http.get('data/ring_' + $routeParams.name + '.json') //reading the product.json file
@@ -159,7 +159,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
             vm.class_rating_star=response.data[vm.id-1].class_rating_star;
             vm.id_product=response.data[vm.id-1].id;
         });
-    }    
+    }
 
     // GET and bind data_array from user.json
     $http.get('data/user.json') //reading the user.json file
@@ -381,12 +381,25 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                         if(i==table_shopping.length-1){
                             var row = document.createElement('tr');
                             var cell=document.createElement('td');
-                            cell.setAttribute('colspan',properties.length-2);
+                            cell.setAttribute('colspan',properties.length-7);
                             cell.setAttribute('style','color:blue');
-                            cell.innerHTML="TOTAL";
+                            cell.innerHTML="<a class='btn btn-warning'><i class='fa fa-angle-left'></i> Continue Shopping</a>";
+                            cell.className="continue";
+                            row.appendChild(cell);
+                            table.appendChild(row);
+                            var cell=document.createElement('td');
+                            cell.setAttribute('colspan',properties.length-5);
+                            cell.setAttribute('style','color:black;font-weight:bold;font-size:20px;');
+                            cell.innerHTML="Total";
+                            cell.setAttribute('id','sub');
+                            row.appendChild(cell);
+                            table.appendChild(row);
+                            var cell=document.createElement('td');
+                            cell.setAttribute('id','checkout');
+                            cell.innerHTML="<div style='cursor: pointer' class='btn btn-success btn-block'>Check Out <i class='fa fa-angle-right'></i></div>";
                             row.appendChild(cell);
                             var cell=document.createElement('td');
-                            cell.setAttribute('style','color:blue');
+                            cell.setAttribute('style','color:red');
                             cell.setAttribute('id','total');
                             cell.innerHTML=sum +"$";
                             row.appendChild(cell);
