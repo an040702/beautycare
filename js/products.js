@@ -20,13 +20,7 @@ productApp.directive('product',function () {
 function OtherController($scope) {
 };
 productApp.controller('OtherController', OtherController);
-//End Code
-// productApp.controller("urlCtrl", function(vm, $route)  {
-//     vm.$on('$routeChangeStart', function($event, next, current,$location) {
-//         // ... you could trigger something here ...
-//         $location.path('#!/'+ $location.path());
-//     });
-// });
+
 var data_array=[];
 productApp.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
     $routeProvider.when('/home',{
@@ -131,12 +125,14 @@ productApp.controller("loginCtrl", function($scope, $http,$routeParams) {
 //             vm.Weight = response.data[vm.id - 1].weight;
 //         });
 // })
-productApp.controller("productCtrl", function($scope, $http,$routeParams,$compile) {
+productApp.controller("productCtrl", function($scope, $http,$routeParams,$compile,$timeout) {
     var vm=$scope;
     vm.currentPage = 1;
     vm.pageSize = 12;
     vm.name_custom = $routeParams.name;
-
+    vm.show_shopping=function(){
+        return true;
+    };
     //Check route if route product page or not
     if(typeof $routeParams.name !== "undefined") {
         $http.get('data/ring_' + $routeParams.name + '.json') //reading the product.json file
@@ -256,6 +252,11 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
             //add product
 
             vm.add_Cart = function (checked_id) {
+                document.getElementById('ul-nav-cart').style='display: block';
+                $timeout(function() {
+                   document.getElementById('ul-nav-cart').style='display: none';
+                }, 2000);
+                
                 //POST data_array to NodeJS
                 $http.post("/product/" + $routeParams.name, data_array)
                     .then(function (response) {
