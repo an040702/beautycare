@@ -52,8 +52,58 @@ function compile(element){
         $compile(el)($scope)
     })
 }
+var data_users=[];
+productApp.controller("loginCtrl", function($scope, $http,$routeParams) {
 
+    var vm=$scope;
+    vm.eml_add = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
+    vm.currentPage = 1;
+    vm.pageSize = 12;
+    vm.name_custom = $routeParams.name;
+
+    //Check route if route product page or not
+        $http.get('data/data_users.json') //reading the product.json file
+            .then(function (response) {
+                    vm.products = response.data;
+                    vm.id = 1;
+                    for(var i=0;i<response.data.length;i++) {
+                        data_users.push({
+                            username: response.data[i].username,
+                            password: response.data[i].password
+                        });
+                    }
+            }
+            );
+    //    function register
+    vm.regis=function () {
+
+        var username=document.getElementById('email').value;
+        var password=document.getElementById('password').value;
+        var password_confim=document.getElementById('password_confirmation').value;
+
+        if(password!=password_confim){
+            shakeModals();
+        }
+
+        else if(password_confim==''&&username==''&&password==''){
+            empty();
+        }
+
+        else{
+            var email=document.getElementById('email').value;
+            var password=document.getElementById('password').value;
+            data_users.push({
+                username: email,
+                password: password
+
+            });
+            alert("Registed !!!");
+            window.history.go();
+        }
+        console.log(data_users);
+    }
+});
 // productApp.controller("profileCtrl", function($scope, $http,$routeParams,$location) {
 //     vm=$scope;
 //     vm.currentPage = 1;
