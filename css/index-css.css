@@ -3,7 +3,7 @@ body {margin: 0px !important;}
 /*anh parallax */
 /*edit page cuc bo*/
 .col-md-3{
-    margin-top: 10%; 
+    margin-top: 10%;
 }
 .col-md-3{
   margin-top: 3% !important;
@@ -88,7 +88,7 @@ body {margin: 0px !important;}
   text-align: center;
   font-weight: bold;
   letter-spacing: 2px;
-  font-family: ;
+
 }
 .defaut_category:hover {
   background-color: black;
@@ -102,7 +102,7 @@ body {margin: 0px !important;}
   text-align: center;
   border: 1.5px solid black;
   font-weight: bold;
-  font-family: ;
+
 }
 /*.media-list{
   height: 40px;

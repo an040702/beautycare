@@ -1,8 +1,71 @@
 <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
 <div class="container" style="margin-top: 100px">
     <div class="row">
-        <div id="show_table"></div>
+        <div id="show_table" class="col-md-12">a0-9sodl0-l</div>
+        <div class="col-md-5" style="display: none" id="hidden">
+                <form>
+                    <div class="row">
+                        <div class="col-6">
+                            <h3>Billing Address</h3>
+                            <label class="label-co" ><i class="fa fa-user"></i> Full Name</label>
+                            <input class="input-co" type="text" id="fname-co" name="firstname" placeholder="Full name">
+                            <label class="label-co" ><i class="fa fa-envelope"></i> Email</label>
+                            <input class="input-co" type="text" id="email-co" name="email" placeholder="abc@example.com">
+                            <label class="label-co" ><i class="fa fa-address-card-o"></i> Address</label>
+                            <input class="input-co" type="text" id="adr-co" name="address" placeholder="1 W. 15th Street">
+                            <label class="label-co" ><i class="fa fa-institution"></i> City</label>
+                            <input class="input-co" type="text" id="city-co" name="city" placeholder="Da Nang">
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="label-co" >District</label>
+                                    <input class="input-co" type="text" id="district" name="district" placeholder="Lien Chieu" >
+                                </div>
+                                <div class="col-6">
+                                    <label class="label-co" class="label-co" for="zip">Ward</label>
+                                    <input class="input-co" type="text" id="zip" name="zip" placeholder="Hoa Khanh Bac">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <h3>Payment</h3>
+                            <label class="label-co">Accepted Cards</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label class="label-co" for="cname">Name on Card</label>
+                            <input class="input-co" type="text" id="cname" name="cardname" placeholder="Nguyen Dinh Minh Duc">
+                            <label class="label-co" for="ccnum">Credit card number</label>
+                            <input class="input-co" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label class="label-co" for="expmonth">Exp Month</label>
+                            <input class="input-co" type="text" id="expmonth" name="expmonth" placeholder="September">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="label-co" for="expyear">Exp Year</label>
+                                    <input class="input-co" type="text" id="expyear" name="expyear" placeholder="2018">
+                                </div>
+                                <div class="col-6">
+                                    <label class="label-co" for="cvv">CVV</label>
+                                    <input class="input-co" type="text" id="cvv" name="cvv" placeholder="352">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <label class="label-co">
+                        <input class="input-co" type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                    </label>
+                    <input class="input-co" type="submit" value="Submit" class="btn-co">
+                </form>
+        </div>
+
     </div>
+
+</div>
 
 </div>
 <div class="container">
