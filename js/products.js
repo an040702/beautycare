@@ -254,7 +254,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
             vm.add_Cart = function (checked_id) {
                 document.getElementById('ul-nav-cart').style='display: block';
                 $timeout(function() {
-                   document.getElementById('ul-nav-cart').style='display: none';
+                   document.getElementById('ul-nav-cart').style='display: hidden';
                 }, 2000);
                 
                 //POST data_array to NodeJS
