@@ -47,7 +47,7 @@ function compile(element){
     })
 }
 var data_users=[];
-productApp.controller("loginCtrl", function($scope, $http,$routeParams) {
+productApp.controller("loginCtrl", function($scope,$http,$routeParams) {
 
     var vm=$scope;
     vm.eml_add = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -94,7 +94,12 @@ productApp.controller("loginCtrl", function($scope, $http,$routeParams) {
             });
             alert("Registed !!!");
             window.history.go();
-        }
+        };
+        $http.post('/checkout',data_users)
+          .then(function(response) {
+              console.log(response);
+              // data_array = response.config.data;
+          });
         console.log(data_users);
     }
 });
@@ -165,7 +170,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                 document.getElementById('show_table').innerHTML="EMPTY CART !!!";
             }
             else {
-                vm.displayTable(data_array);
+                vm.displayTable(data_array,'table_shopping');
             }
         });
 
@@ -212,7 +217,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                     document.getElementById('show_table').innerHTML="EMPTY CART !!!";
                 }
                 else {
-                    vm.displayTable(data_array);
+                    vm.displayTable(data_array,'table_shopping');
                 };
                 if(typeof $routeParams.name !== "undefined"){
                     $http.post("/product/"+$routeParams.name,data_array)
@@ -255,8 +260,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                 document.getElementById('ul-nav-cart').style='display: block';
                 $timeout(function() {
                    document.getElementById('ul-nav-cart').style='display: hidden';
-                }, 2000);
-                
+                }, 2000);                
                 //POST data_array to NodeJS
                 $http.post("/product/" + $routeParams.name, data_array)
                     .then(function (response) {
@@ -310,13 +314,20 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                     }
                 }
                 console.log(data_array);
-                vm.displayTable(data_array);
+                vm.displayTable(data_array,'table_shopping');
             }
             //
-            vm.displayTable=function (table_shopping) {
+            vm.displayTable=function (table_shopping,table_id) {
                 console.log(table_shopping.length);
-                    document.getElementById('show_table').innerHTML="<table id='table_shopping'><tr><th width='5%'>No</th><th width='25%'>Image</th><th width='10%'>Name</th><th width='5%'>Id</th><th width='10%'>Type</th><th width='10%'>Quantity</th><th width='10%'>Price/1</th><th width='15%'>Price/Quantity</th><th width='10%'>Remove</th></tr></table>";
-                    var table = document.getElementById('table_shopping');
+                    if(typeof $routeParams.name !== "undefined") {
+                    document.getElementById('show_table').innerHTML="<table id='"+table_id+"'><tr><th width='5%'>No</th><th width='25%'>Image</th><th width='10%'>Name</th><th width='5%'>Id</th><th width='10%'>Type</th><th width='10%'>Quantity</th><th width='10%'>Price/1</th><th width='15%'>Price/Quantity</th><th width='10%'>Remove</th></tr></table>";
+                    }
+                    else
+                    {
+                      document.getElementById('show_table').innerHTML = "";
+                      document.getElementById('show_table1').innerHTML="<table id='"+table_id+"'><tr><th width='5%'>No</th><th width='25%'>Image</th><th width='10%'>Name</th><th width='5%'>Id</th><th width='10%'>Type</th><th width='10%'>Quantity</th><th width='10%'>Price/1</th><th width='15%'>Price/Quantity</th><th width='10%'>Remove</th></tr></table>";
+                    }
+                    var table = document.getElementById(table_id);
                     var sum=0;
                     for (var i = 0; i < table_shopping.length; ++i)
                     {   // keep a reference to an individual president object
@@ -408,7 +419,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                             table.appendChild(row);
                             var cell=document.createElement('td');
                             cell.setAttribute('id','checkout');
-                            cell.innerHTML="<div style='cursor: pointer' class='btn btn-success btn-block'>Check Out <i class='fa fa-angle-right'></i></div>";
+                            cell.innerHTML="<a href='#!/checkout' style='text-decoration: none'><div style='cursor: pointer' class='btn btn-success btn-block'>Check Out <i class='fa fa-angle-right'></i></div></a>";
                             row.appendChild(cell);
                             var cell=document.createElement('td');
                             cell.setAttribute('style','color:red');

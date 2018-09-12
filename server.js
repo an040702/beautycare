@@ -47,6 +47,17 @@ app.post('/checkout', function(req, res){
   fs.writeFile('data/user.json', json, 'utf8', callback); // write it back 
   console.log("Saved!!!");
 });
+var user_obj =[];
+var user_json = JSON.stringify(user_obj);
+//Post data_user from checkout page
+// app.post('/checkout', function(req, res){
+//   res.send("Got data_user. NodeJS response");
+//   user_obj = req.body;
+//   console.log(user_obj);
+//   user_json = JSON.stringify(user_obj); //convert it back to json
+//   fs.writeFile('data/data_users.json', user_json, 'utf8', callback); // write it back 
+//   console.log("Saved!!!");
+// });
 
 /**
  * STATIC FILES
