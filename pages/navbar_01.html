@@ -135,12 +135,17 @@
           <input class="search__input" type="text" placeholder="Search" ng-model="productSearch.name">
         </div>
       </form>
+
       <ul style="margin-right: 5px;" class="nav navbar-nav navbar-right snip1555">
+        <li>
+          <a href='#!/login' style="font-weight: 600" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in <i class="fas fa-sign-in-alt"></i></a>
+        </li>
         <!-- CONTACT US            -->
         <li>
           <a href="contact.html"><i class="fas fa-globe"></i></a>
         </li>
-        <!-- ABOUT US            -->
+        <!-- ABOUT US          -->
+
         <li>
           <a href="about_us.html"><i class="far fa-id-card"></i></a>
         </li>
@@ -154,7 +159,7 @@
             <ul class="dropdown-menu" id="ul-nav-cart">
               <li>
                 <div class="container navbar-product pre-scrollable">
-                  <div id="show_table"></div>
+                  <div id="show_table" ng-controller="productCtrl"></div>
                 </div>
               </li>             
             </ul>
@@ -164,3 +169,71 @@
   </nav>
 </div>
 
+<div class="modal fade login" id="loginModal"  ng-controller="loginCtrl"  >
+  <div class="modal-dialog login animated" >
+    <div class="modal-content-login">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Login with</h4>
+      </div>
+      <div class="modal-body">
+        <div class="box">
+          <div>
+            <div class="content">
+              <div class="social">
+                <a class="circle github" style="cursor: pointer" >
+                  <i class="fa fa-github fa-fw"></i>
+                </a>
+                <a id="google_login" class="circle google" style="cursor: pointer">
+                  <i class="fa fa-google-plus fa-fw"></i>
+                </a>
+                <a id="facebook_login" class="circle facebook" style="cursor: pointer">
+                  <i class="fa fa-facebook fa-fw"></i>
+                </a>
+              </div>
+              <div class="division">
+                <div class="line l"></div>
+                <span>or</span>
+                <div class="line r"></div>
+              </div>
+              <div class="error"></div>
+              <div class="form loginBox">
+                <form method="post" action="/login" accept-charset="UTF-8">
+                  <input id="em" class="form-control" type="text" placeholder="Email" name="email">
+                  <input id="pass" class="form-control" type="password" placeholder="Password" name="password">
+                  <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content registerBox">
+            <div class="form">
+              <form  data-remote="true" action="/register" accept-charset="UTF-8">
+                <input id="email" class="form-control" ng-model="email" type="text" ng-pattern="eml_add" ng-required="true" autocomplete="off" placeholder="Email">
+                <span class="red-text" ng-if="inquiryForm.email.$error.required && inquiryForm.email.$dirty">Email is a required field</span>
+
+                <span class="red-text" ng-show="inquiryForm.email.$error.pattern">Invalid Email</span>
+                <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                <input class="btn btn-default btn-register" type="button" value="Create account"  ng-click="regis()">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="forgot login-footer">
+            <span>Looking to
+                     <span style="cursor: pointer;color: #00BBFF" onclick="showRegisterForm()">create an account</span>
+            ?</span>
+        </div>
+        <div class="forgot register-footer" style="display:none">
+          <span>Already have an account?</span>
+          <span style="cursor: pointer;color: #00BBFF" onclick="showLoginForm()">Login</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

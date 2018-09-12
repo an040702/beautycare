@@ -35,6 +35,11 @@ productApp.config(['$routeProvider','$locationProvider',function($routeProvider,
     }).when('/checkout',{
         templateUrl : "pages/check_out.html",
         controller : "productCtrl"
+    }).when('/login',{
+        templateUrl: (function () {
+            window.location=path;
+        })
+
     }).otherwise({redirectTo:'/home'});
     // $locationProvider.html5Mode(true);
 }]);
@@ -47,31 +52,28 @@ function compile(element){
     })
 }
 var data_users=[];
+
 productApp.controller("loginCtrl", function($scope,$http,$routeParams) {
 
     var vm=$scope;
     vm.eml_add = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
-    vm.currentPage = 1;
-    vm.pageSize = 12;
-    vm.name_custom = $routeParams.name;
 
     //Check route if route product page or not
         $http.get('data/data_users.json') //reading the product.json file
             .then(function (response) {
                     vm.products = response.data;
-                    vm.id = 1;
                     for(var i=0;i<response.data.length;i++) {
                         data_users.push({
                             username: response.data[i].username,
-                            password: response.data[i].password
+                            password: response.data[i].password,
+                            check_login: response.data[i].check
                         });
                     }
             }
             );
     //    function register
     vm.regis=function () {
-
         var username=document.getElementById('email').value;
         var password=document.getElementById('password').value;
         var password_confim=document.getElementById('password_confirmation').value;
@@ -93,43 +95,19 @@ productApp.controller("loginCtrl", function($scope,$http,$routeParams) {
 
             });
             alert("Registed !!!");
+            $http.post(path,data_users)
+              .then(function(response) {
+                  console.log(response);
+                  // data_array = response.config.data;
+              });
+            // alert($routeParams.name);
             window.history.go();
         };
-        $http.post('/checkout',data_users)
-          .then(function(response) {
-              console.log(response);
-              // data_array = response.config.data;
-          });
+
         console.log(data_users);
     }
 });
-// productApp.controller("profileCtrl", function($scope, $http,$routeParams,$location) {
-//     vm=$scope;
-//     vm.currentPage = 1;
-//     vm.pageSize = 12;
-//     vm.name_custom = $routeParams.name;
-//     $http.get('data/ring_' + $routeParams.name + '.json') //reading the product.json file
-//         .then(function (response) {
-//             vm.products = response.data; // binding the data to the vm variable
-//             vm.id = $routeParams.id;
-//             vm.image = response.data[vm.id - 1].image;
-//             vm.name_product = response.data[vm.id - 1].name;
-//             vm.sex = response.data[vm.id - 1].sex;
-//             vm.price = response.data[vm.id - 1].price;
-//             vm.price_8 = response.data[vm.id - 1].price_8;
-//             vm.price_9 = response.data[vm.id - 1].price_9;
-//             vm.price_10_5 = response.data[vm.id - 1].price_10_5;
-//             vm.title_info = response.data[vm.id - 1].title_info;
-//             vm.description = response.data[vm.id - 1].description;
-//             vm.Trade_Mark = response.data[vm.id - 1].trade_mark;
-//             vm.Stone = response.data[vm.id - 1].stone;
-//             vm.Color = response.data[vm.id - 1].color;
-//             vm.Shape = response.data[vm.id - 1].shape;
-//             vm.Cara = response.data[vm.id - 1].cara;
-//             vm.Age = response.data[vm.id - 1].age;
-//             vm.Weight = response.data[vm.id - 1].weight;
-//         });
-// })
+
 productApp.controller("productCtrl", function($scope, $http,$routeParams,$compile,$timeout) {
     var vm=$scope;
     vm.currentPage = 1;
@@ -179,7 +157,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
         document.getElementById('table_shopping').style='width: 50%';
         a=document.getElementById('sub');
         b=document.getElementById('show_table');
-        a.setAttribute('colspan','5')
+        a.setAttribute('colspan','5');
         b.setAttribute('class','col-md-7');
         document.getElementById('checkout').remove();
         document.getElementById('hidden').style='display:inline';
@@ -203,7 +181,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
             sum+=parseInt(data_array[check_price].price_quantity);
         }
         document.getElementById("total").innerText=sum +"$";
-    }
+    };
             var name_product;
             var price_product;
             var type_product;
@@ -215,6 +193,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                 data_array.splice(event.target.id,1);
                 if(data_array.length==0){
                     document.getElementById('show_table').innerHTML="EMPTY CART !!!";
+                    document.getElementById('show_table1').innerHTML="EMPTY CART !!!";
                 }
                 else {
                     vm.displayTable(data_array,'table_shopping');
@@ -232,11 +211,12 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                             console.log(response);
                             // data_array = response.config.data;
                         });
-                };
-            }
+                }
+            };
             vm.remove_all_product=function(event) {
-                data_array.splice(0,event.target.id);
+                data_array.splice(0,data_array.length);
                 document.getElementById('show_table').innerHTML="EMPTY CART !!!";
+                document.getElementById('show_table1').innerHTML="EMPTY CART !!!";
                 if(typeof $routeParams.name !== "undefined"){
                     $http.post("/product/"+$routeParams.name,data_array)
                         .then(function(response) {
@@ -251,7 +231,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                             // data_array = response.config.data;
                         });
                 };
-            }
+            };
 
 
             //add product
@@ -313,19 +293,22 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                         });
                     }
                 }
+                vm.displayTable(data_array);
                 console.log(data_array);
-                vm.displayTable(data_array,'table_shopping');
-            }
-            //
+
+            };
+
+
+
             vm.displayTable=function (table_shopping,table_id) {
                 console.log(table_shopping.length);
                     if(typeof $routeParams.name !== "undefined") {
-                    document.getElementById('show_table').innerHTML="<table id='"+table_id+"'><tr><th width='5%'>No</th><th width='25%'>Image</th><th width='10%'>Name</th><th width='5%'>Id</th><th width='10%'>Type</th><th width='10%'>Quantity</th><th width='10%'>Price/1</th><th width='15%'>Price/Quantity</th><th width='10%'>Remove</th></tr></table>";
+                        document.getElementById('show_table').innerHTML="<table id='"+table_id+"'><tr><th style='text-align: center !important;'>No</th><th style='text-align: center !important;'>Image</th><th style='text-align: center !important;'>Name</th><th style='text-align: center !important;' id='th_id'>Id</th><th style='text-align: center !important;' id='th_type'>Type</th><th style='text-align: center !important;'>Quantity</th><th style='text-align: center !important;' id='th_price'>Price/1</th><th style='text-align: center !important;'>Price</th><th style='text-align: center !important;' id='th_remove'><button style='font-weight:600; font-style=both' class='btn btn-danger btn-sm' id='remove_all_product'>ALL</button></th></tr></table>";
                     }
-                    else
-                    {
-                      document.getElementById('show_table').innerHTML = "";
-                      document.getElementById('show_table1').innerHTML="<table id='"+table_id+"'><tr><th width='5%'>No</th><th width='25%'>Image</th><th width='10%'>Name</th><th width='5%'>Id</th><th width='10%'>Type</th><th width='10%'>Quantity</th><th width='10%'>Price/1</th><th width='15%'>Price/Quantity</th><th width='10%'>Remove</th></tr></table>";
+                    else {
+                            document.getElementById('show_table').innerHTML = "";
+                            document.getElementById('show_table1').innerHTML = "<table id='" + table_id + "'><tr><th style='text-align: center !important;'>No</th><th style='text-align: center !important;'>Image</th><th style='text-align: center !important;'>Name</th><th style='text-align: center !important;'>Id</th><th style='text-align: center !important;'>Type</th><th style='text-align: center !important;' >Quantity</th><th style='text-align: center !important;'>Price/1</th><th style='text-align: center !important;'>Price/Quantity</th><th style='text-align: center !important;'><button style='font-weight:600; font-style=both' class='btn btn-danger btn-sm' id='remove_all_product'>ALL</button></th></tr></table>";
+
                     }
                     var table = document.getElementById(table_id);
                     var sum=0;
@@ -344,7 +327,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                             if (j == 1) {
                                 var cell = document.createElement('td');
                                 var img = document.createElement('img');
-                                img.className="ing-responsive2"
+                                img.className="ing-responsive2";
                                 img.src=products[properties[j]];
                                 img.style='max-width: 100px;max-height: 100px';
                                 cell.appendChild(img);
@@ -387,7 +370,17 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                                 cell.appendChild(button);
 
                             }
-                            else {
+                            else if(j==3){
+                                var cell = document.createElement('td');
+                                cell.innerHTML = products[properties[j]];
+                                cell.setAttribute('id','id_product_'+i);
+                            }
+                            else if(j==4){
+                                var cell = document.createElement('td');
+                                cell.setAttribute('id','type_product_'+i);
+                                cell.innerHTML = products[properties[j]];
+                            }
+                            else{
                                 var cell = document.createElement('td');
                                 cell.innerHTML = products[properties[j]];
                             }
@@ -411,46 +404,54 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                             row.appendChild(cell);
                             table.appendChild(row);
                             var cell=document.createElement('td');
-                            cell.setAttribute('colspan',properties.length-5);
+                            if(typeof $routeParams.name !== "undefined") {
+                                cell.setAttribute('colspan',properties.length-7);
+                            }
+                            else{
+                                cell.setAttribute('colspan',properties.length-4);
+                            }
                             cell.setAttribute('style','color:black;font-weight:bold;font-size:20px;');
                             cell.innerHTML="Total";
                             cell.setAttribute('id','sub');
                             row.appendChild(cell);
                             table.appendChild(row);
                             var cell=document.createElement('td');
-                            cell.setAttribute('id','checkout');
-                            cell.innerHTML="<a href='#!/checkout' style='text-decoration: none'><div style='cursor: pointer' class='btn btn-success btn-block'>Check Out <i class='fa fa-angle-right'></i></div></a>";
-                            row.appendChild(cell);
-                            var cell=document.createElement('td');
                             cell.setAttribute('style','color:red');
                             cell.setAttribute('id','total');
                             cell.innerHTML=sum +"$";
                             row.appendChild(cell);
-                            table.appendChild(row);
-                            var cell = document.createElement('td');
-                            var button = document.createElement('button');
-                            button.className='btn btn-danger btn-sm';
-                            button.innerHTML="ALL ";
-                            button.setAttribute('id',table_shopping.length);
-                            button.style='font-weight:600; font-style=both';
-                            cell.appendChild(button);
+                            var cell=document.createElement('td');
+                            cell.setAttribute('id','checkout');
+                            cell.innerHTML="<a href='#!/checkout' style='text-decoration: none'><div style='cursor: pointer' class='btn btn-success btn-block'>Check Out <i class='fa fa-angle-right'></i></div></a>";
                             row.appendChild(cell);
                             table.appendChild(row);
                         }
                     }
-                    var el = document.getElementById('checkout');
-                    el.setAttribute("ng-click", "changetable()");
-                    compile(el);
-                    var el = document.getElementById(table_shopping.length);
-                    el.setAttribute("ng-click", "remove_all_product($event)");
-                    compile(el);
-                    for(var i=0;i<table_shopping.length;i++){
-                        var el = document.getElementById(i);
-                        el.setAttribute("data-ng-click", "remove_product($event)");
+                    if(data_array.length>0){
+                        var el = document.getElementById('checkout');
+                        el.setAttribute("ng-click", "changetable()");
                         compile(el);
-                        var el = document.getElementById("quantity_no_"+(i+1));
-                        el.setAttribute("data-ng-click", "change_quantity($event)");
+                        var el = document.getElementById('remove_all_product');
+                        el.setAttribute("ng-click", "remove_all_product($event)");
                         compile(el);
+                        for(var i=0;i<table_shopping.length;i++){
+                            var el = document.getElementById(i);
+                            el.setAttribute("data-ng-click", "remove_product($event)");
+                            compile(el);
+                            var el = document.getElementById("quantity_no_"+(i+1));
+                            el.setAttribute("data-ng-click", "change_quantity($event)");
+                            compile(el);
+                        }
+                        if(typeof $routeParams.name !== "undefined") {
+                            document.getElementById('th_price').style.display='none';
+                            document.getElementById('th_id').style.display='none';
+                            document.getElementById('th_type').style.display='none';
+                            for (var i=0;i<data_array.length;i++) {
+                                document.getElementById('price_'+(i+1)).style.display='none';
+                                document.getElementById('id_product_'+(i)).style.display='none';
+                                document.getElementById('type_product_'+(i)).style.display='none';
+                            }
+                        }
                     }
                 }
         }

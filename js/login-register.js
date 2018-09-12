@@ -6,6 +6,8 @@
  * Web script: http://creative-tim.com
  * 
  */
+var path;
+
 function showRegisterForm(){
     $('.loginBox').fadeOut('fast',function(){
         $('.registerBox').fadeIn('fast');
@@ -18,6 +20,7 @@ function showRegisterForm(){
        
 }
 function showLoginForm(){
+    path=window.location.href
     $('#loginModal .registerBox').fadeOut('fast',function(){
         $('.loginBox').fadeIn('fast');
         $('.register-footer').fadeOut('fast',function(){
@@ -26,7 +29,8 @@ function showLoginForm(){
         
         $('.modal-title').html('Login with');
     });       
-     $('.error').removeClass('alert alert-danger').html(''); 
+     $('.error').removeClass('alert alert-danger').html('');
+
 }
 
 function openLoginModal(){
@@ -50,14 +54,15 @@ function loginAjax(){
     var pass=document.getElementById('pass').value;
     for(var i=0;i<data_users.length;i++){
         if(user==data_users[i].username&&pass==data_users[i].password){
+            check_login=true;
             check=true;
             break;
         }
         else check=false;
     }
     if(check==true){
-        alert("Login complete");
-        window.history.go();
+
+        back();
     }
     else {
         shakeModal();
@@ -88,5 +93,7 @@ function empty(){
         $('#loginModal .modal-dialog').removeClass('shake');
     }, 1000 );
 }
-
+function back() {
+    location.reload();
+}
    

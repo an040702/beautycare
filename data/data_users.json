@@ -1,8 +1,10 @@
 [{
 	"username":"karobest3@gmail.com",
-	"password":"KKkk0902"
+	"password":"KKkk0902",
+	"check" : "true"
 },
 {
 	"username":"nhanoccho@gmail.com",
-	"password":"kienlavodich"
+	"password":"kienlavodich",
+	"check" : "true"
 }]
