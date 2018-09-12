@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-[{"no":1,"image":"images/images_ring/images_ring_gold/gold_4.png","id":"(G4)","type":"gold","name":"LOVE","value":1,"price":"850$","price_quantity":850},{"no":2,"image":"images/images_ring/images_ring_diamon/diamon_2.png","id":"(D2)","type":"diamon","name":"WEEDING","value":1,"price":"1300$","price_quantity":1300}]
-=======
-[{"no":1,"image":"images/images_ring/images_ring_polish/polish_2.png","id":"(PO2)","type":"polish","name":"WEEDING","value":2,"price":"700$","price_quantity":700},{"no":2,"image":"images/images_ring/images_ring_gold/gold_2.png","id":"(G2)","type":"gold","name":"WEEDING","value":2,"price":"700$","price_quantity":700}]
->>>>>>> d90951a7048b6aaa329dc892a459ac077715cacc
+[{"no":1,"image":"images/images_ring/images_ring_gold/gold_3.png","id":"(G3)","type":"gold","name":"PROPOSE","value":1,"price":"999$","price_quantity":999}]

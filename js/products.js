@@ -1,7 +1,29 @@
 //creating an application module
 
 //Products App module
+//DO NOT TOUCH DO NOT TOUCH //DO NOT TOUCH DO NOT TOUCH//DO NOT TOUCH DO NOT TOUCH//DO NOT TOUCH DO NOT TOUCH
+//DO NOT TOUCH DO NOT TOUCH
+//DO NOT TOUCH DO NOT TOUCH
+//DO NOT TOUCH DO NOT TOUCH
+//DO NOT TOUCH DO NOT TOUCH//DO NOT TOUCH DO NOT TOUCH
+//DO NOT TOUCH DO NOT TOUCH
 
+// (ENG)
+// (VIE)
+//KHÔNG PHẬN SỰ MIỄN ĐỤNG VÀO LÀM ƠN CÁI !!!
+//KHÔNG PHẬN SỰ MIỄN ĐỤNG VÀO LÀM ƠN CÁI !!!
+//KHÔNG PHẬN SỰ MIỄN ĐỤNG VÀO LÀM ƠN CÁI !!!
+//NẾU ĐỌC ĐƯỢC TỚI ĐÂY THÌ TAB RA CHỖ KHÁC LÀM HỘ CÁM ƠN NHIỀU
+//NẾU ĐỌC ĐƯỢC TỚI ĐÂY THÌ TAB RA CHỖ KHÁC LÀM HỘ CÁM ƠN NHIỀU
+//NẾU ĐỌC ĐƯỢC TỚI ĐÂY THÌ TAB RA CHỖ KHÁC LÀM HỘ CÁM ƠN NHIỀU
+//NẾU ĐỌC ĐƯỢC TỚI ĐÂY THÌ TAB RA CHỖ KHÁC LÀM HỘ CÁM ƠN NHIỀU
+//KHÔNG PHẬN SỰ MIỄN ĐỤNG VÀO LÀM ƠN CÁI !!!
+//KHÔNG PHẬN SỰ MIỄN ĐỤNG VÀO LÀM ƠN CÁI !!!
+//KHÔNG PHẬN SỰ MIỄN ĐỤNG VÀO LÀM ƠN CÁI !!!
+//NẾU ĐỌC ĐƯỢC TỚI ĐÂY THÌ TAB RA CHỖ KHÁC LÀM HỘ CÁM ƠN NHIỀU
+//NẾU ĐỌC ĐƯỢC TỚI ĐÂY THÌ TAB RA CHỖ KHÁC LÀM HỘ CÁM ƠN NHIỀU
+//NẾU ĐỌC ĐƯỢC TỚI ĐÂY THÌ TAB RA CHỖ KHÁC LÀM HỘ CÁM ƠN NHIỀU
+//NẾU ĐỌC ĐƯỢC TỚI ĐÂY THÌ TAB RA CHỖ KHÁC LÀM HỘ CÁM ƠN NHIỀU
 var productApp = angular.module('productApp', ['ngRoute', 'angularUtils.directives.dirPagination']);
 //Navbar direvtive
 
@@ -65,8 +87,23 @@ function compile(element){
 }
 var data_users=[];
 
+//DO NOT TOUCH DO NOT TOUCH
+//DO NOT TOUCH DO NOT TOUCH//DO NOT TOUCH DO NOT TOUCH
+//DO NOT TOUCH DO NOT TOUCH
 
-// không thằng nào được đụng vào đây (VIE)
+// (ENG)//DO NOT TOUCH DO NOT TOUCH
+// //DO NOT TOUCH DO NOT TOUCH//DO NOT TOUCH DO NOT TOUCH
+// //DO NOT TOUCH DO NOT TOUCH
+//
+// // (ENG)
+
+// không thằng nào được đụng vào đây login chưa làm xong(VIE)
+// "NO ONE TOUCHED" (ENG)
+
+// không thằng nào được đụng vào đây login chưa làm xong(VIE)
+// "NO ONE TOUCHED" (ENG)
+
+// không thằng nào được đụng vào đây login chưa làm xong(VIE)
 // "NO ONE TOUCHED" (ENG)
 
 
@@ -79,12 +116,13 @@ productApp.controller("login_logout_Ctrl", function($scope,$http) {
             .then(function (response) {
                vm.name = response.data[localStorage.id_user_login].nickname;
                vm.sex =response.data[localStorage.id_user_login].sex;
-                if(vm.sex=='male'){
+                if(vm.sex=='male' ){
                     document.getElementById("icon_user_female").style.display="none";
                     document.getElementById("icon_user_male").style.display="block";
                     document.getElementById("admin").style.display="none";
                 }
-                else if(vm.name="Gosu"){
+                if(vm.name=="Gosu" && vm.sex=='male') {
+
                     document.getElementById("icon_user_female").style.display="none";
                     document.getElementById("icon_user_male").style.display="none";
                     document.getElementById("admin").style.display="block";
@@ -93,6 +131,7 @@ productApp.controller("login_logout_Ctrl", function($scope,$http) {
                     document.getElementById("icon_user_female").style.display="block";
                     document.getElementById("icon_user_male").style.display="none";
                     document.getElementById("admin").style.display="none";
+
                 }
             });
 
@@ -101,6 +140,9 @@ productApp.controller("login_logout_Ctrl", function($scope,$http) {
 
     }
     else if(localStorage.check_login=="false"){
+        document.getElementById("admin").style.display="none";
+        document.getElementById("icon_user_female").style.display="none";
+        document.getElementById("icon_user_male").style.display="none";
         document.getElementById("login_navbar").style.display="block";
         document.getElementById("logout_navbar").style.display="none";
     }
@@ -108,6 +150,9 @@ productApp.controller("login_logout_Ctrl", function($scope,$http) {
         localStorage.check_login="false";
         document.getElementById("login_navbar").style.display="block";
         document.getElementById("logout_navbar").style.display="none";
+        document.getElementById("admin").style.display="none";
+        document.getElementById("icon_user_female").style.display="none";
+        document.getElementById("icon_user_male").style.display="none";
     };
 });
 productApp.controller("loginCtrl", function($scope,$http,$routeParams) {
@@ -537,13 +582,13 @@ $(document).ready(function(){
     });
 });
 
-<<<<<<< HEAD
+
 function click() {
 
     localStorage.check_login="false";
     document.getElementById('show_login_change').innerHTML=localStorage.check_login;
 };
-=======
+
 productApp.controller("trueFalseCtrl", function($scope, $http,$routeParams,$compile,$timeout) {
     var true_false = $scope;
     var displayDiv = false;
@@ -557,4 +602,3 @@ productApp.controller("trueFalseCtrl", function($scope, $http,$routeParams,$comp
     }
     
 });
->>>>>>> d90951a7048b6aaa329dc892a459ac077715cacc
