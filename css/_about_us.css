@@ -4,19 +4,19 @@
 	margin-bottom: 6px;
 }
 .about_introduce{
-	background-image: url(../images/image_aboutus/background34.jpg);
+	background-color: black;
 }
 .about_introduce p{
 	margin: 0px auto;
     font-size: 20px;
-    color: #1b1a19;
+    color: white;
     padding-bottom: 25px;
 }
 .about_information{
 	text-align: center;
     font-weight: bold;
     font-size: 40px;
-    color: #2d2c28;
+    color: white;
 }
 .about_icon{
 	width: 100%;
@@ -52,9 +52,9 @@
 .about_common_child{
     text-align: center;
 }
-.about_promise{
+/*.about_promise{
 	background: #feeced;
-}
+}*/
 .about_promise1{
     height: 300px;
     background: url(../images/image_aboutus/about.jpg);
@@ -85,6 +85,65 @@
     color: #323232;
     text-align: justify;
 	}
+.about_header{
+    background-image: url('../images/index_background/aboutus.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+.imagesabout_parlax{
+    height: 500px;
+    background: url(../images/team.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+}
+.imagesabout_parlax>h3{
+    margin-top: 225px;
+    color: #fefefe;
+    font-size: 50px;
+    font-family: Georgia, Times,Times New Roman;
+    letter-spacing: 10px;
+}
+.about_logo{
+    text-align: center;
+    margin-top: 225px;
+    color: #fefefe;
+    font-size: 50px;
+    font-family:Georgia, Times,Times New Roman;
+    letter-spacing: 10px;
+}
+.about_count{
+    background-color: #1a1a1a;
+    color: white;
+    height: auto;
+}
+.thought_number{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+.about_attribute{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.about_circle{
+    border-radius: 50%;
+}
+.all_team{
+    margin-bottom: 20px;
+    /*padding-bottom: 20px;*/
+}
+.about_people{
+    border: solid 2px #f2f2f2;
+    padding: 30px 10px;
+    position: relative;
+    text-align: center;
+}
+
 
 body {margin: 0px !important;} 
 /*anh parallax */
