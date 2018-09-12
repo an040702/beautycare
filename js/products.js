@@ -20,6 +20,14 @@ productApp.directive('product',function () {
 });
 function OtherController($scope) {
 };
+productApp.controller('AppController', [function() {
+            var vm = this;
+            vm.submit = function() {
+                console.log('Form is submitted with following user', vm.user);
+                alert("Thank you, we look forward to connecting!");
+                document.getElementById("myForm").reset();
+            };
+        }]);        
 productApp.controller('OtherController', OtherController);
 
 var data_array=[];
@@ -40,7 +48,10 @@ productApp.config(['$routeProvider','$locationProvider',function($routeProvider,
         templateUrl: (function () {
             window.location=path;
         })
-
+    }).when('/about-us',{
+        templateUrl : "./pages/_about_us.html"
+    }).when('/contact-us',{
+        templateUrl : "./pages/_contact.html"
     }).otherwise({redirectTo:'/home'});
     // $locationProvider.html5Mode(true);
 }]);
@@ -526,8 +537,24 @@ $(document).ready(function(){
     });
 });
 
+<<<<<<< HEAD
 function click() {
 
     localStorage.check_login="false";
     document.getElementById('show_login_change').innerHTML=localStorage.check_login;
 };
+=======
+productApp.controller("trueFalseCtrl", function($scope, $http,$routeParams,$compile,$timeout) {
+    var true_false = $scope;
+    var displayDiv = false;
+    console.log(true_false.displayDiv);
+    true_false.displayDiv = localStorage.saveTF;
+    //Function change true/false
+    true_false.changeTF = function(){
+        console.log(true_false.displayDiv);
+        true_false.displayDiv = !true_false.displayDiv;
+        localStorage.saveTF = true_false.displayDiv;
+    }
+    
+});
+>>>>>>> d90951a7048b6aaa329dc892a459ac077715cacc

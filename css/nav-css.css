@@ -195,13 +195,13 @@ a > img.nav_logo {
 
 .search__input {
     width: 100%;
-    padding: 12px 24px;
+    padding: 8px 25px;
     background-color: transparent;
     transition: transform 250ms ease-in-out;
     font-size: 13px;
     line-height: 11px;
     color: white;
-    background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg);
+    background-image: url('http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg');
     background-repeat: no-repeat;
     background-size: 18px 18px;
     background-position: 95% center;
@@ -213,14 +213,14 @@ a > img.nav_logo {
 
 .search__input::placeholder {
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 3.5px;
 }
 
 .search__input:hover{
-    padding: 12px 0;
+    padding: 8px 25px;
     outline: 0;
     border: 1px solid transparent;
-    border-bottom: 1px solid #9d9d9d;
-    border-radius: 0;
-    background-position: 100% center;
+    border-bottom: 1px solid cyan;
+    border-radius: 0px;
+    background-position: 95% center;
 }
