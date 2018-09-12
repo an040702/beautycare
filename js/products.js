@@ -66,10 +66,6 @@ productApp.config(['$routeProvider','$locationProvider',function($routeProvider,
     }).when('/checkout',{
         templateUrl : "pages/check_out.html",
         controller : "productCtrl"
-    }).when('/login',{
-        templateUrl: (function () {
-            window.location=path;
-        })
     }).when('/about-us',{
         templateUrl : "./pages/_about_us.html"
     }).when('/contact-us',{
