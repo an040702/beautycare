@@ -7,7 +7,6 @@
  * 
  */
 var path;
-
 function showRegisterForm(){
     $('.loginBox').fadeOut('fast',function(){
         $('.registerBox').fadeIn('fast');
@@ -47,27 +46,30 @@ function openRegisterModal(){
     }, 230);
     
 }
-
 function loginAjax(){
     var check=false;
     var user=document.getElementById('em').value;
     var pass=document.getElementById('pass').value;
     for(var i=0;i<data_users.length;i++){
         if(user==data_users[i].username&&pass==data_users[i].password){
-            check_login=true;
+            localStorage.id_user_login=i;
             check=true;
             break;
         }
         else check=false;
     }
     if(check==true){
-
+        localStorage.check_login="true";
         back();
     }
     else {
+        localStorage.check_login="false";
         shakeModal();
     }
-}
+};
+
+
+
 
 function shakeModal(){
     $('#loginModal .modal-dialog').addClass('shake');

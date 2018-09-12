@@ -1,4 +1,4 @@
-<div id="navbar" class="">    
+<div id="navbar" class="" ng-controller="login_logout_Ctrl">
   <nav class="navbar navbar-inverse navbar-fixed-top nav_container" role="navigation">
     <!-- NAVBAR HEADER -->
     <div class="navbar-header">
@@ -137,9 +137,7 @@
       </form>
 
       <ul style="margin-right: 5px;" class="nav navbar-nav navbar-right snip1555">
-        <li>
-          <a href='#!/login' style="font-weight: 600" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in <i class="fas fa-sign-in-alt"></i></a>
-        </li>
+
         <!-- CONTACT US            -->
         <li>
           <a href="contact.html"><i class="fas fa-globe"></i></a>
@@ -163,6 +161,20 @@
                 </div>
               </li>             
             </ul>
+        </li>
+        <li>
+          <a style="cursor: pointer;font-weight: 600;" id="icon_user_male">{{name}} <i class='fas fa-male'></i></a>
+        </li>
+        <li>
+          <a style="cursor: pointer;font-weight: 600;" id="icon_user_female" >{{name}} <i class="fas fa-female"></i></a>
+        </li>
+        <li>
+          <a style="cursor: pointer;font-weight: 600;" id="admin" >{{name}} <i class="fas fa-crown"></i></a>
+        </li>
+        <li>
+
+          <a href='#!/login' id="login_navbar" style="font-weight: 600" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in <i class="fas fa-sign-in-alt"></i></a>
+          <a style="cursor: pointer;font-weight: 600;" id="logout_navbar" ng-click="logout()"> Log out <i class="fas fa-sign-out-alt"></i></a>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -217,6 +229,7 @@
                 <span class="red-text" ng-show="inquiryForm.email.$error.pattern">Invalid Email</span>
                 <input id="password" class="form-control" type="password" placeholder="Password" name="password">
                 <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                <input id="nick_name" class="form-control" type="text" placeholder="Enter nick name of you">
                 <input class="btn btn-default btn-register" type="button" value="Create account"  ng-click="regis()">
               </form>
             </div>

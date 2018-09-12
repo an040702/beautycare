@@ -4,6 +4,7 @@
 
 var productApp = angular.module('productApp', ['ngRoute', 'angularUtils.directives.dirPagination']);
 //Navbar direvtive
+
 productApp.directive('mainNavbar',function () {
     return {
         restrict: 'AE',
@@ -53,14 +54,57 @@ function compile(element){
 }
 var data_users=[];
 
+
+// không thằng nào được đụng vào đây (VIE)
+// "NO ONE TOUCHED" (ENG)
+
+
+productApp.controller("login_logout_Ctrl", function($scope,$http) {
+    var vm=$scope;
+    vm.name;
+    vm.sex;
+    if(localStorage.check_login=="true"){
+        $http.get('data/data_users.json') //reading the product.json file
+            .then(function (response) {
+               vm.name = response.data[localStorage.id_user_login].nickname;
+               vm.sex =response.data[localStorage.id_user_login].sex;
+                if(vm.sex=='male'){
+                    document.getElementById("icon_user_female").style.display="none";
+                    document.getElementById("icon_user_male").style.display="block";
+                    document.getElementById("admin").style.display="none";
+                }
+                else if(vm.name="Gosu"){
+                    document.getElementById("icon_user_female").style.display="none";
+                    document.getElementById("icon_user_male").style.display="none";
+                    document.getElementById("admin").style.display="block";
+                }
+                else if(vm.sex=='female'){
+                    document.getElementById("icon_user_female").style.display="block";
+                    document.getElementById("icon_user_male").style.display="none";
+                    document.getElementById("admin").style.display="none";
+                }
+            });
+
+        document.getElementById("login_navbar").style.display="none";
+        document.getElementById("logout_navbar").style.display="block";
+
+    }
+    else if(localStorage.check_login=="false"){
+        document.getElementById("login_navbar").style.display="block";
+        document.getElementById("logout_navbar").style.display="none";
+    }
+    $scope.logout=function () {
+        localStorage.check_login="false";
+        document.getElementById("login_navbar").style.display="block";
+        document.getElementById("logout_navbar").style.display="none";
+    };
+});
 productApp.controller("loginCtrl", function($scope,$http,$routeParams) {
 
     var vm=$scope;
     vm.eml_add = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
     //Change check true/false
-    vm.changeTF = function () {
 
-    }
 
     //Check route if route product page or not
         $http.get('data/data_users.json') //reading the product.json file
@@ -109,6 +153,11 @@ productApp.controller("loginCtrl", function($scope,$http,$routeParams) {
 
         console.log(data_users);
     }
+
+    //login
+
+
+
 });
 
 productApp.controller("productCtrl", function($scope, $http,$routeParams,$compile,$timeout) {
@@ -116,6 +165,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
     vm.currentPage = 1;
     vm.pageSize = 12;
     vm.name_custom = $routeParams.name;
+
     vm.show_shopping=function(){
         return true;
     };
@@ -476,15 +526,8 @@ $(document).ready(function(){
     });
 });
 
-productApp.controller("trueFalseCtrl", function($scope, $http,$routeParams,$compile,$timeout) {
-    var true_false = $scope;
-    var displayDiv = false;
-    true_false.displayDiv = localStorage.saveTF;
-    //Function change true/false
-    true_false.changeTF = function(){
-        console.log(true_false.displayDiv);
-        true_false.displayDiv = !true_false.displayDiv;
-        localStorage.saveTF = true_false.displayDiv;
-    }
-    
-});
+function click() {
+
+    localStorage.check_login="false";
+    document.getElementById('show_login_change').innerHTML=localStorage.check_login;
+};

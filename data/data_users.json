@@ -1,10 +1,12 @@
 [{
 	"username":"karobest3@gmail.com",
 	"password":"KKkk0902",
-	"check" : "true"
+	"nickname" : "Gosu",
+	"sex" : "male"
 },
 {
 	"username":"nhanoccho@gmail.com",
 	"password":"kienlavodich",
-	"check" : "true"
+	"nickname" : "Kirantos Tera",
+	"sex" : "female"
 }]
