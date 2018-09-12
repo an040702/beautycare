@@ -479,6 +479,7 @@ $(document).ready(function(){
 productApp.controller("trueFalseCtrl", function($scope, $http,$routeParams,$compile,$timeout) {
     var true_false = $scope;
     var displayDiv = false;
+    
     true_false.displayDiv = localStorage.saveTF;
     //Function change true/false
     true_false.changeTF = function(){
