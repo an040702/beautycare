@@ -57,7 +57,10 @@ productApp.controller("loginCtrl", function($scope,$http,$routeParams) {
 
     var vm=$scope;
     vm.eml_add = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    //Change check true/false
+    vm.changeTF = function () {
 
+    }
 
     //Check route if route product page or not
         $http.get('data/data_users.json') //reading the product.json file
@@ -471,4 +474,17 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
     });
+});
+
+productApp.controller("trueFalseCtrl", function($scope, $http,$routeParams,$compile,$timeout) {
+    var true_false = $scope;
+    var displayDiv = false;
+    true_false.displayDiv = localStorage.saveTF;
+    //Function change true/false
+    true_false.changeTF = function(){
+        console.log(true_false.displayDiv);
+        true_false.displayDiv = !true_false.displayDiv;
+        localStorage.saveTF = true_false.displayDiv;
+    }
+    
 });
