@@ -16,7 +16,8 @@ function showRegisterForm(){
         $('.modal-title').html('Register with');
     }); 
     $('.error').removeClass('alert alert-danger').html('');
-       
+    document.getElementById("modal_header").style.display="none";
+    document.getElementById("icon_of_login").style.display="none";
 }
 function showLoginForm(){
     path=window.location.href
@@ -29,7 +30,8 @@ function showLoginForm(){
         $('.modal-title').html('Login with');
     });       
      $('.error').removeClass('alert alert-danger').html('');
-
+    document.getElementById("modal_header").style.display="block";
+    document.getElementById("icon_of_login").style.display="block";
 }
 
 function openLoginModal(){
@@ -85,6 +87,22 @@ function shakeModal(){
 function shakeModals(){
     $('#loginModal .modal-dialog').addClass('shake');
     $('.error').addClass('alert alert-danger').html("Password not equal Password Confim");
+    $('input[type="password"]').val('');
+    setTimeout( function(){
+        $('#loginModal .modal-dialog').removeClass('shake');
+    }, 1000 );
+}
+function shakeModals_username(){
+    $('#loginModal .modal-dialog').addClass('shake');
+    $('.error').addClass('alert alert-danger').html("Username is already taken!!!");
+    $('input[type="password"]').val('');
+    setTimeout( function(){
+        $('#loginModal .modal-dialog').removeClass('shake');
+    }, 1000 );
+}
+function shakeModals_phone(){
+    $('#loginModal .modal-dialog').addClass('shake');
+    $('.error').addClass('alert alert-danger').html("Phone wrong !!!");
     $('input[type="password"]').val('');
     setTimeout( function(){
         $('#loginModal .modal-dialog').removeClass('shake');

@@ -151,6 +151,11 @@ productApp.controller("login_logout_Ctrl", function($scope,$http) {
         document.getElementById("icon_user_male").style.display="none";
     };
 });
+
+
+
+//controller of Login Register
+
 productApp.controller("loginCtrl", function($scope,$http,$routeParams) {
 
     var vm=$scope;
@@ -161,51 +166,117 @@ productApp.controller("loginCtrl", function($scope,$http,$routeParams) {
     //Check route if route product page or not
         $http.get('data/data_users.json') //reading the product.json file
             .then(function (response) {
-                    vm.products = response.data;
                     for(var i=0;i<response.data.length;i++) {
                         data_users.push({
                             username: response.data[i].username,
                             password: response.data[i].password,
-                            check_login: response.data[i].check
+                            sex:response.data[i].sex,
+                            nickname:response.data[i].nickname,
+                            age:response.data[i].age,
+                            address:response.data[i].address,
+                            telephone:response.data[i].telephone
                         });
                     }
             }
             );
-    //    function register
-    vm.regis=function () {
-        var username=document.getElementById('email').value;
-        var password=document.getElementById('password').value;
-        var password_confim=document.getElementById('password_confirmation').value;
-
-        if(password!=password_confim){
-            shakeModals();
-        }
-
-        else if(password_confim==''&&username==''&&password==''){
-            empty();
-        }
-
-        else{
-            var email=document.getElementById('email').value;
-            var password=document.getElementById('password').value;
-            data_users.push({
-                username: email,
-                password: password
-
-            });
-            alert("Registed !!!");
-            $http.post(path,data_users)
-              .then(function(response) {
-                  console.log(response);
-                  // data_array = response.config.data;
-              });
-            // alert($routeParams.name);
-            window.history.go();
+        var check_required_phone=true;
+        vm.check_phone=function(){
+            var phone=document.getElementById('telephone_rg').value;
+            document.getElementById("warning_digit").style.display="none";
+            document.getElementById("warning_character").style.display="none";
+            document.getElementById("warning_digit_11").style.display="none";
+            for(var i=0;i<phone.length;i++) {
+                    var check_phone;
+                    check_phone = isNaN(phone[i]);
+                    if (check_phone == true) {
+                        check_required_phone=false;
+                        break;
+                    }
+                }
+                    if(check_phone==true){
+                    document.getElementById("warning_character").style.display="block";
+                    document.getElementById("warning_digit_11").style.display="none";
+                    document.getElementById("warning_digit").style.display="none";
+                    }
+                    else{
+                        if(phone.length<10){
+                            check_required_phone=false;
+                            document.getElementById("warning_digit").style.display="block";
+                        }
+                        else if(phone.length>11){
+                            check_required_phone=false;
+                            document.getElementById("warning_digit_11").style.display="block";
+                        }
+                        else{
+                            check_required_phone=true;
+                            document.getElementById("warning_digit").style.display="none";
+                        }
+                        document.getElementById("warning_character").style.display="none";
+                    }
         };
+            //    function register
+            vm.regis = function () {
+                if(check_required_phone==false){
+                    shakeModals_phone();
+                }
+                else {
+                    var username = document.getElementById('email').value;
+                    var password = document.getElementById('password').value;
+                    var password_confim = document.getElementById('password_confirmation').value;
+                    var nickname = document.getElementById('nick_name').value;
+                    var telephone = document.getElementById('telephone_rg').value;
+                    var address = document.getElementById('add_rg').value;
+                    var age = document.getElementById('age_rg').value;
+                    var sex;
+                    var sexs = document.getElementsByName('Sex');
+                    for (var i = 0; i < sexs.length; i++) {
+                        if (sexs[i].checked) {
+                            sex = sexs[i].value;
+                        }
+                    }
+                    var check_username = true;
+                    for (var i = 0; i < data_users.length; i++) {
+                        if (data_users[i].username == username) {
+                            check_username = false;
+                            break;
+                        }
+                    }
 
-        console.log(data_users);
-    }
+                    if (check_username == false) {
+                        shakeModals_username();
+                    }
+                    if (check_username == true) {
+                        if (password != password_confim) {
+                            shakeModals();
+                        }
 
+                        else if (password_confim == '' || username == '' || password == '' || nickname == '') {
+                            empty();
+                        }
+                        else {
+                            data_users.push({
+                                username: username,
+                                password: password,
+                                sex: sex,
+                                nickname: nickname,
+                                age: age,
+                                address: address,
+                                telephone: telephone
+
+                            });
+                            alert("Registed !!!");
+                            $http.post(path, data_users)
+                                .then(function (response) {
+                                    console.log(response);
+                                    // data_array = response.config.data;
+                                });
+                            // alert($routeParams.name);
+                            window.history.go();
+                        }
+                    }
+                    console.log(data_users);
+                }
+            }
     //login
 
 

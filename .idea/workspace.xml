@@ -4,8 +4,6 @@
     <list default="true" id="58a0e303-35d4-45fb-8ba3-284591d2700d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/user.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/user.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kien" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/user1.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/user1.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,38 +52,38 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="7" />
-          <entry key="html" value="17" />
+          <entry key="html" value="21" />
           <entry key="js" value="13" />
-          <entry key="json" value="3" />
+          <entry key="json" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="7" />
-          <entry key="HTML" value="17" />
-          <entry key="JSON" value="3" />
+          <entry key="HTML" value="21" />
+          <entry key="JSON" value="4" />
           <entry key="JavaScript" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="50" />
-          <entry key="html" value="894" />
-          <entry key="js" value="6709" />
+          <entry key="html" value="1253" />
+          <entry key="js" value="8784" />
           <entry key="json" value="200" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="50" />
-          <entry key="HTML" value="897" />
+          <entry key="HTML" value="1256" />
           <entry key="JSON" value="200" />
-          <entry key="JavaScript" value="6706" />
+          <entry key="JavaScript" value="8781" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.10" value="4" />
           <entry key="project.open.time.17" value="1" />
@@ -99,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="833">
+              <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -110,20 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/shopcart.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="64" column="18" lean-forward="true" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/check_out.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="1122">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -137,10 +126,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/shopcart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1088">
+              <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="98" column="15" lean-forward="true" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="32" />
+            <state relative-caret-position="1071">
+              <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2720">
+              <caret line="164" column="36" selection-start-line="164" selection-start-column="36" selection-end-line="164" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/login-register.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="738">
+              <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="19" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,8 +167,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/products.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="476">
+              <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#!!top" expanded="true" />
@@ -179,34 +198,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/login-register.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10">
-              <caret line="42" column="29" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="29" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/navbar_01.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="179" column="10" lean-forward="true" selection-start-line="179" selection-start-column="10" selection-end-line="179" selection-end-column="10" />
+            <state relative-caret-position="315">
+              <caret line="177" column="13" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="13" />
               <folding>
-                <element signature="n#style#0;n#a#0;n#li#0;n#ul#1;n#div#1;n#nav#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#9217#9224#1" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#3;n#ul#1;n#div#1;n#nav#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#4;n#ul#1;n#div#1;n#nav#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#5;n#ul#1;n#div#1;n#nav#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#6;n#ul#1;n#div#1;n#nav#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/data_users.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -246,6 +257,11 @@
       <find>login</find>
       <find>log in</find>
       <find>remove_all</find>
+      <find>disp</find>
+      <find>displayDiv</find>
+      <find>logo</find>
+      <find>logi</find>
+      <find>logina</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -267,14 +283,14 @@
         <option value="$PROJECT_DIR$/js/slideproduct.js" />
         <option value="$PROJECT_DIR$/pages/profile_ring.html" />
         <option value="$PROJECT_DIR$/pages/checkout.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/checkout.css" />
+        <option value="$PROJECT_DIR$/pages/login_register.html" />
         <option value="$PROJECT_DIR$/pages/product.html" />
         <option value="$PROJECT_DIR$/pages/check_out.html" />
-        <option value="$PROJECT_DIR$/pages/login_register.html" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/products.js" />
-        <option value="$PROJECT_DIR$/js/login-register.js" />
         <option value="$PROJECT_DIR$/pages/navbar_01.html" />
+        <option value="$PROJECT_DIR$/js/login-register.js" />
       </list>
     </option>
   </component>
@@ -423,6 +439,11 @@
             <path>
               <item name="beautycare" type="b2602c69:ProjectViewProjectNode" />
               <item name="beautycare" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beautycare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beautycare" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -443,6 +464,324 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/login-register.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/best_sell/sell_hair.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/best_sell/sell_skin.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/user.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/products.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pages/check_out.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pages/home.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/server.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/test/user1.json</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/_about_us.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/best_sell/sell_jewellry.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/best_sell/sell_makeup.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/best_sell/sell_nails.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/ring_hair.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/ring_skin.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/image_aboutus/aboutus.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/Conditioner/no.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/10.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/11.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/12.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/13.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/14.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/15.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/16.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/17.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/18.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/19.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/20.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/5.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/6.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/7.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/8.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/hair_care/9.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/hair/shampoo/1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/10.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/11.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/12.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/13.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/14.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/15.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/16.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/17.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/18.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/19.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/20.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/21.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/22.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/23.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/24.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/4.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/5.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/6.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/7.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/8.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/acnec_triment/9.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/bleaching/1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/bleaching/10.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/bleaching/11.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/bleaching/12.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/bleaching/2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/bleaching/3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/bleaching/4.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/bleaching/5.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/bleaching/6.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/bleaching/7.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/bleaching/8.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/bleaching/9.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/10.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/11.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/12.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/4.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/5.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/6.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/7.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/8.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/9.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/acness.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/all_clear_doubleW.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/bio_gold.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/biore.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/e100.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/estee_lalder.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/inmisfree.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/mocha.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/nuocruamat_acnes_wash.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/ponds.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/milk_cleanser/sua-rua-mat-Neutrogena-Oil-Free-Acne-Wash-Pink-Grapefruit-Facial-Cleanser.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/10.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/11.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/12.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/13.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/15.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/4.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/5.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/6.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/7.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/8.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/9.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/acua.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/geo_duong_am_neutrogena.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/kem-duong-ban-ngay-Paulas-Choice-Clear-Ultra-Light-Daily-Hydrating-Fluid-SPF30.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/kem-duong-trang-da-innisfree_whitening_pore_cream_50ml-beauty-garden-1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/kem_duong_ngay_simple.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/kem_duong_trang_g9.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/kemduongchongnang_rebirth.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/kemduongda_innisfree_ceramide.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/linhnham.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/snow_white_milk_lotion.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/soft.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/moisturizing/vves.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/index_background/aboutus.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/index_background/avatar.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/team.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pages/_about_us.html</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/about_us.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/10.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/11.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/12.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/13.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/15.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/16.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/20.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/23.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/24.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/4.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/5.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/6.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/7.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/8.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/dactrimun/9.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/10.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/11.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/12.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/13.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/15.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/4.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/5.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/6.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/7.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/8.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/9.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/acua.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/geo_duong_am_neutrogena.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/kem-duong-ban-ngay-Paulas-Choice-Clear-Ultra-Light-Daily-Hydrating-Fluid-SPF30.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/kem-duong-trang-da-innisfree_whitening_pore_cream_50ml-beauty-garden-1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/kem_duong_ngay_simple.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/kem_duong_trang_g9.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/kemduongchongnang_rebirth.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/kemduongda_innisfree_ceramide.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/linhnham.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/snow_white_milk_lotion.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/soft.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/duongda/vves.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/10.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/11.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/12.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/4.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/5.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/6.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/7.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/8.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/9.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/acness.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/all_clear_doubleW.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/bio_gold.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/biore.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/e100.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/estee_lalder.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/inmisfree.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/mocha.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/nuocruamat_acnes_wash.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/ponds.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/suaruamat/sua-rua-mat-Neutrogena-Oil-Free-Acne-Wash-Pink-Grapefruit-Facial-Cleanser.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/taytrang/1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/taytrang/10.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/taytrang/11.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/taytrang/12.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/taytrang/2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/taytrang/3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/taytrang/4.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/taytrang/5.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/taytrang/6.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/taytrang/7.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/taytrang/8.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/images_hair_skin/skin/taytrang/9.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/jquery.counterup.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pages/about_us.html</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -477,12 +816,12 @@
       <workItem from="1536642392558" duration="15760000" />
       <workItem from="1536659214759" duration="11000" />
       <workItem from="1536659707864" duration="621000" />
-      <workItem from="1536737861994" duration="17458000" />
+      <workItem from="1536737861994" duration="31240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82795000" />
+    <option name="totallyTimeSpent" value="96577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -572,13 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/rings-css.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2353">
@@ -663,32 +995,17 @@
     <entry file="file://$PROJECT_DIR$/pages/login_register.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/check_out.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#1;n#div#0;n#div#1;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#2;n#div#0;n#div#1;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#3;n#div#0;n#div#1;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/shopcart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
-          <caret line="64" column="18" lean-forward="true" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+          <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="833">
+          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -697,17 +1014,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pages/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2720">
+          <caret line="164" column="36" selection-start-line="164" selection-start-column="36" selection-end-line="164" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data_users.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="98" column="15" lean-forward="true" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="32" />
+        <state relative-caret-position="1071">
+          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/login-register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/navbar_01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="177" column="13" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#3;n#ul#1;n#div#1;n#nav#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#4;n#ul#1;n#div#1;n#nav#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#5;n#ul#1;n#div#1;n#nav#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#6;n#ul#1;n#div#1;n#nav#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/products.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="476">
+          <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#!!top" expanded="true" />
@@ -735,29 +1088,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/login-register.js">
+    <entry file="file://$PROJECT_DIR$/pages/check_out.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="42" column="29" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="29" />
+        <state relative-caret-position="1122">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/navbar_01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="179" column="10" lean-forward="true" selection-start-line="179" selection-start-column="10" selection-end-line="179" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#1;n#div#1;n#nav#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#9217#9224#1" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#1;n#div#0;n#div#1;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#2;n#div#0;n#div#1;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#3;n#div#0;n#div#1;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

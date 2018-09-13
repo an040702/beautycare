@@ -185,52 +185,73 @@
 <div class="modal fade login" id="loginModal"  ng-controller="loginCtrl"  >
   <div class="modal-dialog login animated" >
     <div class="modal-content-login">
-      <div class="modal-header">
+      <div class="modal-header" id="modal_header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title">Login with</h4>
       </div>
       <div class="modal-body">
         <div class="box">
-          <div>
             <div class="content">
-              <div class="social">
-                <a class="circle github" style="cursor: pointer" >
-                  <i class="fa fa-github fa-fw"></i>
-                </a>
-                <a id="google_login" class="circle google" style="cursor: pointer">
-                  <i class="fa fa-google-plus fa-fw"></i>
-                </a>
-                <a id="facebook_login" class="circle facebook" style="cursor: pointer">
-                  <i class="fa fa-facebook fa-fw"></i>
-                </a>
-              </div>
+              <div id="icon_of_login">
+                <div class="social">
+                  <a class="circle github" style="cursor: pointer" >
+                    <i class="fa fa-github fa-fw"></i>
+                  </a>
+                  <a id="google_login" class="circle google" style="cursor: pointer">
+                    <i class="fa fa-google-plus fa-fw"></i>
+                  </a>
+                  <a id="facebook_login" class="circle facebook" style="cursor: pointer">
+                    <i class="fa fa-facebook fa-fw"></i>
+                  </a>
+                </div>
+
               <div class="division">
                 <div class="line l"></div>
                 <span>or</span>
                 <div class="line r"></div>
               </div>
+              </div>
               <div class="error"></div>
               <div class="form loginBox">
                 <form method="post" action="/login" accept-charset="UTF-8">
-                  <input id="em" class="form-control" type="text" placeholder="Email" name="email"/>
+                  <input id="em" class="form-control" type="text" placeholder="Username" name="email"/>
                   <input id="pass" class="form-control" type="password" placeholder="Password" name="password" onkeydown="loginAjax(event)" />
                   <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax(event)">
                 </form>
               </div>
             </div>
-          </div>
         </div>
         <div class="box">
-          <div class="content registerBox">
-            <div class="form">
-              <form  data-remote="true" action="/register" accept-charset="UTF-8">
-                <input id="email" class="form-control" ng-model="email" type="text" ng-pattern="eml_add" ng-required="true" autocomplete="off" placeholder="Email">
-                <span class="red-text" ng-if="inquiryForm.email.$error.required && inquiryForm.email.$dirty">Email is a required field</span>
 
+          <div class="content registerBox">
+            <div style="font-weight: 600;margin-bottom: 10px"><b>Please fill in this form to create an account</b></div>
+            <div class="form">
+
+              <form  data-remote="true" action="/register" accept-charset="UTF-8">
+                <label style="float: left"><b>Username</b></label>
+                <input id="email" class="form-control" ng-model="email" type="text" ng-pattern="eml_add" ng-required="true" autocomplete="off" placeholder="Username">
+                <span class="red-text" ng-if="inquiryForm.email.$error.required && inquiryForm.email.$dirty">Email is a required field</span>
                 <span class="red-text" ng-show="inquiryForm.email.$error.pattern">Invalid Email</span>
+                <label style="float: left"><b>Password</b></label>
                 <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                <label style="float: left"><b>Repeat Password</b></label>
                 <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
-                <input id="nick_name" class="form-control" type="text" placeholder="Enter nick name of you">
+                <label style="float: left"><b>Nickname</b></label>
+                <input id="nick_name" class="form-control" type="text" placeholder="Nickname">
+                <label style="float: left"><b>Name</b></label>
+                <input id="name_rg" class="form-control" type="text" placeholder="Name">
+                <label style="float: left"><b>Age</b></label>
+                <input id="age_rg" class="form-control" type="text" placeholder="Age">
+                <label style="float: left"><b>Sex</b></label><br>
+                <input  type="radio" value="male" name="Sex" checked>Male
+                <input  type="radio" value="female" name="Sex">Female<br>
+                <label style="float: left"><b>Address</b></label>
+                <input id="add_rg" class="form-control" type="text" placeholder="Address">
+                <label style="float: left"><b>Phone</b></label>
+                <input id="telephone_rg" class="form-control" type="text" placeholder="Phone" ng-keyup="check_phone()" />
+                <div style="float:left; color:red;display: none" id="warning_digit"><i class="fas fa-exclamation"></i> Phone not enough 10 digit</div>
+                <div style="float:left; color:red;display: none" id="warning_digit_11"><i class="fas fa-exclamation"></i> Phone mustn't over than 11 digits</div>
+                <div style="float:left; color:red;display: none" id="warning_character"><i class="fas fa-exclamation"></i> Phone not equal character</div>
                 <input class="btn btn-default btn-register" type="button" value="Create account"  ng-click="regis()">
               </form>
             </div>
