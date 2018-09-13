@@ -92,7 +92,7 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    
+
     height: 500px;
 }
 .imagesabout_parlax{
@@ -108,7 +108,7 @@
     margin-top: 225px;
     color: #fefefe;
     font-size: 50px;
-    font-family: Georgia, Times,Times New Roman;
+    font-family: Georgia, Times, Times New Roman;
     letter-spacing: 10px;
 }
 .about_logo{
@@ -116,7 +116,7 @@
     margin-top: 225px;
     color: #fefefe;
     font-size: 50px;
-    font-family:Georgia, Times,Times New Roman;
+    font-family:Georgia, Times, Times New Roman;
     letter-spacing: 10px;
 }
 .about_count{
@@ -129,6 +129,7 @@
     font-size: 40px;
     text-align: center;
     font-weight: bold;
+    font-family:   Times, Times New Roman;
 }
 .about_attribute{
     text-align: center;
