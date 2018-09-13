@@ -22,10 +22,24 @@ app.all('*', function(req, res, next) {
 
 //Post data_test from test.html
 app.post('/', function(req, res){
+  // fs.readFile('test/user1.json', 'utf8', function (err, data) {
+  //   if (err) throw err;
+  //   obj = JSON.parse(data);
+  //   console.log(obj);
+  // });
+  // let obj = require('test/user1.json');
+  let obj = JSON.parse(fs.readFileSync('data/data_users.json', 'utf-8'));
+  var users;
+  users=obj;
+  console.log(users);
   res.send("ok. NodeJS response");
-  obj = req.body;
-  json = JSON.stringify(obj); //convert it back to json
-	fs.writeFile('test/user1.json', json, 'utf8', callback); // write it back 
+  console.log(obj);
+  console.log(req.body.length);
+  console.log(req.body[req.body.length-1]);
+  users.push(req.body[req.body.length-1]);
+  console.log(users);
+  json = JSON.stringify(users); //convert it back to json
+	fs.writeFile('data/data_users.json', json, 'utf8', callback); // write it back 
 	
 });
 
@@ -50,7 +64,11 @@ app.post('/checkout', function(req, res){
 var user_obj =[];
 var user_json = JSON.stringify(user_obj);
 // Post data_user from checkout page
-app.post('/login', function(req, res){
+app.post('/:path', function(req, res){
+  var url_parts = url.parse(req.url);
+  var path = url_parts.pathname;
+  // console.log(url_parts);
+  console.log(url_parts.pathname);
   res.send("Got data_user. NodeJS response");
   user_obj = req.body;
   console.log(user_obj);
