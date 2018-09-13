@@ -132,7 +132,7 @@
         </div>
         <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button> -->
         <div class="search__container">
-          <input class="search__input" type="text" placeholder="Search" ng-model="productSearch.name">
+          <input class="search__input" type="text" placeholder="Search" ng-model="productSearch.name" ng-controller="productCtrl">
         </div>
       </form>
 
@@ -140,12 +140,12 @@
 
         <!-- CONTACT US            -->
         <li>
-          <a href="contact.html"><i class="fas fa-globe"></i></a>
+          <a href="#!/contact-us"><i class="fas fa-globe"></i></a>
         </li>
         <!-- ABOUT US          -->
 
         <li>
-          <a href="about_us.html"><i class="far fa-id-card"></i></a>
+          <a href="#!/about-us"><i class="far fa-id-card"></i></a>
         </li>
 
         <!-- CART            -->
@@ -211,9 +211,9 @@
               <div class="error"></div>
               <div class="form loginBox">
                 <form method="post" action="/login" accept-charset="UTF-8">
-                  <input id="em" class="form-control" type="text" placeholder="Email" name="email">
-                  <input id="pass" class="form-control" type="password" placeholder="Password" name="password">
-                  <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                  <input id="em" class="form-control" type="text" placeholder="Email" name="email"/>
+                  <input id="pass" class="form-control" type="password" placeholder="Password" name="password" onkeydown="loginAjax(event)" />
+                  <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax(event)">
                 </form>
               </div>
             </div>
