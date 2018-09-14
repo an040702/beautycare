@@ -92,7 +92,7 @@
 .social_hidden>a,social_hidden>a:visited { color: #fff; }
 .social_hidden>a:hover { color: #fff; }
 /*Style social*/
-.social {
+.social1 {
 	float: left;
 	margin: 10px 5px; width: 30px; height: 30px; 	
 	display: block; text-align: center; line-height:33px; color: #fff;
@@ -102,23 +102,23 @@
 	transition:transform .2s ease-out;
 	transform-style:preserve-3d;
 }
-.social > div {
+.social1 > div {
 	width: 30px; height: 30px; background: #000;
 	position: absolute; top: 0; left: 0; right: 0; bottom: 0;
 }
-.social >.front {
+.social1 >.front {
 	transform:translateZ(11.5px);
 }
-.social >.back {
+.social1 >.back {
 	background: #3B5998;
 	transform:rotateX(-100deg) translateZ(11.5px);
 }
 /*Social Media Colors */
-.social.social-twitter > .back { background: #55ACEE; }
-.social.social-googleplus > .back { background: #dd4B39; }
-.social.social-skype > .back { background: #12A5F4; }
-.social.social-linkedin > .back { background: #4875B4; }
+.social1.social-twitter > .back { background: #55ACEE; }
+.social1.social-googleplus > .back { background: #dd4B39; }
+.social1.social-skype > .back { background: #12A5F4; }
+.social1.social-linkedin > .back { background: #4875B4; }
 /*Hover */
-.social:hover {
+.social1:hover {
 	transform: rotatex(100deg);
 }
