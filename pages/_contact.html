@@ -10,9 +10,9 @@
 	<div class="container contact_header" ng-controller="AppController as ctrl">		
 		<div class="row contact_here">
 			<div class="col-sm-5">
-				<h2>Headquarters :</h2>
+				<div class="contact_quaters">Headquarters :</div>
 				<div class="row contact_adress">
-					<div class="col-sm-3 option_font">
+					<div class="col-sm-3 contact_location">
                 	   Address :
                     </div>
                     <div class="col-sm-9">
@@ -20,7 +20,7 @@
                     </div>
 				</div>
 				<div class="row">
-                    <div class="col-md-3 option_font">
+                    <div class="col-md-3 contact_location">
                         Phone :
                     </div>
                     <div class="col-md-9">
@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 option_font">
+                    <div class="col-md-3 contact_location">
                         Fax  :
                     </div>
                     <div class="col-md-9">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="row contact_adress">
-                    <div class="col-md-3 option_font">
+                    <div class="col-md-3 contact_location">
                         Email :
                     </div>
                     <div class="col-md-9 mail">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 option_font">
+                    <div class="col-md-3 contact_location">
                         Hours of operation :
                     </div>
                     <div class="col-md-9">
@@ -98,27 +98,27 @@
 			<div class="col-sm-7" >
 				<form ng-submit="ctrl.submit()" name="myForm" id="myForm">
 					<div class="form-group">
-						<label class="option_font">Your Name * </label><br>
+						<div class="contact_location">Your Name * </div><br>
 						<input type="text" ng-model="ctrl.user.username" name="uname" class="contact_form username" placeholder="Enter your name" required ng-minlength="3"/><br>
 			            <span ng-show="myForm.$dirty && myForm.uname.$error.required">This is a required field</span>
 			            <span ng-show="myForm.$dirty && myForm.uname.$error.minlength">Minimum length required is 3</span>
 			            <span ng-show="myForm.$dirty && myForm.uname.$invalid">This field is invalid </span>
 					</div>
 					<div class="form-group">
-						<label class="option_font">Your Phone * </label><br>
+						<div class="contact_location">Your Phone * </div><br>
 						<input type="text" ng-model="ctrl.user.phone" name="phone" class="contact_form phone" placeholder="Enter your phone" required ng-minlength="9"/><br>
 			            <span ng-show="myForm.$dirty && myForm.phone.$error.required">This is a required field</span>
 			            <span ng-show="myForm.$dirty && myForm.phone.$error.minlength">Minimum length required is 10</span>
 			            <span ng-show="myForm.$dirty && myForm.phone.$invalid">This field is invalid </span>
 					</div>
 					<div class="form-group">
-						<label class="option_font">Your Email * </label><br>
+						<div class="contact_location">Your Email * </div><br>
 						<input type="email" ng-model="ctrl.user.email" name="email" class=" contact_formemail contact_form" placeholder="Enter your Email" required/>
 		                <span ng-show="myForm.$dirty && myForm.email.$error.required">This is a required field</span>
 		                <span ng-show="myForm.$dirty && myForm.email.$invalid">This field is invalid </span>
 					</div>
 					<div class="form-group">
-						<label class="option_font">Your Message * </label><br>
+						<div class="contact_location">Your Message * </div><br>
 						<textarea ng-model="ctrl.user.message" name="message" class="contact_form contactform_textarea message" placeholder="Enter your message" required ng-minlength="1"></textarea>
 		                <span ng-show="myForm.$dirty && myForm.message.$error.required">This is a required field</span>
 		                <span ng-show="myForm.$dirty && myForm.message.$error.minlength">Minimum length required is 1</span>

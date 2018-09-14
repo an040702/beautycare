@@ -10,9 +10,12 @@
     		padding-top: 10px;
     		padding-bottom: 10px;
     	}
-    	.option_font{
+    	.contact_location{
     		font-family: fantasy;
     		font-size: large;
+    	}
+    	.contact_quaters{
+    		font-size: 30px;
     	}
     	/*Conditional*/
     	/*--------------------------------------*/
