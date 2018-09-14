@@ -16,7 +16,7 @@ th {
 td {
   padding: 10px;
 }
-input {
+input,textarea {
   text-align: center;
 }
 .actions .btn{

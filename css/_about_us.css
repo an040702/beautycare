@@ -151,7 +151,30 @@
 .about_promise{
     background-color: 
 }
-
+.our_history{
+    margin-bottom: 30px;
+}
+.about_since{
+    border-bottom: 1px solid black;
+}
+.about_history{
+    text-align: center;
+    font-size: 30px;
+    font-variant: all;
+    font-weight: bold;
+    margin :10px 0px;
+}
+.about_text{
+    text-align: justify;
+    color: #666;
+    font-size: 16px;
+}
+.about_year{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #666;
+    font-weight: bold;
+}
 body {margin: 0px !important;} 
 /*anh parallax */
 /*edit page cuc bo*/

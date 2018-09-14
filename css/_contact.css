@@ -1,118 +1,124 @@
 /*---------------------------------------------------------------------*/
-    	.contact_logo{
-			background-image: url('../images/index_background/here.jpg');
-			background-attachment: fixed;
-			background-position: center;
-			background-size: cover;
-			height: 500px;
-		}
-    	.contact_here{
-    		padding-top: 10px;
-    		padding-bottom: 10px;
-    	}
-    	.contact_location{
-    		font-family: fantasy;
-    		font-size: large;
-    	}
-    	.contact_quaters{
-    		font-size: 30px;
-    	}
-    	/*Conditional*/
-    	/*--------------------------------------*/
-      	.username.ng-valid {
-          	background-color: lightgreen;
-      	}
-      	.username.ng-dirty.ng-invalid-required {
-         	 background-color: red;
-      	}
-      	.username.ng-dirty.ng-invalid-minlength {
-         	 background-color: yellow;
-      	}
- 		/*--------------------------------------*/
- 		.phone.ng-valid {
- 			background-color: lightgreen;
- 		}
- 		.phone.ng-dirty.ng-invalid-required {
-         	 background-color: red;
-      	}
-      	.phone.ng-dirty.ng-invalid-minlength {
-         	 background-color: yellow;
-      	}
- 		/*--------------------------------------*/
-      	.email.ng-valid {
-          	background-color: lightgreen;
-      	}
-      	.email.ng-dirty.ng-invalid-required {
-          	background-color: red;
-      	}
-     	 .email.ng-dirty.ng-invalid-email {
-         	 background-color: yellow;
-     	}
-     	/*--------------------------------------*/
-     	/*End conditional*/
- 		.contact_form{
- 			width: 100%;
- 		}
- 		.contactform_textarea{
- 			height: 120px;
- 		}
- 		.contact_header{
- 			margin-top: 20px;
- 		}
- 		.contact_adress{
- 			margin-bottom: 20px;
- 		}
- 		.contact_idm{
-			text-align: center;
-			margin: 120px 0px;
-			color: #fff9;
-			font-size: 54px;
-			font-family:Georgia, Times,Times New Roman;
-			letter-spacing: 10px;
-		}
- 		/*---------------------------------------------------------------------*/
-       /* Set the size of the div element that contains the map */
-       /*---------------------------------------------------------------------*/
-      	#map {
-	        height: 500px;  /* The height is 500 pixels */
-	        width: 100%;  /* The width is the width of the web page */
-	        margin-bottom: 20px;
-	        overflow: hidden;
-       }
-       /*---------------------------------------------------------------------*/
-       /*Social icon hover effect*/
-       /*---------------------------------------------------------------------*/
-       	.social_hidden>a,social_hidden>a:visited { color: #fff; }
-		.social_hidden>a:hover { color: #fff; }
-		/*Style social*/
-		.social {
-			float: left;
-			margin: 10px 5px; width: 30px; height: 30px; 	
-			display: block; text-align: center; line-height:33px; color: #fff;
-			
-			position: relative;
-			transform:rotateY(0deg);
-			transition:transform .2s ease-out;
-			transform-style:preserve-3d;
-		}
-		.social > div {
-			width: 30px; height: 30px; background: #000;
-			position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-		}
-		.social >.front {
-			transform:translateZ(11.5px);
-		}
-		.social >.back {
-			background: #3B5998;
-			transform:rotateX(-100deg) translateZ(11.5px);
-		}
-		 /*Social Media Colors */
-		.social.social-twitter > .back { background: #55ACEE; }
-		.social.social-googleplus > .back { background: #dd4B39; }
-		.social.social-skype > .back { background: #12A5F4; }
-		.social.social-linkedin > .back { background: #4875B4; }
-		 /*Hover */
-		.social:hover {
-			transform: rotatex(100deg);
-		}
-		/*---------------------------------------------------------------------
+.contact_logo{
+	background-image: url('../images/index_background/here.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+}
+.contact_here{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.contact_location{
+	font-family: fantasy;
+	font-size: large;
+	color: #006180;
+	margin-top: 10px;
+}
+.contact_quaters{
+	font-size: 30px;
+	color:#006180;
+}
+.contact_detail{
+	margin-top: 12px;
+	font-size: 15px;
+}
+/*Conditional*/
+/*--------------------------------------*/
+	.username.ng-valid {
+  	background-color: lightgreen;
+	}
+	.username.ng-dirty.ng-invalid-required {
+ 	 background-color: red;
+	}
+	.username.ng-dirty.ng-invalid-minlength {
+ 	 background-color: yellow;
+	}
+/*--------------------------------------*/
+	.phone.ng-valid {
+		background-color: lightgreen;
+	}
+	.phone.ng-dirty.ng-invalid-required {
+ 	 background-color: red;
+	}
+	.phone.ng-dirty.ng-invalid-minlength {
+ 	 background-color: yellow;
+	}
+/*--------------------------------------*/
+	.email.ng-valid {
+  	background-color: lightgreen;
+	}
+	.email.ng-dirty.ng-invalid-required {
+  	background-color: red;
+	}
+	 .email.ng-dirty.ng-invalid-email {
+ 	 background-color: yellow;
+	}
+/*--------------------------------------*/
+/*End conditional*/
+	.contact_form{
+		width: 100%;
+	}
+	.contactform_textarea{
+		height: 120px;
+	}
+	.contact_header{
+		margin-top: 20px;
+	}
+	.contact_adress{
+		margin-bottom: 20px;
+	}
+	.contact_idm{
+	text-align: center;
+	margin: 120px 0px;
+	color: #fff9;
+	font-size: 54px;
+	font-family:Georgia, Times,Times New Roman;
+	letter-spacing: 10px;
+}
+/*---------------------------------------------------------------------*/
+/* Set the size of the div element that contains the map */
+/*---------------------------------------------------------------------*/
+	#map {
+    height: 500px;  /* The height is 500 pixels */
+    width: 100%;  /* The width is the width of the web page */
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+/*---------------------------------------------------------------------*/
+/*Social icon hover effect*/
+/*---------------------------------------------------------------------*/
+.social_hidden>a,social_hidden>a:visited { color: #fff; }
+.social_hidden>a:hover { color: #fff; }
+/*Style social*/
+.social {
+	float: left;
+	margin: 10px 5px; width: 30px; height: 30px; 	
+	display: block; text-align: center; line-height:33px; color: #fff;
+	
+	position: relative;
+	transform:rotateY(0deg);
+	transition:transform .2s ease-out;
+	transform-style:preserve-3d;
+}
+.social > div {
+	width: 30px; height: 30px; background: #000;
+	position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+}
+.social >.front {
+	transform:translateZ(11.5px);
+}
+.social >.back {
+	background: #3B5998;
+	transform:rotateX(-100deg) translateZ(11.5px);
+}
+/*Social Media Colors */
+.social.social-twitter > .back { background: #55ACEE; }
+.social.social-googleplus > .back { background: #dd4B39; }
+.social.social-skype > .back { background: #12A5F4; }
+.social.social-linkedin > .back { background: #4875B4; }
+/*Hover */
+.social:hover {
+	transform: rotatex(100deg);
+}

@@ -9,57 +9,57 @@
 	</div>
 	<div class="container contact_header" ng-controller="AppController as ctrl">		
 		<div class="row contact_here">
-			<div class="col-sm-5">
+			<div class="col-md-5">
 				<div class="contact_quaters">Headquarters :</div>
 				<div class="row contact_adress">
 					<div class="col-sm-3 contact_location">
                 	   Address :
                     </div>
-                    <div class="col-sm-9">
+                    <div class="col-sm-9 contact_detail">
                         38 Yen Bai Street, Hai Chau District, Da Nang City, Viet Nam.
                     </div>
 				</div>
 				<div class="row">
-                    <div class="col-md-3 contact_location">
+                    <div class="col-sm-3 contact_location">
                         Phone :
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-sm-9 contact_detail">
                         +(84) 123 456 6879
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 contact_location">
+                    <div class="col-sm-3 contact_location">
                         Fax  :
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-sm-9 contact_detail">
                         123 456 6789
                     </div>
                 </div>
                 <div class="row contact_adress">
-                    <div class="col-md-3 contact_location">
+                    <div class="col-sm-3 contact_location">
                         Email :
                     </div>
-                    <div class="col-md-9 mail">
+                    <div class="col-sm-9 mail contact_detail">
                         <a href="mailto:info@yourdomain.com"> Info@gmail.com </a><br>
                         <a href="mailto:support@yourdomain.com"> Support@gmail.com </a>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 contact_location">
-                        Hours of operation :
+                    <div class="col-sm-3 contact_location">
+                        Operation :
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-sm-9 contact_detail">
                         <div>Open 7 days a week</div><br>
                         <div>8am to 9pm</div>
                     </div>
                 </div>
                 <div class="row">
-                	<div class="col-md-12">
+                	<div class="col-sm-12 contact_detail">
                 		" FOLLOW " and " LIKE " The SIMPLON Center on <a href="">Facebook</a> + <a href="">Googleplus</a> + <a href="">Instagram</a> + <a href="">Twitter</a> for daily messages and highlighted work from our collaborative professionals. 
                 	</div>
                 </div>
                 <div class="row ">
-                	<div class="col-md-12 social_hidden">
+                	<div class="col-sm-12 social_hidden">
                 		<a class="social" href="#" target="_blank">
 						    <div class="front">
 								<i class="fa fa-facebook"></i>
@@ -95,7 +95,7 @@
 					</div>
                 </div>
 			</div>
-			<div class="col-sm-7" >
+			<div class="col-md-7" >
 				<form ng-submit="ctrl.submit()" name="myForm" id="myForm">
 					<div class="form-group">
 						<div class="contact_location">Your Name * </div><br>
@@ -125,7 +125,7 @@
 		                <span ng-show="myForm.$dirty && myForm.message.$invalid">This field is invalid </span>
 					</div>
 					<div class="form-group">
-						 <input type="submit"  value="Send" ng-disabled="myForm.$invalid" style="background-color: #4ab94a;color: white;margin-bottom: 20px;" onclick="myFunction()" class="contact_form">
+						 <input type="submit"  value="Send" ng-disabled="myForm.$invalid" style="background-color: #4ab94a;color: white;margin-bottom: 20px;height: 30px" onclick="myFunction()" class="contact_form">
 					</div>
 					<div class="form-group">
 						<small><strong>*</strong> These fields are required .</small>
