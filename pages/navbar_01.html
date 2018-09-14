@@ -1,4 +1,4 @@
-<div id="navbar" class="" ng-controller="login_logout_Ctrl">
+<div id="navbar" class="" >
   <nav class="navbar navbar-inverse navbar-fixed-top nav_container" role="navigation">
     <!-- NAVBAR HEADER -->
     <div class="navbar-header">
@@ -8,7 +8,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand nav_logo" href="#!/home">
+      <a class="navbar-brand nav_logo" href="#!/home/index">
         <img class="img-responsive nav_logo" src="logo/logo.png"></img>
       </a>
     </div>
@@ -127,12 +127,12 @@
       <!-- NAVBAR RIGHT -->
       <!-- NAVBAR FORM -->
       <form class="navbar-form navbar-left">
-        <!-- <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search" ng-model="productSearch.name"></input>
-        </div>
-        <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button> -->
-        <div class="search__container">
-          <input class="search__input" type="text" placeholder="Search" ng-model="productSearch.name" ng-controller="productCtrl">
+       <!--<div class="form-group">-->
+            <!--<input type="text" class="form-control" placeholder="Search" ng-model="productSearch.name" />-->
+        <!--</div>-->
+        <!--<button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>-->
+        <div class="search__container" id="div_search ">
+          <input class="search__input" type="text" placeholder="Search" id="search_name_product"  ng-keypress="search_name()">
         </div>
       </form>
 
@@ -158,7 +158,7 @@
             <ul class="dropdown-menu" id="ul-nav-cart">
               <li>
                 <div class="container navbar-product pre-scrollable">
-                  <div id="show_table" ng-controller="productCtrl"></div>
+                  <div id="show_table"   style="font-weight: 600"></div>
                 </div>
               </li>             
             </ul>
@@ -182,7 +182,7 @@
   </nav>
 </div>
 
-<div class="modal fade login" id="loginModal"  ng-controller="loginCtrl"  >
+<div class="modal fade login" id="loginModal">
   <div class="modal-dialog login animated" >
     <div class="modal-content-login">
       <div class="modal-header" id="modal_header">
