@@ -49,11 +49,10 @@
 <br>
 <!-- thong tin  -->
 <p class="outside">
-<div class="container">
+<div class="container" >
     <!-- tieu de // row 3 -->
     <div class="row">
         <div class="col-md-12">
-
             <b class="outside-title-page">BEST SELLER</b>
         </div>
     </div>
@@ -62,22 +61,22 @@
     <div style="" class="row">
         <div class="col-md-12" id="Processor">
             <div class="col-md-2">
-                <div class="defaut_category active" onclick="filterSelection('hair')">HAIR</div>
+                <div class="defaut_category active" onclick="" style="cursor: pointer">HAIR</div>
             </div>
             <div class="col-md-2">
-                <div class="defaut_category" onclick="filterSelection('skin')">SKIN</div>
+                <div class="defaut_category" onclick="" style="cursor: pointer">SKIN</div>
             </div>
             <div class="col-md-2">
-                <div class="defaut_category" onclick="filterSelection('makeup')">MAKEUP</div>
+                <div class="defaut_category" onclick="" style="cursor: pointer">MAKEUP</div>
             </div>
             <div class="col-md-2">
-                <div class="defaut_category" onclick="filterSelection('nails')">NAILS</div>
+                <div class="defaut_category" onclick="" style="cursor: pointer">NAILS</div>
             </div>
             <div class="col-md-2">
-                <div class="defaut_category" onclick="filterSelection('jewellry')">JEWELLRY</div>
+                <div class="defaut_category" onclick="" style="cursor: pointer">JEWELLRY</div>
             </div>
             <div class="col-md-2">
-                <div class="defaut_category" onclick="filterSelection('wedding')">WEDDING</div>
+                <div class="defaut_category" onclick="" style="cursor: pointer">WEDDING</div>
             </div>
         </div>
     </div>
@@ -86,302 +85,174 @@
 
     <div class="row">
       <!-- HAIR -->
-      <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 hair column" ng-repeat="product in hairhome">
-        <hr>
-        <div>
-        <div class="row">
-          <div class="col-md-2">
-          <h4 style="font-weight: 700;float: left;" id="name_{{product.class_rating_star}}" >{{product.name}}</h4>
+            <!-- Rings products 1st row -->
+                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12" style="margin-top: 0 !important;">
+                    <hr>
+                    <div>
+                        <h4 class="title-related" >RING/PNJ</h4>
+                        <fieldset class="rating1" style="float: right;">
+                            <input type="radio" id="1star5" name="rating1" value="5" /><label class = "full" for="1star5" title="Awesome - 5 stars"></label>
+                            <input type="radio" id="1star4half" name="rating1" value="4 and a half" /><label class="half" for="1star4half" title="Pretty good - 4.5 stars"></label>
+                            <input type="radio" id="1star4" name="rating1" value="4" /><label class = "full" for="1star4" title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="1star3half" name="rating1" value="3 and a half" /><label class="half" for="1star3half" title="Meh - 3.5 stars"></label>
+                            <input type="radio" id="1star3" name="rating1" value="3" /><label class = "full" for="1star3" title="Meh - 3 stars"></label>
+                            <input type="radio" id="1star2half" name="rating1" value="2 and a half" /><label class="half" for="1star2half" title="Kinda bad - 2.5 stars"></label>
+                            <input type="radio" id="1star2" name="rating1" value="2" /><label class = "full" for="1star2" title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="1star1half" name="rating1" value="1 and a half" /><label class="half" for="1star1half" title="Meh - 1.5 stars"></label>
+                            <input type="radio" id="1star1" name="rating1" value="1" /><label class = "full" for="1star1" title="Sucks big time - 1 star"></label>
+                            <input type="radio" id="1starhalf" name="rating1" value="half" /><label class="half" for="1starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                        <div style="clear: left;clear: right;"></div>
+                        <div class="wrapper" style="float: right;">
+                            <input type="checkbox" id="st1" value="1" />
+                            <label title="Favorite" for="st1"></label>
+                        </div>
+                    </div>
+                    <div class="container1">
+                        <div class="overlay">
+                            <a href="#!/profile/gold/9"><div class="text">PREVIEW SHADES</div></a>
+                        </div>
+                        <div class="img-responsive">
+                            <a href="#!/profile/gold/9"><img src="images\images_ring\images_ring_gold\gold_9.png" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <hr class="style-one">
+                    <div>
+                        <div class="cost">
+                            660$
+                        </div>
+                        <div>
+                            <a style="display: block" class="btn_custom" href="#!/profile/gold/9"><span>SHOW MORE  </span><i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md3 col-lg-3 col-sm-3 col-xs-12">
+                    <hr>
+                    <div>
+                        <h4 class="title-related">RING/PNJ</h4>
+                        <fieldset class="rating2" style="float: right;">
+                            <input type="radio" id="2star5" name="rating2" value="5" /><label class = "full" for="2star5" title="Awesome - 5 stars"></label>
+                            <input type="radio" id="2star4half" name="rating2" value="4 and a half" /><label class="half" for="2star4half" title="Pretty good - 4.5 stars"></label>
+                            <input type="radio" id="2star4" name="rating2" value="4" /><label class = "full" for="2star4" title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="2star3half" name="rating2" value="3 and a half" /><label class="half" for="2star3half" title="Meh - 3.5 stars"></label>
+                            <input type="radio" id="2star3" name="rating2" value="3" /><label class = "full" for="2star3" title="Meh - 3 stars"></label>
+                            <input type="radio" id="2star2half" name="rating2" value="2 and a half" /><label class="half" for="2star2half" title="Kinda bad - 2.5 stars"></label>
+                            <input type="radio" id="2star2" name="rating2" value="2" /><label class = "full" for="2star2" title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="2star1half" name="rating2" value="1 and a half" /><label class="half" for="2star1half" title="Meh - 1.5 stars"></label>
+                            <input type="radio" id="2star1" name="rating2" value="1" /><label class = "full" for="2star1" title="Sucks big time - 1 star"></label>
+                            <input type="radio" id="2starhalf" name="rating2" value="half" /><label class="half" for="2starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                        <div style="clear: left;clear: right;"></div>
+                        <div class="wrapper" style="float: right;">
+                            <input type="checkbox" id="st2"  value="2" />
+                            <label class="half" for="st2" title="Favorite"></label>
+                        </div>
+                    </div>
+                    <div class="container1">
+                        <div class="img-responsive">
+                            <a href="#!/profile/gold/2"><img src="images\images_ring\images_ring_gold\gold_2.png" class="img-responsive"></a>
+                            <div class="overlay">
+                                <a href="#!/profile/gold/2"><div class="text">PREVIEW SHADES</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="style-one">
+                    <div>
+                        <div class="cost">
+                            700$
+                        </div>
+                        <div>
+                            <a style="display: block" class="btn_custom" href="#!/profile/gold/2"><span>SHOW MORE  </span><i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md3 col-lg-3 col-sm-3 col-xs-12">
+                    <hr>
+                    <div>
+                        <h4 class="title-related">RING/PNJ</h4>
+                        <fieldset class="rating3" style="float: right;">
+                            <input type="radio" id="3star5" name="rating3" value="5" /><label class = "full" for="3star5" title="Awesome - 5 stars"></label>
+                            <input type="radio" id="3star4half" name="rating3" value="4 and a half" /><label class="half" for="3star4half" title="Pretty good - 4.5 stars"></label>
+                            <input type="radio" id="3star4" name="rating3" value="4" /><label class = "full" for="3star4" title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="3star3half" name="rating3" value="3 and a half" /><label class="half" for="3star3half" title="Meh - 3.5 stars"></label>
+                            <input type="radio" id="3star3" name="rating3" value="3" /><label class = "full" for="3star3" title="Meh - 3 stars"></label>
+                            <input type="radio" id="3star2half" name="rating3" value="2 and a half" /><label class="half" for="3star2half" title="Kinda bad - 2.5 stars"></label>
+                            <input type="radio" id="3star2" name="rating3" value="2" /><label class = "full" for="3star2" title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="3star1half" name="rating3" value="1 and a half" /><label class="half" for="3star1half" title="Meh - 1.5 stars"></label>
+                            <input type="radio" id="3star1" name="rating3" value="1" /><label class = "full" for="3star1" title="Sucks big time - 1 star"></label>
+                            <input type="radio" id="3starhalf" name="rating3" value="half" /><label class="half" for="3starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                        <div style="clear: left;clear: right;"></div>
+                        <div class="wrapper" style="float: right;">
+                            <input type="checkbox" id="st3" value="1" />
+                            <label for="st3"></label>
+                        </div>
+                    </div>
+                    <div class="container1">
+                        <div class="img-responsive">
+                            <a href="#!/profile/diamon/3"><img src="images\images_ring\images_ring_diamon\diamon_3.png" class="img-responsive"></a>
+                            <div class="overlay">
+                                <a href="#!/profile/diamon/3"><div class="text">PREVIEW SHADES</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="style-one">
+                    <div>
+                        <div class="cost">
+                            1900$
+                        </div>
+                        <div>
+                            <a style="display: block" class="btn_custom" href="#!/profile/diamon/3"><span>SHOW MORE  </span><i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md3 col-lg-3 col-sm-3 col-xs-12">
+                    <hr>
+                    <div>
+                        <h4 class="title-related">RING/PNJ</h4>
+                        <fieldset class="rating4" style="float: right;">
+                            <input type="radio" id="4star5" name="rating4" value="5" /><label class = "full" for="4star5" title="Awesome - 5 stars"></label>
+                            <input type="radio" id="4star4half" name="rating4" value="4 and a half" /><label class="half" for="4star4half" title="Pretty good - 4.5 stars"></label>
+                            <input type="radio" id="4star4" name="rating4" value="4" /><label class = "full" for="4star4" title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="4star3half" name="rating4" value="3 and a half" /><label class="half" for="4star3half" title="Meh - 3.5 stars"></label>
+                            <input type="radio" id="4star3" name="rating4" value="3" /><label class = "full" for="4star3" title="Meh - 3 stars"></label>
+                            <input type="radio" id="4star2half" name="rating4" value="2 and a half" /><label class="half" for="4star2half" title="Kinda bad - 2.5 stars"></label>
+                            <input type="radio" id="4star2" name="rating4" value="2" /><label class = "full" for="4star2" title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="4star1half" name="rating4" value="1 and a half" /><label class="half" for="4star1half" title="Meh - 1.5 stars"></label>
+                            <input type="radio" id="4star1" name="rating4" value="1" /><label class = "full" for="4star1" title="Sucks big time - 1 star"></label>
+                            <input type="radio" id="4starhalf" name="rating4" value="half" /><label class="half" for="4starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                        <div style="clear: left;clear: right;"></div>
+                        <div class="wrapper" style="float: right;">
+                            <input type="checkbox" id="st4" value="1" />
+                            <label for="st4"></label>
+                        </div>
+                    </div>
+                    <div class="container1">
+                        <div class="img-responsive">
+                            <a href="#!/profile/diamon/4"><img src="images\images_ring\images_ring_diamon\diamon_4.png" class="img-responsive"></a>
+                            <div class="overlay">
+                                <a href="#!/profile/diamon/4"><div class="text">PREVIEW SHADES</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="style-one">
+                    <div>
+                        <div class="cost">
+                            1300$
+                        </div>
+                        <div>
+                            <a style="display: block" class="btn_custom" href="#!/profile/diamon/4"><span>SHOW MORE  </span><i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+    </div>
 
-          </div>
-          <div class="col-md-10">
-          <fieldset class="rating{{product.class_rating_star}}" style="float: right;">
-            <input type="radio" id="{{product.class_rating_star}}star5" name="rating{{product.class_rating_star}}" value="5" /><label class = "full" for="{{product.class_rating_star}}star5" title="Awesome - 5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star4half" name="rating{{product.class_rating_star}}" value="4 and a half" /><label class="half" for="{{product.class_rating_star}}star4half" title="Pretty good - 4.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star4" name="rating{{product.class_rating_star}}" value="4" /><label class = "full" for="{{product.class_rating_star}}star4" title="Pretty good - 4 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star3half" name="rating{{product.class_rating_star}}" value="3 and a half" /><label class="half" for="{{product.class_rating_star}}star3half" title="Meh - 3.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star3" name="rating{{product.class_rating_star}}" value="3" /><label class = "full" for="{{product.class_rating_star}}star3" title="Meh - 3 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star2half" name="rating{{product.class_rating_star}}" value="2 and a half" /><label class="half" for="{{product.class_rating_star}}star2half" title="Kinda bad - 2.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star2" name="rating{{product.class_rating_star}}" value="2" /><label class = "full" for="{{product.class_rating_star}}star2" title="Kinda bad - 2 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star1half" name="rating{{product.class_rating_star}}" value="1 and a half" /><label class="half" for="{{product.class_rating_star}}star1half" title="Meh - 1.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star1" name="rating{{product.class_rating_star}}" value="1" /><label class = "full" for="{{product.class_rating_star}}star1" title="Sucks big time - 1 star"></label>
-            <input type="radio" id="{{product.class_rating_star}}starhalf" name="rating{{product.class_rating_star}}" value="half" /><label class="half" for="{{product.class_rating_star}}starhalf" title="Sucks big time - 0.5 stars"></label>
-          </fieldset>
-          </div>
-        </div>
-        <div class="row" style="clear: left;">
-          <div class="col-md-6" style="clear: right">
-            <h4 style="font-weight: 700;float: left" id="id_sp_{{product.class_rating_star}}">{{product.id}}</h4>
-          </div>
-          <div class="wrapper col-md-6">
-            <input style="float: right;" type="checkbox" id="st{{product.class_rating_star}}" value="1" />
-            <label style="float: right;" title="Favorite" for="st{{product.class_rating_star}}"></label>
-          </div>
-        </div>
-      </div>
-        <div class="container1">
-          <div class="overlay">
-                    <!-- <a href="#!profile_gold/{{product.class_rating_star}}"> -->
-          <a href="#!/profile/{{name_custom}}/{{product.class_rating_star}}"> <div class="text">PREVIEW SHADES</div></a>
-                    <!--</a>-->
-                </div>
-          <div class="img-responsive">
-                   <!--<a href="#!profile_gold/{{product.class_rating_star}}">-->
-          <a href="#!/profile/{{name_custom}}/{{product.class_rating_star}}"><img ng-src={{product.image}} class="img-responsive"></a>
-                    <!--</a>-->
-                </div>
-        </div>
-        <hr class="style-one">
-        <div>
-          <div class="cost" id="price_{{product.class_rating_star}}">
-            {{product.price}}
-          </div>
-          <div>
-            <div style="display: block" class="btn_custom" ng-click="add_Cart(product.class_rating_star)" id="btn_{{product.id}}_add_{{product.class_rating_star}}"><span>ADD CART  </span> <i class="fas fa-shopping-cart"></i></div>
-          <div style="display: none" class="btn_custom_added" ng-click="add_Cart(product.class_rating_star)" id="btn_{{product.id}}_added_{{product.class_rating_star}}"><span>ADDED CART  </span> <i class="fas fa-shopping-cart"></i></div>
-          </div>
-        </div>
-      </div>
-      
-      
 
       <!-- SKIN -->
-      <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 skin column" ng-repeat="product in skinshome">
-        <hr>
-        <div>
-        <div class="row">
-          <div class="col-md-2">
-          <h4 style="font-weight: 700;float: left;" id="name_{{product.class_rating_star}}" >{{product.name}}</h4>
 
-          </div>
-          <div class="col-md-10">
-          <fieldset class="rating{{product.class_rating_star}}" style="float: right;">
-            <input type="radio" id="{{product.class_rating_star}}star5" name="rating{{product.class_rating_star}}" value="5" /><label class = "full" for="{{product.class_rating_star}}star5" title="Awesome - 5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star4half" name="rating{{product.class_rating_star}}" value="4 and a half" /><label class="half" for="{{product.class_rating_star}}star4half" title="Pretty good - 4.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star4" name="rating{{product.class_rating_star}}" value="4" /><label class = "full" for="{{product.class_rating_star}}star4" title="Pretty good - 4 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star3half" name="rating{{product.class_rating_star}}" value="3 and a half" /><label class="half" for="{{product.class_rating_star}}star3half" title="Meh - 3.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star3" name="rating{{product.class_rating_star}}" value="3" /><label class = "full" for="{{product.class_rating_star}}star3" title="Meh - 3 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star2half" name="rating{{product.class_rating_star}}" value="2 and a half" /><label class="half" for="{{product.class_rating_star}}star2half" title="Kinda bad - 2.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star2" name="rating{{product.class_rating_star}}" value="2" /><label class = "full" for="{{product.class_rating_star}}star2" title="Kinda bad - 2 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star1half" name="rating{{product.class_rating_star}}" value="1 and a half" /><label class="half" for="{{product.class_rating_star}}star1half" title="Meh - 1.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star1" name="rating{{product.class_rating_star}}" value="1" /><label class = "full" for="{{product.class_rating_star}}star1" title="Sucks big time - 1 star"></label>
-            <input type="radio" id="{{product.class_rating_star}}starhalf" name="rating{{product.class_rating_star}}" value="half" /><label class="half" for="{{product.class_rating_star}}starhalf" title="Sucks big time - 0.5 stars"></label>
-          </fieldset>
-          </div>
-        </div>
-        <div class="row" style="clear: left;">
-          <div class="col-md-6" style="clear: right">
-            <h4 style="font-weight: 700;float: left" id="id_sp_{{product.class_rating_star}}">{{product.id}}</h4>
-          </div>
-          <div class="wrapper col-md-6">
-            <input style="float: right;" type="checkbox" id="st{{product.class_rating_star}}" value="1" />
-            <label style="float: right;" title="Favorite" for="st{{product.class_rating_star}}"></label>
-          </div>
-        </div>
-      </div>
-        <div class="container1">
-          <div class="overlay">
-                    <!--<a href="#!profile_gold/{{product.class_rating_star}}">-->
-          <a href="#!/profile/{{name_custom}}/{{product.class_rating_star}}"> <div class="text">PREVIEW SHADES</div></a>
-                    <!--</a>-->
-                </div>
-          <div class="img-responsive">
-                   <!--<a href="#!profile_gold/{{product.class_rating_star}}">-->
-          <a href="#!/profile/{{name_custom}}/{{product.class_rating_star}}"><img ng-src={{product.image}} class="img-responsive"></a>
-                    <!--</a>-->
-                </div>
-        </div>
-        <hr class="style-one">
-        <div>
-          <div class="cost" id="price_{{product.class_rating_star}}">
-            {{product.price}}
-          </div>
-          <div>
-            <div style="display: block" class="btn_custom" ng-click="add_Cart(product.class_rating_star)" id="btn_{{product.id}}_add_{{product.class_rating_star}}"><span>ADD CART  </span> <i class="fas fa-shopping-cart"></i></div>
-          <div style="display: none" class="btn_custom_added" ng-click="add_Cart(product.class_rating_star)" id="btn_{{product.id}}_added_{{product.class_rating_star}}"><span>ADDED CART  </span> <i class="fas fa-shopping-cart"></i></div>
-          </div>
-        </div>
-      </div>
-      <!-- END SKIN -->    
-
-      <!-- MAKEUP -->
-      <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 makeup column" ng-repeat="product in makeuphome">
-        <hr>
-        <div>
-        <div class="row">
-          <div class="col-md-2">
-          <h4 style="font-weight: 700;float: left;" id="name_{{product.class_rating_star}}" >{{product.name}}</h4>
-
-          </div>
-          <div class="col-md-10">
-          <fieldset class="rating{{product.class_rating_star}}" style="float: right;">
-            <input type="radio" id="{{product.class_rating_star}}star5" name="rating{{product.class_rating_star}}" value="5" /><label class = "full" for="{{product.class_rating_star}}star5" title="Awesome - 5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star4half" name="rating{{product.class_rating_star}}" value="4 and a half" /><label class="half" for="{{product.class_rating_star}}star4half" title="Pretty good - 4.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star4" name="rating{{product.class_rating_star}}" value="4" /><label class = "full" for="{{product.class_rating_star}}star4" title="Pretty good - 4 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star3half" name="rating{{product.class_rating_star}}" value="3 and a half" /><label class="half" for="{{product.class_rating_star}}star3half" title="Meh - 3.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star3" name="rating{{product.class_rating_star}}" value="3" /><label class = "full" for="{{product.class_rating_star}}star3" title="Meh - 3 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star2half" name="rating{{product.class_rating_star}}" value="2 and a half" /><label class="half" for="{{product.class_rating_star}}star2half" title="Kinda bad - 2.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star2" name="rating{{product.class_rating_star}}" value="2" /><label class = "full" for="{{product.class_rating_star}}star2" title="Kinda bad - 2 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star1half" name="rating{{product.class_rating_star}}" value="1 and a half" /><label class="half" for="{{product.class_rating_star}}star1half" title="Meh - 1.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star1" name="rating{{product.class_rating_star}}" value="1" /><label class = "full" for="{{product.class_rating_star}}star1" title="Sucks big time - 1 star"></label>
-            <input type="radio" id="{{product.class_rating_star}}starhalf" name="rating{{product.class_rating_star}}" value="half" /><label class="half" for="{{product.class_rating_star}}starhalf" title="Sucks big time - 0.5 stars"></label>
-          </fieldset>
-          </div>
-        </div>
-        <div class="row" style="clear: left;">
-          <div class="col-md-6" style="clear: right">
-            <h4 style="font-weight: 700;float: left" id="id_sp_{{product.class_rating_star}}">{{product.id}}</h4>
-          </div>
-          <div class="wrapper col-md-6">
-            <input style="float: right;" type="checkbox" id="st{{product.class_rating_star}}" value="1" />
-            <label style="float: right;" title="Favorite" for="st{{product.class_rating_star}}"></label>
-          </div>
-        </div>
-      </div>
-        <div class="container1">
-          <div class="overlay">
-                    <!--<a href="#!profile_gold/{{product.class_rating_star}}">-->
-          <a href="#!/profile/{{name_custom}}/{{product.class_rating_star}}"> <div class="text">PREVIEW SHADES</div></a>
-                    <!--</a>-->
-                </div>
-          <div class="img-responsive">
-                   <!--<a href="#!profile_gold/{{product.class_rating_star}}">-->
-          <a href="#!/profile/{{name_custom}}/{{product.class_rating_star}}"><img ng-src={{product.image}} class="img-responsive"></a>
-                    <!--</a>-->
-                </div>
-        </div>
-        <hr class="style-one">
-        <div>
-          <div class="cost" id="price_{{product.class_rating_star}}">
-            {{product.price}}
-          </div>
-          <div>
-            <div style="display: block" class="btn_custom" ng-click="add_Cart(product.class_rating_star)" id="btn_{{product.id}}_add_{{product.class_rating_star}}"><span>ADD CART  </span> <i class="fas fa-shopping-cart"></i></div>
-          <div style="display: none" class="btn_custom_added" ng-click="add_Cart(product.class_rating_star)" id="btn_{{product.id}}_added_{{product.class_rating_star}}"><span>ADDED CART  </span> <i class="fas fa-shopping-cart"></i></div>
-          </div>
-        </div>
-      </div>
-      <!-- END MAKEUP -->
-
-      <!-- NAILS -->
-      <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 nails column" ng-repeat="product in nailshome">
-        <hr>
-        <div>
-        <div class="row">
-          <div class="col-md-2">
-          <h4 style="font-weight: 700;float: left;" id="name_{{product.class_rating_star}}" >{{product.name}}</h4>
-
-          </div>
-          <div class="col-md-10">
-          <fieldset class="rating{{product.class_rating_star}}" style="float: right;">
-            <input type="radio" id="{{product.class_rating_star}}star5" name="rating{{product.class_rating_star}}" value="5" /><label class = "full" for="{{product.class_rating_star}}star5" title="Awesome - 5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star4half" name="rating{{product.class_rating_star}}" value="4 and a half" /><label class="half" for="{{product.class_rating_star}}star4half" title="Pretty good - 4.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star4" name="rating{{product.class_rating_star}}" value="4" /><label class = "full" for="{{product.class_rating_star}}star4" title="Pretty good - 4 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star3half" name="rating{{product.class_rating_star}}" value="3 and a half" /><label class="half" for="{{product.class_rating_star}}star3half" title="Meh - 3.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star3" name="rating{{product.class_rating_star}}" value="3" /><label class = "full" for="{{product.class_rating_star}}star3" title="Meh - 3 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star2half" name="rating{{product.class_rating_star}}" value="2 and a half" /><label class="half" for="{{product.class_rating_star}}star2half" title="Kinda bad - 2.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star2" name="rating{{product.class_rating_star}}" value="2" /><label class = "full" for="{{product.class_rating_star}}star2" title="Kinda bad - 2 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star1half" name="rating{{product.class_rating_star}}" value="1 and a half" /><label class="half" for="{{product.class_rating_star}}star1half" title="Meh - 1.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star1" name="rating{{product.class_rating_star}}" value="1" /><label class = "full" for="{{product.class_rating_star}}star1" title="Sucks big time - 1 star"></label>
-            <input type="radio" id="{{product.class_rating_star}}starhalf" name="rating{{product.class_rating_star}}" value="half" /><label class="half" for="{{product.class_rating_star}}starhalf" title="Sucks big time - 0.5 stars"></label>
-          </fieldset>
-          </div>
-        </div>
-        <div class="row" style="clear: left;">
-          <div class="col-md-6" style="clear: right">
-            <h4 style="font-weight: 700;float: left" id="id_sp_{{product.class_rating_star}}">{{product.id}}</h4>
-          </div>
-          <div class="wrapper col-md-6">
-            <input style="float: right;" type="checkbox" id="st{{product.class_rating_star}}" value="1" />
-            <label style="float: right;" title="Favorite" for="st{{product.class_rating_star}}"></label>
-          </div>
-        </div>
-      </div>
-        <div class="container1">
-          <div class="overlay">
-                    <!--<a href="#!profile_gold/{{product.class_rating_star}}">-->
-          <a href="#!/profile/{{name_custom}}/{{product.class_rating_star}}"> <div class="text">PREVIEW SHADES</div></a>
-                    <!--</a>-->
-                </div>
-          <div class="img-responsive">
-                   <!--<a href="#!profile_gold/{{product.class_rating_star}}">-->
-          <a href="#!/profile/{{name_custom}}/{{product.class_rating_star}}"><img ng-src={{product.image}} class="img-responsive"></a>
-                    <!--</a>-->
-                </div>
-        </div>
-        <hr class="style-one">
-        <div>
-          <div class="cost" id="price_{{product.class_rating_star}}">
-            {{product.price}}
-          </div>
-          <div>
-            <div style="display: block" class="btn_custom" ng-click="add_Cart(product.class_rating_star)" id="btn_{{product.id}}_add_{{product.class_rating_star}}"><span>ADD CART  </span> <i class="fas fa-shopping-cart"></i></div>
-          <div style="display: none" class="btn_custom_added" ng-click="add_Cart(product.class_rating_star)" id="btn_{{product.id}}_added_{{product.class_rating_star}}"><span>ADDED CART  </span> <i class="fas fa-shopping-cart"></i></div>
-          </div>
-        </div>
-      </div>
-      <!-- END NAILS -->       
-
-      <!-- JEWELLRY -->
-      <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 jewellry column" ng-repeat="product in jewellryhome">
-        <hr>
-        <div>
-        <div class="row">
-          <div class="col-md-2">
-          <h4 style="font-weight: 700;float: left;" id="name_{{product.class_rating_star}}" >{{product.name}}</h4>
-
-          </div>
-          <div class="col-md-10">
-          <fieldset class="rating{{product.class_rating_star}}" style="float: right;">
-            <input type="radio" id="{{product.class_rating_star}}star5" name="rating{{product.class_rating_star}}" value="5" /><label class = "full" for="{{product.class_rating_star}}star5" title="Awesome - 5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star4half" name="rating{{product.class_rating_star}}" value="4 and a half" /><label class="half" for="{{product.class_rating_star}}star4half" title="Pretty good - 4.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star4" name="rating{{product.class_rating_star}}" value="4" /><label class = "full" for="{{product.class_rating_star}}star4" title="Pretty good - 4 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star3half" name="rating{{product.class_rating_star}}" value="3 and a half" /><label class="half" for="{{product.class_rating_star}}star3half" title="Meh - 3.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star3" name="rating{{product.class_rating_star}}" value="3" /><label class = "full" for="{{product.class_rating_star}}star3" title="Meh - 3 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star2half" name="rating{{product.class_rating_star}}" value="2 and a half" /><label class="half" for="{{product.class_rating_star}}star2half" title="Kinda bad - 2.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star2" name="rating{{product.class_rating_star}}" value="2" /><label class = "full" for="{{product.class_rating_star}}star2" title="Kinda bad - 2 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star1half" name="rating{{product.class_rating_star}}" value="1 and a half" /><label class="half" for="{{product.class_rating_star}}star1half" title="Meh - 1.5 stars"></label>
-            <input type="radio" id="{{product.class_rating_star}}star1" name="rating{{product.class_rating_star}}" value="1" /><label class = "full" for="{{product.class_rating_star}}star1" title="Sucks big time - 1 star"></label>
-            <input type="radio" id="{{product.class_rating_star}}starhalf" name="rating{{product.class_rating_star}}" value="half" /><label class="half" for="{{product.class_rating_star}}starhalf" title="Sucks big time - 0.5 stars"></label>
-          </fieldset>
-          </div>
-        </div>
-        <div class="row" style="clear: left;">
-          <div class="col-md-6" style="clear: right">
-            <h4 style="font-weight: 700;float: left" id="id_sp_{{product.class_rating_star}}">{{product.id}}</h4>
-          </div>
-          <div class="wrapper col-md-6">
-            <input style="float: right;" type="checkbox" id="st{{product.class_rating_star}}" value="1" />
-            <label style="float: right;" title="Favorite" for="st{{product.class_rating_star}}"></label>
-          </div>
-        </div>
-      </div>
-        <div class="container1">
-          <div class="overlay">
-                    <!--<a href="#!profile_gold/{{product.class_rating_star}}">-->
-          <a href="#!/profile/{{name_custom}}/{{product.class_rating_star}}"> <div class="text">PREVIEW SHADES</div></a>
-                    <!--</a>-->
-                </div>
-          <div class="img-responsive">
-                   <!--<a href="#!profile_gold/{{product.class_rating_star}}">-->
-          <a href="#!/profile/{{name_custom}}/{{product.class_rating_star}}"><img ng-src={{product.image}} class="img-responsive"></a>
-                    <!--</a>-->
-                </div>
-        </div>
-        <hr class="style-one">
-        <div>
-          <div class="cost" id="price_{{product.class_rating_star}}">
-            {{product.price}}
-          </div>
-          <div>
-            <div style="display: block" class="btn_custom" ng-click="add_Cart(product.class_rating_star)" id="btn_{{product.id}}_add_{{product.class_rating_star}}"><span>ADD CART  </span> <i class="fas fa-shopping-cart"></i></div>
-          <div style="display: none" class="btn_custom_added" ng-click="add_Cart(product.class_rating_star)" id="btn_{{product.id}}_added_{{product.class_rating_star}}"><span>ADDED CART  </span> <i class="fas fa-shopping-cart"></i></div>
-          </div>
-        </div>
-      </div>
       <!-- END JEWELLRY -->       
 
-    </div>
     <br><br><br>
     <!-- tieu de // row 6 // css row 3 -->
     <div class="row">
@@ -436,6 +307,7 @@
         </div>
     </div>
     <!-- anh thong  tin // row 9 // css row 7-->
+
     <div class="row">
         <div style="text-align: center; margin-left: 14px;">
             <!-- <div class="col-md-3">

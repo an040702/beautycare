@@ -54,9 +54,9 @@ productApp.controller('OtherController', OtherController);
 
 var data_array=[];
 productApp.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
-    $routeProvider.when('/home',{
+    $routeProvider.when('/home/:name',{
         templateUrl : "./pages/home.html",
-        controller:"myCtrl"
+        controller:"productCtrl"
     }).when('/product/:name',{
         templateUrl : "./pages/product.html",
         controller : "productCtrl"
@@ -70,7 +70,10 @@ productApp.config(['$routeProvider','$locationProvider',function($routeProvider,
         templateUrl : "./pages/_about_us.html"
     }).when('/contact-us',{
         templateUrl : "./pages/_contact.html"
-    }).otherwise({redirectTo:'/home'});
+    }).otherwise({
+        redirectTo:'/home/index',
+        controller : "productCtrl"
+    });
     // $locationProvider.html5Mode(true);
 }]);
 function compile(element){
@@ -103,224 +106,6 @@ var data_users=[];
 // "NO ONE TOUCHED" (ENG)
 
 
-productApp.controller("login_logout_Ctrl", function($scope,$http) {
-    var vm=$scope;
-    vm.name;
-    vm.sex;
-    if(localStorage.check_login=="true"){
-        $http.get('data/data_users.json') //reading the product.json file
-            .then(function (response) {
-               vm.name = response.data[localStorage.id_user_login].nickname;
-               vm.sex =response.data[localStorage.id_user_login].sex;
-                if(vm.sex=='male' ){
-                    document.getElementById("icon_user_female").style.display="none";
-                    document.getElementById("icon_user_male").style.display="block";
-                    document.getElementById("admin").style.display="none";
-                }
-                if(vm.name=="Gosu" && vm.sex=='male') {
-
-                    document.getElementById("icon_user_female").style.display="none";
-                    document.getElementById("icon_user_male").style.display="none";
-                    document.getElementById("admin").style.display="block";
-                }
-                else if(vm.sex=='female'){
-                    document.getElementById("icon_user_female").style.display="block";
-                    document.getElementById("icon_user_male").style.display="none";
-                    document.getElementById("admin").style.display="none";
-
-                }
-            });
-
-        document.getElementById("login_navbar").style.display="none";
-        document.getElementById("logout_navbar").style.display="block";
-
-    }
-    else if(localStorage.check_login=="false"){
-        document.getElementById("admin").style.display="none";
-        document.getElementById("icon_user_female").style.display="none";
-        document.getElementById("icon_user_male").style.display="none";
-        document.getElementById("login_navbar").style.display="block";
-        document.getElementById("logout_navbar").style.display="none";
-    }
-    $scope.logout=function () {
-        localStorage.check_login="false";
-        document.getElementById("login_navbar").style.display="block";
-        document.getElementById("logout_navbar").style.display="none";
-        document.getElementById("admin").style.display="none";
-        document.getElementById("icon_user_female").style.display="none";
-        document.getElementById("icon_user_male").style.display="none";
-    };
-});
-
-
-
-//controller of Login Register
-
-productApp.controller("loginCtrl", function($scope,$http,$routeParams) {
-
-    var vm=$scope;
-    vm.eml_add = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-    //Change check true/false
-
-
-    //Check route if route product page or not
-        $http.get('data/data_users.json') //reading the product.json file
-            .then(function (response) {
-                    for(var i=0;i<response.data.length;i++) {
-                        data_users.push({
-                            username: response.data[i].username,
-                            password: response.data[i].password,
-                            name:response.data[i].name,
-                            sex:response.data[i].sex,
-                            birthday:response.data[i].birthday,
-                            nickname:response.data[i].nickname,
-                            address:response.data[i].address,
-                            telephone:response.data[i].telephone
-                        });
-                    }
-            }
-            );
-        var check_required=true;
-        vm.check_username=function(){
-            var username=document.getElementById('email').value;
-            for(var i=0;i<data_users.length;i++){
-                if(username==data_users[i].username){
-                    document.getElementById('warning_username').style.display='block';
-                    break;
-                }
-                else{
-                    document.getElementById('warning_username').style.display='none';
-                }
-            }
-        };
-        vm.check_pass=function(){
-          var pass=document.getElementById('password').value;
-          if(pass.length<6){
-              document.getElementById('warning_password').style.display='block';
-          }
-          else{
-              document.getElementById('warning_password').style.display='none';
-          }
-        };
-        vm.check_pass_comfim=function(){
-            var pass_confim=document.getElementById("password_confirmation").value;
-            if(pass_confim!=document.getElementById("password").value){
-                document.getElementById('warning_password_confim').style.display='block';
-            }
-            else{
-                document.getElementById('warning_password_confim').style.display='none';
-            }
-        };
-        vm.check_phone=function(){
-            var phone=document.getElementById('telephone_rg').value;
-            document.getElementById("warning_digit").style.display="none";
-            document.getElementById("warning_character").style.display="none";
-            document.getElementById("warning_digit_11").style.display="none";
-            for(var i=0;i<phone.length;i++) {
-                    var check_phone;
-                    check_phone = isNaN(phone[i]);
-                    if (check_phone == true) {
-                        check_required=false;
-                        break;
-                    }
-                }
-                    if(check_phone==true){
-                    document.getElementById("warning_character").style.display="block";
-                    document.getElementById("warning_digit_11").style.display="none";
-                    document.getElementById("warning_digit").style.display="none";
-                    }
-                    else{
-                        if(phone.length<10){
-                            check_required=false;
-                            document.getElementById("warning_digit").style.display="block";
-                        }
-                        else if(phone.length>11){
-                            check_required=false;
-                            document.getElementById("warning_digit_11").style.display="block";
-                        }
-                        else{
-                            check_required=true;
-                            document.getElementById("warning_digit").style.display="none";
-                        }
-                        document.getElementById("warning_character").style.display="none";
-                    }
-
-        };
-            //    function register
-            vm.regis = function () {
-                var phone=document.getElementById('telephone_rg').value;
-                if(phone.length==0){
-                    check_required=false;
-                }
-                if(check_required==false){
-                    alert(document.getElementById('bday').value);
-                    shakeModals_phone();
-                }
-                else {
-                    var username = document.getElementById('email').value;
-                    var password = document.getElementById('password').value;
-                    var password_confim = document.getElementById('password_confirmation').value;
-                    var nickname = document.getElementById('nick_name').value;
-                    var telephone = document.getElementById('telephone_rg').value;
-                    var address = document.getElementById('add_rg').value;
-                    var birthday=document.getElementById('bday').value;
-                    var sex;
-                    var name=document.getElementById("name_rg").value;
-                    var sexs = document.getElementsByName('Sex');
-                    for (var i = 0; i < sexs.length; i++) {
-                        if (sexs[i].checked) {
-                            sex = sexs[i].value;
-                        }
-                    }
-                    var check_username = true;
-                    for (var i = 0; i < data_users.length; i++) {
-                        if (data_users[i].username == username) {
-                            check_username = false;
-                            break;
-                        }
-                    }
-
-                    if (check_username == false) {
-                        shakeModals_username();
-                    }
-                    if (check_username == true) {
-                        if (password != password_confim) {
-                            shakeModals();
-                        }
-
-                        else if (password_confim == '' || username == '' || password == '' || nickname == '') {
-                            empty();
-                        }
-                        else {
-                            data_users.push({
-                                username: username,
-                                password: password,
-                                name: name,
-                                sex: sex,
-                                nickname: nickname,
-                                birthday:birthday,
-                                address: address,
-                                telephone: telephone
-
-                            });
-                            alert("Registed !!!");
-                            $http.post(path, data_users)
-                                .then(function (response) {
-                                    console.log(response);
-                                    // data_array = response.config.data;
-                                });
-                            // alert($routeParams.name);
-                            window.history.go();
-                        }
-                    }
-                    console.log(data_users);
-                }
-            }
-    //login
-
-
-
-});
 
 productApp.controller("productCtrl", function($scope, $http,$routeParams,$compile,$timeout) {
     var vm=$scope;
@@ -354,6 +139,221 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
             vm.id_product=response.data[vm.id-1].id;
         });
     }
+    $http.get('data/data_users.json') //reading the product.json file
+        .then(function (response) {
+                for(var i=0;i<response.data.length;i++) {
+                    data_users.push({
+                        username: response.data[i].username,
+                        password: response.data[i].password,
+                        name:response.data[i].name,
+                        sex:response.data[i].sex,
+                        birthday:response.data[i].birthday,
+                        nickname:response.data[i].nickname,
+                        address:response.data[i].address,
+                        telephone:response.data[i].telephone
+                    });
+                }
+            }
+        );
+
+    vm.name;
+    vm.sex;
+    if(localStorage.check_login=="true"){
+        $http.get('data/data_users.json') //reading the product.json file
+            .then(function (response) {
+                vm.name = response.data[localStorage.id_user_login].nickname;
+                vm.sex =response.data[localStorage.id_user_login].sex;
+                if(vm.sex=='male' ){
+                    document.getElementById("icon_user_female").style.display="none";
+                    document.getElementById("icon_user_male").style.display="block";
+                    document.getElementById("admin").style.display="none";
+                }
+                if(vm.name=="Gosu" && vm.sex=='male') {
+
+                    document.getElementById("icon_user_female").style.display="none";
+                    document.getElementById("icon_user_male").style.display="none";
+                    document.getElementById("admin").style.display="block";
+                }
+                else if(vm.sex=='female'){
+                    document.getElementById("icon_user_female").style.display="block";
+                    document.getElementById("icon_user_male").style.display="none";
+                    document.getElementById("admin").style.display="none";
+
+                }
+            });
+
+        document.getElementById("login_navbar").style.display="none";
+        document.getElementById("logout_navbar").style.display="block";
+
+    }
+    else if(localStorage.check_login=="false"){
+        document.getElementById("admin").style.display="none";
+        document.getElementById("icon_user_female").style.display="none";
+        document.getElementById("icon_user_male").style.display="none";
+        document.getElementById("login_navbar").style.display="block";
+        document.getElementById("logout_navbar").style.display="none";
+    }
+
+    var check_required=true;
+    vm.check_username=function(){
+        var username=document.getElementById('email').value;
+        for(var i=0;i<data_users.length;i++){
+            if(username==data_users[i].username){
+                document.getElementById('warning_username').style.display='block';
+                break;
+            }
+            else{
+                document.getElementById('warning_username').style.display='none';
+            }
+        }
+    };
+    vm.check_pass=function(){
+        var pass=document.getElementById('password').value;
+        if(pass.length<6){
+            document.getElementById('warning_password').style.display='block';
+        }
+        else{
+            document.getElementById('warning_password').style.display='none';
+        }
+    };
+    vm.check_pass_comfim=function(){
+        var pass_confim=document.getElementById("password_confirmation").value;
+        if(pass_confim!=document.getElementById("password").value){
+            document.getElementById('warning_password_confim').style.display='block';
+        }
+        else{
+            document.getElementById('warning_password_confim').style.display='none';
+        }
+    };
+    vm.check_phone=function(){
+        var phone=document.getElementById('telephone_rg').value;
+        document.getElementById("warning_digit").style.display="none";
+        document.getElementById("warning_character").style.display="none";
+        document.getElementById("warning_digit_11").style.display="none";
+        for(var i=0;i<phone.length;i++) {
+            var check_phone;
+            check_phone = isNaN(phone[i]);
+            if (check_phone == true) {
+                check_required=false;
+                break;
+            }
+        }
+        if(check_phone==true){
+            document.getElementById("warning_character").style.display="block";
+            document.getElementById("warning_digit_11").style.display="none";
+            document.getElementById("warning_digit").style.display="none";
+        }
+        else{
+            if(phone.length<10){
+                check_required=false;
+                document.getElementById("warning_digit").style.display="block";
+            }
+            else if(phone.length>11){
+                check_required=false;
+                document.getElementById("warning_digit_11").style.display="block";
+            }
+            else{
+                check_required=true;
+                document.getElementById("warning_digit").style.display="none";
+            }
+            document.getElementById("warning_character").style.display="none";
+        }
+
+    };
+    //    function register
+    vm.regis = function () {
+        var phone=document.getElementById('telephone_rg').value;
+        if(phone.length==0){
+            check_required=false;
+        }
+        if(check_required==false){
+            alert(document.getElementById('bday').value);
+            shakeModals_phone();
+        }
+        else {
+            var username = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var password_confim = document.getElementById('password_confirmation').value;
+            var nickname = document.getElementById('nick_name').value;
+            var telephone = document.getElementById('telephone_rg').value;
+            var address = document.getElementById('add_rg').value;
+            var birthday=document.getElementById('bday').value;
+            var sex;
+            var name=document.getElementById("name_rg").value;
+            var sexs = document.getElementsByName('Sex');
+            for (var i = 0; i < sexs.length; i++) {
+                if (sexs[i].checked) {
+                    sex = sexs[i].value;
+                }
+            }
+            var check_username = true;
+            for (var i = 0; i < data_users.length; i++) {
+                if (data_users[i].username == username) {
+                    check_username = false;
+                    break;
+                }
+            }
+
+            if (check_username == false) {
+                shakeModals_username();
+            }
+            if (check_username == true) {
+                if (password != password_confim) {
+                    shakeModals();
+                }
+
+                else if (password_confim == '' || username == '' || password == '' || nickname == '') {
+                    empty();
+                }
+                else {
+                    data_users.push({
+                        username: username,
+                        password: password,
+                        name: name,
+                        sex: sex,
+                        nickname: nickname,
+                        birthday:birthday,
+                        address: address,
+                        telephone: telephone
+
+                    });
+                    alert("Registed !!!");
+
+                    $http.post(path, data_users)
+                        .then(function (response) {
+                            console.log(response);
+                            // data_array = response.config.data;
+                        });
+                    // alert($routeParams.name);
+                    window.history.go();
+                }
+            }
+            console.log(data_users);
+        }
+    };
+    //login
+
+
+
+
+
+    vm.logout=function () {
+        localStorage.check_login="false";
+        document.getElementById("login_navbar").style.display="block";
+        document.getElementById("logout_navbar").style.display="none";
+        document.getElementById("admin").style.display="none";
+        document.getElementById("icon_user_female").style.display="none";
+        document.getElementById("icon_user_male").style.display="none";
+        data_array.splice(0,data_array.length);
+        $http.post("/product/" + $routeParams.name, data_array)
+            .then(function (response) {
+                data_array = response.config.data;
+                console.log(data_array);
+            });
+        vm.displayTable(data_array);
+        document.getElementById('show_table').innerHTML="EMPTY CART !!!";
+        document.getElementById('show_table1').innerHTML="EMPTY CART !!!";
+    };
 
     // GET and bind data_array from user.json
     $http.get('data/user.json') //reading the user.json file
@@ -397,22 +397,11 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
         }
         document.getElementById("total").innerText=sum +"$";
     };
-            var name_product;
-            var price_product;
-            var type_product;
-            var image_product;
-            var id_product;
-            var value_product;
-            var price_product_quantity;
+
+
+
             vm.remove_product=function(event) {
                 data_array.splice(event.target.id,1);
-                if(data_array.length==0){
-                    document.getElementById('show_table').innerHTML="EMPTY CART !!!";
-                    document.getElementById('show_table1').innerHTML="EMPTY CART !!!";
-                }
-                else {
-                    vm.displayTable(data_array,'table_shopping');
-                };
                 if(typeof $routeParams.name !== "undefined"){
                     $http.post("/product/"+$routeParams.name,data_array)
                         .then(function(response) {
@@ -427,35 +416,53 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                             // data_array = response.config.data;
                         });
                 }
+                vm.displayTable(data_array);
+                if(data_array.length==0){
+                    document.getElementById('show_table').innerHTML="EMPTY CART !!!";
+                    document.getElementById('show_table1').innerHTML="EMPTY CART !!!";
+                }
+
             };
             vm.remove_all_product=function(event) {
-                data_array.splice(0,data_array.length);
-                document.getElementById('show_table').innerHTML="EMPTY CART !!!";
-                document.getElementById('show_table1').innerHTML="EMPTY CART !!!";
+
                 if(typeof $routeParams.name !== "undefined"){
-                    $http.post("/product/"+$routeParams.name,data_array)
-                        .then(function(response) {
-                            console.log(response);
-                            // data_array = response.config.data;
+                    data_array.splice(0,data_array.length);
+                    $http.post("/product/" + $routeParams.name, data_array)
+                        .then(function (response) {
+                            data_array = response.config.data;
+                            console.log(data_array);
                         });
                 }
-                else if(typeof $routeParams.name == "undefined"){
+                if(typeof $routeParams.name == "undefined"){
+                    data_array.splice(0,data_array.length);
                     $http.post("/checkout",data_array)
                         .then(function(response) {
                             console.log(response);
                             // data_array = response.config.data;
                         });
                 };
+                document.getElementById('show_table').innerHTML="EMPTY CART !!!";
+                document.getElementById('show_table1').innerHTML="EMPTY CART !!!";
             };
 
 
             //add product
 
             vm.add_Cart = function (checked_id) {
+                var name_product;
+                var price_product;
+                var type_product;
+                var image_product;
+                var id_product;
+                var value_product;
+                var price_product_quantity;
+
                 if (localStorage.check_login == "false") {
+
                     openLoginModal();
                 }
                 else {
+
                     document.getElementById('ul-nav-cart').style = 'display: block';
                     $timeout(function () {
                         document.getElementById('ul-nav-cart').style = 'display: hidden';
@@ -466,6 +473,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                             data_array = response.config.data;
                             console.log(data_array);
                         });
+
                     name_product = document.getElementById("name_" + checked_id).innerText;
                     price_product = document.getElementById("price_" + checked_id).innerText;
                     type_product = $routeParams.name;
@@ -672,7 +680,15 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                             }
                         }
                     }
-                }
+                };
+
+            //compile search
+
+            vm.search_name=function(){
+                var el = document.getElementById("search_name_product");
+                el.setAttribute("ng-model", "test.name");
+                compile(el);
+            };
         }
 
 
