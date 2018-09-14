@@ -170,16 +170,47 @@ productApp.controller("loginCtrl", function($scope,$http,$routeParams) {
                         data_users.push({
                             username: response.data[i].username,
                             password: response.data[i].password,
+                            name:response.data[i].name,
                             sex:response.data[i].sex,
+                            birthday:response.data[i].birthday,
                             nickname:response.data[i].nickname,
-                            age:response.data[i].age,
                             address:response.data[i].address,
                             telephone:response.data[i].telephone
                         });
                     }
             }
             );
-        var check_required_phone=true;
+        var check_required=true;
+        vm.check_username=function(){
+            var username=document.getElementById('email').value;
+            for(var i=0;i<data_users.length;i++){
+                if(username==data_users[i].username){
+                    document.getElementById('warning_username').style.display='block';
+                    break;
+                }
+                else{
+                    document.getElementById('warning_username').style.display='none';
+                }
+            }
+        };
+        vm.check_pass=function(){
+          var pass=document.getElementById('password').value;
+          if(pass.length<6){
+              document.getElementById('warning_password').style.display='block';
+          }
+          else{
+              document.getElementById('warning_password').style.display='none';
+          }
+        };
+        vm.check_pass_comfim=function(){
+            var pass_confim=document.getElementById("password_confirmation").value;
+            if(pass_confim!=document.getElementById("password").value){
+                document.getElementById('warning_password_confim').style.display='block';
+            }
+            else{
+                document.getElementById('warning_password_confim').style.display='none';
+            }
+        };
         vm.check_phone=function(){
             var phone=document.getElementById('telephone_rg').value;
             document.getElementById("warning_digit").style.display="none";
@@ -189,7 +220,7 @@ productApp.controller("loginCtrl", function($scope,$http,$routeParams) {
                     var check_phone;
                     check_phone = isNaN(phone[i]);
                     if (check_phone == true) {
-                        check_required_phone=false;
+                        check_required=false;
                         break;
                     }
                 }
@@ -200,23 +231,29 @@ productApp.controller("loginCtrl", function($scope,$http,$routeParams) {
                     }
                     else{
                         if(phone.length<10){
-                            check_required_phone=false;
+                            check_required=false;
                             document.getElementById("warning_digit").style.display="block";
                         }
                         else if(phone.length>11){
-                            check_required_phone=false;
+                            check_required=false;
                             document.getElementById("warning_digit_11").style.display="block";
                         }
                         else{
-                            check_required_phone=true;
+                            check_required=true;
                             document.getElementById("warning_digit").style.display="none";
                         }
                         document.getElementById("warning_character").style.display="none";
                     }
+
         };
             //    function register
             vm.regis = function () {
-                if(check_required_phone==false){
+                var phone=document.getElementById('telephone_rg').value;
+                if(phone.length==0){
+                    check_required=false;
+                }
+                if(check_required==false){
+                    alert(document.getElementById('bday').value);
                     shakeModals_phone();
                 }
                 else {
@@ -226,8 +263,9 @@ productApp.controller("loginCtrl", function($scope,$http,$routeParams) {
                     var nickname = document.getElementById('nick_name').value;
                     var telephone = document.getElementById('telephone_rg').value;
                     var address = document.getElementById('add_rg').value;
-                    var age = document.getElementById('age_rg').value;
+                    var birthday=document.getElementById('bday').value;
                     var sex;
+                    var name=document.getElementById("name_rg").value;
                     var sexs = document.getElementsByName('Sex');
                     for (var i = 0; i < sexs.length; i++) {
                         if (sexs[i].checked) {
@@ -257,9 +295,10 @@ productApp.controller("loginCtrl", function($scope,$http,$routeParams) {
                             data_users.push({
                                 username: username,
                                 password: password,
+                                name: name,
                                 sex: sex,
                                 nickname: nickname,
-                                age: age,
+                                birthday:birthday,
                                 address: address,
                                 telephone: telephone
 
@@ -413,50 +452,31 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
             //add product
 
             vm.add_Cart = function (checked_id) {
-                document.getElementById('ul-nav-cart').style='display: block';
-                $timeout(function() {
-                   document.getElementById('ul-nav-cart').style='display: hidden';
-                }, 2000);                
-                //POST data_array to NodeJS
-                $http.post("/product/" + $routeParams.name, data_array)
-                    .then(function (response) {
-                        data_array = response.config.data;
-                        console.log(data_array);
-                    });
-                name_product = document.getElementById("name_" + checked_id).innerText;
-                price_product = document.getElementById("price_" + checked_id).innerText;
-                type_product = $routeParams.name;
-                image_product = "images/images_ring/images_ring_" + $routeParams.name + "/" + $routeParams.name + "_" + checked_id + ".png";
-                id_product = document.getElementById("id_sp_" + checked_id).innerText;
-                value_product = 1;
-                price_product_quantity = parseInt(price_product) * parseInt(value_product);
-                var check;
-                var tam = 0;
-                if (data_array.length == 0) {
-                    //add data to array
-                    data_array.push({
-                        no: data_array.length + 1,
-                        image: image_product,
-                        id: id_product,
-                        type: type_product,
-                        name: name_product,
-                        value: 1,
-                        price: price_product,
-                        price_quantity: price_product_quantity
-                    });
+                if (localStorage.check_login == "false") {
+                    openLoginModal();
                 }
                 else {
-                    for (tam; tam < data_array.length; tam++) {
-                        if (id_product == data_array[tam].id) {
-                            data_array[tam].value++;
-                            check = false;
-                            break;
-                        }
-                        else {
-                            check = true;
-                        }
-                    }
-                    if (check == true) {
+                    document.getElementById('ul-nav-cart').style = 'display: block';
+                    $timeout(function () {
+                        document.getElementById('ul-nav-cart').style = 'display: hidden';
+                    }, 2000);
+                    //POST data_array to NodeJS
+                    $http.post("/product/" + $routeParams.name, data_array)
+                        .then(function (response) {
+                            data_array = response.config.data;
+                            console.log(data_array);
+                        });
+                    name_product = document.getElementById("name_" + checked_id).innerText;
+                    price_product = document.getElementById("price_" + checked_id).innerText;
+                    type_product = $routeParams.name;
+                    image_product = "images/images_ring/images_ring_" + $routeParams.name + "/" + $routeParams.name + "_" + checked_id + ".png";
+                    id_product = document.getElementById("id_sp_" + checked_id).innerText;
+                    value_product = 1;
+                    price_product_quantity = parseInt(price_product) * parseInt(value_product);
+                    var check;
+                    var tam = 0;
+                    if (data_array.length == 0) {
+                        //add data to array
                         data_array.push({
                             no: data_array.length + 1,
                             image: image_product,
@@ -468,12 +488,35 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                             price_quantity: price_product_quantity
                         });
                     }
+                    else {
+                        for (tam; tam < data_array.length; tam++) {
+                            if (id_product == data_array[tam].id) {
+                                data_array[tam].value++;
+                                check = false;
+                                break;
+                            }
+                            else {
+                                check = true;
+                            }
+                        }
+                        if (check == true) {
+                            data_array.push({
+                                no: data_array.length + 1,
+                                image: image_product,
+                                id: id_product,
+                                type: type_product,
+                                name: name_product,
+                                value: 1,
+                                price: price_product,
+                                price_quantity: price_product_quantity
+                            });
+                        }
+                    }
+                    vm.displayTable(data_array);
+                    console.log(data_array);
+
                 }
-                vm.displayTable(data_array);
-                console.log(data_array);
-
             };
-
 
 
             vm.displayTable=function (table_shopping,table_id) {

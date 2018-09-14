@@ -102,7 +102,7 @@ function shakeModals_username(){
 }
 function shakeModals_phone(){
     $('#loginModal .modal-dialog').addClass('shake');
-    $('.error').addClass('alert alert-danger').html("Phone wrong !!!");
+    $('.error').addClass('alert alert-danger').html("Please enter again !!!");
     $('input[type="password"]').val('');
     setTimeout( function(){
         $('#loginModal .modal-dialog').removeClass('shake');

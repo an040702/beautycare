@@ -229,24 +229,26 @@
 
               <form  data-remote="true" action="/register" accept-charset="UTF-8">
                 <label style="float: left"><b>Username</b></label>
-                <input id="email" class="form-control" ng-model="email" type="text" ng-pattern="eml_add" ng-required="true" autocomplete="off" placeholder="Username">
-                <span class="red-text" ng-if="inquiryForm.email.$error.required && inquiryForm.email.$dirty">Email is a required field</span>
-                <span class="red-text" ng-show="inquiryForm.email.$error.pattern">Invalid Email</span>
+                <input id="email" class="form-control" ng-model="email" type="text" ng-pattern="eml_add" ng-required="true" autocomplete="off" placeholder="Username" ng-keyup="check_username()">
+                <div style="float:left; color:red;display: none" id="warning_username"><i class="fas fa-exclamation"></i> Username is already taken</div><br>
                 <label style="float: left"><b>Password</b></label>
-                <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                <input id="password" class="form-control" type="password" placeholder="Password" name="password" ng-keyup="check_pass()">
+                <div style="float:left; color:red;display: none" id="warning_password"><i class="fas fa-exclamation"></i> Pass must over than 5 character or number</div><br>
                 <label style="float: left"><b>Repeat Password</b></label>
-                <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation" ng-keyup="check_pass_comfim()">
+                <div style="float:left; color:red;display: none" id="warning_password_confim"><i class="fas fa-exclamation"></i> Pass confirm is not equal pass</div><br>
                 <label style="float: left"><b>Nickname</b></label>
-                <input id="nick_name" class="form-control" type="text" placeholder="Nickname">
+                <input id="nick_name" class="form-control" type="text" placeholder="Nickname"><br>
                 <label style="float: left"><b>Name</b></label>
                 <input id="name_rg" class="form-control" type="text" placeholder="Name">
-                <label style="float: left"><b>Age</b></label>
-                <input id="age_rg" class="form-control" type="text" placeholder="Age">
+              <br>
+                <label style="float: left" for="bday">Birthday</label>
+                <input type="date" id="bday" name="bday" style="width: 78%" /><br><br>
                 <label style="float: left"><b>Sex</b></label><br>
                 <input  type="radio" value="male" name="Sex" checked>Male
-                <input  type="radio" value="female" name="Sex">Female<br>
+                <input  type="radio" value="female" name="Sex">Female<br><br>
                 <label style="float: left"><b>Address</b></label>
-                <input id="add_rg" class="form-control" type="text" placeholder="Address">
+                <input id="add_rg" class="form-control" type="text" placeholder="Address"><br>
                 <label style="float: left"><b>Phone</b></label>
                 <input id="telephone_rg" class="form-control" type="text" placeholder="Phone" ng-keyup="check_phone()" />
                 <div style="float:left; color:red;display: none" id="warning_digit"><i class="fas fa-exclamation"></i> Phone not enough 10 digit</div>

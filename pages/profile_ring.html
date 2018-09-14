@@ -124,7 +124,7 @@
       			 <hr class="style-one">
       			 <div>
       				<div class="cost">
-      					12.300.000<sup>đ</sup>
+      					660$
       				</div>
       				<div>
 						<div style="display: block" class="btn_custom" ng-click="add_Cart(9)" id="btn_(G9)_add_9"><span>ADD CART  </span> <i class="fas fa-shopping-cart"></i></div>
@@ -164,7 +164,7 @@
       			 <hr class="style-one">
       			 <div>
       				<div class="cost">
-      					12.300.000<sup>đ</sup>
+      					700$
       				</div>
       				<div>
 						<div style="display: block" class="btn_custom" ng-click="add_Cart(2)" id="btn_(G2)_add_2"><span>ADD CART  </span> <i class="fas fa-shopping-cart"></i></div>
@@ -204,7 +204,7 @@
       			 <hr class="style-one">
       			 <div>
       				<div class="cost">
-      					12.300.000<sup>đ</sup>
+      					1900$
       				</div>
       				<div>
 						<div style="display: block" class="btn_custom" ng-click="add_Cart(3)" id="btn_(D3)_add_3"><span>ADD CART  </span> <i class="fas fa-shopping-cart"></i></div>
@@ -244,7 +244,7 @@
       			 <hr class="style-one">
       			 <div>
       				<div class="cost">
-      					12.300.000<sup>đ</sup>
+      					1300$
       				</div>
       				<div>
 						<div style="display: block" class="btn_custom" ng-click="add_Cart(4)" id="btn_(D4)_add_4"><span>ADD CART  </span> <i class="fas fa-shopping-cart"></i></div>
@@ -319,7 +319,6 @@
 					<div class="row">
 						<div class="col-md-2">
 							<h4 style="font-weight: 700;float: left;" id="name_{{product.class_rating_star}}" >{{product.name}}</h4>
-
 						</div>
 						<div class="col-md-10">
 							<fieldset class="rating{{product.class_rating_star}}" style="float: right;">
@@ -344,7 +343,6 @@
 							<input style="float: right;" type="checkbox" id="st{{product.class_rating_star}}" value="1" />
 							<label style="float: right;" title="Favorite" for="st{{product.class_rating_star}}"></label>
 						</div>
-
 					</div>
 				</div>
 				<div class="container1">
@@ -362,7 +360,7 @@
 				<hr class="style-one">
 				<div>
 					<div class="cost" id="price_{{product.class_rating_star}}">
-						{{product.price}}
+						{{product.price}}$
 					</div>
 					<div>
 						<div style="display: block" class="btn_custom" ng-click="add_Cart(product.class_rating_star)" id="btn_{{product.id}}_add_{{product.class_rating_star}}"><span>ADD CART  </span> <i class="fas fa-shopping-cart"></i></div>
@@ -370,23 +368,24 @@
 					</div>
 				</div>
 			</div>
-
 			<div ng-controller="OtherController" class="other-controller col-xs-12">
+				<br>
+				<br>
+				<br>
 				<div class="text-center">
 					<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)"></dir-pagination-controls>
 				</div>
 			</div>
+			<!-- <div class="row">
+                <div class="col-xs-12">
+                        <div class="col-xs-6">
+                            <h3>Products Page: {{ currentPage }}</h3>
+                        </div>
+                        <div class="col-xs-6">
+                        </div>
 
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="col-xs-6">
-						<h3>Products Page: {{ currentPage }}</h3>
-					</div>
-					<div class="col-xs-6">
-
-					</div>
-				</div>
-			</div>
+                </div>
+            </div> -->
 		</div>
-		<div id="show_table"></div>
+
 	</div>
