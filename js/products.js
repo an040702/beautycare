@@ -107,7 +107,7 @@ var data_users=[];
 
 
 
-productApp.controller("productCtrl", function($scope, $http,$routeParams,$compile,$timeout) {
+productApp.controller("productCtrl", function($scope, $http,$routeParams,$compile,$timeout,$route) {
     $http.get('data/best_sell/sell_hair.json') //reading the product.json file
         .then(function (response) {
             vm.products = response.data;
@@ -116,6 +116,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
     vm.currentPage = 1;
     vm.pageSize = 12;
     vm.name_custom = $routeParams.name;
+    vm.test = localStorage.test1;
 
     vm.show_shopping=function(){
         return true;
@@ -694,10 +695,15 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
 
             //compile search
 
-            vm.search_name=function(){
+            vm.search_name=function($event){
                 var el = document.getElementById("search_name_product");
-                el.setAttribute("ng-model", "test.name");
-                compile(el);
+                el.setAttribute("ng-model", "test_1.name");
+                localStorage.test1 = vm.productSearch;
+                // compile(el);
+                if ($event.keyCode == 13) {
+                    $route.reload();
+                }
+                
             };
         }
 
