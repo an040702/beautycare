@@ -1,11 +1,8 @@
 .about_introduce{
 	text-align: center;
-	background-color: #e4ecec;
+	background-color: black;
 	margin-bottom: 6px;
     height: 250px;
-}
-.about_introduce{
-	background-color: black;
 }
 .about_introduce p{
 	margin: 0px auto;

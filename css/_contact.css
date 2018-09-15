@@ -1,6 +1,6 @@
 /*---------------------------------------------------------------------*/
 .contact_logo{
-	background-image: url('../images/index_background/here.jpg');
+	background-image: url('../images/index_background/girl-woman-female-model-red-color-648635-pxhere.com.jpg');
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -26,65 +26,78 @@
 }
 /*Conditional*/
 /*--------------------------------------*/
-	.username.ng-valid {
-  	background-color: lightgreen;
-	}
-	.username.ng-dirty.ng-invalid-required {
- 	 background-color: red;
-	}
-	.username.ng-dirty.ng-invalid-minlength {
- 	 background-color: yellow;
-	}
+.username.ng-valid {
+	background-color: lightgreen;
+}
+.username.ng-dirty.ng-invalid-required {
+	 background-color: red;
+}
+.username.ng-dirty.ng-invalid-minlength {
+	 background-color: yellow;
+}
 /*--------------------------------------*/
-	.phone.ng-valid {
-		background-color: lightgreen;
-	}
-	.phone.ng-dirty.ng-invalid-required {
- 	 background-color: red;
-	}
-	.phone.ng-dirty.ng-invalid-minlength {
- 	 background-color: yellow;
-	}
+.phone.ng-valid {
+	background-color: lightgreen;
+}
+.phone.ng-dirty.ng-invalid-required {
+	 background-color: red;
+}
+.phone.ng-dirty.ng-invalid-minlength {
+	 background-color: yellow;
+}
 /*--------------------------------------*/
-	.email.ng-valid {
-  	background-color: lightgreen;
-	}
-	.email.ng-dirty.ng-invalid-required {
-  	background-color: red;
-	}
-	 .email.ng-dirty.ng-invalid-email {
- 	 background-color: yellow;
-	}
+.email.ng-valid {
+	background-color: lightgreen;
+}
+.email.ng-dirty.ng-invalid-required {
+	background-color: red;
+}
+ .email.ng-dirty.ng-invalid-email {
+	 background-color: yellow;
+}
 /*--------------------------------------*/
 /*End conditional*/
-	.contact_form{
-		width: 100%;
-	}
-	.contactform_textarea{
-		height: 120px;
-	}
-	.contact_header{
-		margin-top: 20px;
-	}
-	.contact_adress{
-		margin-bottom: 20px;
-	}
-	.contact_idm{
+.contact_form{
+	width: 100%;
+}
+.contactform_textarea{
+	height: 120px;
+}
+.contact_header{
+	margin-top: 20px;
+}
+.contact_adress{
+	margin-bottom: 20px;
+}
+.contact_idm{
 	text-align: center;
-	margin: 120px 0px;
-	color: #fff9;
-	font-size: 54px;
-	font-family:Georgia, Times,Times New Roman;
-	letter-spacing: 10px;
+    margin-top: 225px;
+    color: #fefefe;
+    font-size: 50px;
+    font-family:Georgia, Times, Times New Roman;
+    letter-spacing: 10px;
+}
+.contact_general{
+	text-align: center;
+	background-color: black;
+	margin-bottom: 6px;
+    height: 250px;
+}
+.contact_general{
+	margin: 0px auto;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 25px;
+    padding-top: 100px;
 }
 /*---------------------------------------------------------------------*/
 /* Set the size of the div element that contains the map */
 /*---------------------------------------------------------------------*/
-	#map {
-    height: 500px;  /* The height is 500 pixels */
-    width: 100%;  /* The width is the width of the web page */
-    margin-bottom: 20px;
-    overflow: hidden;
+#map {
+	height: 500px;  /* The height is 500 pixels */
+	width: 100%;  /* The width is the width of the web page */
+	margin-bottom: 20px;
+	overflow: hidden;
 }
 /*---------------------------------------------------------------------*/
 /*Social icon hover effect*/
