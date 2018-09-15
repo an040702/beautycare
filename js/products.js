@@ -108,6 +108,10 @@ var data_users=[];
 
 
 productApp.controller("productCtrl", function($scope, $http,$routeParams,$compile,$timeout) {
+    $http.get('data/best_sell/sell_hair.json') //reading the product.json file
+        .then(function (response) {
+            vm.products = response.data;
+        });
     var vm=$scope;
     vm.currentPage = 1;
     vm.pageSize = 12;
@@ -115,6 +119,12 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
 
     vm.show_shopping=function(){
         return true;
+    };
+    vm.bs_ring=function (even) {
+        $http.get('data/best_sell/'+event.target.id+'.json') //reading the product.json file
+            .then(function (response) {
+                vm.products = response.data;
+            });
     };
     //Check route if route product page or not
     if(typeof $routeParams.name !== "undefined") {

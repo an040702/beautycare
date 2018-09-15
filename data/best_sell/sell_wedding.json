@@ -1,11 +1,10 @@
-[ 
-  {
-  "id": "(EYE1)",
-    "type":"eyes",
-  "name": "PROPOSE",
-  "image":"images/images_ring/images_ring_eyes/eyes_1.png",
-  "price": "600",
-  "class_rating_star": "1",
+[{
+  "id": "(2)",
+  "type" :"weddingkit",
+  "name": "WEDDING",
+  "image":"images/images_ring/images_ring_weddingkit/weddingkit_2.png",
+  "price": "1300",
+  "class_rating_star": "2",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_1",
   "description" : "Description_1",
@@ -16,31 +15,12 @@
   "cara" : "1.9",
   "weight": "5.6612",
   "age" : "18K"
-  },
-  {
-  "id": "(EYE15)",
-    "type": "lips",
-  "name": "ROMANTIC",
-  "image":"images/images_ring/images_ring_lips/lips_8.png",
-  "price": "21.000.000",
-  "class_rating_star": "8",
-  "sex" : "Female",
-  "title_info" : "Write Somthing About Product_1",
-  "description" : "Description_1",
-  "trade_mark" : "NTK",
-  "stone" : "DIAMON",
-  "color" : "WHITE",
-  "shape" : "CIRCLE",
-  "cara" : "1.9",
-  "weight": "5.6612",
-  "age" : "18K"
-  },
-  {
-  "id": "(LIP10)",
+  },{
+  "id": "(12)",
+  "type" :"weddingkit",
   "name": "NOBLE",
-    "type": "lips",
-  "image":"images/images_ring/images_ring_lips/lips_12.png",
-  "price": "31.500.000",
+  "image":"images/images_ring/images_ring_weddingkit/weddingkit_12.png",
+  "price": "1150",
   "class_rating_star": "12",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_1",
@@ -52,14 +32,13 @@
   "cara" : "1.9",
   "weight": "5.6612",
   "age" : "18K"
-  },
-  {
-  "id": "(LIP5)",
-  "name": "ROSE",
-    "type": "lips",
-  "image":"images/images_ring/images_ring_lips/lips_9.png",
-  "price": "32.300.000",
-  "class_rating_star": "9",
+},{
+  "id": "(6)",
+  "type" :"weddingbride",
+  "name": "LOVE",
+  "image":"images/images_ring/images_ring_weddingbride/weddingbride_6.png",
+  "price": "1400",
+  "class_rating_star": "6",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_1",
   "description" : "Description_1",
@@ -70,6 +49,23 @@
   "cara" : "1.9",
   "weight": "5.6612",
   "age" : "18K"
-  }
-  
+},{
+  "id": "(8)",
+  "type" :"weddingbride",
+  "name": "ROMANTIC",
+  "image":"images/images_ring/images_ring_weddingbride/weddingbride_8.png",
+  "price": "1270",
+  "class_rating_star": "8",
+  "sex" : "Female",
+  "title_info" : "Write Somthing About Product_1",
+  "description" : "Description_1",
+  "trade_mark" : "NTK",
+  "stone" : "DIAMON",
+  "color" : "WHITE",
+  "shape" : "CIRCLE",
+  "cara" : "1.9",
+  "weight": "5.6612",
+  "age" : "18K"
+}
+
 ]
