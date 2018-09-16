@@ -135,7 +135,6 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                 });
         }
             vm.abc = function () {
-            	alert("kien");
                 $http.get('data/ring_' + $routeParams.name + '.json') //reading the product.json file
                     .then(function (response) {
                         var data_search = [];
@@ -186,6 +185,9 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                         }
                         vm.products = show_data;
                         console.log(vm.products);
+                        if(show_data.length==0){
+                        	vm.products=response.data;
+						}
                     })
             };
         $http.get('data/data_users.json') //reading the product.json file
