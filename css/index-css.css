@@ -65,6 +65,7 @@ body {margin: 0px !important;}
   float: right;
   margin-top: -355px;
 }
+.mySlides {display:none;}
 
 /*row 3*/
 .outside-title-page{
