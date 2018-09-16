@@ -437,11 +437,11 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
             var check_price = 0;
             var sum = 0;
             for (check_price; check_price < data_array.length; check_price++) {
-                document.getElementById("price_no_" + (check_price + 1)).innerText = parseInt(data_array[check_price].price) * parseInt(document.getElementById("quantity_no_" + (check_price + 1)).value) + "$";
+                document.getElementById("price_no_" + (check_price + 1)).innerText = parseFloat(data_array[check_price].price) * parseFloat(document.getElementById("quantity_no_" + (check_price + 1)).value) + "$";
                 data_array[check_price].value = document.getElementById("quantity_no_" + (check_price + 1)).value;
                 data_array[check_price].price_quantity = document.getElementById("price_no_" + (check_price + 1)).innerText;
                 // =data_array[check_price].no;
-                sum += parseInt(data_array[check_price].price_quantity);
+                sum += parseFloat(data_array[check_price].price_quantity);
             }
             document.getElementById("total").innerText = sum + "$";
         };
@@ -529,7 +529,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                 image_product = "images/images_ring/images_ring_" + $routeParams.name + "/" + $routeParams.name + "_" + checked_id + ".png";
                 id_product = document.getElementById("id_sp_" + checked_id).innerText;
                 value_product = 1;
-                price_product_quantity = parseInt(price_product) * parseInt(value_product);
+                price_product_quantity = parseFloat(price_product.slice(0,-1)) * parseFloat(value_product);
                 var check;
                 var tam = 0;
                 if (data_array.length == 0) {
@@ -623,8 +623,8 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                         var cell = document.createElement('td');
                         cell.className = "a";
                         cell.id = "price_no_" + (i + 1);
-                        cell.innerHTML = parseInt(products[properties[5]]) * parseInt(products[properties[j - 1]]) + "$";
-                        sum += parseInt(products[properties[5]]) * parseInt(products[properties[j - 1]]);
+                        cell.innerHTML = parseFloat(products[properties[5]]) * parseFloat(products[properties[j - 1]]) + "$";
+                        sum += parseFloat(products[properties[5]]) * parseFloat(products[properties[j - 1]]);
                     }
                     else if (j == properties.length - 3) {
                         var cell = document.createElement('td');
