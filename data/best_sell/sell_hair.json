@@ -1,10 +1,10 @@
 [	
 	{
-	"id": "(H1)",
+	"id": "(EXT1)",
       "type":"extensions",
-  "name": "PNJ",
+  "name": "TEEZER",
   "image":"images/images_ring/images_ring_extensions/extensions_1.png",
-  "price": "1200",
+  "price": "20",
   "class_rating_star": "1",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_1",
@@ -18,11 +18,11 @@
   "age" : "18K"
 	},
 	{
-	"id": "(H3)",
-  "name": "PROPOSE",
+	"id": "(CUR3)",
+  "name": "WAVES",
       "type": "curling",
   "image":"images/images_ring/images_ring_curling/curling_3.png",
-  "price": "1900",
+  "price": "19.5",
   "class_rating_star": "3",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_1",
@@ -54,11 +54,11 @@
   "age" : "18K"
   },
   {
-  "id": "(H81)",
+  "id": "(SH5)",
     "type": "shampoo",
-  "name": "HEART",
+  "name": "SHEA",
   "image":"images/images_ring/images_ring_shampoo/shampoo_5.png",
-  "price": "1300",
+  "price": "13.5",
   "class_rating_star": "5",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_1",
