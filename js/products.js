@@ -131,8 +131,63 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                     vm.Weight = response.data[vm.id - 1].weight;
                     vm.class_rating_star = response.data[vm.id - 1].class_rating_star;
                     vm.id_product = response.data[vm.id - 1].id;
+
                 });
         }
+            vm.abc = function () {
+            	alert("kien");
+                $http.get('data/ring_' + $routeParams.name + '.json') //reading the product.json file
+                    .then(function (response) {
+                        var data_search = [];
+                        var show_data = [];
+                        var search = document.getElementById("search_name_product").value;
+                        for (var i = 0; i < response.data.length; i++) {
+                            var tam = 0;
+                            var dem = 0;
+                            var check_tam = true;
+                            for (var j = 0; j < search.length; j++) {
+                                var check = false;
+                                for (var k = tam; k < response.data[i].name.length; k++) {
+                                    if (search[j].toUpperCase() == response.data[i].name[k]) {
+                                        check = true;
+                                        tam = k + 1;
+                                        dem++;
+                                        break;
+                                    }
+                                    else {
+                                        check = false;
+                                    }
+                                    ;
+                                    if (dem >= 1 && check == false) {
+                                        check_tam = false;
+                                        break;
+                                    }
+                                }
+                                if (check == false) {
+                                    check_tam = false;
+                                    break;
+                                }
+                            }
+                            if (search.length == 1) {
+                                if (check == true) {
+                                    data_search.push({
+                                        here: i
+                                    });
+                                }
+                            }
+                            if (check_tam == true && search.length > 1) {
+                                data_search.push({
+                                    here: i
+                                });
+                            }
+                        }
+                        for (var i = 0; i < data_search.length; i++) {
+                            show_data[i]=response.data[data_search[i].here];
+                        }
+                        vm.products = show_data;
+                        console.log(vm.products);
+                    })
+            };
         $http.get('data/data_users.json') //reading the product.json file
             .then(function (response) {
                     for (var i = 0; i < response.data.length; i++) {
@@ -672,69 +727,72 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                 }
             }
         };
-        vm.search_name=function () {
-			var vm=$scope;
-			$http.get('data/ring_' + $routeParams.name + '.json') //reading the product.json file
-				.then(function (response) {
-					var data_search = [];
-					var show_data = [];
-					var search = document.getElementById("search_name_product").value;
-					for (var i = 0; i < response.data.length; i++) {
-						var tam = 0;
-						var dem = 0;
-						var check_tam = true;
-						for (var j = 0; j < search.length; j++) {
-							var check = false;
-							for (var k = tam; k < response.data[i].name.length; k++) {
-								if (search[j].toUpperCase() == response.data[i].name[k]) {
-									check = true;
-									tam = k + 1;
-									dem++;
-									break;
-								}
-								else {
-									check = false;
-								}
-								;
-								if (dem >= 1 && check == false) {
-									check_tam = false;
-									break;
-								}
-							}
-							if (check == false) {
-								check_tam = false;
-								break;
-							}
-						}
-						if (search.length == 1) {
-							if (check == true) {
-								data_search.push({
-									here: i
-								});
-							}
-						}
-						if (check_tam == true && search.length > 1) {
-							data_search.push({
-								here: i
-							});
-						}
-					}
-					var tamp=0;
-					for (var i = 0; i < data_search.length; i++) {
-						show_data[i]=response.data[data_search[i].here];
-					}
-
-					vm.products_new = show_data;
-
-					console.log(show_data);
-
+        // vm.search_name=function () {
+		// 	var vm=$scope;
+		// 	document.getElementById('show_product_custom').style.display='none';
+		// 	document.getElementById("show_product_custom_1").style.display='block';
+		// 	$http.get('data/ring_' + $routeParams.name + '.json') //reading the product.json file
+		// 		.then(function (response) {
+		// 			var data_search = [];
+		// 			var show_data = [];
+		//
+		// 			var search = document.getElementById("search_name_product").value;
+		// 			for (var i = 0; i < response.data.length; i++) {
+		// 				var tam = 0;
+		// 				var dem = 0;
+		// 				var check_tam = true;
+		// 				for (var j = 0; j < search.length; j++) {
+		// 					var check = false;
+		// 					for (var k = tam; k < response.data[i].name.length; k++) {
+		// 						if (search[j].toUpperCase() == response.data[i].name[k]) {
+		// 							check = true;
+		// 							tam = k + 1;
+		// 							dem++;
+		// 							break;
+		// 						}
+		// 						else {
+		// 							check = false;
+		// 						}
+		// 						;
+		// 						if (dem >= 1 && check == false) {
+		// 							check_tam = false;
+		// 							break;
+		// 						}
+		// 					}
+		// 					if (check == false) {
+		// 						check_tam = false;
+		// 						break;
+		// 					}
+		// 				}
+		// 				if (search.length == 1) {
+		// 					if (check == true) {
+		// 						data_search.push({
+		// 							here: i
+		// 						});
+		// 					}
+		// 				}
+		// 				if (check_tam == true && search.length > 1) {
+		// 					data_search.push({
+		// 						here: i
+		// 					});
+		// 				}
+		// 			}
+		// 			var tamp=0;
+		// 			for (var i = 0; i < data_search.length; i++) {
+		// 				show_data[i]=response.data[data_search[i].here];
+		// 			}
+		// 			vm.products_new = show_data;
+		// 			console.log(vm.products_new);
+        //             if(show_data.length==0){
+        //             	document.getElementById('show_product_custom').style.display='block';
+		// 			}
 
 					// var el = document.getElementById("products");
 					// el.setAttribute( "dir-paginate","product in products | itemsPerPage: pageSize");
 					// compile(el);
 
-            });
-	}
+            // });
+	// }
 
         //compile search
         // if (typeof $routeParams.name !== "undefined") {
