@@ -1,6 +1,6 @@
 [{
   "id": "(CUR1)",
-  "name": "PNJ",
+  "name": "NOVA",
   "image":"images/images_ring/images_ring_curling/curling_1.png",
   "price": "120",
   "class_rating_star": "1",
@@ -16,7 +16,7 @@
   "age" : "18K"
 },{
   "id": "(CUR2)",
-  "name": "WAVES",
+  "name": "PERFECTION",
   "image":"images/images_ring/images_ring_curling/curling_2.png",
   "price": "130",
   "class_rating_star": "2",
@@ -48,7 +48,7 @@
   "age" : "10K"
 },{
   "id": "(CUR4)",
-  "name": "LOVE",
+  "name": "KERIA",
   "image":"images/images_ring/images_ring_curling/curling_4.png",
   "price": "130",
   "class_rating_star": "4",
@@ -64,7 +64,7 @@
   "age" : "20K"
 },{
   "id": "(CUR5)",
-  "name": "HEART",
+  "name": "TESCOM",
   "image":"images/images_ring/images_ring_curling/curling_5.png",
   "price": "130",
   "class_rating_star": "5",
@@ -80,7 +80,7 @@
   "age" : "18K"
 },{
   "id": "(CUR6)",
-  "name": "LOVE",
+  "name": "SHINON",
   "image":"images/images_ring/images_ring_curling/curling_6.png",
   "price": "140",
   "class_rating_star": "6",
@@ -96,7 +96,7 @@
   "age" : "14K"
 },{
   "id": "(CUR7)",
-  "name": "LUXURY",
+  "name": "TITANMS",
   "image":"images/images_ring/images_ring_curling/curling_7.png",
   "price": "125",
   "class_rating_star": "7",
@@ -112,7 +112,7 @@
   "age" : "20K"
 },{
   "id": "(CUR8)",
-  "name": "ROMANTIC",
+  "name": "CODOS",
   "image":"images/images_ring/images_ring_curling/curling_8.png",
   "price": "127",
   "class_rating_star": "8",
@@ -128,7 +128,7 @@
   "age" : "18K"
 },{
   "id": "(CUR9)",
-  "name": "ROSE",
+  "name": "DIVA",
   "image":"images/images_ring/images_ring_curling/curling_9.png",
   "price": "180",
   "class_rating_star": "9",
@@ -143,7 +143,7 @@
   "age" : "18K"
 },{
   "id": "(CUR10)",
-  "name": "COUPLE",
+  "name": "OEM",
   "image":"images/images_ring/images_ring_curling/curling_10.png",
   "price": "165",
   "class_rating_star": "1",
@@ -159,7 +159,7 @@
   "age" : "20K"
 },{
   "id": "(CUR11)",
-  "name": "COUPLE",
+  "name": "MAGIDEAL",
   "image":"images/images_ring/images_ring_curling/curling_11.png",
   "price": "145",
   "class_rating_star": "11",
@@ -175,7 +175,7 @@
   "age" : "10K"
 },{
   "id": "(CUR12)",
-  "name": "NOBLE",
+  "name": "SEDU",
   "image":"images/images_ring/images_ring_curling/curling_12.png",
   "price": "115",
   "class_rating_star": "12",
@@ -192,7 +192,7 @@
 }
 ,{
   "id": "(CUR13)",
-  "name": "NOBLE",
+  "name": "MAGIC",
   "image":"images/images_ring/images_ring_curling/curling_13.png",
   "price": "124",
   "class_rating_star": "13",
@@ -209,7 +209,7 @@
 }
 ,{
   "id": "(CUR14)",
-  "name": "PNJ",
+  "name": "LKOO",
   "image":"images/images_ring/images_ring_curling/curling_14.png",
   "price": "170",
   "class_rating_star": "14",
@@ -226,7 +226,7 @@
 }
 ,{
   "id": "(CUR15)",
-  "name": "NOBLE",
+  "name": "SUPERSTARS",
   "image":"images/images_ring/images_ring_curling/curling_15.png",
   "price": "130",
   "class_rating_star": "15",
@@ -243,7 +243,7 @@
 }
 ,{
   "id": "(CUR16)",
-  "name": "NTK",
+  "name": "RETRO",
   "image":"images/images_ring/images_ring_curling/curling_16.png",
   "price": "170",
   "class_rating_star": "16",
@@ -260,7 +260,7 @@
 }
 ,{
   "id": "(CUR17)",
-  "name": "NOBLE",
+  "name": "REVELAG",
   "image":"images/images_ring/images_ring_curling/curling_17.png",
   "price": "160",
   "class_rating_star": "17",
@@ -277,7 +277,7 @@
 }
 ,{
   "id": "(CUR18)",
-  "name": "NOBLE",
+  "name": "BUNMAKER",
   "image":"images/images_ring/images_ring_curling/curling_18.png",
   "price": "136",
   "class_rating_star": "18",
@@ -294,7 +294,7 @@
 }
 ,{
   "id": "(CUR19)",
-  "name": "PNJ",
+  "name": "KINGTEST",
   "image":"images/images_ring/images_ring_curling/curling_19.png",
   "price": "170",
   "class_rating_star": "19",
@@ -311,7 +311,7 @@
 }
 ,{
   "id": "(CUR20)",
-  "name": "NOBLE",
+  "name": "KEMEIS",
   "image":"images/images_ring/images_ring_curling/curling_20.png",
   "price": "165",
   "class_rating_star": "2",

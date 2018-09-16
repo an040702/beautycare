@@ -16,7 +16,7 @@
   "age" : "18K"
 },{
   "id": "(EXT2)",
-  "name": "WEEDING",
+  "name": "AISHU",
   "image":"images/images_ring/images_ring_extensions/extensions_2.png",
   "price": "130",
   "class_rating_star": "2",
@@ -32,7 +32,7 @@
   "age" : "14K"
 },{
   "id": "(EXT3)",
-  "name": "PROPOSE",
+  "name": "MAISON",
   "image":"images/images_ring/images_ring_extensions/extensions_3.png",
   "price": "190",
   "class_rating_star": "3",
@@ -48,7 +48,7 @@
   "age" : "10K"
 },{
   "id": "(EXT4)",
-  "name": "LOVE",
+  "name": "RAINBOW",
   "image":"images/images_ring/images_ring_extensions/extensions_4.png",
   "price": "130",
   "class_rating_star": "4",
@@ -64,7 +64,7 @@
   "age" : "20K"
 },{
   "id": "(EXT5)",
-  "name": "HEART",
+  "name": "WIGCAP",
   "image":"images/images_ring/images_ring_extensions/extensions_5.png",
   "price": "130",
   "class_rating_star": "5",
@@ -80,7 +80,7 @@
   "age" : "18K"
 },{
   "id": "(EXT6)",
-  "name": "LOVE",
+  "name": "LADYSTART",
   "image":"images/images_ring/images_ring_extensions/extensions_6.png",
   "price": "140",
   "class_rating_star": "6",
@@ -96,7 +96,7 @@
   "age" : "14K"
 },{
   "id": "(EXT7)",
-  "name": "LUXURY",
+  "name": "CARTON",
   "image":"images/images_ring/images_ring_extensions/extensions_7.png",
   "price": "125",
   "class_rating_star": "7",
@@ -112,7 +112,7 @@
   "age" : "20K"
 },{
   "id": "(EXT8)",
-  "name": "ROMANTIC",
+  "name": "IKEA",
   "image":"images/images_ring/images_ring_extensions/extensions_8.png",
   "price": "127",
   "class_rating_star": "8",
@@ -128,7 +128,7 @@
   "age" : "18K"
 },{
   "id": "(EXT9)",
-  "name": "ROSE",
+  "name": "ETC",
   "image":"images/images_ring/images_ring_extensions/extensions_9.png",
   "price": "180",
   "class_rating_star": "9",
@@ -143,7 +143,7 @@
   "age" : "18K"
 },{
   "id": "(EXT10)",
-  "name": "COUPLE",
+  "name": "VIVIANS",
   "image":"images/images_ring/images_ring_extensions/extensions_10.png",
   "price": "165",
   "class_rating_star": "1",
@@ -159,7 +159,7 @@
   "age" : "20K"
 },{
   "id": "(EXT11)",
-  "name": "COUPLE",
+  "name": "BURQUA",
   "image":"images/images_ring/images_ring_extensions/extensions_11.png",
   "price": "145",
   "class_rating_star": "11",
@@ -175,7 +175,7 @@
   "age" : "10K"
 },{
   "id": "(EXT12)",
-  "name": "NOBLE",
+  "name": "NIQUA",
   "image":"images/images_ring/images_ring_extensions/extensions_12.png",
   "price": "115",
   "class_rating_star": "12",
@@ -192,7 +192,7 @@
 }
 ,{
   "id": "(EXT13)",
-  "name": "NOBLE",
+  "name": "CHADOR",
   "image":"images/images_ring/images_ring_extensions/extensions_13.png",
   "price": "124",
   "class_rating_star": "13",
@@ -209,7 +209,7 @@
 }
 ,{
   "id": "(EXT14)",
-  "name": "PNJ",
+  "name": "SHAYLA",
   "image":"images/images_ring/images_ring_extensions/extensions_14.png",
   "price": "170",
   "class_rating_star": "14",
@@ -226,7 +226,7 @@
 }
 ,{
   "id": "(EXT15)",
-  "name": "NOBLE",
+  "name": "FORMER",
   "image":"images/images_ring/images_ring_extensions/extensions_15.png",
   "price": "130",
   "class_rating_star": "15",
@@ -243,7 +243,7 @@
 }
 ,{
   "id": "(EXT16)",
-  "name": "NTK",
+  "name": "DEGE",
   "image":"images/images_ring/images_ring_extensions/extensions_16.png",
   "price": "170",
   "class_rating_star": "16",
@@ -260,7 +260,7 @@
 }
 ,{
   "id": "(EXT17)",
-  "name": "NOBLE",
+  "name": "JAGUA",
   "image":"images/images_ring/images_ring_extensions/extensions_17.png",
   "price": "160",
   "class_rating_star": "17",
@@ -277,7 +277,7 @@
 }
 ,{
   "id": "(EXT18)",
-  "name": "NOBLE",
+  "name": "BINGO",
   "image":"images/images_ring/images_ring_extensions/extensions_18.png",
   "price": "136",
   "class_rating_star": "18",
@@ -294,7 +294,7 @@
 }
 ,{
   "id": "(EXT19)",
-  "name": "PNJ",
+  "name": "MISNA",
   "image":"images/images_ring/images_ring_extensions/extensions_19.png",
   "price": "170",
   "class_rating_star": "19",
@@ -311,7 +311,7 @@
 }
 ,{
   "id": "(EXT20)",
-  "name": "NOBLE",
+  "name": "KANAC",
   "image":"images/images_ring/images_ring_extensions/extensions_20.png",
   "price": "165",
   "class_rating_star": "2",
