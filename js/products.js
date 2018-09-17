@@ -672,18 +672,11 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                 if (i == table_shopping.length - 1) {
                     var row = document.createElement('tr');
                     var cell = document.createElement('td');
-                    cell.setAttribute('colspan', properties.length - 7);
-                    cell.setAttribute('style', 'color:blue');
-                    cell.innerHTML = "<a class='btn btn-warning'><i class='fa fa-angle-left'></i> Continue Shopping</a>";
-                    cell.className = "continue";
-                    row.appendChild(cell);
-                    table.appendChild(row);
-                    var cell = document.createElement('td');
                     if (typeof $routeParams.name !== "undefined") {
-                        cell.setAttribute('colspan', properties.length - 7);
+                        cell.setAttribute('colspan', properties.length - 5);
                     }
                     else {
-                        cell.setAttribute('colspan', properties.length - 4);
+                        cell.setAttribute('colspan', properties.length - 2);
                     }
                     cell.setAttribute('style', 'color:black;font-weight:bold;font-size:20px;');
                     cell.innerHTML = "Total";
