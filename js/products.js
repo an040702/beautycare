@@ -46,8 +46,11 @@ productApp.config(['$routeProvider','$locationProvider',function($routeProvider,
 		controller : "productCtrl"
 	}).when('/about-us',{
 		templateUrl : "./pages/_about_us.html"
-	}).when('/contact-us',{
-		templateUrl : "./pages/_contact.html"
+	}).when('/about-us',{
+        templateUrl : "./pages/_about_us.html"
+    }).when('/checkout/:name',{
+		templateUrl : "./pages/paymen.html",
+        controller : "productCtrl"
 	}).otherwise({
 		redirectTo:'/home/index',
 		controller : "productCtrl"
@@ -104,8 +107,24 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                     });
             };
         }
+    if($routeParams.name=="payment"){
+
+        document.getElementById('ul-nav-cart').style.display='none';
 
 
+        $http.get('data/data_users.json') //reading the product.json file
+            .then(function (response) {
+                console.log(response.data);
+                document.getElementById('fname').value=response.data[localStorage.id_user_login].name;
+                document.getElementById('adr').value=response.data[localStorage.id_user_login].address;
+                document.getElementById('dob').value=response.data[localStorage.id_user_login].birthday;
+                document.getElementById('cname').value=response.data[localStorage.id_user_login].name;
+            });
+        console.log(data_array);
+        }
+    else{
+        document.getElementById('ul-nav-cart').style.display='block';
+    }
         vm.show_shopping = function () {
             return true;
         };
@@ -577,14 +596,13 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
 
 
         vm.displayTable = function (table_shopping, table_id) {
-            console.log(table_shopping.length);
             if (typeof $routeParams.name !== "undefined") {
-                document.getElementById('show_table').innerHTML = "<table id='" + table_id + "'><tr><th style='text-align: center !important;'>No</th><th style='text-align: center !important;'>Image</th><th style='text-align: center !important;'>Name</th><th style='text-align: center !important;' id='th_id'>Id</th><th style='text-align: center !important;' id='th_type'>Type</th><th style='text-align: center !important;'>Quantity</th><th style='text-align: center !important;' id='th_price'>Price/1</th><th style='text-align: center !important;'>Price</th><th style='text-align: center !important;' id='th_remove'><button style='font-weight:600; font-style=both' class='btn btn-danger btn-sm' id='remove_all_product'>ALL</button></th></tr></table>";
+                document.getElementById('show_table').innerHTML = "<table id='" + table_id + "' class=''><tr><th >No</th><th >Image</th><th >Name</th><th  id='th_id'>Id</th><th  id='th_type'>Type</th><th >Quantity</th><th  id='th_price'>Price/1</th><th >Price</th><th  id='th_remove'><button style='font-weight:600; font-style=both' class='btn btn-danger btn-sm' id='remove_all_product'>ALL</button></th></tr></table>";
             }
             else {
                 document.getElementById('show_table').innerHTML = "";
-                document.getElementById('show_table1').innerHTML = "<table id='" + table_id + "'><tr><th style='text-align: center !important;'>No</th><th style='text-align: center !important;'>Image</th><th style='text-align: center !important;'>Name</th><th style='text-align: center !important;'>Id</th><th style='text-align: center !important;'>Type</th><th style='text-align: center !important;' >Quantity</th><th style='text-align: center !important;'>Price/1</th><th style='text-align: center !important;'>Price/Quantity</th><th style='text-align: center !important;'><button style='font-weight:600; font-style=both' class='btn btn-danger btn-sm' id='remove_all_product'>ALL</button></th></tr></table>";
-
+                document.getElementById('show_table1').innerHTML = "<table id='" + table_id + "'><tr><th >No</th><th >Image</th><th >Name</th><th >Id</th><th >Type</th><th  >Quantity</th><th >Price/1</th><th >Price/Quantity</th><th ><button style='font-weight:600; font-style=both' class='btn btn-danger btn-sm' id='remove_all_product'>ALL</button></th></tr></table>";
+                document.getElementById('show_table1').innerHTML = "<table id='" + table_id + "'><tr><th >No</th><th >Image</th><th >Name</th><th >Id</th><th >Type</th><th  >Quantity</th><th >Price/1</th><th >Price/Quantity</th><th ><button style='font-weight:600; font-style=both' class='btn btn-danger btn-sm' id='remove_all_product'>ALL</button></th></tr></table>";
             }
             var table = document.getElementById(table_id);
             var sum = 0;
@@ -690,10 +708,16 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                     row.appendChild(cell);
                     var cell = document.createElement('td');
                     cell.setAttribute('id', 'checkout');
-                    cell.innerHTML = "<a href='#!/checkout' style='text-decoration: none'><div style='cursor: pointer' class='btn btn-success btn-block'>Check Out <i class='fa fa-angle-right'></i></div></a>";
+                    if(typeof $routeParams.name !== "undefined") {
+                        cell.innerHTML = "<a href='#!/checkout' style='text-decoration: none'><div style='cursor: pointer' class='btn btn-success btn-block'>Check Out <i class='fa fa-angle-right'></i></div></a>";
+                    }
+                    if(typeof $routeParams.name === "undefined"){
+                        cell.innerHTML = "<a href='#!/checkout/payment' style='text-decoration: none'><div style='cursor: pointer' class='btn btn-success btn-block'>Payment <i class='fa fa-angle-right'></i></div></a>";
+                    }
                     row.appendChild(cell);
                     table.appendChild(row);
                 }
+                table.appendChild(row);
             }
             if (data_array.length > 0) {
                 var el = document.getElementById('checkout');
