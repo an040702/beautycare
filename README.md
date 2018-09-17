@@ -20,3 +20,4 @@
 # 28/08/2018: Make new branch FilterFunction
 # 28 / 8 / 2018 Add pagination into product
 # 28/08/2018 -> 04/09/2018: Fix refresh page error 404...
+# 04/09/2018 -> 18/09/2018: Complete project... Will be continue...!!!
