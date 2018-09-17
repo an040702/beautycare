@@ -44,12 +44,12 @@ productApp.config(['$routeProvider','$locationProvider',function($routeProvider,
 	}).when('/checkout',{
 		templateUrl : "pages/check_out.html",
 		controller : "productCtrl"
-	}).when('/about-us',{
-		templateUrl : "./pages/_about_us.html"
+	}).when('/contact-us',{
+		templateUrl : "./pages/_contact.html"
 	}).when('/about-us',{
         templateUrl : "./pages/_about_us.html"
     }).when('/checkout/:name',{
-		templateUrl : "./pages/paymen.html",
+		templateUrl : "./pages/payment.html",
         controller : "productCtrl"
 	}).otherwise({
 		redirectTo:'/home/index',
