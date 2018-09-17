@@ -122,9 +122,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
             });
         console.log(data_array);
         }
-    else{
-        document.getElementById('ul-nav-cart').style.display='block';
-    }
+  
         vm.show_shopping = function () {
             return true;
         };
