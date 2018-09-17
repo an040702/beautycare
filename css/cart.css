@@ -49,8 +49,8 @@ div.fadein {
 div.count_items
 {
   position: absolute;
-    top: 15px;
-    right: -5px;
+    top: 8px;
+    right: 0px;
     background: #D9534F;
     color: #FFF;
     font-weight: bold;

@@ -513,9 +513,8 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
 
 
         //add product
-        var sum_items = parseInt($("#items_quantity")[0].innerText);
-		
-        vm.add_Cart = function (checked_id) {
+        var sum_items = 0;
+		vm.add_Cart = function (checked_id) {
             var name_product;
             var price_product;
             var type_product;
@@ -529,12 +528,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                 openLoginModal();
             }
             else {
-            	//Display quantity items added beside cart icon
-            	sum_items++;
-				$("#items_quantity")[0].innerText = sum_items;
-				$("#items_quantity")[0].style.display = "block";
-				$(".count_items")[0].style.display = "block";
-				//End display function
+
                 document.getElementById('ul-nav-cart').style = 'display: block';
                 $timeout(function () {
                     document.getElementById('ul-nav-cart').style = 'display: hidden';
@@ -545,7 +539,7 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                         data_array = response.config.data;
                         console.log(data_array);
                     });
-
+               
                 name_product = document.getElementById("name_" + checked_id).innerText;
                 price_product = document.getElementById("price_" + $routeParams.name + "_" + checked_id).innerText;
                 type_product = $routeParams.name;
@@ -592,6 +586,16 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                         });
                     }
                 }
+                //Display quantity items added beside cart icon
+                sum_items = 0;
+                for (var k=0;k<data_array.length;k++){
+                	sum_items = sum_items + data_array[k].value;
+                };
+                            	
+				$("#items_quantity")[0].innerText = sum_items;
+				$("#items_quantity")[0].style.display = "block";
+				$(".count_items")[0].style.display = "block";
+				//End display function
                 vm.displayTable(data_array);
                 console.log(data_array);
 
