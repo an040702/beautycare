@@ -1,8 +1,8 @@
 [{
   "id": "(ACN1)",
-  "name": "PNJ",
+  "name": "SALICA",
   "image":"images/images_ring/images_ring_skinacne/skinacne_1.png",
-  "price": "1200",
+  "price": "120",
   "class_rating_star": "1",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_1",
@@ -16,9 +16,9 @@
   "age" : "18K"
 },{
   "id": "(ACN2)",
-  "name": "WEEDING",
+  "name": "TERMINATOR",
   "image":"images/images_ring/images_ring_skinacne/skinacne_2.png",
-  "price": "1300",
+  "price": "140",
   "class_rating_star": "2",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_2",
@@ -32,9 +32,9 @@
   "age" : "14K"
 },{
   "id": "(ACN3)",
-  "name": "PROPOSE",
+  "name": "HUMANE",
   "image":"images/images_ring/images_ring_skinacne/skinacne_3.png",
-  "price": "1900",
+  "price": "190",
   "class_rating_star": "3",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_3",
@@ -48,9 +48,9 @@
   "age" : "10K"
 },{
   "id": "(ACN4)",
-  "name": "LOVE",
+  "name": "CLVISIBLE",
   "image":"images/images_ring/images_ring_skinacne/skinacne_4.png",
-  "price": "1300",
+  "price": "110",
   "class_rating_star": "4",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_4",
@@ -64,9 +64,9 @@
   "age" : "20K"
 },{
   "id": "(ACN5)",
-  "name": "HEART",
+  "name": "MEDERMA",
   "image":"images/images_ring/images_ring_skinacne/skinacne_5.png",
-  "price": "1300",
+  "price": "95",
   "class_rating_star": "5",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_5",
@@ -80,9 +80,9 @@
   "age" : "18K"
 },{
   "id": "(ACN6)",
-  "name": "LOVE",
+  "name": "SULFUL",
   "image":"images/images_ring/images_ring_skinacne/skinacne_6.png",
-  "price": "1400",
+  "price": "106",
   "class_rating_star": "6",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_6",
@@ -96,9 +96,9 @@
   "age" : "14K"
 },{
   "id": "(ACN7)",
-  "name": "LUXURY",
+  "name": "CLSTUBBON",
   "image":"images/images_ring/images_ring_skinacne/skinacne_7.png",
-  "price": "1250",
+  "price": "110",
   "class_rating_star": "7",
   "description" : "Description_7",
   "sex" : "Male",
@@ -112,9 +112,9 @@
   "age" : "20K"
 },{
   "id": "(ACN8)",
-  "name": "ROMANTIC",
+  "name": "CLMAX",
   "image":"images/images_ring/images_ring_skinacne/skinacne_8.png",
-  "price": "1270",
+  "price": "112",
   "class_rating_star": "8",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_8",
@@ -128,9 +128,9 @@
   "age" : "18K"
 },{
   "id": "(ACN9)",
-  "name": "ROSE",
+  "name": "CLRAPID",
   "image":"images/images_ring/images_ring_skinacne/skinacne_9.png",
-  "price": "1800",
+  "price": "92",
   "class_rating_star": "9",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_9",
@@ -143,9 +143,9 @@
   "age" : "18K"
 },{
   "id": "(ACN10)",
-  "name": "COUPLE",
+  "name": "NUVILEO",
   "image":"images/images_ring/images_ring_skinacne/skinacne_10.png",
-  "price": "1650",
+  "price": "118",
   "class_rating_star": "10",
   "sex" : "Male & Female",
   "title_info" : "Write Somthing About Product_10",
@@ -159,9 +159,9 @@
   "age" : "20K"
 },{
   "id": "(ACN11)",
-  "name": "COUPLE",
+  "name": "ROYALSEA",
   "image":"images/images_ring/images_ring_skinacne/skinacne_11.png",
-  "price": "1450",
+  "price": "202",
   "class_rating_star": "11",
   "sex" : "Male & Female",
   "title_info" : "Write Somthing About Product_11",
@@ -175,9 +175,9 @@
   "age" : "10K"
 },{
   "id": "(ACN12)",
-  "name": "NOBLE",
+  "name": "MURAD",
   "image":"images/images_ring/images_ring_skinacne/skinacne_12.png",
-  "price": "1150",
+  "price": "86",
   "class_rating_star": "12",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_12",
@@ -192,9 +192,9 @@
 }
 ,{
   "id": "(ACN13)",
-  "name": "NOBLE",
+  "name": "ADVANTAGE",
   "image":"images/images_ring/images_ring_skinacne/skinacne_13.png",
-  "price": "1240",
+  "price": "140",
   "class_rating_star": "13",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_12",
@@ -209,9 +209,9 @@
 }
 ,{
   "id": "(ACN14)",
-  "name": "PNJ",
+  "name": "RAPID",
   "image":"images/images_ring/images_ring_skinacne/skinacne_14.png",
-  "price": "1700",
+  "price": "97",
   "class_rating_star": "14",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_14",
@@ -226,9 +226,9 @@
 }
 ,{
   "id": "(ACN15)",
-  "name": "NOBLE",
+  "name": "COLEX",
   "image":"images/images_ring/images_ring_skinacne/skinacne_15.png",
-  "price": "1300",
+  "price": "104",
   "class_rating_star": "15",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_15",
@@ -243,9 +243,9 @@
 }
 ,{
   "id": "(ACN16)",
-  "name": "NTK",
+  "name": "DIFFERIN",
   "image":"images/images_ring/images_ring_skinacne/skinacne_16.png",
-  "price": "1700",
+  "price": "111",
   "class_rating_star": "16",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_12",
@@ -260,9 +260,9 @@
 }
 ,{
   "id": "(ACN17)",
-  "name": "NOBLE",
+  "name": "NATURAL",
   "image":"images/images_ring/images_ring_skinacne/skinacne_17.png",
-  "price": "1600",
+  "price": "160",
   "class_rating_star": "17",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_12",
@@ -277,9 +277,9 @@
 }
 ,{
   "id": "(ACN18)",
-  "name": "NOBLE",
+  "name": "TREEACTIVE",
   "image":"images/images_ring/images_ring_skinacne/skinacne_18.png",
-  "price": "1360",
+  "price": "113",
   "class_rating_star": "18",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_18",
@@ -294,9 +294,9 @@
 }
 ,{
   "id": "(ACN19)",
-  "name": "PNJ",
+  "name": "TAME",
   "image":"images/images_ring/images_ring_skinacne/skinacne_19.png",
-  "price": "1700",
+  "price": "141",
   "class_rating_star": "19",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_19",
@@ -311,9 +311,9 @@
 }
 ,{
   "id": "(ACN20)",
-  "name": "NOBLE",
+  "name": "NONO",
   "image":"images/images_ring/images_ring_skinacne/skinacne_20.png",
-  "price": "1650",
+  "price": "165",
   "class_rating_star": "20",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_20",

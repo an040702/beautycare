@@ -1,8 +1,8 @@
 [{
   "id": "(MOI1)",
-  "name": "PNJ",
+  "name": "CERAVEAM",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_1.png",
-  "price": "1200",
+  "price": "112",
   "class_rating_star": "1",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_1",
@@ -16,9 +16,9 @@
   "age" : "18K"
 },{
   "id": "(MOI2)",
-  "name": "WEEDING",
+  "name": "CERAVE",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_2.png",
-  "price": "1300",
+  "price": "170",
   "class_rating_star": "2",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_2",
@@ -32,9 +32,9 @@
   "age" : "14K"
 },{
   "id": "(MOI3)",
-  "name": "PROPOSE",
+  "name": "CERAVEDR",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_3.png",
-  "price": "1900",
+  "price": "130",
   "class_rating_star": "3",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_3",
@@ -48,9 +48,9 @@
   "age" : "10K"
 },{
   "id": "(MOI4)",
-  "name": "LOVE",
+  "name": "OILCONTROL",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_4.png",
-  "price": "1300",
+  "price": "127",
   "class_rating_star": "4",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_4",
@@ -64,9 +64,9 @@
   "age" : "20K"
 },{
   "id": "(MOI5)",
-  "name": "HEART",
+  "name": "GARNIER",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_5.png",
-  "price": "1300",
+  "price": "133",
   "class_rating_star": "5",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_5",
@@ -80,9 +80,9 @@
   "age" : "18K"
 },{
   "id": "(MOI6)",
-  "name": "LOVE",
+  "name": "YESTO",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_6.png",
-  "price": "1400",
+  "price": "125",
   "class_rating_star": "6",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_6",
@@ -96,9 +96,9 @@
   "age" : "14K"
 },{
   "id": "(MOI7)",
-  "name": "LUXURY",
+  "name": "STIVES",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_7.png",
-  "price": "1250",
+  "price": "88",
   "class_rating_star": "7",
   "description" : "Description_7",
   "sex" : "Male",
@@ -112,9 +112,9 @@
   "age" : "20K"
 },{
   "id": "(MOI8)",
-  "name": "ROMANTIC",
+  "name": "AVEENO",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_8.png",
-  "price": "1270",
+  "price": "85",
   "class_rating_star": "8",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_8",
@@ -128,9 +128,9 @@
   "age" : "18K"
 },{
   "id": "(MOI9)",
-  "name": "ROSE",
+  "name": "LRP",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_9.png",
-  "price": "1800",
+  "price": "144",
   "class_rating_star": "9",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_9",
@@ -143,9 +143,9 @@
   "age" : "18K"
 },{
   "id": "(MOI10)",
-  "name": "COUPLE",
+  "name": "BOMB",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_10.png",
-  "price": "1650",
+  "price": "119",
   "class_rating_star": "10",
   "sex" : "Male & Female",
   "title_info" : "Write Somthing About Product_10",
@@ -159,9 +159,9 @@
   "age" : "20K"
 },{
   "id": "(MOI11)",
-  "name": "COUPLE",
+  "name": "NO7",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_11.png",
-  "price": "1450",
+  "price": "98",
   "class_rating_star": "11",
   "sex" : "Male & Female",
   "title_info" : "Write Somthing About Product_11",
@@ -175,9 +175,9 @@
   "age" : "10K"
 },{
   "id": "(MOI12)",
-  "name": "NOBLE",
+  "name": "ELF",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_12.png",
-  "price": "1150",
+  "price": "76",
   "class_rating_star": "12",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_12",
@@ -192,9 +192,9 @@
 }
 ,{
   "id": "(MOI13)",
-  "name": "NOBLE",
+  "name": "OILFREEPP",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_13.png",
-  "price": "1240",
+  "price": "240",
   "class_rating_star": "13",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_12",
@@ -209,9 +209,9 @@
 }
 ,{
   "id": "(MOI14)",
-  "name": "PNJ",
+  "name": "OILFREEGF",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_14.png",
-  "price": "1700",
+  "price": "242",
   "class_rating_star": "14",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_14",
@@ -226,9 +226,9 @@
 }
 ,{
   "id": "(MOI15)",
-  "name": "NOBLE",
+  "name": "NTGNN",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_15.png",
-  "price": "1300",
+  "price": "129",
   "class_rating_star": "15",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_15",
@@ -243,9 +243,9 @@
 }
 ,{
   "id": "(MOI16)",
-  "name": "NTK",
+  "name": "NTGTR",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_16.png",
-  "price": "1700",
+  "price": "128",
   "class_rating_star": "16",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_12",
@@ -260,9 +260,9 @@
 }
 ,{
   "id": "(MOI17)",
-  "name": "NOBLE",
+  "name": "OILFREEBT",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_17.png",
-  "price": "1600",
+  "price": "239",
   "class_rating_star": "17",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_12",
@@ -277,9 +277,9 @@
 }
 ,{
   "id": "(MOI18)",
-  "name": "NOBLE",
+  "name": "HEALTHYDD",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_18.png",
-  "price": "1360",
+  "price": "155",
   "class_rating_star": "18",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_18",
@@ -294,9 +294,9 @@
 }
 ,{
   "id": "(MOI19)",
-  "name": "PNJ",
+  "name": "ANTI",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_19.png",
-  "price": "1700",
+  "price": "126",
   "class_rating_star": "19",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_19",
@@ -311,9 +311,9 @@
 }
 ,{
   "id": "(MOI20)",
-  "name": "NOBLE",
+  "name": "HEALTHYVV",
   "image":"images/images_ring/images_ring_skinmoisturizing/skinmoisturizing_20.png",
-  "price": "1650",
+  "price": "156",
   "class_rating_star": "20",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_20",

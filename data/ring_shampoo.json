@@ -1,8 +1,8 @@
 [{
   "id": "(SH1)",
-  "name": "PNJ",
+  "name": "KERASTASEB",
   "image":"images/images_ring/images_ring_shampoo/shampoo_1.png",
-  "price": "1200",
+  "price": "20.5",
   "class_rating_star": "1",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_1",
@@ -16,9 +16,9 @@
   "age" : "18K"
 },{
   "id": "(SH2)",
-  "name": "WEEDING",
+  "name": "CHRISTOPHE",
   "image":"images/images_ring/images_ring_shampoo/shampoo_2.png",
-  "price": "1300",
+  "price": "22",
   "class_rating_star": "2",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_2",
@@ -32,9 +32,9 @@
   "age" : "14K"
 },{
   "id": "(SH3)",
-  "name": "PROPOSE",
+  "name": "SHEASP",
   "image":"images/images_ring/images_ring_shampoo/shampoo_3.png",
-  "price": "1900",
+  "price": "19.5",
   "class_rating_star": "3",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_3",
@@ -48,9 +48,9 @@
   "age" : "10K"
 },{
   "id": "(SH4)",
-  "name": "LOVE",
+  "name": "MANE",
   "image":"images/images_ring/images_ring_shampoo/shampoo_4.png",
-  "price": "1300",
+  "price": "15",
   "class_rating_star": "4",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_4",
@@ -64,7 +64,7 @@
   "age" : "20K"
 },{
   "id": "(SH5)",
-  "name": "SHEA",
+  "name": "SHEACS",
   "image":"images/images_ring/images_ring_shampoo/shampoo_5.png",
   "price": "13.5",
   "class_rating_star": "5",
@@ -80,9 +80,9 @@
   "age" : "18K"
 },{
   "id": "(SH6)",
-  "name": "LOVE",
+  "name": "ALPECIN",
   "image":"images/images_ring/images_ring_shampoo/shampoo_6.png",
-  "price": "1400",
+  "price": "17",
   "class_rating_star": "6",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_6",
@@ -96,9 +96,9 @@
   "age" : "14K"
 },{
   "id": "(SH7)",
-  "name": "LUXURY",
+  "name": "KERASTASEOR",
   "image":"images/images_ring/images_ring_shampoo/shampoo_7.png",
-  "price": "1250",
+  "price": "11.8",
   "class_rating_star": "7",
   "description" : "Description_7",
   "sex" : "Male",
@@ -112,9 +112,9 @@
   "age" : "20K"
 },{
   "id": "(SH8)",
-  "name": "ROMANTIC",
+  "name": "AVEENO",
   "image":"images/images_ring/images_ring_shampoo/shampoo_8.png",
-  "price": "1270",
+  "price": "12.5",
   "class_rating_star": "8",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_8",
@@ -128,9 +128,9 @@
   "age" : "18K"
 },{
   "id": "(SH9)",
-  "name": "ROSE",
+  "name": "INGSLEYDC",
   "image":"images/images_ring/images_ring_shampoo/shampoo_9.png",
-  "price": "1800",
+  "price": "18",
   "class_rating_star": "9",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_9",
@@ -143,9 +143,9 @@
   "age" : "18K"
 },{
   "id": "(SH10)",
-  "name": "COUPLE",
+  "name": "JASON",
   "image":"images/images_ring/images_ring_shampoo/shampoo_10.png",
-  "price": "1650",
+  "price": "16",
   "class_rating_star": "10",
   "sex" : "Male & Female",
   "title_info" : "Write Somthing About Product_10",
@@ -159,9 +159,9 @@
   "age" : "20K"
 },{
   "id": "(SH11)",
-  "name": "COUPLE",
+  "name": "INGSLEYPO",
   "image":"images/images_ring/images_ring_shampoo/shampoo_11.png",
-  "price": "1450",
+  "price": "19",
   "class_rating_star": "11",
   "sex" : "Male & Female",
   "title_info" : "Write Somthing About Product_11",
@@ -175,9 +175,9 @@
   "age" : "10K"
 },{
   "id": "(SH12)",
-  "name": "NOBLE",
+  "name": "JOICOCD",
   "image":"images/images_ring/images_ring_shampoo/shampoo_12.png",
-  "price": "1150",
+  "price": "24.5",
   "class_rating_star": "12",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_12",
@@ -192,9 +192,9 @@
 }
 ,{
   "id": "(SH13)",
-  "name": "NOBLE",
+  "name": "JOICOBL",
   "image":"images/images_ring/images_ring_shampoo/shampoo_13.png",
-  "price": "1240",
+  "price": "22",
   "class_rating_star": "13",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_12",
@@ -209,9 +209,9 @@
 }
 ,{
   "id": "(SH14)",
-  "name": "PNJ",
+  "name": "FUSION",
   "image":"images/images_ring/images_ring_shampoo/shampoo_14.png",
-  "price": "1700",
+  "price": "17",
   "class_rating_star": "14",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_14",
@@ -226,9 +226,9 @@
 }
 ,{
   "id": "(SH15)",
-  "name": "NOBLE",
+  "name": "REDKEN",
   "image":"images/images_ring/images_ring_shampoo/shampoo_15.png",
-  "price": "1300",
+  "price": "21.5",
   "class_rating_star": "15",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_15",
@@ -243,9 +243,9 @@
 }
 ,{
   "id": "(SH16)",
-  "name": "NTK",
+  "name": "BORRES",
   "image":"images/images_ring/images_ring_shampoo/shampoo_16.png",
-  "price": "1700",
+  "price": "28",
   "class_rating_star": "16",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_12",
@@ -260,9 +260,9 @@
 }
 ,{
   "id": "(SH17)",
-  "name": "NOBLE",
+  "name": "CAUDALIE",
   "image":"images/images_ring/images_ring_shampoo/shampoo_17.png",
-  "price": "1600",
+  "price": "106",
   "class_rating_star": "17",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_12",
@@ -277,9 +277,9 @@
 }
 ,{
   "id": "(SH18)",
-  "name": "NOBLE",
+  "name": "KERASTASEUU",
   "image":"images/images_ring/images_ring_shampoo/shampoo_18.png",
-  "price": "1360",
+  "price": "36",
   "class_rating_star": "18",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_18",
@@ -294,9 +294,9 @@
 }
 ,{
   "id": "(SH19)",
-  "name": "PNJ",
+  "name": "WLB",
   "image":"images/images_ring/images_ring_shampoo/shampoo_19.png",
-  "price": "1700",
+  "price": "20",
   "class_rating_star": "19",
   "sex" : "Male",
   "title_info" : "Write Somthing About Product_19",
@@ -311,9 +311,9 @@
 }
 ,{
   "id": "(SH20)",
-  "name": "NOBLE",
+  "name": "JASONMK",
   "image":"images/images_ring/images_ring_shampoo/shampoo_20.png",
-  "price": "1650",
+  "price": "16.5",
   "class_rating_star": "20",
   "sex" : "Female",
   "title_info" : "Write Somthing About Product_20",
