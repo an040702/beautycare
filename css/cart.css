@@ -36,3 +36,32 @@ img.img-responsive2{max-width: 100px;max-height: 100px;margin-top: 5px}
 div.navbar-product{
   width: 600px;
 }
+div.fadein, div.fadeout {
+    opacity: 0;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
+div.fadein {
+    opacity: 1;
+}
+div.count_items
+{
+  position: absolute;
+    top: 15px;
+    right: -5px;
+    background: #D9534F;
+    color: #FFF;
+    font-weight: bold;
+    margin-left: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    font-size: 10px;
+    display: none;
+}

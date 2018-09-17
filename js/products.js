@@ -513,7 +513,8 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
 
 
         //add product
-
+        var sum_items = parseInt($("#items_quantity")[0].innerText);
+		
         vm.add_Cart = function (checked_id) {
             var name_product;
             var price_product;
@@ -528,7 +529,12 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                 openLoginModal();
             }
             else {
-
+            	//Display quantity items added beside cart icon
+            	sum_items++;
+				$("#items_quantity")[0].innerText = sum_items;
+				$("#items_quantity")[0].style.display = "block";
+				$(".count_items")[0].style.display = "block";
+				//End display function
                 document.getElementById('ul-nav-cart').style = 'display: block';
                 $timeout(function () {
                     document.getElementById('ul-nav-cart').style = 'display: hidden';
