@@ -483,10 +483,24 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
             }
             vm.displayTable(data_array);
             if (data_array.length == 0) {
+            	sum_items = 0;
+ 				$("#items_quantity")[0].innerText = sum_items;
                 document.getElementById('show_table').innerHTML = "EMPTY CART !!!";
                 document.getElementById('show_table1').innerHTML = "EMPTY CART !!!";
-            }
 
+            }
+            else{
+	            //Display quantity items added beside cart icon
+	            sum_items = 0;
+	            for (var k=0;k<data_array.length;k++){
+	            	sum_items = sum_items + data_array[k].value;
+	            };
+	                        	
+				$("#items_quantity")[0].innerText = sum_items;
+				$("#items_quantity")[0].style.display = "block";
+				$(".count_items")[0].style.display = "block";
+				//End display function
+			}
         };
         vm.remove_all_product = function (event) {
 
@@ -507,6 +521,16 @@ productApp.controller("productCtrl", function($scope, $http,$routeParams,$compil
                     });
             }
             ;
+            //Display quantity items added beside cart icon
+            sum_items = 0;
+            for (var k=0;k<data_array.length;k++){
+            	sum_items = sum_items + data_array[k].value;
+            };
+                        	
+			$("#items_quantity")[0].innerText = sum_items;
+			$("#items_quantity")[0].style.display = "block";
+			$(".count_items")[0].style.display = "block";
+			//End display function
             document.getElementById('show_table').innerHTML = "EMPTY CART !!!";
             document.getElementById('show_table1').innerHTML = "EMPTY CART !!!";
         };
