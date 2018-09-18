@@ -94,7 +94,7 @@
 }
 .imagesabout_parlax{
     height: 500px;
-    background: url(../images/team.png) no-repeat;
+    background: url(../images/index_background/team.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
