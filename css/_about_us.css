@@ -1,3 +1,6 @@
+.about_info{
+    margin-bottom: 50px;
+}
 .about_introduce{
 	text-align: center;
 	background-color: black;
@@ -51,9 +54,6 @@
 .about_common_child{
     text-align: center;
 }
-/*.about_promise{
-	background: #feeced;
-}*/
 .about_promise1{
     height: 300px;
     background: url(../images/image_aboutus/about.jpg);
@@ -117,12 +117,14 @@
     letter-spacing: 10px;
 }
 .about_count{
+    margin-top: 50px;
     background-color: black;
     color: white;
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 .thought_number{
+    margin-top: 80px;
     font-size: 40px;
     text-align: center;
     font-weight: bold;
@@ -130,17 +132,15 @@
 }
 .about_attribute{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .about_circle{
     border-radius: 50%;
 }
 .all_team{
     margin-bottom: 20px;
-    /*padding-bottom: 20px;*/
 }
 .about_people{
-/*    border: solid 1px #f2f2f2;*/
     padding: 30px 10px;
     position: relative;
     text-align: center;
